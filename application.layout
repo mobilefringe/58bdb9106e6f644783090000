@@ -213,34 +213,24 @@
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
                                 <li><a href="/map">Centre Map</a></li>
-                                <li class="footer_main_li"><a href="/promotions">Promotions</a></li>
-                                <li class="footer_main_li">Events</li>
-                                <li><a href="/events">Mall Events</a></li>
-                                <li><a href="/contests">Contests</a></li>   
                             </ul>
                         </div>
                         <div class="col-md-4">
                             <ul class="footer_ul">
-                                <li class="footer_main_li">Centre Information</li>
-                                <li><a href="/about_us">About Us</a></li>
-                                <li><a href="/hours">Operating Hours</a></li>
-                                <li><a href="/getting_here">Getting Here</a></li>
-                                <li><a href="/jobs">Careers</a></li>
-                                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                                <li><a href="/leasing">Leasing & Partnerships</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
+                                <li class="footer_main_li"><a href="/promotions">Promotions</a></li>
+                                <li class="footer_main_li">Events</li>
+                                <li><a href="/events">Mall Events</a></li>
+                                <li><a href="/contests">Contests</a></li> 
                             </ul>
                         </div>
                         <div class="col-md-4">
                             <ul class="footer_ul">
                                 <li class="footer_main_li">Guest Services</li>
-                                <li><a href="/guest_services">Guest Services</a></li>
-                                <li><a href="/gift_cards">Gift Cards</a></li>
-                                <li><a href="/group_tours">Group Tours</a></li>
-                                <li><a href="/mall_walkers_program">Mall Walker’s Program</a></li>
-                                <li><a href="/accessibility">Accessibility</a></li>
-                                <li><a href="/green_initiatives">Green Initiatives</a></li>
-                                <li><a href="/newsletter">Newsletter</a></li>
+                                <li><a href="/amenities">Amenities</a></li>
+                                <!--<li><a href="/hours">Operating Hours</a></li>-->
+                                <li><a href="/parking">Parking Information</a></li>
+                                <li><a href="/newsletter">e-News Subscription</a></li>
+                                <li><a href="/jobs">Job Opportunities</a></li>
                             </ul>
                         </div>
                     </div>
