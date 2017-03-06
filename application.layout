@@ -148,18 +148,6 @@
                                 <span>Subscribe to Our Newsletter</span>
                             </a>
                         </div>
-                        <!--<form action="//mobilefringe.createsend.com/t/d/s/ddtidj/" method="post" id="subForm" class="newsletter_form">-->
-                        <!--    <label class="top_form_control">-->
-                        <!--        <i class="custom_i fa fa-envelope-o"></i>-->
-                        <!--        <input name="cm-ddtidj-ddtidj" type="text" placeholder="Enter your email to Subscribe" required />-->
-                        <!--    </label>-->
-                        <!--    <label class="newsletter_label ">-->
-                        <!--        <input id="agree_newsletter" type="checkbox" required oninvalid="this.setCustomValidity('Please check this box to proceed')"  />-->
-                        <!--        I agree to receive newsletters.-->
-                        <!--    </label>-->
-                        <!--    <button type="submit" class="submit_newsletter"><i class="fa fa-arrow-right"></i></button>-->
-                        <!--    <span id="subscription_confirmed">Thank you for subscribing.</span>-->
-                        <!--</form>-->
                     </div>
                 </div>
             </div>
@@ -167,51 +155,38 @@
                 <div class="top_nav_row">
                     <div class="top_nav_menu" id="top_nav_stores">
                         <div class="dropdown">
-                            <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Stores <i class="fa fa-caret-down"></i></a>
+                            <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Directory <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
-                                <li><a href="/stores">Directory</a></li>
+                                <li><a href="/stores">Shop</a></li>
+                                <li><a href="/dine">Dine</a></li>
                                 <li><a href="/map">Centre Map</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_events">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
-                                <li><a href="/events">Mall-Wide Events</a></li>
-                                <li><a href="/contests">Online Contests</a></li>
-                               
                             </ul>
                         </div>
                     </div>
                     <div class="top_nav_menu" id="top_nav_promotions">
                         <a href="/promotions">Promotions</a>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_centre_info">
+                    <div class="top_nav_menu" id="top_nav_events">
                         <div class="dropdown">
-                            <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Centre Information <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
-                                <li><a href="/about_us">About Us</a></li>
-                                <li><a href="/hours">Operating Hours</a></li>
-                                <li><a href="/getting_here">Getting Here</a></li>
-                                <li><a href="/jobs">Careers</a></li>
-                                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                                <li><a href="/leasing">Leasing & Partnerships</a></li>
-                                <li><a href="/contact_us">Contact Us</a></li>
+                            <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
+                                <li><a href="/events">Mall Events</a></li>
+                                <li><a href="/contests">Contests</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_about_us">
+                    <div class="top_nav_menu" id="top_nav_promotions">
+                        <a href="/rock_rose">Rock Rose</a>
+                    </div>
+                    <div class="top_nav_menu" id="top_nav_centre_info">
                         <div class="dropdown">
-                            <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu4">
-                                <li><a href="/guest_services">Guest Services</a></li>
-                                <li><a href="/gift_cards">Gift Cards</a></li>
-                                <li><a href="/group_tours">Group Tours</a></li>
-                                <li><a href="/mall_walkers_program">Mall Walker’s Program</a></li>
-                                <li><a href="/accessibility">Accessibility</a></li>
-                                <li><a href="/green_initiatives">Green Initiatives</a></li>
-                                <li><a href="/newsletter">Newsletter</a></li>
+                            <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
+                                <li><a href="/amenities">Amenities</a></li>
+                                <!--<li><a href="/hours">Operating Hours</a></li>-->
+                                <li><a href="/parking">Parking Information</a></li>
+                                <li><a href="/newsletter">e-News Subscription</a></li>
+                                <li><a href="/jobs">JOb Opportunities</a></li>
                             </ul>
                         </div>
                     </div>
