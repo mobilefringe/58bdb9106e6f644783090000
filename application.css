@@ -403,7 +403,9 @@ a:hover, a:focus{
     width:28px;
     margin: 0 7px;
 }
-
+.top_header_social_icons img:first-of-type{
+    margin-left: 0;
+}
 .todays_hours b{
     font-weight: bold;
 }
