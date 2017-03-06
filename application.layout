@@ -106,18 +106,18 @@
             </nav>
             <div class="row top_header">
                 <div class="col-md-4 hidden_phone">
-                    <p class="todays_hours">
-                        <b>Today's Hours </b>
-                        <span id="home_hours_container">
-                            <script id="home_hours_template" type="x-tmpl-mustache/text">
-                                {%raw%}{{h}}{%endraw%}
-                            </script>
-                        </span>
-                        <br />
-                        <a href="/hours">
-                            CLICK HERE FOR FULL HOURS
-                        </a>
-                    </p>
+                    <!--<p class="todays_hours">-->
+                    <!--    <b>Today's Hours </b>-->
+                    <!--    <span id="home_hours_container">-->
+                    <!--        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
+                    <!--            {%raw%}{{h}}{%endraw%}-->
+                    <!--        </script>-->
+                    <!--    </span>-->
+                    <!--    <br />-->
+                    <!--    <a href="/hours">-->
+                    <!--        CLICK HERE FOR FULL HOURS-->
+                    <!--    </a>-->
+                    <!--</p>-->
                     <div class="top_header_social_icons ">
                         <a target="_blank" href="//www.facebook.com/dixieoutletmall?ref=mf"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="Facebook"></a>
                         <a target="_blank" href="//twitter.com/DixieOutletMall"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="Twitter"></a>
@@ -132,6 +132,12 @@
                 </div>
                 <div class="col-md-4">
                     <div class="pull-right">
+                        <div class="newsletter_btn">
+                            <a href="/newsletter">
+                                <i class="custom_i fa fa-envelope-o"></i>
+                                <span>Subscribe to Our Newsletter</span>
+                            </a>
+                        </div>
                         <div class="site_searcher_div" >
                             <label class="top_form_control no_margin">
                                 <i class="custom_i fa fa-search"></i>
@@ -141,12 +147,6 @@
                             <div class="site_search_results" id="search_results_stores"></div>
                             <div class="site_search_results" id="search_results_events"></div>
                             <div class="site_search_results" id="search_results_promotions"></div>
-                        </div>
-                        <div class="newsletter_btn">
-                            <a href="/newsletter">
-                                <i class="custom_i fa fa-envelope-o"></i>
-                                <span>Subscribe to Our Newsletter</span>
-                            </a>
                         </div>
                     </div>
                 </div>
