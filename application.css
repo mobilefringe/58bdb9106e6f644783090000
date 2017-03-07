@@ -872,9 +872,10 @@ a:hover, a:focus{
 }
 
 .details_store_name{
+    margin-bottom: 10px;
     font-size: 20px;
     color: #4A4A4A;
-    margin-bottom:20px;
+    text-transform: uppercase;
 }
 
 .details_desc p{
