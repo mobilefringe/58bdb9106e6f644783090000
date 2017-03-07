@@ -7,7 +7,9 @@
             <script id="promos_template" type="x-tmpl-mustache/text">
                 <div class="col-md-4 margin_50">
                     <div class="promo_container">
-                        <img src="{{image_url}}" alt="Promotion" class="promo_img" />
+                        <div>
+                            <img src="{{image_url}}" alt="Promotion" class="promo_img" />
+                        </div>
                         <div class="details">
                             <h3 class="details_header">{{name}}</h3>
                             <h3 class="details_store_name">{{store_name}}</h3>
