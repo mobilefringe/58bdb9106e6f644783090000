@@ -348,7 +348,8 @@ function renderPromotions(container, template, collection){
         if(val.image_url.indexOf('missing.png') > 0){
             val.image_url  = store_details.store_front_url_abs;
         }
-        
+        var store_categories = getCategoriesNamesByStoreSlug(val.store_detail_btn);
+        val.categories = store_categories;
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
