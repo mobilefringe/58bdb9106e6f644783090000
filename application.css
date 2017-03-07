@@ -837,7 +837,7 @@ a:hover, a:focus{
     max-width: 100%;
     border-bottom: 2px solid #000;
 }
-.promo_details {
+.promo_container .details {
     padding: 30px 20px;
 }
 .details_sharer{
