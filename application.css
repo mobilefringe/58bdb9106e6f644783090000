@@ -844,6 +844,7 @@ a:hover, a:focus{
 .promo_container .details {
     padding: 30px 20px;
     padding-bottom: 0;
+    height: 200px;
 }
 .details_sharer{
     display: inline-block;
