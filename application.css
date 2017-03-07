@@ -865,10 +865,10 @@ a:hover, a:focus{
 }
 
 .details_header{
-    font-weight:bold;
+    margin-bottom: 25px;
+    font-weight: bold;
     font-size: 20px;
     color: #4A4A4A;
-    margin:20px 0;
 }
 
 .details_store_name{
