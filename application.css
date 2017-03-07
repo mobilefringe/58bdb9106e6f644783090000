@@ -865,6 +865,7 @@ a:hover, a:focus{
 }
 
 .details_header{
+    margin-top: 0;
     margin-bottom: 25px;
     font-weight: bold;
     font-size: 20px;
