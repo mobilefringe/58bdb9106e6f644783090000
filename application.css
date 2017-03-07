@@ -832,10 +832,12 @@ a:hover, a:focus{
 .promo_container {
     position: relative;
     border: 1px solid #000;
-    
 }
-
-.promo_container img {
+.promo_img_container {
+    height: 225px;
+    overflow: hidden;
+}
+.promo_img_container img {
     max-width: 100%;
     border-bottom: 2px solid #000;
 }
