@@ -830,7 +830,9 @@ a:hover, a:focus{
     color:#fff;
 }
 .promo_container {
+    position: relative;
     border: 1px solid #000;
+    
 }
 
 .promo_container img {
@@ -890,13 +892,17 @@ a:hover, a:focus{
 }
 
 
-.read_more_btn{
+.read_more_btn {
+    padding: 6px 35px;
     width: 140px;
+    position: absolute;
+    bottom: -15px;
+    left: 25%;
     background:#E9B50A;
     color: #fff;
-    padding: 6px 35px;
+    
     font-size: 12px;
-    border:0;
+    border: 0;
 }
 
 .read_more_btn:hover{
