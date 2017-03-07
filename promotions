@@ -70,6 +70,11 @@
             var category_list = getStoreCategories();
             renderGeneral("#category_select", "#category_select_template", category_list);
             $("#category_select").prepend("<option selected>Sort By Category</option>");
+            $("#category_select").on('change', function() {            
+                if ($(this).val() != ""){
+                    alert("yes!!");   
+                }
+            });  
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             console.log(promotions)
