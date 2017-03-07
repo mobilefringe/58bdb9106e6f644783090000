@@ -72,7 +72,7 @@
             $("#category_select").prepend("<option selected>Sort By Category</option>");
             $("#category_select").on('change', function() {            
                 if ($(this).val() != ""){
-                      alert($(this).val());
+                      console.log($(this).val());
                 }
             });  
             
