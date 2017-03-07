@@ -9,7 +9,11 @@
             Find your Store
         </div>
         <div class="col-md-4">
-            <select>Sort By Categories</select>    
+            <select id="category_select">
+                <script id="category_select_template" type="x-tmpl-mustache/text">
+                    <option value="">{{name}}</option>
+                </script>
+            </select>
         </div>
         <div class="col-md-4">
             View Directory    
@@ -50,6 +54,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
+            var category_list = getStoreCategories();
+            renderGeneral("#category_select", "#category_select_template", category_list);
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             console.log(promotions)
             var published_promos = [];
