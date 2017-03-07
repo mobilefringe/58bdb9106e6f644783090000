@@ -838,7 +838,7 @@ a:hover, a:focus{
     border-bottom: 2px solid #000;
 }
 .promo_details {
-    
+    padding: 30px 20px;
 }
 .details_sharer{
     display: inline-block;
