@@ -1,3 +1,22 @@
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="store_list_header">Promotions</h3>
+        </div>   
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            Find your Store
+        </div>
+        <div class="col-md-4">
+            <select>Sort By Categories</select>    
+        </div>
+        <div class="col-md-4">
+            View Directory    
+        </div>
+</div>
+
+
 <div class="fluid_row mobile_padding">
     <div class="row">
         <div class="col-md-12">
