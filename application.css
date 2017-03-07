@@ -11,7 +11,20 @@
     src: url(//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/014/841/original/Brandon_bld.otf?1448395145);
     font-weight: bold;
 }
-
+@font-face {
+    font-family: "abril_extrabold";
+    src: url(//mallmaverick.cdn.speedyrails.net/sites/58bdb9106e6f644783090000//1488899397000/Abril_Display_ExtraBold.otf);
+    font-weight:;
+}
+@font-face {
+    font-family: "gibson_reg";
+    src: url(//mallmaverick.cdn.speedyrails.net/sites/58bdb9106e6f644783090000//1488899426000/Gibson Regular.ttf)
+}
+@font-face {
+    font-family: "gibson_bold";
+    src: url(//mallmaverick.cdn.speedyrails.net/sites/58bdb9106e6f644783090000//1488899417000/Gibson Bold.ttf);
+    font-weight: bold;
+}
 
 .store_list_name a{
     -webkit-tap-highlight-color: #E9B50A
