@@ -890,13 +890,11 @@ a:hover, a:focus{
 
 
 .read_more_btn{
-    width:140px;
+    width: 140px;
     background:#E9B50A;
-    color:#fff;
-    text-transform:uppercase;
+    color: #fff;
     padding: 6px 35px;
     font-size: 12px;
-    border-radius: 4px;
     border:0;
 }
 
