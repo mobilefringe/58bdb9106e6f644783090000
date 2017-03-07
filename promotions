@@ -18,11 +18,13 @@
             </div>
         </div>
         <div class="col-md-4">
-            <select id="category_select">
-                <script id="category_select_template" type="x-tmpl-mustache/text">
-                    <option value="">{{name}}</option>
-                </script>
-            </select>
+            <div class="category_select_container">
+                <select id="category_select">
+                    <script id="category_select_template" type="x-tmpl-mustache/text">
+                        <option value="">{{name}}</option>
+                    </script>
+                </select>
+            </div>
         </div>
         <div class="col-md-4">
             <a href="/stores">View Directory</a>
