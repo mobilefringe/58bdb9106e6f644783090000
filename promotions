@@ -1,0 +1,51 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="store_list_header">Promotions</h3>
+        </div>
+        <div id="promos_container">
+            <script id="promos_template" type="x-tmpl-mustache/text">
+                <div class="col-md-4 margin_50">
+                    <div class="promo_container">
+                        <img src="{{image_url}}" alt="Promotion" class="" />
+                        <div>
+                            <h3 class="details_header">{{name}}</h3>
+                            <h3 class="details_store_name">{{store_name}}</h3>
+                            <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>    
+                        </div>
+                    </div>
+                    <a href="/promotions/{{slug}}" class="read_more_btn">read more</a>
+                </div>
+            </script>
+        </div>
+        <div class="col-md-12">
+            <h3 id="no_promos" class="hidden_now">There are currently no promotions available, please check back again later.</h3>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var published_promos = [];
+            $.each( promotions , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                } 
+            });
+            if(published_promos.length > 0){
+                renderPromotions("#promos_container","#promos_template", published_promos);
+            }
+            else{
+                $('#no_promos').show()
+            }
+            show_content();
+            $('#top_nav_promotions').addClass('active_yellow')
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
