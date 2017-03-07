@@ -837,6 +837,9 @@ a:hover, a:focus{
     max-width: 100%;
     border-bottom: 2px solid #000;
 }
+.promo_details {
+    
+}
 .details_sharer{
     display: inline-block;
     background: #ededed;
