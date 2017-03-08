@@ -77,9 +77,8 @@
                     <script id="store_list_template" type="x-tmpl-mustache/text">
                         <div class="col-md-2">
                             <div class="store_logo_container">
-                                <a href="#{{initial}}">
-                                    <span style="{{show}}" class="store_initial">{{initial}}</span>
-                                </a>
+                                <span style="{{show}}" class="store_initial" id="#{{initial}}">{{initial}}</span>
+                                
                                 <a href="/stores/{{slug}}">
                                     <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                                 </a>
