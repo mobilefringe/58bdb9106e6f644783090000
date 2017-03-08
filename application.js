@@ -117,7 +117,7 @@ function renderStoreList(container, template, collection, type){
         }
         if (val.jobs.length > 0){
             val.job_exist = "display:inline";
-            val.job_list = val.promotions.length;
+            val.job_list = val.jobs.length;
             // var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
             // if (store_promo != undefined){
             //     val.promo_btn = "/promotions/" + store_promo.slug;
