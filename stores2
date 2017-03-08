@@ -40,9 +40,10 @@
     <div class="fluid_row">
         <div class="row">
             <div class="col-md-12">
-                <span class="store_initial hidden_now" id="cat_name"></span>
+                
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
+                        <span class="store_initial hidden_now" id="cat_name"></span>
                         <div class="col-md-2">
                             <div class="store_logo_container">
                                 <img src="{{store_front_url_abs}}"/>
