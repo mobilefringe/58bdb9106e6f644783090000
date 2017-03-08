@@ -81,7 +81,7 @@
                             <a href="/stores/{{slug}}">
                                 <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                                 <div class="store_coming_soon" style="{{new_store}}">
-                                    <span class="new_store">Coming soon</span>
+                                   Coming soon
                                 </div>
                                 <div class="store_list_promos">
                                     <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
