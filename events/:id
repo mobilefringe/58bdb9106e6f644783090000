@@ -1,55 +1,40 @@
 <div class="fluid_row mobile_padding">
     <div class="row">
-        <div class="col-md-4">
-            <div id="promo_details_container">
-                <script id="promo_details_template" type="x-tmpl-mustache/text">
-                    <div class="promo_details_img">
-                        <img src="{{image_url}}" alt="Store Logo" class="details_image hidden_phone" />
-                    </div>
-                    <div class="margin_20"></div>
-                    <h3 class="details_header caps center">{{store_name}}</h3>
-                </script>
-            </div>
-            <div id="category_container">
-                <script id="category_template" type="x-tmpl-mustache/text">
-                    <h3 class="category_title center">{{.}}</h3>
-                </script>
-            </div>
-            <div id="store_details_container">
-                <script id="store_details_template" type="x-tmpl-mustache/text">
-                    <h4 class="store_details_title caps">Contact</h4>
-                    <p class="store_details_phone">{{phone}}</p>
-                    <h4 class="store_details_title caps">Operation Hours</h4>        
-                    <a href="/stores/{{slug}}"><div class="store_details_btn caps">Store Details & Location</div></a>
-                </script>
-            </div>
+        <div class="col-md-12">
+            <h3 class="store_list_header back_btn"><a href="/jobs">Back to Events</a></h3>
         </div>
-        <div class="col-md-8">
-            <h3 class="back_btn"><a href="/promotions"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488986031000/left_chevron.png" class="" alt=""> Back to Promotions</a></h3>
-            <div class="thick_line no_margin"></div>
-            <div id="promo_details_container_2" class="promo_details_container">
+        <!--<div class="col-md-3" id="promo_details_container">-->
+        <!--    <script id="promo_details_template" type="x-tmpl-mustache/text">-->
+        <!--        <img src="{{image_url}}" alt="Store Logo" class="details_image hidden_phone" />-->
+        <!--        <div class="margin_20"></div>-->
+        <!--        <div class="details_sharer hidden_phone">-->
+        <!--            <span>Share</span>-->
+        <!--            <img src="//codecloud.cdn.speedyrails.netm/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">-->
+        <!--            <img src="//codecloud.cdn.speedyrails.netm/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">-->
+        <!--        </div>-->
+        <!--    </script>-->
+        <!--</div>-->
+        <div class="col-md-12">
+            <div class="yellow_line no_margin"></div>
+            <div id="promo_details_container_2">
                 <script id="promo_details_template_2" type="x-tmpl-mustache/text">
-                    <h3 class="details_header caps">{{name}}</h3>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="details_sharer pull-right">
-                                <span>Share</span>
-                                <a href="//www.facebook.com/sharer.php?u=https://dixieoutletmall.com/promotions/{{slug}}" target="_blank">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
-                                </a>
-                                <a target="_blank" href="//twitter.com/share?url=https://dixieoutletmall.com/promotions/{{slug}}&text={{name}}">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="{{promo_image_url_abs}}" class="promo_details_image" style="{{promo_image_show}}" />
-                    <div class="margin_30"></div>
+                    <h3 class="details_header">{{name}}</h3>
+                    <h3 class="details_store_name">{{store_name}}</h3>
+                    <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                    <hr class="separator margin_30" />
                     <div class="details_desc">
                         {{{rich_description}}}
+                    </div>
+                    <img src="{{event_image_url_abs}}" class="promo_details_image" style="{{promo_image_show}}" />
+                    <div class="margin_30"></div>
+                    <div class="details_sharer ">
+                        <span>Share</span>
+                        <a href="//www.facebook.com/sharer.php?u=https://dixieoutletmall.com/events/{{slug}}" target="_blank">
+                            <img src="//codecloud.cdn.speedyrails.netm/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
+                        </a>
+                        <a target="_blank" href="//twitter.com/share?url=https://dixieoutletmall.com/events/{{slug}}">
+                            <img src="//codecloud.cdn.speedyrails.netm/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
+                        </a>
                     </div>
                 </script>
             </div>
@@ -57,30 +42,6 @@
     </div>
 </div>
 <div class="margin_40"></div>
-<script>
-    $(document).ready(function(e){
-        init(e);
-        function renderAll(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            promo_details = getPromotionDetailsBySlug(slug);
-            console.log(promo_details);
-            renderPromoDetails('#promo_details_container', '#promo_details_template', promo_details)
-            renderPromoDetails('#promo_details_container_2', '#promo_details_template_2', promo_details)
-            
-            var store_slug = promo_details.store_detail_btn;
-            var categories = getCategoriesNamesByStoreSlug(store_slug);
-            console.log(categories);
-            renderSimple("#category_container", "#category_template", categories);
-            
-            var store_details = getStoreDetailsBySlug(store_slug);
-            renderSimple("#store_details_container", "#store_details_template", store_details);
-            show_content();
-            $('#top_nav_promotions').addClass('active_yellow')
-        }
-        loadMallDataCached(renderAll); 
-    });
-</script>
 <script>
     $(document).ready(function(e){
         init(e);
