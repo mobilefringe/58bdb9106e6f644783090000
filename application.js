@@ -115,6 +115,17 @@ function renderStoreList(container, template, collection, type){
         else{
             val.promotion_exist = "display:none";
         }
+        if (val.jobs.length > 0){
+            val.job_exist = "display:inline";
+            val.job_list = val.promotions.length;
+            var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
+            if (store_promo != undefined){
+                val.promo_btn = "/promotions/" + store_promo.slug;
+            }
+        }
+        else{
+            val.job_exist = "display:none";
+        }
         if(val.phone.length < 1){
             val.phone_exist = "display:none";
         }
