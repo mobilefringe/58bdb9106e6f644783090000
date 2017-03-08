@@ -39,15 +39,14 @@
 <div class="site_container">
     <div class="fluid_row">
         <div class="row">
-
-            
-            <div class="col-md-2">
+            <div class="col-md-12">
                 <span class="store_initial hidden_now" id="cat_name"></span>
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
-                        <img src="{{store_front_url_abs}}"/>
-                        <span style="{{show}}" class="store_initial">{{initial}}</span>
-                        
+                        <div class="col-md-2">
+                            <img src="{{store_front_url_abs}}"/>
+                            <span style="{{show}}" class="store_initial">{{initial}}</span>
+                        </div>
                     </script>
                 </div>
             </div>
