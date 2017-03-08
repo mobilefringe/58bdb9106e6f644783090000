@@ -90,7 +90,7 @@ function renderStoreList(container, template, collection, type){
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
-            $(".store_logo_container").hide();
+            val.initial_img = "display:none";
         }
         if(val.is_coming_soon_store == true){
             val.coming_soon_store = "display:inline";
