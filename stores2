@@ -82,7 +82,7 @@
                                 <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                                 <div class="store_coming_soon">
                                     <div style="{{new_store}}">
-                                        Coming soon
+                                        <span class="new_store">Coming soon</span>
                                     </div>
                                 </div>
                                 <div class="store_list_promos">
