@@ -93,13 +93,13 @@ function renderStoreList(container, template, collection, type){
             // val.initial_img = "display:none";
         }
         if(val.is_coming_soon_store == true){
-            val.coming_soon_store = "display:inline";
+            val.coming_soon_store = "display: block";
         }
         else{
             val.coming_soon_store = "display:none";
         }
         if(val.is_new_store == true){
-            val.new_store = "display:inline";
+            val.new_store = "display: block";
         }
         else{
             val.new_store = "display:none";
