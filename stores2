@@ -29,8 +29,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <a href="/stores">
-                    <div class="promotions_header_container directory_btn">View Directory</div>
+                <a href="/map">
+                    <div class="promotions_header_container directory_btn">View Map</div>
                 </a>
             </div>
         </div>
