@@ -40,7 +40,6 @@
     <div class="fluid_row">
         <div class="row">
             <div class="col-md-12">
-                
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
                         <span class="store_initial hidden_now" id="cat_name"></span>
@@ -50,6 +49,7 @@
                                 <span style="{{show}}" class="store_initial">{{initial}}</span>
                             </div>
                         </div>
+                        <div class="margin_30"></div>
                     </script>
                 </div>
             </div>
