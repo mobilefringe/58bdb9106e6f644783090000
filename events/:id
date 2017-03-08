@@ -69,9 +69,9 @@
             renderEventDetails('#promo_details_container_2', '#promo_details_template_2', event_details)
             
             var store_slug = event_details.store_detail_btn;
-            var categories = getCategoriesNamesByStoreSlug(store_slug);
-            console.log(categories);
-            renderSimple("#category_container", "#category_template", categories);
+            // var categories = getCategoriesNamesByStoreSlug(store_slug);
+            // console.log(categories);
+            // renderSimple("#category_container", "#category_template", categories);
             
             var store_details = getStoreDetailsBySlug(store_slug);
             renderSimple("#store_details_container", "#store_details_template", store_details);
