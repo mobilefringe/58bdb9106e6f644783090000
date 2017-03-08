@@ -44,10 +44,10 @@
                     <script id="store_list_template" type="x-tmpl-mustache/text">
                         <div class="col-md-2">
                             <div class="store_logo_container">
+                                <span style="{{show}}" class="store_initial">{{initial}}</span>
                                 <a href="/stores/{{slug}}">
                                     <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                                 </a>
-                                <span style="{{show}}" class="store_initial">{{initial}}</span>
                             </div>
                             <div class="margin_30"></div>
                         </div>
