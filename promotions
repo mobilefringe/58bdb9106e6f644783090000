@@ -9,7 +9,7 @@
             <div class="col-md-4">
                 <div class="promotions_header_container store_search" >
                     <label class="">
-                        <input type="text" placeholder="Search" id="site_search" />
+                        <input type="text" placeholder="Find Your Store" id="site_search" />
                         <i class="custom_i fa fa-search"></i>
                         
                         <i id="close_search" class="fa fa-times-circle"></i>
