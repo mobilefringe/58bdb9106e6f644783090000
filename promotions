@@ -7,8 +7,8 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="promotions_header_container store_search " >
-                    <label class="top_form_control no_margin">
+                <div class="promotions_header_container store_search" >
+                    <label class="">
                         <input type="text" placeholder="Search" id="site_search" />
                         <i class="custom_i fa fa-search"></i>
                         
