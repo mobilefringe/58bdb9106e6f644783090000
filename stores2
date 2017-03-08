@@ -40,19 +40,21 @@
     <div class="fluid_row">
         
             <div class="col-md-12">
-                <div id="store_list_container">
-                    <script id="store_list_template" type="x-tmpl-mustache/text">
-                        <span class="store_initial hidden_now" id="cat_name"></span>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="store_logo_container">
-                                    <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
-                                    <span style="{{show}}" class="store_initial">{{initial}}</span>
+                <div class="row">
+                    <div id="store_list_container">
+                        <script id="store_list_template" type="x-tmpl-mustache/text">
+                            <span class="store_initial hidden_now" id="cat_name"></span>
+                            
+                                <div class="col-md-2">
+                                    <div class="store_logo_container">
+                                        <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                                        <span style="{{show}}" class="store_initial">{{initial}}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="margin_30"></div>
-                    </script>
+                            
+                            <div class="margin_30"></div>
+                        </script>
+                    </div>
                 </div>
             </div>
      
