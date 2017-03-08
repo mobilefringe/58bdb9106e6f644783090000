@@ -80,6 +80,11 @@
                             <div class="store_logo_container">
                                 <a href="/stores/{{slug}}">
                                     <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                                    <div>
+                                        <span style="{{new_store}}" class="new_store">New</span>
+                                        <span style="{{coming_soon_store}}" class="new_store">Coming soon</span>
+                                        <a href="{{promo_btn}}"><span class="new_store" style="{{promotion_exist}}">SALE</span></a>
+                                    </div>
                                 </a>
                             </div>
                         
