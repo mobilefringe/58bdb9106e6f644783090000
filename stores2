@@ -39,28 +39,9 @@
 <div class="site_container">
     <div class="fluid_row">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="store_list_header">Stores/Directory</h3>
-            </div>
-            <div class="col-md-3">
-                <div class="yellow_line store_list_line_margin"></div>
-                <h3 class="category_header">Categories</h3>
-                <div class="position_relative show_phone">
-                    <a href="#" id="cat_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select Category <i class="fa fa-caret-down pull-right"></i></a>
-                    <ul id="category_container_phone" class="dropdown-menu" aria-labelledby="cat_dd">
-                        <script id="category_template_phone" type="x-tmpl-mustache/text">
-                            <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>    
-                        </script>
-                    </ul>
-                </div>
-                <h5 class="category_name active_cat hidden_phone"><a href="#" class="show_all_stores">All</a></h5>
-                <div id="category_container" class="hidden_phone">
-                    <script id="category_template" type="x-tmpl-mustache/text">
-                        <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
-                    </script>
-                </div>
-            </div>
-            <div class="col-md-9">
+
+            
+            <div class="col-md-2">
                 <span class="store_initial hidden_now" id="cat_name"></span>
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
