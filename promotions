@@ -1,35 +1,37 @@
 <div class="promotions_header">
-    <div class="row">
-        <div class="col-md-12">
-            <h3 class="store_list_header">Promotions</h3>
-        </div>   
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="site_searcher_div" >
-                <label class="top_form_control no_margin">
-                    <i class="custom_i fa fa-search"></i>
-                    <input type="text" placeholder="Search" id="site_search" />
-                    <i id="close_search" class="fa fa-times-circle"></i>
-                </label>
-                <div class="site_search_results" id="search_results_stores"></div>
-                <div class="site_search_results" id="search_results_events"></div>
-                <div class="site_search_results" id="search_results_promotions"></div>
-            </div>
+    <div class="site_container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="store_list_header">Promotions</h3>
+            </div>   
         </div>
-        <div class="col-md-4">
-            <div class="promotions_header_container">
-                <select id="category_select">
-                    <script id="category_select_template" type="x-tmpl-mustache/text">
-                        <option value="{{name}}">{{name}}</option>
-                    </script>
-                </select>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="site_searcher_div" >
+                    <label class="top_form_control no_margin">
+                        <i class="custom_i fa fa-search"></i>
+                        <input type="text" placeholder="Search" id="site_search" />
+                        <i id="close_search" class="fa fa-times-circle"></i>
+                    </label>
+                    <div class="site_search_results" id="search_results_stores"></div>
+                    <div class="site_search_results" id="search_results_events"></div>
+                    <div class="site_search_results" id="search_results_promotions"></div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <a href="/stores">
-                <div class="promotions_header_container directory_btn">View Directory</div>
-            </a>
+            <div class="col-md-4">
+                <div class="promotions_header_container">
+                    <select id="category_select">
+                        <script id="category_select_template" type="x-tmpl-mustache/text">
+                            <option value="{{name}}">{{name}}</option>
+                        </script>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="/stores">
+                    <div class="promotions_header_container directory_btn">View Directory</div>
+                </a>
+            </div>
         </div>
     </div>
 </div>
