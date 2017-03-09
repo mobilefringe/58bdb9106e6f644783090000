@@ -24,7 +24,7 @@
                     <select id="category_select">
                         <script id="category_select_template" type="x-tmpl-mustache/text">
                             <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
-                            <option value="{{name}}">{{name}}</option>
+                            <option class="show_cat_stores" value="{{name}}">{{name}}</option>
                         </script>
                     </select>
                 </div>
@@ -123,19 +123,40 @@
             $('#top_nav_stores').addClass('active_yellow')
         }
         loadMallDataCached(renderAll); 
-    })
+    });
+    
+    function show_cat_stores(){
+    $('.show_cat_stores').click(function(e){
+        var cat_id = $(this).attr('data-id');
+        $('.active_cat').removeClass('active_cat');
+        $(this).addClass('active_cat');
+        var rows = $('.cats_row');
+        rows.hide();
+        $('.store_initial').hide();
+        $('#cat_name').text($(this).text());
+        $('#cat_name').css('display', 'block');
+        $.each(rows, function(i, val){
+            var cat_array = val.getAttribute('data-cat').split(',');
+            if ($.inArray(cat_id, cat_array) >= 0){
+                $(val).show();
+            }
+        });
+        $('html, body').animate({scrollTop : 0},800);
+        e.preventDefault();
+    });
+    $('.show_all_stores').click(function(e){
+        $('.active_cat').removeClass('active_cat');
+        $(this).addClass('active_cat');
+        var rows = $('.cats_row');
+        rows.show();
+        $.each($('.store_initial'), function(i, val){
+           if ($(val).text().length > 0){
+               $(val).show();
+           } 
+        });
+        $('#cat_name').hide();
+        e.preventDefault();
+    });
+    
+}
 </script>
-
-<!--<div class="row cats_row" data-cat="{{cat_list}}">-->
-<!--                            <div class="col-md-5 col-xs-6">-->
-<!--                                <p class="store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>-->
-<!--                            </div>-->
-<!--                            <div class="col-md-7 col-xs-6">-->
-<!--                                <p class="store_list_name pull-right">-->
-<!--                                    <span style="{{new_store}}" class="new_store">New</span>-->
-<!--                                    <span style="{{coming_soon_store}}" class="new_store">Coming soon</span>-->
-<!--                                    <a href="{{promo_btn}}"><span class="new_store" style="{{promotion_exist}}">SALE</span></a>-->
-<!--                                    <a style="{{phone_exist}}" href="tel:{{phone}}"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1446046952000/telephone66.png" class="" alt="phone"><span class="phone_field">{{phone}}</a>-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
