@@ -10,11 +10,11 @@
                     <h3 class="details_header caps center">{{store_name}}</h3>
                 </script>
             </div>
-            <div id="category_container">
-                <script id="category_template" type="x-tmpl-mustache/text">
-                    <h3 class="category_title center">{{.}}</h3>
-                </script>
-            </div>
+            <!--<div id="category_container">-->
+            <!--    <script id="category_template" type="x-tmpl-mustache/text">-->
+            <!--        <h3 class="category_title center">{{.}}</h3>-->
+            <!--    </script>-->
+            <!--</div>-->
             <!--<div id="store_details_container">-->
             <!--    <script id="store_details_template" type="x-tmpl-mustache/text">-->
             <!--        <h4 class="store_details_title caps center">Contact</h4>-->
