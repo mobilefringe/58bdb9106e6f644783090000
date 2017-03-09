@@ -105,11 +105,11 @@
 
             renderGeneral("#category_select", "#category_select_template", categories);
             $("#category_select").prepend("<option selected>Sort By Category</option>");
-            $("#category_select").on('change', function() {            
-                if ($(this).val() != ""){
-                      console.log($(this).val());
-                }
-            });  
+            // $("#category_select").on('change', function() {            
+            //     if ($(this).val() != ""){
+            //           console.log($(this).val());
+            //     }
+            // });  
             
             var stores = getStoresList();
             console.log(stores);
