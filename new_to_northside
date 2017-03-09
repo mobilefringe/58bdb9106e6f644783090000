@@ -25,8 +25,8 @@
             </div>
         </div>
         <div class="col-md-9">
-            <h3 class="hours_header" id="mm_page_title">Gift Cards</h3>
-            <p class="page_desc"></p>
+            <h3 class="hours_header" id="mm_page_title">New to Northside?</h3>
+            <div id="mm_page_content"></div>
         
             
         </div>
