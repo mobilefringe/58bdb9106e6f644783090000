@@ -87,14 +87,14 @@
             // var categories = getCategoriesNamesByStoreSlug(store_slug);
             // console.log(categories);
             // renderSimple("#category_container", "#category_template", categories);
-            var
-            var hour_ids = store_details.store_hours;
-            if (hour_ids.length > 0){
-                var hours = (getHoursForIds(hour_ids));
-                renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
-            } else {
-                $('#hours').hide();
-            }
+
+            // var hour_ids = store_details.store_hours;
+            // if (hour_ids.length > 0){
+            //     var hours = (getHoursForIds(hour_ids));
+            //     renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            // } else {
+            //     $('#hours').hide();
+            // }
                 
             var store_details = getStoreDetailsBySlug(store_slug);
             renderSimple("#store_details_container", "#store_details_template", store_details);
