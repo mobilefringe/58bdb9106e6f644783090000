@@ -17,9 +17,9 @@
             </div>
             <div id="store_details_container">
                 <script id="store_details_template" type="x-tmpl-mustache/text">
-                    <h4 class="store_details_title caps">Contact</h4>
+                    <h4 class="store_details_title caps center">Contact</h4>
                     <p class="store_details_phone">{{phone}}</p>
-                    <h4 class="store_details_title caps">Operation Hours</h4>        
+                    <h4 class="store_details_title caps center">Operation Hours</h4>        
                     <a href="/stores/{{slug}}"><div class="store_details_btn caps">Store Details & Location</div></a>
                 </script>
             </div>
