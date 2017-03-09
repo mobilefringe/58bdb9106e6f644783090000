@@ -83,21 +83,6 @@
             renderEventDetails('#promo_details_container', '#promo_details_template', event_details)
             renderEventDetails('#promo_details_container_2', '#promo_details_template_2', event_details)
             
-            // var store_slug = event_details.store_detail_btn;
-            // var categories = getCategoriesNamesByStoreSlug(store_slug);
-            // console.log(categories);
-            // renderSimple("#category_container", "#category_template", categories);
-
-            // var hour_ids = store_details.store_hours;
-            // if (hour_ids.length > 0){
-            //     var hours = (getHoursForIds(hour_ids));
-            //     renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
-            // } else {
-            //     $('#hours').hide();
-            // }
-                
-            // var store_details = getStoreDetailsBySlug(store_slug);
-            // renderSimple("#store_details_container", "#store_details_template", store_details);
             show_content();
             $('#top_nav_events').addClass('active_yellow')
         }
