@@ -67,7 +67,7 @@
         <![endif]-->
     </head>
 
-    <body id="page-top">
+        <body id="page-top">
         <div class="site_container">
             <nav class="show_phone mobile_nav navbar-fixed-top">
                 <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445970905000/menu.png" class="menu_toggler">
@@ -82,23 +82,33 @@
                                 <li><a href="/map">Centre Map</a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a class="dd_link" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>
+                                <li><a href="/hope_gallery">Hope Gallery</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/promotions">Promotions</a></li>
                         <li>
-                            <a class="dd_link" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
+                            <a class="dd_link" href="#" id="mobile_nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
                                 <li><a href="/events">Mall Events</a></li>
                                 <li><a href="/contests">Contests</a></li>
                             </ul>
                         </li>
-                        <li><a href="/rock_rose">Rock Rose</a></li>
                         <li>
-                            <a class="dd_link" href="#" id="mobile_nav3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
+                            <a class="dd_link" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
-                                <li><a href="/amenities">Amenities</a></li>
+                                <li><a href="/new_to_northside">New to Northside?</a></li>
+                                <li><a href="/information">Information</a></li>
+                                <li><a href="/directions">Directions</a></li>
+                                <li><a href="/parking">Parking</a></li>
+                                <li><a href="/jobs">Careers</a></li>
+                                <li><a href="/newsletter">Become a Northsider</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                                 <!--<li><a href="/hours">Operating Hours</a></li>-->
-                                <li><a href="/parking">Parking Information</a></li>
-                                <li><a href="/non_profit_groups">e-News Subscription</a></li>
-                                <li><a href="/leasing">Job Opportunities</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -159,7 +169,18 @@
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
-                                <li><a href="/map">Centre Map</a></li>
+                                <li><a href="/map">All</a></li>
+                                <li><a href="/map">Interactive Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="top_nav_menu" id="top_nav_rock_rose">
+                        <div class="dropdown">
+                            <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>
+                                <li><a href="/hope_gallery">Hope Gallery</a></li>
                             </ul>
                         </div>
                     </div>
@@ -168,25 +189,26 @@
                     </div>
                     <div class="top_nav_menu" id="top_nav_events">
                         <div class="dropdown">
-                            <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
+                            <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
                                 <li><a href="/events">Mall Events</a></li>
                                 <li><a href="/contests">Contests</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_promotions">
-                        <a href="/rock_rose">Rock Rose</a>
-                    </div>
+                    
                     <div class="top_nav_menu" id="top_nav_centre_info">
                         <div class="dropdown">
-                            <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
+                            <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
-                                <li><a href="/amenities">Amenities</a></li>
+                                <li><a href="/new_to_northside">New to Northside?</a></li>
+                                <li><a href="/information">Information</a></li>
+                                <li><a href="/directions">Directions</a></li>
+                                <li><a href="/parking">Parking</a></li>
+                                <li><a href="/jobs">Careers</a></li>
+                                <li><a href="/newsletter">Become a Northsider</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                                 <!--<li><a href="/hours">Operating Hours</a></li>-->
-                                <li><a href="/parking">Parking Information</a></li>
-                                <li><a href="/newsletter">e-News Subscription</a></li>
-                                <li><a href="/jobs">Job Opportunities</a></li>
                             </ul>
                         </div>
                     </div>
