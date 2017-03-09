@@ -1,0 +1,177 @@
+<div class="fluid_row">
+    <div class="row margin_20">
+        <div class="col-md-4 mobile_padding">
+            <div id="store_logo_container" class="store_details_logo">
+                <script id="store_logo_template" type="x-tmpl-mustache/text">
+                    <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
+                </script>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="mapsvg_store_detail" class="mobile_padding"></div>
+        </div>
+    </div>
+    <div class="black_divider"></div> 
+    <div class="row">
+        <div class="col-md-4 mobile_padding">
+            <h3 class="store_details_title caps center">Contact</h3>
+            <div id="store_phone_container">
+                <script id="store_phone_template" type="x-tmpl-mustache/text">
+                    <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p></a>
+                </script>
+            </div>
+            <div id="hours">
+                <h3 class="store_details_title caps center">Store Hours</h3> 
+                <div id="reg_hours_container" class="hours_container">
+                    <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <span>{{day}}</span>
+                            </div>
+                            <div class="col-md-7">
+                                <span>{{hour_string}}</span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
+            <h3 class="store_details_title caps center">Categories</h3> 
+            <div id="store_categories_container">
+                <script id="store_categories_template" type="x-tmpl-mustache/text">
+                    <h3 class="store_details_categories center">{{category_list}}</h3>
+                </script>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="store_details_container">
+                <script id="store_details_template" type="x-tmpl-mustache/text">
+                    <h3 class="store_details_title caps">{{name}}</h3>
+                    <p class="store_desc margin_30">{{description}}</p>
+                </script>
+            </div>
+            <div id="promotions">
+                <h3 class="store_details_title caps">Promotions</h3>
+                <div class="row">
+                    <div id="promos_container">
+                        <script id="promos_template" type="x-tmpl-mustache/text">
+                            <div class="col-md-6 margin_50">
+                                <div class="promo_container" value="{{categories}}">
+                                    <div class="promo_img_container">
+                                        <img src="{{image_url}}" alt="Promotion" class="promo_img" />
+                                    </div>
+                                    <div class="details">
+                                        <h3 class="details_header">{{name}}</h3>
+                                        <h3 class="details_store_name">{{store_name}}</h3>
+                                        <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>    
+                                    </div>
+                                    <a href="/promotions/{{slug}}" class="read_more_btn">Read More</a>
+                                </div>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div id="jobs">
+                <h3 class="store_details_title caps">Jobs</h3>
+                <div class="row">
+                    <div id="jobs_container">
+                        <script id="jobs_template" type="x-tmpl-mustache/text">
+                            <div class="col-md-9 mobile_padding">                                 
+                                <h3 class="jobs_name"><a href="/jobs/{{slug}}">{{name}}</a></h3>
+                            </div>
+                            <div class="col-md-3 hidden_phone">
+                                <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin_30"></div>
+
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
+<link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var store_details = getStoreDetailsBySlug(slug);
+            console.log(store_details);
+            if(store_details === undefined){
+                window.location = "/";
+            } else {
+                renderStoreDetails("#store_logo_container", "#store_logo_template", store_details, slug);
+                renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
+                renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
+                renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
+                
+                var hour_ids = store_details.store_hours;
+                if (hour_ids.length > 0){
+                    var hours = (getHoursForIds(hour_ids));
+                    renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+                } else {
+                    $('#hours').hide();
+                }
+                
+                var store_promo_ids = store_details.promotions
+                var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
+                var published_promos = [];
+                $.each(store_promos, function(key, val){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        published_promos.push(val);
+                    } 
+                });
+                if( published_promos.length > 0){
+                    renderPromotions("#promos_container","#promos_template", published_promos);
+                } else {
+                    $('#promotions').hide();
+                }
+                
+                var store_job_ids = store_details.jobs
+                var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+                var published_jobs = [];
+                $.each( store_jobs , function( key, val ){
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        published_jobs.push(val);
+                    } 
+                });
+                if(published_jobs.length > 0){
+                    renderJobs('#jobs_container', '#jobs_template', published_jobs);
+                } else {
+                    $('#employment').hide();
+                }
+                
+                show_content();
+                
+                $('#top_nav_stores').addClass('active_yellow');
+                
+                regions = {};
+                var stores = getStoresList();
+                $.each( stores , function( key, val ) {
+                    if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                        obj = {};
+                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name'>"+val.name+"</p></div>"
+                        obj["attr"] = {}
+                        obj["attr"]["href"] = "/stores/"+val.slug
+                        regions[val.svgmap_region] = obj
+                    }
+                });
+                load_map(regions, store_details);
+                $('.collapse').show();
+            }
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
