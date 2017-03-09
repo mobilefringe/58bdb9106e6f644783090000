@@ -100,16 +100,11 @@
         init(e);
         function renderAll(){
             var categories = getStoreCategories();
-            
-
             renderGeneral("#category_select", "#category_select_template", categories);
             $('#category_select').prepend('<option class="show_all_stores">All</option>');
             $("#category_select").prepend("<option selected>Sort By Category</option>");
             
-            
-            
             var stores = getStoresList();
-            console.log(stores);
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
             renderGeneral('#category_container', '#category_template', categories);
             renderGeneral('#category_container_phone', '#category_template_phone', categories);
