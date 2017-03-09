@@ -103,8 +103,9 @@
             
 
             renderGeneral("#category_select", "#category_select_template", categories);
-            $("#category_select").prepend("<option selected>Sort By Category</option>");
             $('#category_select').prepend('<option class="show_all_stores">All</option>');
+            $("#category_select").prepend("<option selected>Sort By Category</option>");
+            
             
             
             var stores = getStoresList();
@@ -123,7 +124,6 @@
     
     function show_cat_stores(){
         $("#category_select").bind("change", function(e) {
-            // e.preventDefault()
             var cat_id = $("#category_select").val();
             var rows = $('.cats_row');
             rows.hide();
@@ -152,6 +152,5 @@
             $('#cat_name').hide();
             e.preventDefault();
         });
-    
-}
+    }
 </script>
