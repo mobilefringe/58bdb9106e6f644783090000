@@ -77,26 +77,20 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var jobs = getJobsList().sortBy(function(o){ return o.name});
-            var published_jobs = [];
-            $.each( jobs , function( key, val ){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    published_jobs.push(val);
-                } 
-            });
-            if(published_jobs.length > 0){
-                renderJobs('#jobs_container', '#jobs_template', published_jobs);
-            }
-            else{
-                $('#no_jobs').show()
-            }
-            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = '//dixieoutlet.mallmaverick.com/pages/dixieoutlet-privacy-policy.json'
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
             show_content();
-            jobs_filter();
-            $('#top_nav_centre_info').addClass('active_yellow')
         }
         loadMallDataCached(renderAll); 
-    })
+    });
 </script>
