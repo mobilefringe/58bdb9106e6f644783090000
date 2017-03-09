@@ -23,6 +23,7 @@
                 <div class="promotions_header_container">
                     <select id="category_select">
                         <script id="category_select_template" type="x-tmpl-mustache/text">
+                            <h5 class="category_name"><a href="#" class="show_cat_stores" data-id="{{id}}">{{name}}</a></h5>    
                             <option value="{{name}}">{{name}}</option>
                         </script>
                     </select>
@@ -75,7 +76,6 @@
             <div class="row_fluid">
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
-                        
                         <div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>
                         <div class="store_logo_container">
                             <a href="/stores/{{slug}}">
@@ -89,7 +89,6 @@
                                 </div>
                             </a>
                         </div>
-                        
                     </script>
                 </div>
             </div>
