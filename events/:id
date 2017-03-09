@@ -23,6 +23,21 @@
                     <a href="/stores/{{slug}}"><div class="store_details_btn caps">Store Details & Location</div></a>
                 </script>
             </div>
+            <div id="hours">
+                <h3 class="store_details_title caps center">Store Hours</h3> 
+                <div id="reg_hours_container" class="hours_container">
+                    <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <span>{{day}}</span>
+                            </div>
+                            <div class="col-md-7">
+                                <span>{{hour_string}}</span>
+                            </div>
+                        </div>
+                    </script>
+                </div>
+            </div>
         </div>
         <div class="col-md-8">
             <h3 class="back_btn"><a href="/events"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488986031000/left_chevron.png" class="" alt=""> Back to Events</a></h3>
@@ -73,6 +88,14 @@
             // console.log(categories);
             // renderSimple("#category_container", "#category_template", categories);
             
+            var hour_ids = store_details.store_hours;
+            if (hour_ids.length > 0){
+                var hours = (getHoursForIds(hour_ids));
+                renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            } else {
+                $('#hours').hide();
+            }
+                
             var store_details = getStoreDetailsBySlug(store_slug);
             renderSimple("#store_details_container", "#store_details_template", store_details);
             show_content();
