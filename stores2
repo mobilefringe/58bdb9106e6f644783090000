@@ -110,6 +110,7 @@
                       console.log($(this).val());
                 }
             });  
+            
             var stores = getStoresList();
             console.log(stores);
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
