@@ -101,7 +101,7 @@
         function renderAll(){
             var categories = getStoreCategories();
             renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<option class="show_all_stores">All</option>');
+            $('#category_select').prepend('<option value="000">All</option>');
             $("#category_select").prepend("<option selected>Sort By Category</option>");
             
             var stores = getStoresList();
