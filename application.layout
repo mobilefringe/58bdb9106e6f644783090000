@@ -159,6 +159,7 @@
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
+                                <li><a href="/map">All</a></li>
                                 <li><a href="/map">Centre Map</a></li>
                             </ul>
                         </div>
@@ -190,11 +191,17 @@
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
-                                <li><a href="/amenities">Amenities</a></li>
+                                <li><a href="/">New to Northside?</a></li>
+                                <li><a href="/">Information</a></li>
+                                <li><a href="/">Directions</a></li>
+                                <li><a href="/parking">Parking</a></li>
+                                <li><a href="/jobs">Careers</a></li>
+                                <li><a href="/newsletter">Become a Northsider</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                                 <!--<li><a href="/hours">Operating Hours</a></li>-->
-                                <li><a href="/parking">Parking Information</a></li>
-                                <li><a href="/newsletter">e-News Subscription</a></li>
-                                <li><a href="/jobs">Job Opportunities</a></li>
+                                
+                                
+                                
                             </ul>
                         </div>
                     </div>
