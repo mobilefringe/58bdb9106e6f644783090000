@@ -104,7 +104,7 @@
 
             renderGeneral("#category_select", "#category_select_template", categories);
             $("#category_select").prepend("<option selected>Sort By Category</option>");
-            // 
+            $('#category_select').prepend('<option class="show_all_stores">All</option>');
             
             
             var stores = getStoresList();
@@ -112,7 +112,7 @@
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
             renderGeneral('#category_container', '#category_template', categories);
             renderGeneral('#category_container_phone', '#category_template_phone', categories);
-            $('#category_container_phone').prepend('<li href="#" class="show_all_stores">All</li>');
+            
             show_content();
             
             show_cat_stores();
@@ -124,26 +124,21 @@
     function show_cat_stores(){
         $("#category_select").bind("change", function(e) {
             e.preventDefault()
-            
             var cat_id = $("#category_select").val();
-
-    // $("#category_select").on('change', function(e) {    
-    //     var cat_id = $(this).attr('data-id');
-        console.log(cat_id)
-        var rows = $('.cats_row');
-        rows.hide();
-        $('.store_initial').hide();
-        $('#cat_name').text($(this).text());
-        $('#cat_name').css('display', 'block');
-        $.each(rows, function(i, val){
-            var cat_array = val.getAttribute('data-cat').split(',');
-            if ($.inArray(cat_id, cat_array) >= 0){
-                $(val).show();
-            }
+            var rows = $('.cats_row');
+            rows.hide();
+            $('.store_initial').hide();
+            $('#cat_name').text($(this).text());
+            $('#cat_name').css('display', 'block');
+            $.each(rows, function(i, val){
+                var cat_array = val.getAttribute('data-cat').split(',');
+                if ($.inArray(cat_id, cat_array) >= 0){
+                    $(val).show();
+                }
+            });
+            $('html, body').animate({scrollTop : 0},800);
+            e.preventDefault();
         });
-        $('html, body').animate({scrollTop : 0},800);
-        e.preventDefault();
-    });
     $('.show_all_stores').click(function(e){
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
