@@ -35,7 +35,6 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1447713049000/img.jpg" class="hidden_phone full_width" alt="hours banner">
                 <div class="margin_20"></div>
                 <ul class="jobs_filter hidden_phone">
                     <li class="active_filter filter_jobs" data-id="all">ALl</li>
