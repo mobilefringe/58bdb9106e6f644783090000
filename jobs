@@ -2,7 +2,7 @@
     <div class="site_container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="store_list_header">Jobs</h3>
+                <h3 class="store_list_header center">Jobs</h3>
             </div>   
         </div>
     </div>
