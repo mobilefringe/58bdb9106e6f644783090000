@@ -125,8 +125,8 @@
     $("#category_select").on('change', function(e) {    
         var cat_id = $(this).attr('data-id');
         console.log(cat_id)
-        $('.active_cat').removeClass('active_cat');
-        $(this).addClass('active_cat');
+        // $('.active_cat').removeClass('active_cat');
+        // $(this).addClass('active_cat');
         var rows = $('.cats_row');
         rows.hide();
         $('.store_initial').hide();
