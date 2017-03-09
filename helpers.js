@@ -394,34 +394,7 @@ function in_my_time_zone(hour, format){
     return hour.tz(getPropertyTimeZone()).format(format)
 }
 
-function show_cat_stores(){
-    $("#category_select").bind("change", function(e) {
-        var cat_id = $("#category_select").val();
-        var rows = $('.cats_row');
-        if(cat_id != "000") {
-            rows.hide();
-            $('.store_initial').hide();
-            $('#cat_name').text($(this).text());
-            $('#cat_name').css('display', 'block');
-            $.each(rows, function(i, val){
-                var cat_array = val.getAttribute('data-cat').split(',');
-                if ($.inArray(cat_id, cat_array) >= 0){
-                    $(val).show();
-                }
-            });
-        } else {
-            rows.show();
-            $.each($('.store_initial'), function(i, val){
-                if ($(val).text().length > 0){
-                    $(val).show();
-                } 
-            });
-            $('#cat_name').hide();    
-        }
-        $('html, body').animate({scrollTop : 0},800);
-        e.preventDefault();
-    });
-}
+
     
 function store_search() {
     $('#close_search_results').click(function(){
