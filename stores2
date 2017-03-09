@@ -100,16 +100,18 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var category_list = getStoreCategories();
-            renderGeneral("#category_select", "#category_select_template", category_list);
+            var categories = getStoreCategories();
+            
+
+            renderGeneral("#category_select", "#category_select_template", categories);
             $("#category_select").prepend("<option selected>Sort By Category</option>");
             $("#category_select").on('change', function() {            
                 if ($(this).val() != ""){
                       console.log($(this).val());
                 }
             });  
-            
             var stores = getStoresList();
+            console.log(stores);
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
             renderGeneral('#category_container', '#category_template', categories);
             renderGeneral('#category_container_phone', '#category_template_phone', categories);
