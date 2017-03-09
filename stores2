@@ -122,8 +122,6 @@
             var cat_id = $("#category_select").val();
             var rows = $('.cats_row');
             if(cat_id != "000") {
-                
-            
                 rows.hide();
                 $('.store_initial').hide();
                 $('#cat_name').text($(this).text());
@@ -143,7 +141,6 @@
                 });
                 $('#cat_name').hide();    
             }
-            
             $('html, body').animate({scrollTop : 0},800);
             e.preventDefault();
         });
