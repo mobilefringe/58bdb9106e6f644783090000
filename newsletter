@@ -1,0 +1,138 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-3 mobile_padding">
+            <h3 class="store_list_header">Guest Services</h3>
+            <ul class="side_menu hidden_phone">
+                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                <li><a href="/information">Information</a></li>
+                <li><a href="/directions">Directions</a></li>
+                <li><a href="/parking">Parking</a></li>
+                <li><a href="/jobs">Careers</a></li>
+                <li class="active"><a href="/newsletter">Become a Northsider</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <!--<li><a href="/hours">Operating Hours</a></li>-->
+            </ul>
+            <div class="position_relative show_phone">
+                <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">New to NORTHSIDE?</span> <i class="fa fa-caret-down pull-right"></i></a>
+                <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
+                    <li><a href="/information">Information</a></li>
+                    <li><a href="/directions">Directions</a></li>
+                    <li><a href="/parking">Parking</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/newsletter">Become a Northsider</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <!--<li><a href="/hours">Operating Hours</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 contact_rows mobile_padding">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1481821875000/Website_Subscribe-Banner_FA.jpg" class="full_width hidden_phone margin_20" alt="Newsletter Banner">
+            <div class="margin_20"></div>
+            <h3 class="hours_header">Subscribe to Dixie's E-Newsletter!</h3>
+ 
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//dixieoutletmall.us11.list-manage.com/subscribe/post?u=6163aac6af752915b3b139054&amp;id=d72b99c0f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                	    <!--<h2>Subscribe to Dixie's E-Newsletter!</h2>-->
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                        	<label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+                        	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
+                        	<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                        	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-MMERGE5">Postal Code  <span class="asterisk">*</span></label>
+                        	<input type="text" value="" name="MMERGE5" class="required" id="mce-MMERGE5">
+                        </div>
+                        <div class="mc-field-group size1of2">
+                        	<label for="mce-MMERGE8">Phone Number </label>
+                        	<input type="text" name="MMERGE8" class="" value="" id="mce-MMERGE8">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-MMERGE6">Age </label>
+                        	<input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-MMERGE7">Gender </label>
+                        	<select name="MMERGE7" class="" id="mce-MMERGE7">
+                            	<option value=""></option>
+                            	<option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Prefer not to say">Prefer not to say</option>
+                        	</select>
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <!--<strong>I agree </strong> -->
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="1" name="group[17081][1]" id="mce-group[17081]-17081-0"><label for="mce-group[17081]-17081-0">I agree to receive newsletters from Dixie Outlet Mall. You can unsubscribe at anytime.</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <!--<strong>I agree 2 </strong> -->
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="2" name="group[17085][2]" id="mce-group[17085]-17085-0"><label for="mce-group[17085]-17085-0"> I agree to receive communications from Dixie Outlet Mall. You can unsubscribe at any time. For more details about personal data privacy, please read our Privacy Policy or contact us: 1250 South Service Road, Mississauga, ON, L5E 1V4 </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mc-field-group input-group" style="display:none">
+                            <strong>VR Adventure Lounge Subscribers </strong>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="4" name="group[17101][4]" id="mce-group[17101]-17101-0"><label for="mce-group[17101]-17101-0">2016</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mc-field-group input-group" style="display:none">
+                            <strong>Dixie Outlet Mall Website </strong>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="8" name="group[17105][8]" id="mce-group[17105]-17105-0" checked><label for="mce-group[17105]-17105-0">2016</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mc-field-group input-group" style="display:none">
+                            <strong>Dixie Outlet Mall </strong>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" value="16" name="group[17109][16]" id="mce-group[17109]-17109-0"><label for="mce-group[17109]-17109-0">2016</label>
+                                </li>
+                            </ul>
+                        </div>
+                    	<div id="mce-responses" class="clear">
+                    		<div class="response" id="mce-error-response" style="display:none"></div>
+                    		<div class="response" id="mce-success-response" style="display:none"></div>
+                    	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6163aac6af752915b3b139054_d72b99c0f3" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='MMERGE5';ftypes[5]='text';fnames[3]='MTD1';ftypes[3]='text';fnames[6]='MMERGE6';ftypes[6]='text';fnames[7]='MMERGE7';ftypes[7]='dropdown';fnames[8]='MMERGE8';ftypes[8]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+        
+        
+        show_content();
+        $('#top_nav_about_us').addClass('active_yellow') 
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
