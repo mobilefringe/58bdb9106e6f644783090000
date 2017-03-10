@@ -11,12 +11,12 @@
         position: absolute;
         top: 100%;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -20px;
         width: 0;
         height: 0;
-        border-top: solid 50px #e15915;
-        border-left: solid 50px transparent;
-        border-right: solid 50px transparent;
+        border-top: solid 20px #e15915;
+        border-left: solid 20px transparent;
+        border-right: solid 20px transparent;
     }
     .tooltip_image {
         position: absolute;
