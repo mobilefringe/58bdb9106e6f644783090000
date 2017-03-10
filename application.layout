@@ -111,18 +111,6 @@
             </nav>
             <div class="row top_header">
                 <div class="col-md-4 hidden_phone">
-                    <!--<p class="todays_hours">-->
-                    <!--    <b>Today's Hours </b>-->
-                    <!--    <span id="home_hours_container">-->
-                    <!--        <script id="home_hours_template" type="x-tmpl-mustache/text">-->
-                    <!--            {%raw%}{{h}}{%endraw%}-->
-                    <!--        </script>-->
-                    <!--    </span>-->
-                    <!--    <br />-->
-                    <!--    <a href="/hours">-->
-                    <!--        CLICK HERE FOR FULL HOURS-->
-                    <!--    </a>-->
-                    <!--</p>-->
                     <div class="top_header_social_icons ">
                         <p>Get to Know Us:</p>
                         <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/"><img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="Facebook"></a>
