@@ -168,7 +168,9 @@
             $('#store_select_container').change(function(e){
                 drop_pin($(this).val())
             });
-            init_map(regions)
+            init_map(regions);
+            
+            store_search();
         }
         loadMallDataCached(renderAll); 
     })
