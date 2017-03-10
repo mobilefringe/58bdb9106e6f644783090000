@@ -90,12 +90,18 @@
             </div>
             <div class="col-md-4">
                 <div class="promotions_header_container dropdown category_selector">
-                    <a class="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select a Store <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span></a>
-                    <ul class="dropdown-menu cat_list" id="store_select_container">
+            <!--        <a class="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Select a Store <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span></a>-->
+            <!--        <ul class="dropdown-menu cat_list" id="store_select_container">-->
+            <!--            <script id="store_select_template" type="x-tmpl-mustache/text">-->
+				        <!--    <li class="show_cat_stores" value='{{svgmap_region}}'>{{name}}</li>-->
+				        <!--</script>-->
+            <!--        </ul>-->
+            
+                    <select id="store_select_container" class="form-control select_store">
                         <script id="store_select_template" type="x-tmpl-mustache/text">
-				            <li class="show_cat_stores" value='{{svgmap_region}}'>{{name}}</li>
-				        </script>
-                    </ul>
+                            <option value='{{svgmap_region}}'>{{name}}</option>
+                        </script>
+                    </select>    
                 </div>
             </div>
             <div class="col-md-4">
@@ -110,11 +116,11 @@
     <div class="fluid_row">
         <div class="row">
             <div class="col-md-12">
-                <!--<select id="store_select_container" class="form-control select_store">-->
-                <!--    <script id="store_select_template" type="x-tmpl-mustache/text">-->
-                <!--        <option value='{{svgmap_region}}'>{{name}}</option>-->
-                <!--    </script>-->
-                <!--</select>-->
+                <select id="store_select_container" class="form-control select_store">
+                    <script id="store_select_template" type="x-tmpl-mustache/text">
+                        <option value='{{svgmap_region}}'>{{name}}</option>
+                    </script>
+                </select>
                 <div class="margin_40"></div>
                 <div class="map_container" id="mapsvg"></div>
             </div>
