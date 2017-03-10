@@ -20,6 +20,11 @@
         right: 25px;
         width: 182px;
     }
+    .tooltip_store_name {
+        font-size: 20px;
+        font-family: 'abril_bold';
+        letter-spacing: 1px;
+    }
 </style>
 
 <div class="promotions_header">
