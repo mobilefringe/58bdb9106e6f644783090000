@@ -26,6 +26,9 @@
         overflow: hidden;
         border: 1px solid #979797;
     }
+    .tooltip_image img {
+        max-width: 100%;
+    }
     .tooltip_content {
         position: absolute;
         top: 0;
