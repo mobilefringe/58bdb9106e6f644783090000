@@ -35,32 +35,31 @@
     </div>
 </div>
 <div class="site_container mobile_padding">
-
-
-<div class="fluid_row mobile_padding">
-    <div class="row">
-        <div class="col-md-6">
-            <h3 class="store_list_header">STORE / CENTRE MAP</h3>
-        </div>
-        <div class="col-md-6 text-right hidden_phone">
-            <h3 class="download_map">
-                Click here to 
-                <a href="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/application/pdf/1485964345000/HandheldDirectory_January 2017 LO.pdf" target="_blank">DOWNLOAD MAP</a>
-            </h3>
-        </div>
-        <div class="margin_40"></div>
-        <div class="col-md-12">
-            <select id="store_select_container" class="form-control select_store">
-                <script id="store_select_template" type="x-tmpl-mustache/text">
-                    <option value='{{svgmap_region}}'>{{name}}</option>
-                </script>
-            </select>
+    <div class="fluid_row">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="store_list_header">STORE / CENTRE MAP</h3>
+            </div>
+            <div class="col-md-6 text-right hidden_phone">
+                <h3 class="download_map">
+                    Click here to 
+                    <a href="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/application/pdf/1485964345000/HandheldDirectory_January 2017 LO.pdf" target="_blank">DOWNLOAD MAP</a>
+                </h3>
+            </div>
             <div class="margin_40"></div>
-            <div class="map_container" id="mapsvg"></div>
+            <div class="col-md-12">
+                <select id="store_select_container" class="form-control select_store">
+                    <script id="store_select_template" type="x-tmpl-mustache/text">
+                        <option value='{{svgmap_region}}'>{{name}}</option>
+                    </script>
+                </select>
+                <div class="margin_40"></div>
+                <div class="map_container" id="mapsvg"></div>
+            </div>
         </div>
     </div>
+    <div class="margin_40"></div>
 </div>
-<div class="margin_40"></div>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
 <link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
