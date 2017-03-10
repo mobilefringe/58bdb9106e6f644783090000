@@ -238,14 +238,15 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="footer_ul">
-                                
                                 <li class="footer_main_li">Guest Services</li>
-                                <li><a href="/amenities">Amenities</a></li>
+                                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                                <li><a href="/information">Information</a></li>
+                                <li><a href="/directions">Directions</a></li>
+                                <li><a href="/parking">Parking</a></li>
+                                <li><a href="/jobs">Careers</a></li>
+                                <li><a href="/newsletter">Become a NORTHSIDER</a></li>
+                                <li class="footer_main_li"><a href="/contact">Contact Us</a></li>
                                 <!--<li><a href="/hours">Operating Hours</a></li>-->
-                                <li><a href="/parking">Parking Information</a></li>
-                                <li><a href="/newsletter">e-News Subscription</a></li>
-                                <li><a href="/jobs">Job Opportunities</a></li>    
-                                <li class="footer_main_li"><a href="/">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
