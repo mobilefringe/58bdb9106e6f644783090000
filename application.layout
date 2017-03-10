@@ -189,15 +189,8 @@
                         <a href="/promotions" class="caps">Promotions</a>
                     </div>
                     <div class="top_nav_menu" id="top_nav_events">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu3" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Events <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
-                                <li><a href="/events">Mall Events</a></li>
-                                <li><a href="/contests">Contests</a></li>
-                            </ul>
-                        </div>
+                        <a href="/events" class="caps">Events</a>
                     </div>
-                    
                     <div class="top_nav_menu" id="top_nav_centre_info">
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu4" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
