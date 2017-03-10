@@ -13,7 +13,7 @@
         display: none;
         background-color: transparent;
         border: none;
-        padding: 12px;
+        padding: 0;
         box-shadow: none;
     }
     .tooltip_div {
