@@ -14,7 +14,7 @@
             <div class="col-md-3 mobile_padding">
                 <h3 class="store_list_header">Guest Services</h3>
                 <ul class="side_menu hidden_phone">
-                    <li><a href="/new_to_northside">New to Northside?</a></li>
+                    <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
                     <li><a href="/information">Information</a></li>
                     <li><a href="/directions">Directions</a></li>
                     <li><a href="/parking">Parking</a></li>
@@ -26,12 +26,13 @@
                 <div class="position_relative show_phone">
                     <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Careers</span> <i class="fa fa-caret-down pull-right"></i></a>
                     <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
-                        <li><a href="/about_us">About Us</a></li>
-                        <li><a href="/hours">Operating Hours</a></li>
-                        <li><a href="/getting_here">Getting Here</a></li>
-                        <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
-                        <li><a href="/leasing">Leasing & Partnerships</a></li>
-                        <li><a href="/contact_us">Contact Us</a></li>
+                        <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                        <li><a href="/information">Information</a></li>
+                        <li><a href="/directions">Directions</a></li>
+                        <li><a href="/parking">Parking</a></li>
+                        <li><a href="/newsletter">Become a Northsider</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <!--<li><a href="/hours">Operating Hours</a></li>-->
                     </ul>
                 </div>
             </div>
