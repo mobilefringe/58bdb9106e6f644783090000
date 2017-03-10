@@ -49,6 +49,7 @@
         </div>
     </div>
     <div class="margin_40"></div>
+    <div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>" + val.name + "</p></div>
 </div>
 <script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
 <link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
