@@ -20,6 +20,11 @@
         right: 25px;
         width: 182px;
     }
+    .tooltip_content hr{
+        margin-top: 10px;
+        margin-bottom: 8px;
+        border-top: 1px solid #979797;
+    }
     .tooltip_store_name {
         font-size: 20px;
         font-family: 'abril_bold';
