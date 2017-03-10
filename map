@@ -12,7 +12,7 @@
         height: auto;
         display: none;
         background-color: transparent !important;
-        border: none;
+        border: none !important;
         padding: 0;
         box-shadow: none;
     }
