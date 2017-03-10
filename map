@@ -141,7 +141,7 @@
                         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
                     }
                     else{
-                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                        obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>Phone:" + val.phone +"</p><p class='tooltip_hours'>Hours Today:<br>10:00am - 8:00pm</p></div></div>"
                     }
                     obj["attr"] = {}
                     obj["attr"]["href"] = "/stores/"+val.slug
@@ -156,3 +156,5 @@
         loadMallDataCached(renderAll); 
     })
 </script>
+
+<!--<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>-->
