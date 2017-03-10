@@ -8,7 +8,7 @@
                 <li><a href="/directions">Directions</a></li>
                 <li><a href="/parking">Parking</a></li>
                 <li><a href="/jobs">Careers</a></li>
-                <li><a href="/newsletter">Become a Northsider</a></li>
+                <li><a href="/newsletter">Become a NORTHSIDER</a></li>
                 <li><a href="/contact">Contact Us</a></li>
                 <!--<li><a href="/hours">Operating Hours</a></li>-->
             </ul>
@@ -19,7 +19,7 @@
                     <li><a href="/directions">Directions</a></li>
                     <li><a href="/parking">Parking</a></li>
                     <li><a href="/jobs">Careers</a></li>
-                    <li><a href="/newsletter">Become a Northsider</a></li>
+                    <li><a href="/newsletter">Become a NORTHSIDER</a></li>
                     <li><a href="/contact">Contact Us</a></li>
                     <!--<li><a href="/hours">Operating Hours</a></li>-->
                 </ul>
@@ -40,7 +40,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = ''
+            var pages_json = '/pages/northside-new-to-northside.json'
             $.getJSON(pages_json).done(function(data) {
                 // $('#mm_page_title').html(data.title);
                 $('#mm_page_content').html(data.body);
