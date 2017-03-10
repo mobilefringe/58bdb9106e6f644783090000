@@ -162,8 +162,6 @@
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
                     
-                } else {
-                    
                 }
                 
                 
