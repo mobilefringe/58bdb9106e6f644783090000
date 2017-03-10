@@ -5,6 +5,7 @@
         </div>
         <div class="col-md-9 contact_rows mobile_padding">
             <!--<div class="margin_20"></div>-->
+            <h3 class="hours_header" id="mm_page_title">Contests</h3>
             <div id="mm_page_content"></div>
             <h3 id="404_msg" class="hidden_now">Sorry we can't find the page you're looking for.</h3>
         </div>
