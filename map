@@ -19,10 +19,10 @@
             <div class="col-md-4">
                 <div class="promotions_header_container dropdown category_selector">
                     <a class="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sort by Category <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span></a>
-                    <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
-                        <script id="category_select_template" type="x-tmpl-mustache/text">
-				            <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>
-				        </script>
+                    <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="store_select_container">
+                        <script id="store_select_template" type="x-tmpl-mustache/text">
+                            <option value='{{svgmap_region}}'>{{name}}</option>
+                        </script>
                     </ul>
                 </div>
             </div>
