@@ -4,8 +4,7 @@
             <h3 class="store_list_header">Contests</h3>
         </div>
         <div class="col-md-9 contact_rows mobile_padding">
-            
-            <div class="margin_20"></div>
+            <!--<div class="margin_20"></div>-->
             <div id="mm_page_content"></div>
             <h3 id="404_msg" class="hidden_now">Sorry we can't find the page you're looking for.</h3>
         </div>
@@ -19,7 +18,7 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             prefix = get_prefix();
-            var pages_json = '//dixieoutlet.mallmaverick.com/pages/dixieoutlet-online-contests.json'
+            var pages_json = '// .json'
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title);
                 $('#mm_page_content').html(data.body);
