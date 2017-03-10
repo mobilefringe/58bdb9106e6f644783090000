@@ -72,14 +72,9 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var category_list = getStoreCategories();
-            renderGeneral("#category_select", "#category_select_template", category_list);
-            $("#category_select").prepend("<option selected>Sort By Category</option>");
-            $("#category_select").on('change', function() {            
-                if ($(this).val() != ""){
-                      console.log($(this).val());
-                }
-            });  
+            var categories = getStoreCategories();
+            renderGeneral("#category_select", "#category_select_template", categories);
+            $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             console.log(promotions)
@@ -97,6 +92,7 @@
             else{
                 $('#no_promos').show()
             }
+            show_cat_stores();
             show_content();
             $('#top_nav_promotions').addClass('active_yellow')
         }
