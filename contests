@@ -1,0 +1,36 @@
+<div class="fluid_row">
+    <div class="row">
+        <div class="col-md-3 mobile_padding">
+            <h3 class="store_list_header">Contests</h3>
+        </div>
+        <div class="col-md-9 contact_rows mobile_padding">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1447713049000/img.jpg" class="full_width hidden_phone" alt="hours banner">
+            <div class="margin_20"></div>
+            <div id="mm_page_content"></div>
+            <h3 id="404_msg" class="hidden_now">Sorry we can't find the page you're looking for.</h3>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = '//dixieoutlet.mallmaverick.com/pages/dixieoutlet-online-contests.json'
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+            $('#top_nav_events').addClass('active_yellow')
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
