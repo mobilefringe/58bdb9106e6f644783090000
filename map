@@ -1,0 +1,100 @@
+<div class="promotions_header">
+    <div class="site_container mobile_padding">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="store_list_header center">Interactive Map</h3>
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="promotions_header_container store_search" >
+                    <label class="">
+                        <input type="text" placeholder="Search" id="store_search" />
+                        <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488985579000/search-512.png" class="pull-right" id="store_search_img" alt="">
+                        <i id="close_search_results" class="fa fa-times-circle hidden_now"></i>
+                    </label>
+                    <div class="search_results" id="store_search_results"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="promotions_header_container dropdown category_selector">
+                    <a class="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sort by Category <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span></a>
+                    <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
+                        <script id="category_select_template" type="x-tmpl-mustache/text">
+				            <li class="show_cat_stores" data-id="{{id}}">{{name}}</li>
+				        </script>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a href="/map">
+                    <div class="promotions_header_container directory_btn">View Interactive Map</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site_container mobile_padding">
+
+
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="store_list_header">STORE / CENTRE MAP</h3>
+        </div>
+        <div class="col-md-6 text-right hidden_phone">
+            <h3 class="download_map">
+                Click here to 
+                <a href="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/application/pdf/1485964345000/HandheldDirectory_January 2017 LO.pdf" target="_blank">DOWNLOAD MAP</a>
+            </h3>
+        </div>
+        <div class="margin_40"></div>
+        <div class="col-md-12">
+            <select id="store_select_container" class="form-control select_store">
+                <script id="store_select_template" type="x-tmpl-mustache/text">
+                    <option value='{{svgmap_region}}'>{{name}}</option>
+                </script>
+            </select>
+            <div class="margin_40"></div>
+            <div class="map_container" id="mapsvg"></div>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.js"></script>
+<link rel="stylesheet" href="//mallmaverick.cdn.speedyrails.net/javascripts/gallery/slimbox/slimbox2.css" type="text/css" media="screen" />
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var stores = getStoresList();
+            renderStoreList('#store_select_container','#store_select_template', stores, "stores");
+            show_content();
+            $('#top_nav_stores').addClass('active_yellow')
+            regions = {};
+            $.each( stores , function( key, val ) {
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
+                    else{
+                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
+                    obj["attr"] = {}
+                    obj["attr"]["href"] = "/stores/"+val.slug
+                    regions[val.svgmap_region] = obj
+                }
+            });
+            $('#store_select_container').change(function(e){
+                drop_pin($(this).val())
+            })
+            init_map(regions)
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
