@@ -21,6 +21,7 @@
         display: inline-block;
         width: 360px;
         height: 189px;
+        background: #fff;
         border: 1px solid #979797;
     }
     .tooltip_div:after {
