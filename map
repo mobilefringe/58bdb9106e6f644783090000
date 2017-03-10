@@ -25,6 +25,9 @@
         margin-bottom: 8px;
         border-top: 1px solid #979797;
     }
+    .tooltip_content p {
+        margin: 0;
+    }
     .tooltip_store_name {
         padding-right: 10px;
         font-size: 20px;
