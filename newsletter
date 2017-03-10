@@ -26,8 +26,7 @@
             </div>
         </div>
         <div class="col-md-9 contact_rows mobile_padding">
-            <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1481821875000/Website_Subscribe-Banner_FA.jpg" class="full_width hidden_phone margin_20" alt="Newsletter Banner">
-            <div class="margin_20"></div>
+            <!--<div class="margin_20"></div>-->
             <h3 class="hours_header">Subscribe to Dixie's E-Newsletter!</h3>
  
             <!-- Begin MailChimp Signup Form -->
