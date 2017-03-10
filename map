@@ -157,14 +157,23 @@
             show_content();
             $('#top_nav_stores').addClass('active_yellow')
             regions = {};
-            $.each( stores , function( key, val ) {
-                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+            $.each(stores, function(key, val) {
+                var hour_ids = stores.store_hours;
+                if (hour_ids.length > 0){
+                    var hours = (getHoursForIds(hour_ids));
+                    
+                } else {
+                    
+                }
+                
+                
+                if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
                     obj = {};
                     if(val.store_front_url_abs.indexOf('missing.png') > -1){
                         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
                     }
                     else{
-                        obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>Phone: " + val.phone +"</p><p class='tooltip_hours'>Hours Today:<br>10:00am - 8:00pm</p></div></div>"
+                        obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>Phone: " + val.phone +"</p><p class='tooltip_hours'>Hours Today:<br>" + val.todays_hours + "</p></div></div>"
                     }
                     obj["attr"] = {}
                     obj["attr"]["href"] = "/stores/"+val.slug
@@ -179,11 +188,5 @@
         loadMallDataCached(renderAll); 
     })
 </script>
-var hour_ids = store_details.store_hours;
-                if (hour_ids.length > 0){
-                    var hours = (getHoursForIds(hour_ids));
-                    renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
-                } else {
-                    $('#hours').hide();
-                }
+
 <!--<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>-->
