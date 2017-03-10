@@ -171,13 +171,9 @@
                     regions[val.svgmap_region] = obj
                 }
             });
-            $('.show_cat_stores').click(function(e){
+            $('#store_select_container').change(function(e){
                 drop_pin($(this).val())
             });
-            // show_cat_stores
-            // $('#store_select_container').change(function(e){
-            //     drop_pin($(this).val())
-            // })
             init_map(regions)
         }
         loadMallDataCached(renderAll); 
