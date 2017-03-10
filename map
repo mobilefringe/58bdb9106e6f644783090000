@@ -1,3 +1,27 @@
+<style>
+    .tooltip_div {
+        position: relative;
+        display: inline-block;
+        width: 360px;
+        height: 189px;
+        border: 1px solid #979797;
+    }
+    .tooltip_image {
+        position: absolute;
+        top: 20px;
+        left: -52px;
+        height: 120px;
+        overflow: hidden;
+        border: 1px solid #979797;
+    }
+    .tooltip_content {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        width: 182px;
+    }
+</style>
+
 <div class="promotions_header">
     <div class="site_container mobile_padding">
         <div class="row">
