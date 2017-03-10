@@ -109,12 +109,6 @@
     <div class="fluid_row">
         <div class="row">
             <div class="col-md-12">
-                <!--<select id="store_select_container" class="form-control select_store">-->
-                <!--    <script id="store_select_template" type="x-tmpl-mustache/text">-->
-                <!--        <option value='{{svgmap_region}}'>{{name}}</option>-->
-                <!--    </script>-->
-                <!--</select>-->
-                <div class="margin_40"></div>
                 <div class="map_container" id="mapsvg"></div>
             </div>
         </div>
