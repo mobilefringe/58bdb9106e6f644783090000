@@ -127,11 +127,9 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-        
-        
-        show_content();
-        $('#top_nav_about_us').addClass('active_yellow') 
+            show_content();
+            $('#top_nav_about_us').addClass('active_yellow') 
         }
         loadMallDataCached(renderAll); 
-    })
+    });
 </script>
