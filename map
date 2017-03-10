@@ -26,6 +26,7 @@
         border-top: 1px solid #979797;
     }
     .tooltip_store_name {
+        padding-right: 10px;
         font-size: 20px;
         font-family: 'abril_bold';
         letter-spacing: 1px;
