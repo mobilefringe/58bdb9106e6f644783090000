@@ -21,7 +21,7 @@
                 </script>
             </div>
             <div id="hours">
-                <h3 class="store_details_title caps center">Store Hours</h3> 
+                <h3 class="store_details_title caps center">Hours</h3> 
                 <div id="reg_hours_container" class="hours_container">
                     <script id="reg_hours_template" type="x-tmpl-mustache/text">
                         <div class="row">
