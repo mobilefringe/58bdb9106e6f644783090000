@@ -117,6 +117,7 @@
                 window.location = "/";
             } else {
                 renderStoreDetails("#store_logo_container", "#store_logo_template", store_details, slug);
+                renderStoreDetails("#store_logo_mobile_container", "#store_logo_mobile_template", store_details, slug);
                 renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
