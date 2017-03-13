@@ -49,8 +49,9 @@
                     <h3 class="store_details_categories center">{{category_list}}</h3>
                 </script>
             </div>
+            <div class="margin_20"></div>
         </div>
-        <div class="margin_20"></div>
+        
         <div class="col-sm-12 col-md-8">
             <div class="margin_20"></div>
             <div id="store_details_container">
