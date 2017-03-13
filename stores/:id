@@ -125,7 +125,7 @@
                     $('#hours').hide();
                 }
                 
-                renderHomeHours('#reg_hours_container','#reg_hours_template', hours);
+                renderHomeHours('#todays_hours_container','#todays_hours_template', hours);
                 
                 
                 function renderHomeHours(container, template, collection){
