@@ -143,6 +143,7 @@
                         }
                         
                         var store_open = val.hours;
+                        return store_open
                     });
                     console.log(store_open);
                 }
