@@ -21,7 +21,7 @@
                 </script>
             </div>
         </div>
-        <div class="col-sm-8 col-md-4 mobile_padding">
+        <div class="col-sm-8 col-md-4">
             <h3 class="store_details_title caps center">Contact</h3>
             <div id="store_phone_container">
                 <script id="store_phone_template" type="x-tmpl-mustache/text">
