@@ -1,9 +1,9 @@
-<div class="fluid_row">
+<div class="fluid_row  mobile_padding">
     <div class="row margin_20">
-        <div class="col-md-4 mobile_padding">
+        <div class="col-md-4">
             <div id="store_logo_container" class="store_details_logo">
                 <script id="store_logo_template" type="x-tmpl-mustache/text">
-                    <img src="{{alt_store_front_url}}" class="store_logo" alt="{{name}}" />
+                    <img src="{{alt_store_front_url}}" class="store_logo hidden_phone" alt="{{name}}" />
                 </script>
             </div>
         </div>
