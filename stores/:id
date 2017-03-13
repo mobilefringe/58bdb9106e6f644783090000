@@ -127,12 +127,10 @@
                     var todays_hours = [];
                     $.each(hours, function(key, val){
                         var today = moment().day();
-                        console.log(today);
                         var  current_day = val.day_of_week;
-                        console.log(current_day)
-                        // if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
-                        //     todays_hours.push(val);
-                        // } 
+                        if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
+                            todays_hours.push(val);
+                        } 
                     });
                     console.log(todays_hours);
                     // if(todays_hours.length > 0){
