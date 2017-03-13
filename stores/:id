@@ -34,11 +34,6 @@
                         </div>
                     </script>
                 </div>
-                <div id="todays_hours_container" class="hours_container">
-                    <script id="todays_hours_template" type="x-tmpl-mustache/text">
-                        Today's Hours {{.}}
-                    </script>
-                </div>
             </div>
             <h3 class="store_details_title caps center">Categories</h3> 
             <div id="store_categories_container">
@@ -120,48 +115,11 @@
                 var hour_ids = store_details.store_hours;
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
-                    console.log(hours)
-                    open_today = [];
-                    $.each(hours, function(key, val){
-                        var today = moment();
-                        var current_day = moment(val.day_of_week);
-                        if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
-                            open_today.push(val);
-                        } 
-                    });
-                    console.log(open_today);
-                    // renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+                    renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
                 } else {
                     $('#hours').hide();
                 }
                 
-                renderHomeHours('#todays_hours_container','#todays_hours_template', hours);
-                
-                
-                function renderHomeHours(container, template, collection){
-                    var item_list = [];
-                    var item_rendered = [];
-                    var template_html = $(template).html();
-                    Mustache.parse(template_html);   // optional, speeds up future uses
-                    item_list.push(collection);    
-                    $.each( item_list , function( key, val ) {
-                        val.day = get_day(val.day_of_week);
-                        var d = new Date();
-                        val.month = get_month(d.getMonth());
-                        val.weekday = addZero(d.getDate());
-                        if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                            var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
-                            var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
-                            val.h = open_time + " - " + close_time;
-                        } else {
-                            val.h = "Closed";
-                        }
-                        var rendered = Mustache.render(template_html,val);
-                        item_rendered.push(rendered);
-                    });
-                    $(container).html(item_rendered.join(''));
-                }
-
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
                 var published_promos = [];
