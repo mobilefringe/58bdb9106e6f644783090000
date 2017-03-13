@@ -122,13 +122,13 @@
                 }
                 
                 var store_hours = store_details.store_hours;
-                if (store_hours.length > 0){
+                if (store_hours != null && store_hours.length > 0){
                     var hours = (getHoursForIds(hour_ids));
                     var todays_hours = [];
                     $.each(hours, function(key, val){
                         var today = moment().day();
                         var  current_day = val.day_of_week;
-                        if (in_my_time_zone(today) === in_my_time_zone(current_day)) {
+                        if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
                             todays_hours.push(val);
                         } 
                     });
