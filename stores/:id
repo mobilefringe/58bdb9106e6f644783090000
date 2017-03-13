@@ -122,9 +122,9 @@
                 }
                 
                 var store_open = "";
-                var store_hours = store_details.store_hours;
+                var hours_list = store_details.store_hours;
                 if (store_hours != null && store_hours.length > 0){
-                    var hours = (getHoursForIds(hour_ids));
+                    var store_hours = (getHoursForIds(hour_ids));
                     var todays_hours = [];
                     $.each(hours, function(key, val){
                         var today = moment().day();
@@ -132,20 +132,9 @@
                         if (today === current_day) {
                             todays_hours.push(val);
                         } 
+                        console.log(todays_hours);
                     });
-                    
-                    $.each(todays_hours, function(key, val) {
-                        if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-                            var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
-                            var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
-                            val.hours = open_time + " - " + close_time;
-                        } else {
-                            val.hours = "Closed";
-                        }
-                        
-                        var store_open = val.hours;
-                        return store_open;
-                    });
+
                     console.log(store_open);
                 }
                 
