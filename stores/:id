@@ -14,6 +14,7 @@
     <div class="black_divider"></div> 
     <div class="row">
         <div class="col-sm-4">
+            <div class="margin_20"></div>
             <div id="store_logo_container" class="store_details_logo">
                 <script id="store_logo_template" type="x-tmpl-mustache/text">
                     <img src="{{alt_store_front_url}}" class="store_logo" alt="{{name}}" />
