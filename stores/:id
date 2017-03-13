@@ -13,14 +13,14 @@
     </div>
     <div class="black_divider"></div> 
     <div class="row">
-        <!--<div class="col-sm-4 hidden-md hidden-lg">-->
-        <!--    <div class="margin_20"></div>-->
-        <!--    <div id="store_logo_container" class="store_details_logo">-->
-        <!--        <script id="store_logo_template" type="x-tmpl-mustache/text">-->
-        <!--            <img src="{{alt_store_front_url}}" class="store_logo" alt="{{name}}" />-->
-        <!--        </script>-->
-        <!--    </div>-->
-        <!--</div>-->
+        <div class="col-sm-4 hidden-md hidden-lg">
+            <div class="margin_20"></div>
+            <div id="store_logo_mobile_container" class="store_details_logo">
+                <script id="store_logo_mobile_template" type="x-tmpl-mustache/text">
+                    <img src="{{alt_store_front_url}}" class="store_logo" alt="{{name}}" />
+                </script>
+            </div>
+        </div>
         <div class="col-sm-8 col-md-4 mobile_padding">
             <h3 class="store_details_title caps center">Contact</h3>
             <div id="store_phone_container">
