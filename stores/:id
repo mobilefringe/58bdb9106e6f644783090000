@@ -131,8 +131,9 @@
                         var  current_day = val.day_of_week;
                         if (today === current_day) {
                             todays_hours.push(val);
+                            console.log(todays_hours);
                         } 
-                        console.log(todays_hours);
+                        
                     });
 
                     console.log(store_open);
