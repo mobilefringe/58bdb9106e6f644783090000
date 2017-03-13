@@ -5,8 +5,8 @@
         color: rgb(0, 0, 0);
         position: absolute;
         border-radius: 0 !important;
-        top: -5px !important;
-        left: -5px !important;
+        top: 0;
+        left: 0;
         z-index: 1000;
         width: auto;
         height: auto;
