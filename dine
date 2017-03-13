@@ -103,18 +103,10 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var categories = getStoreCategories();
-            // renderGeneral("#category_select", "#category_select_template", categories);
-            // $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
-            // $("#category_select").prepend("<option selected>Sort By Category</option>");
-            
             var fast_food = getStoresListByCategoryID(3155);
             var food_court = getStoresListByCategoryID(3384);
             var restaurants = getStoresListByCategoryID(3385);
             var dine_list = fast_food.concat(food_court, restaurants).sortBy(function(o){ return o.name});
-            
-            // var newStoreList = _.uniq(stores, function(o){ return o.name; });
-            
             renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");
             
             show_content();
