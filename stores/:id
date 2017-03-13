@@ -36,7 +36,7 @@
                 </div>
                 <div id="todays_hours_container" class="hours_container">
                     <script id="todays_hours_template" type="x-tmpl-mustache/text">
-                        Today's Hours {{hours}}
+                        Today's Hours {{.}}
                     </script>
                 </div>
             </div>
