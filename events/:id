@@ -38,7 +38,7 @@
             <div id="promo_details_container">
                 <script id="promo_details_template" type="x-tmpl-mustache/text">
                     <div class="promo_details_img">
-                        <img src="{{image_url}}" alt="Store Logo" class="details_image hidden_phone" />
+                        <img src="{{image_url}}" alt="Store Logo" class="details_image" />
                     </div>
                     <div class="margin_20"></div>
                     <h3 class="details_header caps center">{{store_name}}</h3>
