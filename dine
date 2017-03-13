@@ -78,9 +78,10 @@
         <div class="col-md-12">
             <div class="row_fluid">
                 <div id="store_list_container">
-                    <!--<div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>-->
                     <script id="store_list_template" type="x-tmpl-mustache/text">
+                        <div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>
                         <div class="col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
+                        
                             <div class="store_logo_container">
                                 <a href="/stores/{{slug}}">
                                     <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
@@ -113,11 +114,10 @@
             var food_court = getStoresListByCategoryID(3384);
             var restaurants = getStoresListByCategoryID(3385);
             var dine_list = fast_food.concat(food_court, restaurants).sortBy(function(o){ return o.name});
-            console.log(dine_list);
             
             // var newStoreList = _.uniq(stores, function(o){ return o.name; });
             
-            renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");0
+            renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");
             
             show_content();
             
