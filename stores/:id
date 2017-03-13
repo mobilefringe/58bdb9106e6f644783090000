@@ -76,10 +76,10 @@
                 <div class="row">
                     <div id="jobs_container">
                         <script id="jobs_template" type="x-tmpl-mustache/text">
-                            <div class="col-md-9 mobile_padding">                                 
+                            <div class="col-sm-9 mobile_padding">                                 
                                 <h3 class="jobs_name"><a href="/jobs/{{slug}}">{{name}}</a></h3>
                             </div>
-                            <div class="col-md-3 hidden_phone">
+                            <div class="col-sm-3">
                                 <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
                             </div>
                         </script>
