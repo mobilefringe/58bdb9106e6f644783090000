@@ -46,7 +46,7 @@
             <!--</div>-->
             <div id="promos_container">
                 <script id="promos_template" type="x-tmpl-mustache/text">
-                    <div class="col-md-4 margin_50 cats_row" data-cat="{{cat_list}}">
+                    <div class="col-sm-6 col-md-4 margin_50 cats_row" data-cat="{{cat_list}}">
                         <div class="promo_container" value="{{categories}}">
                             <div class="promo_img_container">
                                 <img src="{{image_url}}" alt="Promotion" class="promo_img" />
