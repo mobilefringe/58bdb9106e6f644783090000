@@ -116,9 +116,9 @@
             // var newStoreList = _.uniq(stores, function(o){ return o.name; });
             
             var stores = getStoresList();
-            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
-            renderGeneral('#category_container', '#category_template', categories);
-            renderGeneral('#category_container_phone', '#category_template_phone', categories);
+            renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");
+            // renderGeneral('#category_container', '#category_template', categories);
+            // renderGeneral('#category_container_phone', '#category_template_phone', categories);
             
             show_content();
             
