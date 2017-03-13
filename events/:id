@@ -1,6 +1,17 @@
 <div class="fluid_row mobile_padding">
     <div class="row">
-        <div class="col-md-8 col-md-push-4">
+        <div class="hidden-xs hidden-sm col-md-4">
+            <div id="promo_details_container">
+                <script id="promo_details_template" type="x-tmpl-mustache/text">
+                    <div class="promo_details_img">
+                        <img src="{{image_url}}" alt="Store Logo" class="details_image" />
+                    </div>
+                    <div class="margin_20"></div>
+                    <h3 class="details_header caps center">{{store_name}}</h3>
+                </script>
+            </div>
+        </div>
+        <div class="col-md-8">
             <h3 class="back_btn"><a href="/events"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488986031000/left_chevron.png" class="" alt=""> Back to Events</a></h3>
             <div class="thick_line no_margin"></div>
             <div id="promo_details_container_2" class="promo_details_container">
@@ -33,17 +44,7 @@
             </div>
             <div class="margin_20"></div>
         </div>
-        <div class="hidden-sm col-md-4 col-md-pull-8">
-            <div id="promo_details_container">
-                <script id="promo_details_template" type="x-tmpl-mustache/text">
-                    <div class="promo_details_img">
-                        <img src="{{image_url}}" alt="Store Logo" class="details_image" />
-                    </div>
-                    <div class="margin_20"></div>
-                    <h3 class="details_header caps center">{{store_name}}</h3>
-                </script>
-            </div>
-        </div>
+        
     </div>
 </div>
 <div class="margin_40"></div>
