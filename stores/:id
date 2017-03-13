@@ -128,7 +128,7 @@
                     $.each(hours, function(key, val){
                         var today = moment().day();
                         var  current_day = val.day_of_week;
-                        if (in_my_time_zone(today)) === in_my_time_zone(current_day)) {
+                        if (in_my_time_zone(today) === in_my_time_zone(current_day)) {
                             todays_hours.push(val);
                         } 
                     });
