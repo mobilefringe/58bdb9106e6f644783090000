@@ -131,11 +131,11 @@
                         var  current_day = val.day_of_week;
                         console.log(current_day)
                         
-                        // if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
+                        if (today === current_day) {
                             
-                        //     moment(val.open_time).tz(getPropertyTimeZone());
-                        //     todays_hours.push(val);
-                        // } 
+                            
+                            todays_hours.push(val);
+                        } 
                     });
                     console.log(todays_hours);
                     // if(todays_hours.length > 0){
