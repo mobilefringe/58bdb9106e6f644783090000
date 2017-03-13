@@ -8,7 +8,9 @@
                     <h3 class="details_header caps">{{name}}</h3>
                     <div class="row">
                         <div class="col-md-8">
-                            <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                            <div class="dates_container">
+                                <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <div class="details_sharer pull-right">
