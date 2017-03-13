@@ -83,8 +83,8 @@
                 </div>
             </div>
             <div id="jobs">
-                <h3 class="store_details_title caps">Jobs</h3>
                 <div class="row">
+                    <h3 class="store_details_title caps">Jobs</h3>
                     <div id="jobs_container">
                         <script id="jobs_template" type="x-tmpl-mustache/text">
                             <div class="col-sm-8 col-md-9 mobile_padding">                                 
