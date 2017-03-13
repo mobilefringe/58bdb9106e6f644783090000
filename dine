@@ -79,7 +79,7 @@
             <div class="row_fluid">
                 <div id="store_list_container">
                     <script id="store_list_template" type="x-tmpl-mustache/text">
-                        <div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>
+                        <div style="{{show}}" class="" id="{{initial}}">{{initial}}</div>
                         <div class="col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
                         
                             <div class="store_logo_container">
