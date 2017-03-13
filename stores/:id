@@ -121,7 +121,16 @@
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
                     console.log(hours)
-                    renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+                    open_today = [];
+                    $.each(hours, function(key, val){
+                        var today = moment();
+                        var current_day = moment(val.day_of_week);
+                        if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
+                            open_today.push(val);
+                        } 
+                    });
+                    console.log(open_today);
+                    // renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
                 } else {
                     $('#hours').hide();
                 }
