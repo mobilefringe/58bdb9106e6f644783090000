@@ -1,6 +1,6 @@
 <div class="fluid_row mobile_padding">
     <div class="row ">
-        <div class="col-md-4 hidden-md">
+        <div class="col-md-4 hidden-sm">
             <div id="store_logo_container" class="store_details_logo">
                 <script id="store_logo_template" type="x-tmpl-mustache/text">
                     <img src="{{alt_store_front_url}}" class="store_logo" alt="{{name}}" />
