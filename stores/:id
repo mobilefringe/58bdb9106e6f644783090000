@@ -121,6 +121,29 @@
                     $('#hours').hide();
                 }
                 
+                var store_hours = store_details.store_hours;
+                if (store_hours.length > 0){
+                    var hours = (getHoursForIds(hour_ids));
+                    var todays_hours = [];
+                    $.each(hours, function(key, val){
+                        var today = moment().day();
+                        var  current_day = moment(val.day_of_week);
+                        if (today.tz(getPropertyTimeZone()) === current_day.tz(getPropertyTimeZone())) {
+                            todays_hours.push(val);
+                        } 
+                    });
+                    console.log(todays_hours);
+                    // if(todays_hours.length > 0){
+                        
+                    //     var current_hours = todays_hours;
+                    // }
+                }
+                
+                
+                
+                
+                
+                
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
                 var published_promos = [];
