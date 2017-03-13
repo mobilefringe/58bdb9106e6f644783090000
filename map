@@ -20,7 +20,7 @@
         position: relative;
         display: inline-block;
         width: 360px;
-        height: 189px;
+        height: 162px;
         background: #fff;
         border: 1px solid #979797;
     }
