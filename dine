@@ -113,7 +113,7 @@
             var dine_list = fast_food.concat(food_court, restaurants).sortBy(function(o){ return o.name});
             console.log(dine_list);
             
-            var newStoreList = _.uniq(stores, function(o){ return o.name; });
+            // var newStoreList = _.uniq(stores, function(o){ return o.name; });
             
             var stores = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
