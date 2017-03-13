@@ -156,6 +156,7 @@
                     });
                     if(todays_hours.length > 0){
                         console.log(todays_hours);
+                        var current_hours = todays_hours;
                     }
                 }
             
