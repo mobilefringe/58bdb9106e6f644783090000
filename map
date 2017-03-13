@@ -154,6 +154,9 @@
                             todays_hours.push(val);
                         } 
                     });
+                    if(todays_hours.length > 0){
+                        console.log(todays_hours);
+                    }
                 }
             
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
