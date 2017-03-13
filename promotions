@@ -77,6 +77,7 @@
             $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            console.log(promotions);
             var published_promos = [];
             $.each(promotions, function(key, val){
                 today = moment();
