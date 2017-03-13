@@ -25,6 +25,7 @@
 				        <!--</script>-->
                     <!--</ul>-->
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
+			            <li class="show_cat_stores" data-id="000">All</li>
 			            <li class="show_cat_stores" data-id="3155">Fast Food</li>
 				        <li class="show_cat_stores" data-id="3384">Food Court</li>
 				        <li class="show_cat_stores" data-id="3385">Restaurants</li>
@@ -103,8 +104,8 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var categories = getStoreCategories();
-            renderGeneral("#category_select", "#category_select_template", categories);
+            // var categories = getStoreCategories();
+            // renderGeneral("#category_select", "#category_select_template", categories);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
             // $("#category_select").prepend("<option selected>Sort By Category</option>");
             
