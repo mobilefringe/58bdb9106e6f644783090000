@@ -70,8 +70,8 @@ function renderStoreList(container, template, collection, type){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     var store_initial="";
-    $.each( collection , function( key, val ) {
-        if (type == "stores" || type == "category_stores"){
+    $.each(collection, function(key, val) {
+        if(type == "stores" || type == "category_stores"){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
                 val.alt_store_front_url = "";
             } else {
@@ -79,31 +79,30 @@ function renderStoreList(container, template, collection, type){
             }
             
         }
-        //var categories = getStoreCategories();
+        
         var current_initial = val.name[0];
         val.cat_list = val.categories.join(',')
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.initial = "";
             val.show = "display:none;";
-        }
-        else{
+        } else {
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "visibility: hidden";
-            // val.initial_img = "display:none";
         }
+        
         if(val.is_coming_soon_store == true){
             val.coming_soon_store = "display: block";
-        }
-        else{
+        } else {
             val.coming_soon_store = "display:none";
         }
+        
         if(val.is_new_store == true){
             val.new_store = "display: block";
-        }
-        else{
+        } else {
             val.new_store = "display:none";
         }
+        
         if (val.promotions.length > 0){
             val.promotion_exist = "display:inline";
             val.promotion_list = val.promotions.length;
@@ -111,29 +110,20 @@ function renderStoreList(container, template, collection, type){
             if (store_promo != undefined){
                 val.promo_btn = "/promotions/" + store_promo.slug;
             }
-        }
-        else{
+        } else {
             val.promotion_exist = "display:none";
         }
         if (val.jobs.length > 0){
             val.job_exist = "display:inline";
             val.job_list = val.jobs.length;
-            // var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-            // if (store_promo != undefined){
-            //     val.promo_btn = "/promotions/" + store_promo.slug;
-            // }
-        }
-        else{
+        } else {
             val.job_exist = "display:none";
         }
-        if(val.phone.length < 1){
-            val.phone_exist = "display:none";
-        }
+        
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
-
     });
     
     $(container).show();
