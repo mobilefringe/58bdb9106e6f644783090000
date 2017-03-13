@@ -106,7 +106,7 @@
         function renderAll(){
             // var categories = getStoreCategories();
             // renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
+            // $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
             // $("#category_select").prepend("<option selected>Sort By Category</option>");
             
             var fast_food = getStoresListByCategoryID(3155);
