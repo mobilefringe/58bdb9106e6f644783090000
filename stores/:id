@@ -10,7 +10,7 @@
         <div class="col-md-8 margin_20">
             <div id="mapsvg_store_detail" class="mobile_padding"></div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 mobile_padding">
             <div class="black_divider"></div>     
         </div>
     </div>
