@@ -1,3 +1,9 @@
+<style>
+    #promos_container .col-sm-6 {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+</style>
 <div class="fluid_row mobile_padding">
     <div class="row">
         <div class="hidden-xs hidden-sm col-md-4 ">
@@ -51,7 +57,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-8">
-            <div id="store_details_container" class="mobile_padding">
+            <div id="store_details_container" class="">
                 <script id="store_details_template" type="x-tmpl-mustache/text">
                     <h3 class="store_details_title caps">{{name}}</h3>
                     <p class="store_desc margin_30">{{description}}</p>
