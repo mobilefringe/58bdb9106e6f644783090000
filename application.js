@@ -1,5 +1,18 @@
 /*Created 2015-10-23  by RKS*/
+function renderContest(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
 
+    collection.alt_photo_url = getImageURL(collection.photo_url);
+    collection.property_name = getPropertyDetails().name;
+    var rendered = Mustache.render(template_html,collection);
+    item_rendered.push(rendered);
+
+    $(container).html(item_rendered.join(''));
+}
+    
 function renderBanner(banner_template,home_banner,banners){
     var item_list = [];
     var item_rendered = [];
