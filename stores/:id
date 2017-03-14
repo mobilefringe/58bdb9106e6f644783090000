@@ -1,9 +1,3 @@
-<style>
-    #promos_container .col-sm-6 {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-</style>
 <div class="fluid_row mobile_padding">
     <div class="row">
         <div class="hidden-xs hidden-sm col-md-4 ">
