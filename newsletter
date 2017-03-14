@@ -33,79 +33,76 @@
                 <img id="page_image" class="margin_20" alt="Newsletter Image" src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488837401000/banner.png"/>
                 <div class="contest_description margin_20">Become a NORTHSIDER today!</div>
             </div>           
-
-
-                <form id="contest_form">
-                    <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
-                    <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
-                    <input type="hidden" name="cm-name" id="cm-name" />
-                    
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label for="first_name">First Name *</label>
-                            <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="last_name">Last Name *</label>
-                            <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
-                        </div>
+            <form id="contest_form">
+                <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                <input type="hidden" name="cm-name" id="cm-name" />
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="first_name">First Name *</label>
+                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label for="email">Email *</label>
-                            <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
-                        </div>
-                        <div class="col-sm-6">
-                            <label for="phone_number">Phone Number *</label>
-                            <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
-                        </div>
+                    <div class="col-sm-6">
+                        <label for="last_name">Last Name *</label>
+                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">  
-                            <label for="zip_code">ZIP Code *</label>
-                            <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
-                        </div>
-                        <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="email">Email *</label>
+                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6"> 
-                            <label for="age">Age</label>
-                            <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
-                        </div>
-                        <div class="col-sm-6">  
-                            <label for="gender">Gender</label>
-                            <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
-                                <option value="">Select</option>
-                                <option value="female">Female</option>
-                                <option value="male">Male</option>
-                            </select>
-                        </div>
+                    <div class="col-sm-6">
+                        <label for="phone_number">Phone Number *</label>
+                        <input class="contest_info" id="phone_number" name="contest[phone]" type="text" required data-validation="required" tabindex="4"/>
                     </div>
-                    <div class="line_break">&nbsp;</div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <button class="submit_btn caps" tabindex="10">Submit</button>
-                        </div>
-                        <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">  
+                        <label for="zip_code">ZIP Code *</label>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
                     </div>
-                    <div class="line_break">&nbsp;</div>
-                    <div class="row">
-                        <div class="col-sm-12">    
-                            <label>
-                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
-                                I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
-                            </label>
-                        </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <label for="age">Age</label>
+                        <input class="contest_info" id="age" name="contest[age]" type="text" tabindex="6"/>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="margin_40"></div>
-                            <p class="hidden_now" id="succes_msg">Thank you! Your information has been received.</p>
-                        </div>
-                        <div class="col-sm-6">
+                    <div class="col-sm-6">  
+                        <label for="gender">Gender</label>
+                        <select class="contest_info" id="gender" name="contest[gender]" tabindex="7">
+                            <option value="">Select</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                        </select>
                     </div>
-                </form>
-
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-12">    
+                        <label>
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
+                            I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="margin_40"></div>
+                        <p class="hidden_now" id="succes_msg">Thank you! Your information has been received.</p>
+                    </div>
+                    <div class="col-sm-6">
+                </div>
+            </form>
         </div>
     </div>
 </div>
