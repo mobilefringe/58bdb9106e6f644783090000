@@ -140,7 +140,7 @@
                         var today = moment().day();
                         var current_day = val.day_of_week;
                         if (today === current_day) {
-                            todays_hours.push(store_hours[x]);
+                            todays_hours.push(store_hours);
                             console.log(todays_hours);
                         } 
                     });
