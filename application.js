@@ -77,6 +77,33 @@ function renderGeneral(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
+function renderPopUp() {
+    var popup = getPopups()[0];
+    
+    if (popup != undefined){
+        $('#pp_img').attr('src', 'https://mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+        $('#pp_url').attr('href',  popup.photo_link)
+    }
+    
+    //popup starts
+    if($.cookie("popup_viewed") != "true"){
+        $.cookie("popup_viewed", "true");
+      $(".hidden-popup-bg").show();
+    }
+    
+    $(".hidden-popup-bg").click(function(event){
+        if( !$( event.target).is('.hidden-popup-form') ) {
+            close_popup();
+        } else {
+            event.stopPropagation();
+        }
+    });
+    
+    $(".hidden-popup-bg .hidden-popup-form").click(function(event){
+        event.stopPropagation();
+    }); 
+}
+
 function renderStoreList(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];
