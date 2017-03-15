@@ -133,19 +133,19 @@
                     $('#hours').hide();
                 }
                 
-                // var todays_hours = [];
-                // var store_hour_ids = store_details.store_hours;
-                // if (store_hour_ids.length > 0){
-                //     var store_hours = (getHoursForIds(hour_ids));
-                //     $.each(store_hours, function(key, val){
-                //         var today = moment().day();
-                //         var current_day = val.day_of_week;
-                //         if (today === current_day) {
-                //             todays_hours.push(val);
-                //         } 
-                //     });
-                // }
-                // console.log(todays_hours);
+                var todays_hours = "";
+                var store_hour_ids = store_details.store_hours;
+                if (store_hour_ids.length > 0){
+                    var store_hours = (getHoursForIds(hour_ids));
+                    $.each(store_hours, function(key, val){
+                        var today = moment().day();
+                        var current_day = val.day_of_week;
+                        if (today === current_day) {
+                            todays_hours = val.hour_string;
+                        } 
+                    });
+                }
+                console.log(todays_hours);
 
                 // var hour_string = "";
                 // var hour_ids = store_details.store_hours;
