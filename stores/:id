@@ -135,9 +135,10 @@
                 var store_hour_ids = store_details.store_hours;
                 if (store_hour_ids.length > 0){
                     var store_hours = (getHoursForIds(hour_ids));
+                    var today = moment().day();
+                    var current_day = store_hours.day_of_week;
                     $.each(store_hours, function(key, val){
-                        var today = moment().day();
-                        var current_day = val.day_of_week;
+                        
                         if (today === current_day) {
                             todays_hours = val.hour_string;
                         } 
