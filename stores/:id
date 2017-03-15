@@ -143,6 +143,7 @@
                         //     ;
                         // } 
                     });
+                }
 
                 // var hour_string = "";
                 // var hour_ids = store_details.store_hours;
