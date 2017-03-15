@@ -131,49 +131,20 @@
                     $('#hours').hide();
                 }
                 
-                var todays_hours = "";
-                var store_hour_ids = store_details.store_hours;
-                if (store_hour_ids.length > 0){
-                    var store_hours = (getHoursForIds(hour_ids));
-                    var today = moment().day();
-                    var current_day = store_hours.day_of_week;
-                    $.each(store_hours, function(key, val){
-                        
-                        if (today === current_day) {
-                            todays_hours = val.hour_string;
-                        } 
-                    });
-                }
-                console.log(todays_hours);
-
-                // var hour_string = "";
-                // var hour_ids = store_details.store_hours;
-
-                // if (hour_ids != null && hour_ids.length > 0){
+                // var todays_hours = "";
+                // var store_hour_ids = store_details.store_hours;
+                // if (store_hour_ids.length > 0){
                 //     var store_hours = (getHoursForIds(hour_ids));
-                //     console.log(store_hours);
-                //     var todays_hours = [];
+                //     var today = moment().day();
+                //     var current_day = store_hours.day_of_week;
                 //     $.each(store_hours, function(key, val){
-                //         var today = moment().day();
-                //         var current_day = val.day_of_week;
+                        
                 //         if (today === current_day) {
-                //             todays_hours.push(val);
+                //             todays_hours = val.hour_string;
                 //         } 
                 //     });
-                //     console.log(todays_hours);
-                    
-                //     if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
-                //         var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
-                //         console.log(open_time);
-                //         var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mma");
-                //         hour_string = open_time + " - " + close_time;
-                //     } else {
-                //         hour_string = "Closed";
-                //     }
-
-                    
                 // }
-                // console.log(hour_string);
+                // console.log(todays_hours);
                 
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
