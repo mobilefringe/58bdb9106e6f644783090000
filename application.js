@@ -618,5 +618,7 @@ function renderHomeHours(container, template, collection){
 }
 
 
-
+function close_popup(){
+    $(".hidden-popup-bg").fadeOut();
+}
 
