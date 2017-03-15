@@ -132,18 +132,17 @@
                 }
                 
                 var store_open = "";
-                var hours_list = store_details.store_hours;
-                if (store_hours != null && store_hours.length > 0){
+                var hour_ids = store_details.store_hours;
+                if (hour_ids != null && hour_ids.length > 0){
                     var store_hours = (getHoursForIds(hour_ids));
                     var todays_hours = [];
-                    $.each(hours, function(key, val){
+                    $.each(store_hours, function(key, val){
                         var today = moment().day();
-                        var  current_day = val.day_of_week;
+                        var current_day = val.day_of_week;
                         if (today === current_day) {
                             todays_hours.push(val);
                             console.log(todays_hours);
                         } 
-                        
                     });
 
                     console.log(store_open);
