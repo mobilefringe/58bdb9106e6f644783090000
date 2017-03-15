@@ -142,8 +142,8 @@
                         if (today === current_day) {
                             todays_hours.push(val);
                         } 
-                        console.log(todays_hours);
                     });
+                    console.log(todays_hours);
                     var hour_string = "";
                     var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mmA");
                     var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mmA");
