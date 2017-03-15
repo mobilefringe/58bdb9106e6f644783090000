@@ -133,9 +133,10 @@
                 
                 var hour_string = "";
                 var hour_ids = store_details.store_hours;
-                console.log(hour_ids);
+
                 if (hour_ids != null && hour_ids.length > 0){
                     var store_hours = (getHoursForIds(hour_ids));
+                    console.log(store_hours);
                     var todays_hours = [];
                     $.each(store_hours, function(key, val){
                         var today = moment().day();
