@@ -131,7 +131,7 @@
                     $('#hours').hide();
                 }
                 
-                var store_open = "";
+                var hour_string = "";
                 var hour_ids = store_details.store_hours;
                 if (hour_ids != null && hour_ids.length > 0){
                     var store_hours = (getHoursForIds(hour_ids));
@@ -144,7 +144,7 @@
                         } 
                     });
                     console.log(todays_hours);
-                    var hour_string = "";
+                    
                     var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mmA");
                     var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mmA");
                    
@@ -154,9 +154,10 @@
                         hour_string = open_time + " - " + close_time;
                     }
 
-                    console.log(hour_string);
+                    
                 }
-
+                console.log(hour_string);
+                
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
                 var published_promos = [];
