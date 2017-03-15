@@ -126,12 +126,24 @@
                 var hour_ids = store_details.store_hours;
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
-                    console.log(hours);
                     renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
                 } else {
                     $('#hours').hide();
                 }
                 
+                var todays_hours = "";
+                var store_hour_ids = store_details.store_hours;
+                if (store_hour_ids.length > 0){
+                    var store_hours = (getHoursForIds(hour_ids));
+                    $.each(store_hours, function(key, val){
+                        var today = moment().day();
+                        var current_day = val.day_of_week;
+                        console.log(current_day);
+                        // if (today === current_day) {
+                        //     ;
+                        // } 
+                    });
+
                 // var hour_string = "";
                 // var hour_ids = store_details.store_hours;
 
