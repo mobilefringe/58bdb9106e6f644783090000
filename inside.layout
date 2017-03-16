@@ -202,7 +202,7 @@
                         <div class="col-xs-6">
                             <ul class="footer_ul">
                                 <li class="footer_main_li">Directory</li>
-                                <li><a href="/all">All</a></li>
+                                <li><a href="/all_stores">All</a></li>
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
                                 <li><a href="/map">Interactive Map</a></li>
