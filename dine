@@ -28,6 +28,7 @@
 			            <li class="show_cat_stores" data-id="000">All</li>
 			            <li class="show_cat_stores" data-id="3155">Fast Food</li>
 				        <li class="show_cat_stores" data-id="3384">Food Court</li>
+				        <li class="show_cat_stores" data-id="3382">Specialty Food</li>
 				        <li class="show_cat_stores" data-id="3385">Restaurants</li>
                     </ul>
                 </div>
@@ -100,9 +101,10 @@
         init(e);
         function renderAll(){
             var fast_food = getStoresListByCategoryID(3155);
+            var specialty_food = getStoresListByCategoryID(3382);
             var food_court = getStoresListByCategoryID(3384);
             var restaurants = getStoresListByCategoryID(3385);
-            var dine_list = fast_food.concat(food_court, restaurants).sortBy(function(o){ return o.name});
+            var dine_list = fast_food.concat(food_court, specialty_food, restaurants).sortBy(function(o){ return o.name});
             renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");
             
             show_content();
