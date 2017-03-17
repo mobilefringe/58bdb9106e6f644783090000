@@ -13,6 +13,12 @@
             </div>
         </div>
         <div class="col-md-8 margin_20">
+            <div id="storename_mobile_container" class="hidden">
+                <script id="storename_mobile_template" type="x-tmpl-mustache/text">
+                    <div class="yellow_line no_margin"></div>
+                    <h3 class="store_details_name">{{name}}</h3>
+                </script>
+            </div>
             <div id="mapsvg_store_detail" class="mobile_padding"></div>
         </div>
         <div class="col-md-12 mobile_padding">
@@ -42,7 +48,7 @@
                     </script>
                 </div>
             </div>
-            <div class="hidden-xs">
+            <div class="hidden-xs hidden-sm">
                 <h3 class="store_details_title caps center">Categories</h3> 
                 <div id="store_categories_container">
                     <script id="store_categories_template" type="x-tmpl-mustache/text">
