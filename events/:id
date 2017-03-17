@@ -18,20 +18,22 @@
                 <script id="promo_details_template_2" type="x-tmpl-mustache/text">
                     <h3 class="details_header caps">{{name}}</h3>
                     <div class="row">
-                        <div class="col-sm-8">
-                            <div class="dates_container">
-                                <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                        <div class="mobile_margin">
+                            <div class="col-sm-8">
+                                <div class="dates_container">
+                                    <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="details_sharer pull-right">
-                                <span>Share</span>
-                                <a href="//www.facebook.com/sharer.php?u=https://dixieoutletmall.com/promotions/{{slug}}" target="_blank">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
-                                </a>
-                                <a target="_blank" href="//twitter.com/share?url=https://dixieoutletmall.com/promotions/{{slug}}&text={{name}}">
-                                    <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
-                                </a>
+                            <div class="col-sm-4">
+                                <div class="details_sharer pull-right">
+                                    <span>Share</span>
+                                    <a href="//www.facebook.com/sharer.php?u=https://dixieoutletmall.com/promotions/{{slug}}" target="_blank">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
+                                    </a>
+                                    <a target="_blank" href="//twitter.com/share?url=https://dixieoutletmall.com/promotions/{{slug}}&text={{name}}">
+                                        <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
