@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="col-md-8 margin_20">
-            <div id="store_name_mobile_container" class="hidden-lg hidden-xl">
+            <div id="store_name_mobile_container" class="mobile_store_name">
                 <script id="store_name_mobile_template" type="x-tmpl-mustache/text">
                     <div class="yellow_line no_margin"></div>
                     <h3 class="store_details_name">{{name}}</h3>
