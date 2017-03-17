@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="col-md-8 margin_20">
-            <div id="storename_mobile_container" class="hidden">
-                <script id="storename_mobile_template" type="x-tmpl-mustache/text">
+            <div id="store_name_mobile_container">
+                <script id="store_name_mobile_template" type="x-tmpl-mustache/text">
                     <div class="yellow_line no_margin"></div>
                     <h3 class="store_details_name">{{name}}</h3>
                 </script>
@@ -123,7 +123,7 @@
                 window.location = "/";
             } else {
                 renderStoreDetails("#store_logo_container", "#store_logo_template", store_details, slug);
-                renderStoreDetails("#storename_mobile_container", "#storename_mobile_template", store_details, slug);
+                renderStoreDetails("#store_name_mobile_container", "#store_name_mobile_template", store_details, slug);
                 renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
