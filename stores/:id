@@ -37,12 +37,12 @@
                 <h3 class="store_details_title caps center">Hours</h3> 
                 <div id="reg_hours_container" class="hours_container">
                     <script id="reg_hours_template" type="x-tmpl-mustache/text">
-                        <div>
-                            <div class="hours_day">
+                        <div class="row">
+                            <div class="col-xs-5">
                                 <span>{{day}}</span>
                             </div>
-                            <div class="hours_string">
-                                <span class="">{{hour_string}}</span>
+                            <div class="col-xs-7">
+                                <span class="pull-right">{{hour_string}}</span>
                             </div>
                         </div>
                     </script>
