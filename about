@@ -15,7 +15,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 mobile_padding">
             <h3 class="hours_header" id="mm_page_title">About Rock Rose</h3>
             <div id="mm_page_content"></div>
         </div>
