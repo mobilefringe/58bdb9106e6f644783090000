@@ -42,7 +42,7 @@
                                 <span>{{day}}</span>
                             </div>
                             <div class="hours_string">
-                                <span class="pull-right">{{hour_string}}</span>
+                                <span class="">{{hour_string}}</span>
                             </div>
                         </div>
                     </script>
