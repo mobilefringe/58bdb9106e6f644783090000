@@ -38,10 +38,10 @@
                 <div id="reg_hours_container" class="hours_container">
                     <script id="reg_hours_template" type="x-tmpl-mustache/text">
                         <div class="row">
-                            <div class="col-xs-5">
+                            <div class="hours_day">
                                 <span>{{day}}</span>
                             </div>
-                            <div class="col-xs-7">
+                            <div class="hours_string">
                                 <span class="pull-right">{{hour_string}}</span>
                             </div>
                         </div>
