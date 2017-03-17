@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-8">
-            <div id="store_details_container" class="">
+            <div id="store_details_container" class="hidden_phone">
                 <script id="store_details_template" type="x-tmpl-mustache/text">
                     <h3 class="store_details_title caps">{{name}}</h3>
                     <p class="store_desc margin_30">{{description}}</p>
