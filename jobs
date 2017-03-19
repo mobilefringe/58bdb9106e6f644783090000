@@ -1,6 +1,6 @@
 <div class="fluid_row mobile_padding">
     <div class="row">
-        <div class="col-md-3 mobile_padding">
+        <div class="col-md-3">
             <h3 class="store_list_header">Guest Services</h3>
             <ul class="side_menu hidden_phone">
                 <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
@@ -25,7 +25,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 mobile_padding">
+        <div class="col-md-9">
             <div class="margin_20"></div>
             <ul class="jobs_filter hidden_phone">
                 <li class="active_filter filter_jobs" data-id="all">ALl</li>
