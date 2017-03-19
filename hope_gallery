@@ -1,6 +1,6 @@
 <div class="fluid_row mobile_padding">
     <div class="row">
-        <div class="col-md-3 mobile_padding">
+        <div class="col-md-3">
             <h3 class="store_list_header">Rock Rose</h3>
             <ul class="side_menu hidden_phone">
                 <li><a href="/about">About</a></li>
@@ -15,7 +15,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9 mobile_padding">
+        <div class="col-md-9">
             <h3 class="hours_header" id="mm_page_title">Hope Gallery</h3>
             <div id="mm_page_content"></div>
         </div>
