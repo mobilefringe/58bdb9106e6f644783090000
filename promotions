@@ -40,12 +40,9 @@
     </div>
 </div>
 
-<div class="site_container">
-    <div class="fluid_row mobile_padding">
+<div class="site_container mobile_padding">
+    <div class="fluid_row ">
         <div class="row">
-            <!--<div class="col-md-12">-->
-            <!--    <h3 class="store_list_header">Promotions</h3>-->
-            <!--</div>-->
             <div id="promos_container">
                 <script id="promos_template" type="x-tmpl-mustache/text">
                     <div class="col-sm-6 col-md-4 margin_50 cats_row" data-cat="{{cat_list}}">
