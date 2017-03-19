@@ -37,11 +37,9 @@
 </div>
 <div class="site_container mobile_padding">
     <div class="fluid_row">
-        <div class="mobile_padding">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="map_container" id="mapsvg"></div>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="map_container" id="mapsvg"></div>
             </div>
         </div>
     </div>
