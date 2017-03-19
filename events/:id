@@ -17,6 +17,7 @@
             <div id="promo_details_container_2" class="promo_details_container">
                 <script id="promo_details_template_2" type="x-tmpl-mustache/text">
                     <h3 class="details_header caps">{{name}}</h3>
+                    <h3 class="details_desc promo_store_name">{{store_name}}</h3>
                     <div class="row">
                         <div class="mobile_margin">
                             <div class="col-sm-8">
