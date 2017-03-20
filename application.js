@@ -142,10 +142,10 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
-        if(val.total_published_promos.length >= 1){
-            var promo_list = val.total_published_promos.length;
-            val.promotion_exist = "display: inline";
-            val.promotion_list = promo_list;
+        if(val.total_published_promos.length > 0){
+            // var promo_list = val.total_published_promos.length;
+            // val.promotion_exist = "display: inline";
+            val.promotion_list = val.total_published_promos.length;
         } else {
             val.promotion_exist = "display: none";
         }
