@@ -95,6 +95,7 @@ function show_cat_stores(){
             });
             $('#cat_name').hide();    
         }
+        $('.dropdown-menu .cat_list').css('display', 'none');
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
