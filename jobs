@@ -93,7 +93,7 @@
                 $('#no_jobs').show()
             }
             
-            // show_content();
+            show_content();
             jobs_filter();
             $('#top_nav_centre_info').addClass('active_yellow')
         }
