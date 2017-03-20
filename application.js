@@ -142,7 +142,7 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
-        
+        console.log(val.total_published_promos)
         if(val.total_published_promos.length > 0){
             var promo_list = val.total_published_promos.length;
             val.promotion_exist = "display: inline";
