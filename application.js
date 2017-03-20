@@ -142,14 +142,14 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
-        if(val.total_published_promos.length > 0){
+        if(val.total_published_promos.length < 0){
             // var promo_list = val.total_published_promos.length;
-            // val.promotion_exist = "display: inline";
+            val.promotion_exist = "display: inline";
             val.promotion_list = val.total_published_promos.length;
         } else {
             val.promotion_exist = "display: none";
         }
-        if (val.total_published_jobs.length > 0){
+        if (val.total_published_jobs.length < 0){
             val.job_exist = "display: inline";
             val.job_list = val.total_published_jobs.length;
         } else {
