@@ -143,13 +143,13 @@ function renderStoreList(container, template, collection, type){
             val.new_store = "display:none";
         }
         
-        if (val.promotions.length > 0){
-            val.promotion_exist = "display:inline";
-            val.promotion_list = val.promotions.length;
-            var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-            if (store_promo != undefined){
-                val.promo_btn = "/promotions/" + store_promo.slug;
-            }
+        if (val.total_published_promos.length > 0){
+            val.promotion_exist = "display: inline";
+            val.promotion_list = val.total_published_promos.length;
+            // var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
+            // if (store_promo != undefined){
+            //     val.promo_btn = "/promotions/" + store_promo.slug;
+            // }
         } else {
             val.promotion_exist = "display:none";
         }
