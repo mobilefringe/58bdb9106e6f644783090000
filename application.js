@@ -301,6 +301,7 @@ function renderHours(container, template, collection, type){
 };
 
 function renderJobs(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -311,7 +312,7 @@ function renderJobs(container, template, collection){
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
         }
         else{
-            val.store_name = "Dixie Outlet";
+            val.store_name = mall_name;
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
