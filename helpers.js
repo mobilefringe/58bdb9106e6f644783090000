@@ -416,6 +416,7 @@ function show_cat_stores(){
             });
             $('#cat_name').hide();    
         }
+        $('category_select').hide();
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
