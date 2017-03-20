@@ -69,7 +69,6 @@ function show_content(){
 
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
-        $('.dropdown:hover .cat_list').css('display', 'block');
         var cat_id = $(this).attr('data-id');
         var rows = $('.cats_row');
         if(cat_id != "000") {
@@ -93,6 +92,7 @@ function show_cat_stores(){
             $('#cat_name').hide();    
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
+        $('.dropdown:hover .cat_list').css('display', 'block');
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
