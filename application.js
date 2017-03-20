@@ -79,8 +79,8 @@ function renderGeneral(container, template, collection){
 
 function renderPopUp() {
     var popup = getPopups()[0];
-    
-    if (popup != undefined){
+
+    if (popup != undefined && popup != null){
         $('#pp_img').attr('src', 'https://mallmaverick.cdn.speedyrails.net' + popup.photo_url)
         $('#pp_url').attr('href',  popup.photo_link)
     }
