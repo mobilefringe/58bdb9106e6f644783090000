@@ -44,7 +44,7 @@
     <div class="fluid_row">
         <div class="mobile_padding">
             <div class="row">
-                <div id="promos_container">
+                <div id="promos_container" class="promos_page">
                     <script id="promos_template" type="x-tmpl-mustache/text">
                         <div class="col-sm-6 col-md-4 margin_50 cats_row" data-cat="{{cat_list}}">
                             <div class="promo_container" value="{{categories}}">
