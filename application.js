@@ -147,18 +147,14 @@ function renderStoreList(container, template, collection, type){
             var promo_list = val.total_published_promos.length;
             val.promotion_exist = "display: inline";
             val.promotion_list = promo_list;
-            // var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-            // if (store_promo != undefined){
-            //     val.promo_btn = "/promotions/" + store_promo.slug;
-            // }
         } else {
             val.promotion_exist = "display: none";
         }
-        if (val.jobs.length > 0){
-            val.job_exist = "display:inline";
-            val.job_list = val.jobs.length;
+        if (val.total_published_jobs.length > 0){
+            val.job_exist = "display: inline";
+            val.job_list = val.total_published_jobs.length;
         } else {
-            val.job_exist = "display:none";
+            val.job_exist = "display: none";
         }
         
         val.block = current_initial + '-block';
