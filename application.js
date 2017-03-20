@@ -146,7 +146,7 @@ function renderStoreList(container, template, collection, type){
             console.log(val.name);
             // var promo_list = val.total_published_promos.length;
             val.promotion_exist = "display: inline";
-            val.promotion_list = val.total_published_promos.length;
+            val.promotion_list = val.total_published_promos;
         } else {
             val.promotion_exist = "display: none";
         }
