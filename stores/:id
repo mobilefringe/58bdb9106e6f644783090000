@@ -67,7 +67,7 @@
             <div id="promotions">
                 <h3 class="store_details_title caps">Promotions</h3>
                 <div class="row">
-                    <div id="promos_container">
+                    <div id="promos_container" class="store_page">
                         <script id="promos_template" type="x-tmpl-mustache/text">
                             <div class="col-sm-6 margin_50">
                                 <div class="promo_container" value="{{categories}}">
