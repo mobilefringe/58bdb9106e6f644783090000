@@ -67,6 +67,10 @@ function show_content(){
     }
 }
 
+$('.category_selector').click(function(e){
+    $('.dropdown-menu .cat_list').css('display', 'block');
+});
+        
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
@@ -91,8 +95,6 @@ function show_cat_stores(){
             });
             $('#cat_name').hide();    
         }
-        $('.dropdown-menu .cat_list').css('display', 'none');
-        $('.dropdown:hover .cat_list').css('display', 'block');
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
