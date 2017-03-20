@@ -69,6 +69,7 @@ function show_content(){
 
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
+        $('.dropdown:hover .cat_list').css('display', 'block');
         var cat_id = $(this).attr('data-id');
         var rows = $('.cats_row');
         if(cat_id != "000") {
