@@ -394,6 +394,8 @@ function in_my_time_zone(hour, format){
 
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
+        $('category_select').hide();
+        
         var cat_id = $(this).attr('data-id');
         var rows = $('.cats_row');
         if(cat_id != "000") {
@@ -416,7 +418,7 @@ function show_cat_stores(){
             });
             $('#cat_name').hide();    
         }
-        $('category_select').hide();
+        
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
