@@ -283,7 +283,7 @@ function load_store_map(reg, store_details){
         loadingText: "loading...",
         zoom: true,
         zoomButtons: {'show': true,'location': 'left' },
-        pan:true,
+        // pan:true,
         cursor:'pointer',
         responsive:true,
         zoomLimit: [0,5],
