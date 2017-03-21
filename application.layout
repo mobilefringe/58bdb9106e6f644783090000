@@ -241,7 +241,7 @@
                 <!--    <div class="margin_20 visible-sm-block visible-xs-block"></div>-->
                 <!--    <p class="store_desc visible-sm-block visible-xs-block">Fashion, home interiors, beauty, dining and nightlife — you can call it home, stay the night, spend the day, enjoy the community and expect the uncommon vibe...</p>-->
                 <!--</div>-->
-                <div class="col-md-3 hidden_phone">
+                <div class="col-md-3">
                     <a target="_blank" href="//www.instagram.com/domainnorthside/"><h3 class="footer_explore">@DOMAINNORTHSIDE</h3></a>
                     <div id="instafeed"></div>
                 </div>
