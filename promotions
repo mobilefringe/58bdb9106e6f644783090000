@@ -70,9 +70,9 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var categories = getStoreCategories();
-            renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
+            // var categories = getStoreCategories();
+            // renderGeneral("#category_select", "#category_select_template", categories);
+            // $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
 
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
