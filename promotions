@@ -90,8 +90,9 @@
                 if(category != null && category.length > 0) {
                     category_list.push(val);
                 } 
+                console.log(category_list)
             });
-            console.log(category_list)
+            
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
             }
