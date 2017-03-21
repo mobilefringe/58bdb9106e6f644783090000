@@ -282,7 +282,7 @@ function load_store_map(reg, store_details){
         tooltipsMode:'custom',
         loadingText: "loading...",
         zoom: true,
-        zoomButtons: {'show': false,'location': 'left' },
+        zoomButtons: {'show': true,'location': 'left' },
         pan:true,
         cursor:'pointer',
         responsive:true,
