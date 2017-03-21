@@ -75,25 +75,17 @@
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
 
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            var promo_categories = promotions.categories;
-            console.log(promotions);
-            console.log(promo_categories)
             var published_promos = [];
-            var promo_cats = [];
             $.each(promotions, function(key, val){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos.push(val);
                 }
-                var category = val.categories;
-                if(category != null && category.length > 0) {
-                    promo_cats.push(val);
-                }
             });
-            console.log(promo_cats);
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
+                renderPromotions("#category_select", "#category_select_template", published_promos);
             }
             else{
                 $('#no_promos').show()
