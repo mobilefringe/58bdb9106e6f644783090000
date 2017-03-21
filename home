@@ -1,15 +1,9 @@
 <!-- popup html form starts-->
-<div class="hidden-popup-bg">
-    <div class="hidden-popup-form">
-        <div class="popup-header">
-           <p onclick="close_popup();" class="popup-close pull-right">X</p>
-        </div>
-        <div class="popup-body">
-            <a id="pp_url" href="">
-                <img id="pp_img" src="" class="" alt="">
-            </a>
-        </div>
-   </div>
+<div class="popup_home hidden_now">
+    <a href="#">
+        <img src="#" alt="pop up" />
+    </a>
+    <i class="fa fa-remove close_popup"></i>
 </div>
 <!-- popup form ends-->
 <div class="flexslider">
