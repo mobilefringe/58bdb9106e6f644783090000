@@ -89,7 +89,7 @@ function renderStoreList(container, template, collection, type){
                 val.alt_store_front_url = default_image.image_url;
             // } else {
             //     val.alt_store_front_url = getImageURL(val.store_front_url);    
-            // }
+            }
         }
         
         var current_initial = val.name[0];
