@@ -78,7 +78,7 @@
             console.log(promotions)
             
             
-            var category_list = [];
+            var category_list = {};
             $.each(promotions, function(key, val){
                 var category = val.categories;
                 if(category != null) {
