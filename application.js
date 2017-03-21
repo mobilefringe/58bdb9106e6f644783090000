@@ -333,8 +333,8 @@ function renderPromotions(container, template, collection){
             val.image_url  = store_details.store_front_url_abs;
         }
 
-        if (val.name.length > 40){
-            val.name_short = val.name.substring(0,40) + "...";
+        if (val.name.length > 30){
+            val.name_short = val.name.substring(0,30) + "...";
         }
         else {
             val.name_short = val.name;
