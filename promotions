@@ -85,7 +85,9 @@
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
-                renderPromotions("#category_select", "#category_select_template", published_promos);
+                
+                var cat_list = _.uniq(published_promos, function(o){ return o.categories; });
+                renderPromotions("#category_select", "#category_select_template", cat_list);
             }
             else{
                 $('#no_promos').show()
