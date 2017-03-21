@@ -76,7 +76,7 @@
             
             
             
-            var promo_categories = getPromotionsList().sortBy(function(o){ return o.categories });
+            var promo_categories = getPromotionsList().sortBy(function(o){ return o.store_name });
             console.log(promo_categories);
             var category_list = [];
             $.each(promo_categories, function(key, val){
