@@ -82,7 +82,7 @@
             $.each(promotions, function(key, val){
                 var category = val.categories;
                 if(category != null) {
-                    category_list.push(category);
+                    category_list.push(val.categories);
                 } 
                 
             });
