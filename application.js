@@ -147,7 +147,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.alt_store_front_url = default_image.image_url;
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -316,7 +316,7 @@ function renderJobDetails(container, template, collection){
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.image_url = default_image.image_url;
             }
             else{
                 val.image_url = store_details.store_front_url_abs;
@@ -324,7 +324,7 @@ function renderJobDetails(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.image_url = default_image.image_url;
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -357,7 +357,7 @@ function renderPromotions(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.image_url = default_image.image_url;
         }
         
         if(val.image_url.indexOf('missing.png') > 0){
@@ -395,7 +395,7 @@ function renderPromoDetails(container, template, collection){
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.image_url = default_image.image_url;
             }
             else{
                 val.image_url = store_details.store_front_url_abs;
@@ -403,7 +403,7 @@ function renderPromoDetails(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.image_url = default_image.image_url;
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
@@ -497,7 +497,7 @@ function renderEvents(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.image_url = default_image.image_url;
         }
         if(val.event_image_url_abs.indexOf('missing.png') < 0){
             val.logo = val.event_image_url_abs;
@@ -507,7 +507,7 @@ function renderEvents(container, template, collection){
                 val.logo = val.image_url;
             }
             else{
-                val.logo = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.logo = default_image.image_url;
             }
         }
         var show_date = moment(val.show_on_web_date);
@@ -538,7 +538,7 @@ function renderEventDetails(container, template, collection){
             val.store_detail_btn = store_details.slug;
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+                val.image_url = default_image.image_url;
             }
             else{
                 val.image_url = store_details.store_front_url_abs;
@@ -546,7 +546,7 @@ function renderEventDetails(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
+            val.image_url = default_image.image_url;
         }
         
         if(val.event_image_url_abs.indexOf('missing.png') > -1){
