@@ -84,6 +84,14 @@
                     published_promos.push(val);
                 } 
             });
+            var category_list = [];
+            $.each(promotions, function(key, val){
+                var category = val.categories;
+                if(category != null && category.length > 0) {
+                    category_list.push(val);
+                } 
+            });
+            consol.log(category_list)
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
             }
