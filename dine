@@ -22,11 +22,11 @@
                         Sort by Category <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span>
                     </a>
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
-			            <li class="show_cat_stores" data-id="000">All</li>
-			            <li class="show_cat_stores" data-id="3155">Fast Food</li>
-				        <li class="show_cat_stores" data-id="3384">Food Court</li>
-				        <li class="show_cat_stores" data-id="3382">Specialty Food</li>
-				        <li class="show_cat_stores" data-id="3385">Restaurants</li>
+			            <li class="show_cat_stores" data-id="000" name="All">All</li>
+			            <li class="show_cat_stores" data-id="3155" name="Fast Food">Fast Food</li>
+				        <li class="show_cat_stores" data-id="3384" name="Food Court">Food Court</li>
+				        <li class="show_cat_stores" data-id="3382" name="Specialty Food">Specialty Food</li>
+				        <li class="show_cat_stores" data-id="3385" name="Restaurants">Restaurants</li>
                     </ul>
                 </div>
             </div>
