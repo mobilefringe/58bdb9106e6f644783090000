@@ -81,6 +81,7 @@
             var category_list = [];
             $.each(promotions, function(key, val){
                 var category = val.categories;
+                console.log(category)
                 if(category != null) {
                     category_list.push(val.categories);
                 } 
