@@ -74,12 +74,12 @@ $('.category_selector').click(function(e){
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         var cat_id = $(this).attr('data-id');
+        var cat_name = $(this).attr('name');
         var rows = $('.cats_row');
         if(cat_id != "000") {
             rows.hide();
-            $('.store_initial').hide();
-            $('#cat_name').text($(this).text());
-            $('#cat_name').css('display', 'block');
+            // $('#cat_name').text($(this).text());
+            // $('#cat_name').css('display', 'block');
             $.each(rows, function(i, val){
                 var cat_array = val.getAttribute('data-cat').split(',');
                 if ($.inArray(cat_id, cat_array) >= 0){
@@ -96,6 +96,7 @@ function show_cat_stores(){
             $('#cat_name').hide();    
         }
         $('.dropdown-menu .cat_list').css('display', 'none');
+        $('#store_cat_list').html(cat_name);
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
