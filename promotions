@@ -85,7 +85,7 @@
                     published_promos.push(val);
                 }
                 var category = val.categories;
-                if(category != null && != undefined && category.length > 0) {
+                if(category != null && category.length > 0) {
                     promo_cats.push(val);
                 }
             });
