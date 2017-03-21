@@ -74,20 +74,21 @@
             renderGeneral("#category_select", "#category_select_template", categories);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
             
-            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
-            console.log(promotions)
             
             
+            var promo_categories = getPromotionsList();
+            console.log(promo_categories);
             var category_list = [];
-            $.each(promotions, function(key, val){
-                var category = val.store_name;
+            $.each(promo_categories, function(key, val){
+                var category = val.categories;
                 console.log(category)
                 if(category != null) {
                     category_list.push(val.categories);
                 } 
-                
             });
             console.log(category_list)
+            
+            var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             $.each(promotions, function(key, val){
                 today = moment();
