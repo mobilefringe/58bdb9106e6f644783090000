@@ -269,6 +269,31 @@ function load_map(reg, store_details){
     drop_pin(store_details.svgmap_region);
 }
 
+function load_store_map(reg, store_details){
+    this_region = {};
+    this_region = store_details.svgmap_region;
+    map = $('#mapsvg_store_detail').mapSvg({
+        source: getSVGMapURL(),    // Path to SVG map
+        colors: {stroke: '#aaa', hover: 0, selected: '#EF4D86'},
+        disableAll: true,
+        height:335,
+        width:848,
+        regions: reg,
+        tooltipsMode:'custom',
+        loadingText: "loading...",
+        zoom: true,
+        zoomButtons: {'show': false,'location': 'left' },
+        pan:true,
+        cursor:'pointer',
+        responsive:true,
+        zoomLimit: [0,5],
+        viewBox:[420,420,1650,1650]
+    });
+    map.setViewBox(store_details.svgmap_region);
+    map.selectRegion(store_details.svgmap_region);
+    drop_pin(store_details.svgmap_region);
+}
+
 function init_map(reg){
     map = $('#mapsvg').mapSvg({
         source: getSVGMapURL(),    // Path to SVG map
