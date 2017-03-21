@@ -343,6 +343,7 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -355,7 +356,7 @@ function renderPromotions(container, template, collection){
             val.image_url = val.promo_image_url_abs;
         }
         else{
-            val.store_name = "Dixie Outlet";
+            val.store_name = mall_name;
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1446753494000/Dixie_default.jpg";
         }
         
