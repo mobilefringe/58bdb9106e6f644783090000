@@ -455,5 +455,5 @@ function submit_contest(slug) {
 }
 
 var default_image = {
-    "image_url" : "//codecloud.cdn.speedyrails.net/sites/58a5f2a26e6f64467d030000/image/jpeg/1487696949000/pdr_default.jpg",
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/jpeg/1490102665000/northside_default.jpg",
 }
