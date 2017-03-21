@@ -75,7 +75,9 @@
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
 
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            var promo_categories = promotions.categories;
             console.log(promotions);
+            console.log(promo_categories)
             var published_promos = [];
             var promo_cats = [];
             $.each(promotions, function(key, val){
