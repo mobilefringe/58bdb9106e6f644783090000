@@ -237,7 +237,7 @@ function drop_pin(id){
     var y_offset = (parseInt(height) /2);
     map.setMarks([{ xy: [coords["x"] - 46 + x_offset, coords["y"] - 110 + y_offset],
         attrs: {
-            src:  '//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1490125119000/northside_map_pin.png'
+            src:  '//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1490125201000/northside_map_pin_small.png'
         }
     }]);
     map.setViewBox(id);
