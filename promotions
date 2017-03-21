@@ -76,6 +76,17 @@
             
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             console.log(promotions)
+            
+            
+            var category_list = [];
+            $.each(promotions, function(key, val){
+                var category = val.categories;
+                if(category != null && category.length > 0) {
+                    category_list.push(val);
+                } 
+                
+            });
+            console.log(category_list)
             var published_promos = [];
             $.each(promotions, function(key, val){
                 today = moment();
@@ -84,15 +95,6 @@
                     published_promos.push(val);
                 } 
             });
-            var category_list = [];
-            $.each(promotions, function(key, val){
-                var category = val.categories;
-                if(category != null && category.length > 0) {
-                    category_list.push(val);
-                } 
-                console.log(category_list)
-            });
-            
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
             }
