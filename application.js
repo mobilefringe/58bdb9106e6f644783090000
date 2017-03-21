@@ -87,9 +87,10 @@ function renderStoreList(container, template, collection, type){
         if(type == "stores" || type == "category_stores"){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
                 val.store_front_url = val.store_front_url_abs
-            } else {
-                val.store_front_url = default_image.image_url;
-            }
+            } 
+            // if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
+            //     val.store_front_url = default_image.image_url;
+            // }
         }
         
         var current_initial = val.name[0];
