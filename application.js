@@ -357,7 +357,7 @@ function renderPromotions(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = default_image.image_url;
+            val.image_url = promo_image.image_url;
         }
         
         if(val.image_url.indexOf('missing.png') > 0){
@@ -497,7 +497,7 @@ function renderEvents(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = default_image.image_url;
+            val.image_url = promo_image.image_url;
         }
         if(val.event_image_url_abs.indexOf('missing.png') < 0){
             val.logo = val.event_image_url_abs;
