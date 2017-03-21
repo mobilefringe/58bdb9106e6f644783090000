@@ -44,7 +44,6 @@
                             <li class="active_filter filter_jobs" data-id="all">All</li>
                             <li class="filter_jobs" data-id="Full Time">Full-Time</li>
                             <li class="filter_jobs" data-id="Part Time">Part-Time</li>
-                            <li class="filter_jobs" data-id="Seasonal">Seasonal</li>
                         </ul>
                     </div>
                 </div>
