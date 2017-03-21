@@ -28,11 +28,11 @@
                             <div class="col-sm-4">
                                 <div class="details_sharer pull-right">
                                     <div>Share</div>
-                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://www.domainnorthside.com/promotions/{{slug}}">
-                                        <div class="social_fb"></div>
+                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
+                                        <div class="social_fb_share"></div>
                                     </a>
-                                    <a target="_blank" href="//twitter.com/share?url=https://www.domainnorthside.com/promotions/{{slug}}&text={{name}}">
-                                        <div class="social_twitter"></div>
+                                    <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
+                                        <div class="social_twitter_share"></div>
                                     </a>
                                 </div>
                             </div>
