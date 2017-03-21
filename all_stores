@@ -96,7 +96,7 @@
         function renderAll(){
             var categories = getStoreCategories();
             renderGeneral("#category_select", "#category_select_template", categories);
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="000">All</li>');
+            $('#category_select').prepend('<li class="show_cat_stores" data-id="000" name="All">All</li>');
             
             var stores = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
