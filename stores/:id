@@ -135,22 +135,7 @@
                 } else {
                     $('#hours').hide();
                 }
-                
-                // var todays_hours = "";
-                // var store_hour_ids = store_details.store_hours;
-                // if (store_hour_ids.length > 0){
-                //     var store_hours = (getHoursForIds(hour_ids));
-                //     var today = moment().day();
-                //     var current_day = store_hours.day_of_week;
-                //     $.each(store_hours, function(key, val){
-                        
-                //         if (today === current_day) {
-                //             todays_hours = val.hour_string;
-                //         } 
-                //     });
-                // }
-                // console.log(todays_hours);
-                
+
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
                 var published_promos = [];
