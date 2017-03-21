@@ -88,7 +88,7 @@ function renderStoreList(container, template, collection, type){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
                 val.alt_store_front_url = "";
             } else {
-                val.alt_store_front_url = getImageURL(val.store_front_url);    
+                val.alt_store_front_url = default_image.image_url;    
             }
             
         }
