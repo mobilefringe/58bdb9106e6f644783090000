@@ -77,13 +77,19 @@
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             console.log(promotions);
             var published_promos = [];
+            var promo_cats = [];
             $.each(promotions, function(key, val){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos.push(val);
-                } 
+                }
+                var category = val.categories;
+                if(category != null && != undefined && category.length > 0) {
+                    promo_cats.push(val);
+                }
             });
+            console.log(promo_cats);
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
             }
