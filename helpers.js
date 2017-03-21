@@ -287,10 +287,10 @@ function load_store_map(reg, store_details){
         cursor:'pointer',
         responsive:true,
         zoomLimit: [0,5],
-        // viewBox:[420,420,1650,1650]
+        viewBox:[420,420,1650,1650]
     });
     map.setViewBox(store_details.svgmap_region);
-    map.selectRegion(store_details.svgmap_region);
+    // map.selectRegion(store_details.svgmap_region);
     drop_pin(store_details.svgmap_region);
 }
 
