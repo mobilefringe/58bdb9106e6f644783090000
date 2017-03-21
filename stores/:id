@@ -183,7 +183,7 @@
                         regions[val.svgmap_region] = obj
                     }
                 });
-                load_map(regions, store_details);
+                load_store_map(regions, store_details);
                 $('.collapse').show();
             }
         }
