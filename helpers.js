@@ -454,4 +454,6 @@ function submit_contest(slug) {
     });
 }
 
-
+var default_image = {
+    "image_url" : "//codecloud.cdn.speedyrails.net/sites/58a5f2a26e6f64467d030000/image/jpeg/1487696949000/pdr_default.jpg",
+}
