@@ -23,10 +23,9 @@
                     </a>
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
 			            <li class="show_cat_stores" data-id="000" name="All">All</li>
-			            <li class="show_cat_stores" data-id="3155" name="Fast Food">Fast Food</li>
-				        <li class="show_cat_stores" data-id="3384" name="Food Court">Food Court</li>
-				        <li class="show_cat_stores" data-id="3382" name="Specialty Food">Specialty Food</li>
-				        <li class="show_cat_stores" data-id="3385" name="Restaurants">Restaurants</li>
+			            <li class="show_cat_stores" data-id="5034" name="Dining & Entertainment">Dining & Entertainment</li>
+				        <li class="show_cat_stores" data-id="5035" name="Late Night">Late Night</li>
+				        <li class="show_cat_stores" data-id="5039" name="Specialty Foods">Specialty Foods</li>
                     </ul>
                 </div>
             </div>
@@ -97,11 +96,13 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var fast_food = getStoresListByCategoryID(3155);
-            var specialty_food = getStoresListByCategoryID(3382);
-            var food_court = getStoresListByCategoryID(3384);
-            var restaurants = getStoresListByCategoryID(3385);
-            var dine_list = fast_food.concat(food_court, specialty_food, restaurants).sortBy(function(o){ return o.name});
+            var dining = getStoresListByCategoryID(5034);
+            var late_night = getStoresListByCategoryID(5035);
+            // var rock_rose = getStoresListByCategoryID(5032);
+            var specialty_foods = getStoresListByCategoryID(5039);
+            
+            
+            var dine_list = dining.concat(late_night, specialty_foods).sortBy(function(o){ return o.name});
             renderStoreList('#store_list_container','#store_list_template', dine_list, "stores");
             
             show_content();
