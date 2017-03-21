@@ -297,7 +297,7 @@ function load_store_map(reg, store_details){
 function init_map(reg){
     map = $('#mapsvg').mapSvg({
         source: getSVGMapURL(),    // Path to SVG map
-        colors: {stroke: '#aaa', hover: '#EF4D86'},
+        colors: {stroke: '#aaa'},
         disableAll: true,
         height:800,
         width:1140,
