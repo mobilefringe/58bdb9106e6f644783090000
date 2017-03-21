@@ -485,6 +485,14 @@ function renderEvents(container, template, collection){
                 val.logo = default_image.image_url;
             }
         }
+        
+        if (val.name.length > 30){
+            val.name_short = val.name.substring(0,30) + "...";
+        }
+        else {
+            val.name_short = val.name;
+        }
+        
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
