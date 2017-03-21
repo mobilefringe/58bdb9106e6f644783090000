@@ -184,7 +184,6 @@
                     }
                 });
                 load_store_map(regions, store_details);
-                $('.collapse').show();
             }
         }
         loadMallDataCached(renderAll); 
