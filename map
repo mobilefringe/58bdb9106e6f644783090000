@@ -63,7 +63,7 @@
             
             regions = {};
             $.each(stores, function(key, val) {
-                var todays_hours_id = store_details.todays_hour;
+                var todays_hours_id = stores.todays_hour;
                 var hour_string = "";
                 if(todays_hours_id != null) {
                     var todays_hours = getTodaysHours(todays_hours_id);
