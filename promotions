@@ -84,6 +84,7 @@
                 renderPromotions("#promos_container","#promos_template", published_promos);
                 
                 var cat_list = _.uniq(published_promos, function(o){ return o.categories; });
+                console.log(cat_list)
                 $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
                 renderPromotions("#category_select", "#category_select_template", cat_list);
             }
