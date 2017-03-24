@@ -27,7 +27,7 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
 	
-    get_instagram("//dixieoutlet.mallmaverick.com/api/v2/dixieoutlet/social.json", 9, 'thumbnail', render_instagram)
+    get_instagram("//northside.mallmaverick.com/api/v2/northside/social.json", 9, 'thumbnail', render_instagram)
     
     blog_searcher();
     
