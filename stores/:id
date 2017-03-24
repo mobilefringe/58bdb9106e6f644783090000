@@ -119,7 +119,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            console.log(store_details)
             if(store_details === undefined){
                 window.location = "/";
             } else {
@@ -138,10 +137,19 @@
                 }
 
                 var todays_hours_id = store_details.todays_hour;
+                var hour_string = "";
                 if(todays_hours_id != null) {
                     var todays_hours = getTodaysHours(todays_hours_id);
                     console.log(todays_hours);
+                    if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
+                        var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
+                        var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
+                        hour_string = open_time + " - " + close_time;
+                    } else {
+                        hour_string = "Closed";
+                    }
                 }
+                console.log(hour_string);
                 
                 
                 
