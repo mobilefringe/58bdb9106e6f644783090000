@@ -142,8 +142,8 @@
                     var todays_hours = getTodaysHours(todays_hours_id);
                     console.log(todays_hours);
                     if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
-                        var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
-                        var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
+                        var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
+                        var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mma");
                         hour_string = open_time + " - " + close_time;
                     } else {
                         hour_string = "Closed";
