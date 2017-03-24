@@ -63,21 +63,21 @@
             
             regions = {};
             $.each(stores, function(key, val) {
-                var todays_hours_id = stores.todays_hour;
-                var hour_string = "";
-                if(todays_hours_id != null) {
-                    var todays_hours = getTodaysHours(todays_hours_id);
-                    if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
-                        var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
-                        var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mma");
-                        hour_string = open_time + " - " + close_time;
-                    } else {
-                        hour_string = "Closed";
-                    }
-                }
-                console.log(hour_string);
-                
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
+                    var todays_hours_id = stores.todays_hour;
+                    var hour_string = "";
+                    if(todays_hours_id != null) {
+                        var todays_hours = getTodaysHours(todays_hours_id);
+                        if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
+                            var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
+                            var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mma");
+                            hour_string = open_time + " - " + close_time;
+                        } else {
+                            hour_string = "Closed";
+                        }
+                    }
+                    console.log(hour_string);
+                
                     obj = {};
                     if(val.store_front_url_abs.indexOf('missing.png') > -1){
                         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
