@@ -334,7 +334,7 @@ function renderPromotions(container, template, collection){
         }
 
         if (val.name.length > 32){
-            val.name_short = val.name.substring(0,32) + "...";
+            val.name_short = val.name.substring(0,30) + "...";
         }
         else {
             val.name_short = val.name;
