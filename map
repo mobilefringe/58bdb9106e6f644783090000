@@ -56,6 +56,7 @@
         init(e);
         function renderAll(){
             var stores = getStoresList();
+            console.log(stores);
             renderStoreList('#store_select_container','#store_select_template', stores, "stores");
             $('#store_select_container').prepend("<option selected value=''>Select a Store</option>")
             show_content();
