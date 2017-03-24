@@ -140,8 +140,9 @@
                 var todays_hours_id = store_details.todays_hour;
                 if(todays_hours_id != null) {
                     var todays_hours = getHoursForIds(todays_hours_id);
+                    console.log(todays_hours);
                 }
-                console.log(todays_hours);
+                
 
                 var store_promo_ids = store_details.promotions
                 var store_promos = getPromotionsForIds(store_promo_ids).sortBy(function(o){ return o.start_date });
