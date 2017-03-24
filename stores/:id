@@ -138,11 +138,13 @@
                 }
 
                 var todays_hours_id = store_details.todays_hour;
-                console.log(todays_hours_id);
                 if(todays_hours_id != null) {
-                    var todays_hours = getHoursForIds(todays_hours_id);
+                    var todays_hours = getTodaysHours(todays_hours_id);
                     console.log(todays_hours);
                 }
+                
+                
+                
                 
 
                 var store_promo_ids = store_details.promotions
