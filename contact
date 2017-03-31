@@ -27,7 +27,17 @@
         </div>
         <div class="col-md-9 inside_page">
             <h3 class="hours_header" id="mm_page_title">Contact Us</h3>
-            <form id="contest_form">
+            <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="sr-only">Success</span>
+                Thank you for contacting us. A member from our team will contact you shortly. 
+            </div>
+            <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
+            </div>
+            <form id="contact_form">
                 <p>We'd love to hear from you! Send us your comments by completing the contact form below.</p>
                 <div class="row">
                     <div class="col-sm-6">
@@ -94,6 +104,38 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            $.validate();
+            
+            $('#contact_form').submit(function(e) {
+                values = [];
+                values = JSON.stringify($('#contact_form').serializeArray());
+                e.preventDefault();
+                $.ajax({
+                    url : "/api/v1/contact_us",
+                    type: "POST",
+                    data : {authenticity_token: '<%=form_authenticity_token%>' ,
+                    form_data:values},
+                    success: function(data, textStatus, jqXHR)
+                    {
+                        $('#send_contact_success').fadeIn();
+                        $('#contact_form').find("input[type=text], textarea").val("");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown)
+                    {
+                        $('#send_contact_error').fadeIn();
+                    }
+                });
+
+    		    
+    		}
+    		else
+    		{
+    			alert("Please Enter Correct Verification Number");
+    			randomgen();
+    			e.preventDefault();
+    		}
+    	});
             show_content();
         }
         loadMallDataCached(renderAll); 
