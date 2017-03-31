@@ -116,26 +116,16 @@
                     type: "POST",
                     data : {authenticity_token: '<%=form_authenticity_token%>' ,
                     form_data:values},
-                    success: function(data, textStatus, jqXHR)
-                    {
+                    success: function(data, textStatus, jqXHR) {
                         $('#send_contact_success').fadeIn();
                         $('#contact_form').find("input[type=text], textarea").val("");
                     },
-                    error: function (jqXHR, textStatus, errorThrown)
-                    {
+                    error: function (jqXHR, textStatus, errorThrown) {
                         $('#send_contact_error').fadeIn();
                     }
                 });
-
-    		    
-    		}
-    		else
-    		{
-    			alert("Please Enter Correct Verification Number");
-    			randomgen();
-    			e.preventDefault();
-    		}
-    	});
+    	    });
+    	    
             show_content();
         }
         loadMallDataCached(renderAll); 
