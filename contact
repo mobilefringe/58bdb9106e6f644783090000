@@ -45,8 +45,8 @@
                         <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
                     <div class="col-sm-6">  
-                        <label for="zip_code">ZIP Code *</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" required data-validation="required" tabindex="5"/>
+                        <label for="zip_code">ZIP Code</label>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" tabindex="5"/>
                     </div>
                 </div>
                 
