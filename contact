@@ -52,14 +52,13 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="email">Comments *</label>
-                        <textarea class="contest_info" id="comments" required data-validation="required" tabindex="5"></textarea>
+                        <textarea class="contest_info" id="comments" rows="8" required data-validation="required" tabindex="5"></textarea>
                     </div>
                 </div>
-                
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                        <button class="submit_btn caps" tabindex="10">Send</button>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
