@@ -33,7 +33,7 @@
             <div class="margin_20"></div>
             <div id="download_button_container">
                 <script id="download_button_template" type="x-tmpl-mustache/text">
-                    <button class="submit_button caps" onclick="window.open('{{photo_url_abs}}')">Getting Here (PDF)</button>    
+                    <button class="submit_btn caps" onclick="window.open('{{photo_url_abs}}')">Getting Here (PDF)</button>    
                 </script>
             </div>
         </div>
