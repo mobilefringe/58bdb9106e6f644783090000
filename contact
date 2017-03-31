@@ -55,7 +55,7 @@
                         <textarea class="contest_info" id="comments" rows="8" required data-validation="required" tabindex="5"></textarea>
                     </div>
                 </div>
-                <div class="line_break">&nbsp;</div>
+                <!--<div class="line_break">&nbsp;</div>-->
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
