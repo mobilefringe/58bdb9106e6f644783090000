@@ -46,10 +46,15 @@
                     </div>
                     <div class="col-sm-6">  
                         <label for="zip_code">ZIP Code</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" tabindex="5"/>
+                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" tabindex="4"/>
                     </div>
                 </div>
-                
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label for="email">Comments *</label>
+                        <textarea class="contest_info" id="comments" required data-validation="required" tabindex="5"></textarea>
+                    </div>
+                </div>
                 
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
