@@ -30,7 +30,7 @@
             <h3 class="hours_header">Become a NORTHSIDER</h3>
             <div class="margin_20"></div>
             <img id="page_image" class="margin_20" alt="Newsletter Image" src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488837401000/banner.png"/>
-            <div class="contest_description margin_20">Become a NORTHSIDER today!</div>
+            <div class="contest_description margin_20">Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</div>
             <form id="contest_form">
                 <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
                 <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
