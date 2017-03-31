@@ -55,7 +55,6 @@
                         <textarea class="contest_info" id="comments" rows="8" required data-validation="required" tabindex="5"></textarea>
                     </div>
                 </div>
-                <!--<div class="line_break">&nbsp;</div>-->
                 <div class="row">
                     <div class="col-sm-12">    
                         <label>
@@ -70,14 +69,6 @@
                         <button class="submit_btn caps" tabindex="7">Send</button>
                     </div>
                     <div class="col-sm-6"></div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="margin_40"></div>
-                        <p class="hidden_now" id="succes_msg">Thank you! Your entry has been received.</p>
-                    </div>
-                    <div class="col-sm-6">
                 </div>
             </form>
             <div class="margin_20"></div>
