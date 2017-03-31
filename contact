@@ -35,7 +35,7 @@
             <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                 <span class="sr-only">Error:</span>
-                There was an error when trying to submit your request. Please ensure you have entered a valid email address and subject and please try again.
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and the required fields. Please try again.
             </div>
             <form id="contact_form">
                 <p>We'd love to hear from you! Send us your comments by completing the contact form below.</p>
