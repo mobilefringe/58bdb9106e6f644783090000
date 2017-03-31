@@ -27,8 +27,8 @@
         </div>
         <div class="col-md-9 contact_page">
             <h3 class="hours_header" id="mm_page_title">Contact Us</h3>
-            <p></p>
             <form id="contest_form">
+                <p>We'd love to hear from you! Send us your comments by completing the contact form below.</p>
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="first_name">First Name *</label>
