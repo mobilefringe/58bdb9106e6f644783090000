@@ -49,7 +49,6 @@
             var prefix = get_prefix();
             var pages_json = prefix + '/pages/northside-directions.json';
             $.getJSON(pages_json).done(function(data) {
-                // $('#mm_page_title').html(data.title);
                 $('#mm_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
@@ -58,7 +57,7 @@
             }); 
             
             var repo = getRepoDetailsByName("Directions").images;
-            renderMapPDF("#download_button_container", "#download_button_template", repo);
+            renderRepo("#download_button_container", "#download_button_template", repo);
             
             show_content();
         }
