@@ -64,11 +64,6 @@
                             <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="8"/> 
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
-                        <div class="line_break">&nbsp;</div>
-                        <label class="contest_rules">
-                            <input id="agree_terms" type="checkbox" name="contest[contest_rules]" required data-validation="required" tabindex="9"/> 
-                            I have read and understand the <a href="/pages/northside-contest-rules" target="_blank">Contest Rules and Regulations</a> as well as the <a href="/pages/northside-privacy-policy" target="_blank">Privacy Policy</a>. 
-                        </label>
                     </div>
                 </div>
                 <div class="row">
