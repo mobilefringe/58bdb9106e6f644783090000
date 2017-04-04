@@ -79,7 +79,7 @@
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos.push(val);
                 }
-                var store_details = getStoreDetailsBySlug(val.store_detail_btn);
+                var store_details = getStoreDetailsBySlug(promotions.store_detail_btn);
                 console.log(store_details)
             });
             if(published_promos.length > 0){
