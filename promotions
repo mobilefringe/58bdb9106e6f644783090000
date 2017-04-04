@@ -79,9 +79,6 @@
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos.push(val);
                 }
-                var store_slug = val.store_detail_btn;
-                var store_details = getStoreDetailsBySlug(store_slug);
-                console.log(store_details)
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
