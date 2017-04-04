@@ -24,7 +24,9 @@
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
 			            <li class="show_cat_stores" data-id="000" name="All">All</li>
 			            <li class="show_cat_stores" data-id="5034" name="Dining & Entertainment">Dining & Entertainment</li>
+				        <li class="show_cat_stores" data-id="5038" name="Hotel">Hotel</li>
 				        <li class="show_cat_stores" data-id="5035" name="Late Night">Late Night</li>
+				        <li class="show_cat_stores" data-id="5032" name="Rock Rose">Rock Rose</li>
 				        <li class="show_cat_stores" data-id="5039" name="Specialty Foods">Specialty Foods</li>
                     </ul>
                 </div>
