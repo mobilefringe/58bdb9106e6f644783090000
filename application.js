@@ -159,8 +159,6 @@ function renderStoreDetails(container, template, collection, slug){
             val.show = "display:none";
         }
         
-        val.category = val.categories[0];
-        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
