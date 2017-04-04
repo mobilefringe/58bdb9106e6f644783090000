@@ -329,7 +329,10 @@ function renderPromotions(container, template, collection){
         }
         
         var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery[0];
-        val.image_url = "//mallmaverick.com" + store_front_image;
+        if(store_front_image != undefined) {
+            val.image_url = "//mallmaverick.com" + store_front_image;
+        }
+        
         console.log(val.image_url)
         // if(val.image_url.indexOf('missing.png') > 0){
         //     val.image_url  = store_details.store_front_url_abs;
