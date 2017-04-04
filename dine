@@ -103,8 +103,7 @@
             var hotel = getStoresListByCategoryID(5038);
             var rock_rose = getStoresListByCategoryID(5032);
             var specialty_foods = getStoresListByCategoryID(5039);
-            
-            
+
             var dine_list = dining.concat(late_night, hotel, rock_rose, specialty_foods).sortBy(function(o){ return o.name});
             var sorted_list = _.uniq(dine_list, function(o){ return o.name; });
             console.log(sorted_list)
