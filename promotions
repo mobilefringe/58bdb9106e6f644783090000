@@ -80,7 +80,7 @@
                     published_promos.push(val);
                 }
                 var store_details = getStoreDetailsBySlug(promotions.store_detail_btn);
-                console.log(0.store_detail_btn)
+                console.log(o.store_detail_btn)
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
