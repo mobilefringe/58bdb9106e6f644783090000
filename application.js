@@ -482,17 +482,17 @@ function renderEvents(container, template, collection){
             val.image_url = default_image.image_url;
         }
         
-        if(val.event_image_url_abs.indexOf('missing.png') < 0){
-            val.logo = val.event_image_url_abs;
-        }
-        else{
-            if(val.image_url.indexOf('missing.png') < 0){
-                val.logo = val.image_url;
-            }
-            else{
-                val.logo = default_image.image_url;
-            }
-        }
+        // if(val.event_image_url_abs.indexOf('missing.png') < 0){
+        //     val.logo = val.event_image_url_abs;
+        // }
+        // else{
+        //     if(val.image_url.indexOf('missing.png') < 0){
+        //         val.logo = val.image_url;
+        //     }
+        //     else{
+        //         val.logo = default_image.image_url;
+        //     }
+        // }
         
         if (val.name.length > 30){
             val.name_short = val.name.substring(0,30) + "...";
