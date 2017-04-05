@@ -87,7 +87,7 @@
                 $('#no_promos').show()
             }
             
-            var cat_list = getStoreCategories();
+            var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
             renderGeneral("#category_select", "#category_select_template", cat_list);
                 
