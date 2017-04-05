@@ -79,6 +79,11 @@
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos.push(val);
                 }
+                
+                var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
+                console.log(store_cetegories);
+                // cat_list.push(store_categories);
+                // console.log(cat_list)
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
@@ -87,9 +92,9 @@
                 $('#no_promos').show()
             }
             
-            var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
-            renderGeneral("#category_select", "#category_select_template", cat_list);
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
+            // var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
+            // renderGeneral("#category_select", "#category_select_template", cat_list);
+            // $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
                 
             show_content();
             store_search();
