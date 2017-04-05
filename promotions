@@ -86,6 +86,7 @@
                 $.each(cat_list, function(key, val){
                     var cat_name = getCategoryDetails(val);
                     console.log(cat_name);
+                });
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
