@@ -89,7 +89,7 @@
             
             var cat_list = getStoreCategories();
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
-            renderSimple("#category_select", "#category_select_template", cat_list);
+            renderGenerals("#category_select", "#category_select_template", cat_list);
                 
             show_content();
             store_search();
