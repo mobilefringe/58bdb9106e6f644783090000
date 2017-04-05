@@ -85,7 +85,7 @@
                 cat_list.push(store_categories);
                 $.each(cat_list, function(key, val){
                     var cat_details = getCategoryDetails(val);
-                    var cat_name = cat_deatils.name;
+                    var cat_name = cat_details.name;
                     cat_names.push(cat_name);
                     console.log(cat_names);
                 });
