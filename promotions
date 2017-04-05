@@ -81,14 +81,8 @@
                     published_promos.push(val);
                 }
                 
-                var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                cat_list.push(store_categories);
-                $.each(cat_list, function(key, val){
-                    var cat_details = getCategoryDetails(val);
-                    var cat_name = cat_details.name;
-                    cat_names.push(cat_name);
-                    console.log(cat_names);
-                });
+                // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
+                // cat_list.push(store_categories);
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
@@ -97,8 +91,8 @@
                 $('#no_promos').show()
             }
             
-            // var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
-            renderGeneral("#category_select", "#category_select_template", cat_list, cat_names);
+            var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
+            renderGeneral("#category_select", "#category_select_template", cat_list);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
                 
             show_content();
