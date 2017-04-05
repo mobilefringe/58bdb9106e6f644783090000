@@ -42,27 +42,27 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="first_name">First Name *</label>
-                        <input class="contest_info" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                        <input class="contest_info" id="first_name" name="first_name" type="text" required data-validation="required" tabindex="1"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="last_name">Last Name *</label>
-                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                        <input class="contest_info" id="last_name" name="last_name" type="text" required data-validation="required" tabindex="2"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="email">Email *</label>
-                        <input class="contest_info" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                        <input class="contest_info" id="email" name="email" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
                     </div>
                     <div class="col-sm-6">  
                         <label for="zip_code">ZIP Code</label>
-                        <input class="contest_info" id="zip_code" name="contest[zip_code]" type="text" tabindex="4"/>
+                        <input class="contest_info" id="zip_code" name="zip_code" type="text" tabindex="4"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <label for="email">Comments *</label>
-                        <textarea class="contest_info" id="comments" rows="8" required data-validation="required" tabindex="5"></textarea>
+                        <textarea class="contest_info" id="comments" name="comments" rows="8" required data-validation="required" tabindex="5"></textarea>
                     </div>
                 </div>
                 <div class="row">
