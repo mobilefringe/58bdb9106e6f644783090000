@@ -82,6 +82,7 @@
                 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
                 cat_list.push(store_categories);
+                console.log(cat_list)
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
