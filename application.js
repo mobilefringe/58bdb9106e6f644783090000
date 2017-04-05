@@ -348,7 +348,8 @@ function renderPromotions(container, template, collection){
             val.name_short = val.name;
         }
         
-        val.cat_list = val.categories.join(',');
+        var store_categories = getStoreDetailsBySlug(val.store_details_btn).categories;
+        val.cat_list = store_categories.join(',');
         
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
