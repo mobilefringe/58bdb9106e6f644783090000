@@ -87,9 +87,9 @@
                 $('#no_promos').show()
             }
             
-            // var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
-            // renderGeneral("#category_select", "#category_select_template", cat_list);
-            // $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
+            var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
+            renderGeneral("#category_select", "#category_select_template", cat_list);
+            $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
                 
             show_content();
             store_search();
