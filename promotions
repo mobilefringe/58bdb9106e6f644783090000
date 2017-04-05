@@ -73,6 +73,7 @@
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
             var published_promos = [];
             var cat_list = [];
+            var cat_names = [];
             $.each(promotions, function(key, val){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
@@ -82,10 +83,11 @@
                 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
                 cat_list.push(store_categories);
-                console.log(cat_list)
                 $.each(cat_list, function(key, val){
-                    var cat_name = getCategoryDetails(val);
-                    console.log(cat_name);
+                    var cat_details = getCategoryDetails(val);
+                    var cat_name = cat_deatils.name;
+                    cat_names.push(cat_name);
+                    console.log(cat_names);
                 });
             });
             if(published_promos.length > 0){
