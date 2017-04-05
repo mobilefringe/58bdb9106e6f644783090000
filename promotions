@@ -80,7 +80,7 @@
                     published_promos.push(val);
                 }
                 
-                var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
+                var store_categories = getStoreDetailsByID(val.promotionable_id).categories[];
                 cat_list.push(store_categories);
                 console.log(cat_list)
             });
