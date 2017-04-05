@@ -81,7 +81,6 @@
                 }
                 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                console.log(store_categories);
                 cat_list.push(store_categories);
                 console.log(cat_list)
             });
