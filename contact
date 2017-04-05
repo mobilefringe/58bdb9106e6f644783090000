@@ -118,7 +118,7 @@
                     form_data:values},
                     success: function(data, textStatus, jqXHR) {
                         $('#send_contact_success').fadeIn();
-                        $('#contact_form').find("input[type=text], textarea").val("");
+                        $('#contact_form').find("input[type=text], input[type=email], textarea").val("");
                     },
                     error: function (jqXHR, textStatus, errorThrown) {
                         $('#send_contact_error').fadeIn();
