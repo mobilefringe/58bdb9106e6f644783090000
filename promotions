@@ -91,11 +91,13 @@
             else{
                 $('#no_promos').show()
             }
+            var category_info = [];
             $.each(cat_list, function(key, val){
-                var category_info = getCategoryDetails(val);
-                console.log(category_info);
-                // renderGeneral("#category_select", "#category_select_template", category_info);
+                var category = getCategoryDetails(val);
+                category_info.push(category);
             });
+            console.log(category_info);
+            renderGeneral("#category_select", "#category_select_template", category_info);
             // var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
             // renderGeneral("#category_select", "#category_select_template", cat_list);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
