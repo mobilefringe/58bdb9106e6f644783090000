@@ -83,9 +83,9 @@
                 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 
-                // val.cat_list = store_categories.join(',');
+                var cat_list = store_categories.join(',');
                 // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                cat_list.concat(store_categories);
+                // cat_list.concat(store_categories);
                 console.log(cat_list);
             });
             if(published_promos.length > 0){
