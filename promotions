@@ -81,12 +81,12 @@
                     published_promos.push(val);
                 }
                 
-                var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
+                var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
                 
-                var promo_categories = store_categories.join(',');
-                // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                cat_list.concat(promo_categories);
-                console.log(cat_list);
+                // var promo_categories = store_categories.join(',');
+                // // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
+                // cat_list.push(promo_categories);
+                console.log(store_categories);
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
