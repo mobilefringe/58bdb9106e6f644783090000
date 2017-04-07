@@ -82,9 +82,6 @@
                 }
                 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                
-                // var promo_categories = store_categories.join(',');
-                // // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
                 cat_list.push(store_categories);
                 console.log(cat_list);
             });
@@ -94,7 +91,10 @@
             else{
                 $('#no_promos').show()
             }
-            
+            $.each(cat_list, function(key, val){
+                var category = getCategoryDetails();
+                console.log(category);
+            });
             var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
             renderGeneral("#category_select", "#category_select_template", cat_list);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
