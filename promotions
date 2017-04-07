@@ -92,7 +92,7 @@
                 $('#no_promos').show()
             }
             $.each(cat_list, function(key, val){
-                var category = getCategoryDetails();
+                var category = getCategoryDetails(val);
                 console.log(category);
             });
             var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
