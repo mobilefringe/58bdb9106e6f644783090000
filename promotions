@@ -81,6 +81,9 @@
                     published_promos.push(val);
                 }
                 
+                var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
+                console.log(store_categories);
+                // val.cat_list = store_categories.join(',');
                 // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
                 // cat_list.push(store_categories);
             });
