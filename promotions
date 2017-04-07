@@ -93,8 +93,8 @@
             }
             $.each(cat_list, function(key, val){
                 var category_info = getCategoryDetails(val);
-                console.log(category);
-                renderGeneral("#category_select", "#category_select_template", category_info);
+                console.log(category_info);
+                // renderGeneral("#category_select", "#category_select_template", category_info);
             });
             // var cat_list = getStoreCategories().sortBy(function(o){ return o.name});
             // renderGeneral("#category_select", "#category_select_template", cat_list);
