@@ -32,16 +32,16 @@
         <div class="col-md-3 inside_page">
             <h3 class="hours_header">Site Hours</h3>
             <p>
-                Monday – Saturday<br>
+                <span class="bold">Monday – Saturday</span><br>
                 10AM to 9PM<br>
-                Sunday<br>
+                <span class="bold">Sunday</span><br>
                 12PM to 6PM<br>
                 <br>
                 *Hours may vary by tenant
             </p>
             <h3 class="hours_header">Find Us</h3>
             <p>
-                Domain NORTHSIDE<br>
+                <span class="bold">Domain NORTHSIDE</span><br>
                 11700 Domain Blvd.<br>
                 Austin, TX 78758<br>
                 <a href="tel:512-758-7937">512-758-7937</a>
