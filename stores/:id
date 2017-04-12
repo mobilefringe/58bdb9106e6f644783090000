@@ -183,6 +183,7 @@
                         regions[val.svgmap_region] = obj
                     }
                 });
+                console.log(regions)
                 load_store_map(regions, store_details);
             }
         }
