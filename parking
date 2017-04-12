@@ -31,16 +31,15 @@
         </div>
         <div class="col-md-3 inside_pages">
             <h3 class="hours_header">Site Hours</h3>
+            <p>
+                Monday – Saturday<br>
+                10AM to 9PM<br>
+                Sunday<br>
+                12PM to 6PM<br>
+                *Hours may vary by tenant
+            </p>
 
-Monday – Saturday
 
-10AM to 9PM
-
-Sunday
-
-12PM to 6PM
-
-Hours may vary by tenant
 
  
 <h3 class="hours_header">Find Us</h3>
