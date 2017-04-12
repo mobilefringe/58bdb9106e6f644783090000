@@ -39,20 +39,13 @@
                 <br>
                 *Hours may vary by tenant
             </p>
-
-
-
- 
-<h3 class="hours_header">Find Us</h3>
-FIND US
-
-Domain NORTHSIDE
-
-11700 Domain Blvd.
-
-Austin, TX 78758
-
-512-758-7937
+            <h3 class="hours_header">Find Us</h3>
+            <p>
+                Domain NORTHSIDE<br>
+                11700 Domain Blvd.<br>
+                Austin, TX 78758<br>
+                512-758-7937<br>
+            </p>
         </div>
     </div>
 </div>
