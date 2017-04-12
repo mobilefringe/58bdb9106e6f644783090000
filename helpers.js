@@ -270,7 +270,7 @@ function load_map(reg, store_details){
     drop_pin(store_details.svgmap_region);
 }
 
-function load_store_map(regions, store_details){
+function load_store_map(reg, store_details){
     this_region = {};
     this_region = store_details.svgmap_region;
     map = $('#mapsvg_store_detail').mapSvg({
