@@ -25,9 +25,28 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-6 inside_page">
             <h3 class="hours_header" id="mm_page_title">New to NORTHSIDE?</h3>
             <div id="mm_page_content"></div>
+        </div>
+        <div class="col-md-3 inside_page">
+            <h3 class="hours_header">Site Hours</h3>
+            <p>
+                Monday – Saturday<br>
+                10AM to 9PM<br>
+                Sunday<br>
+                12PM to 6PM<br>
+                <br>
+                *Hours may vary by tenant
+            </p>
+            <h3 class="hours_header">Find Us</h3>
+            <p>
+                Domain NORTHSIDE<br>
+                11700 Domain Blvd.<br>
+                Austin, TX 78758<br>
+                512-758-7937<br>
+            </p>
+            <h3 class="next_btn"><a href="/directions">Get Directions <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1492018455000/right_chevron.png" class="" alt=""></a></h3>
         </div>
     </div>
 </div>
