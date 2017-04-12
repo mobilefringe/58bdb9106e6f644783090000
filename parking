@@ -25,11 +25,11 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-6 inside_pages">
+        <div class="col-md-6 inside_page">
             <h3 class="hours_header" id="mm_page_title">Parking</h3>
             <div id="mm_page_content"></div>
         </div>
-        <div class="col-md-3 inside_pages">
+        <div class="col-md-3 inside_page">
             <h3 class="hours_header">Site Hours</h3>
             <p>
                 Monday – Saturday<br>
