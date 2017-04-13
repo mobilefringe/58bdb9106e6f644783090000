@@ -133,7 +133,7 @@
                 console.log(cat_ids)
                 if (cat_ids.length > 0){
                     $.each(cat_ids, function(key, val){
-                        var categories = getCategoryDetails(cat_ids[]);
+                        var categories = getCategoryDetails(cat_ids[i]);
                         console.log(categories);
                     });
                     // renderGeneral("#store_categories_container", "#store_categories_template", store_details, slug);
