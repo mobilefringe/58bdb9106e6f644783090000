@@ -199,7 +199,7 @@
             }
         }
         
-        function renderGeneral(container, store_categories_template, collection){
+        function renderGeneral(store_categories_container, store_categories_template, collection){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(store_categories_template).html();
@@ -211,7 +211,7 @@
                 console.log(repo_rendered);
                 item_rendered.push(repo_rendered);
             });
-            $(container).html(item_rendered.join(''));
+            $(store_categories_container).html(item_rendered.join(''));
         }
 
         loadMallDataCached(renderAll); 
