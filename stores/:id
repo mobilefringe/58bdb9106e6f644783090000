@@ -135,10 +135,8 @@
                         var categories = getCategoryDetails(cat_ids[key]);
                         cat_list.push(categories);
                     });
-                    console.log(cat_list);
                     renderGeneral("#store_categories_container", "#store_categories_template", cat_list);
                 } 
-                
                 
                 var hour_ids = store_details.store_hours;
                 if (hour_ids.length > 0){
