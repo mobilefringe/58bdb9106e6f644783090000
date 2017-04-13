@@ -129,6 +129,16 @@
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
                 
+                var cat_ids = store_deatils.categories;
+                if (cat_ids.length > 0){
+                    var categories = (getCategoryDetails(cat_ids));
+                    console.log(categories)
+                    // renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
+                } 
+                // else {
+                //     $('#hours').hide();
+                // }
+                
                 var hour_ids = store_details.store_hours;
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
