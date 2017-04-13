@@ -130,6 +130,7 @@
                 renderStoreDetails("#store_categories_container", "#store_categories_template", store_details, slug);
                 
                 var cat_ids = store_details.categories;
+                console.log(cat_ids)
                 if (cat_ids.length > 0){
                     var categories = (getCategoryDetails(cat_ids));
                     console.log(categories)
