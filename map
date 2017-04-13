@@ -64,7 +64,6 @@
             regions = {};
             $.each(stores, function(key, val) {
                 var todays_hours_id = val.todays_hour;
-                console.log(todays_hours_id);
                 var hour_string = "";
                 if(todays_hours_id != null) {
                     var todays_hours = getTodaysHours(todays_hours_id);
@@ -76,7 +75,7 @@
                         hour_string = "Closed";
                     }
                 } else {
-                    $('tooltip_hours').hide();
+                    $('.tooltip_hours').hide();
                 }
                    
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
