@@ -70,7 +70,7 @@
                     if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
                         var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
                         var close_time = in_my_time_zone(moment(todays_hours.close_time), "h:mma");
-                        hour_string = "Hours Today:" + <br> open_time + " - " + close_time;
+                        hour_string = open_time + " - " + close_time;
                     } else {
                         hour_string = "Closed";
                     }
@@ -84,7 +84,7 @@
                         obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
                     }
                     else{
-                        obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>Phone: " + val.phone +"</p><p class='tooltip_hours'>" + hour_string + "</p></div></div>"
+                        obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>Phone: " + val.phone +"</p><p class='tooltip_hours'>Hours Today:<br>" + hour_string + "</p></div></div>"
                     }
                     obj["attr"] = {}
                     // obj["attr"]["href"] = "/stores/"+ val.slug
