@@ -208,7 +208,7 @@
                 val.cat_name = val.name;
                 console.log(val.cat_name);
                 var repo_rendered = Mustache.render(template_html,val);
-                
+                console.log(repo_rendered);
                 item_rendered.push(repo_rendered);
             });
             $(container).html(item_rendered.join(''));
