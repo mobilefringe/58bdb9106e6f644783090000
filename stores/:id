@@ -199,12 +199,12 @@
             }
         }
         
-        function renderGeneral(store_categories_container, store_categories_template, collection){
+        function renderGeneral(store_categories_container, store_categories_template, cat_list){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(store_categories_template).html();
             Mustache.parse(template_html); 
-            $.each( collection , function( key, val ) {
+            $.each( cat_list , function( key, val ) {
                 val.cat_name = val.name;
                 console.log(val.cat_name);
                 var repo_rendered = Mustache.render(template_html,val);
