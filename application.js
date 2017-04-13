@@ -494,7 +494,7 @@ function renderEvents(container, template, collection){
             }
         }
         else{
-            val.store_name = mall_name;
+            val.store_name = "Domain NORTHSIDE";
             val.image_url = default_image.image_url;
         }
         
