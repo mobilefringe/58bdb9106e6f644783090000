@@ -75,7 +75,7 @@
                         hour_string = "Closed";
                     }
                 } else {
-                    hour_string = "Hello!!";
+                    hour_string = "Hours Unavailable";
                 }
                    
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
