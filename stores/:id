@@ -199,10 +199,10 @@
             }
         }
         
-        function renderGeneral(container, template, collection){
+        function renderGeneral(container, store_categories_template, collection){
             var item_list = [];
             var item_rendered = [];
-            var template_html = $(template).html();
+            var template_html = $(store_categories_template).html();
             Mustache.parse(template_html); 
             $.each( collection , function( key, val ) {
                 val.cat_name = val.name;
