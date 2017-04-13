@@ -110,17 +110,10 @@
         
         function renderAll(){
             var repo = getRepoDetailsByName("Newsletter").images;
-            console.log(repo)
             renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
             
             $.validate();
-            
-            // $('#contest_form').submit(function(e){
-            //     e.preventDefault();
-            //     $('.submit_btn').prop('disabled', true);
-            //     submit_contest(slug);
-            // });
-            
+
             show_content();
         }
         
