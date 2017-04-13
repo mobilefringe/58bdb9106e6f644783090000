@@ -86,7 +86,7 @@
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-12">    
-                        <label>
+                        <label class="newsletter_agree">
                             <input id="newsletter_signup" type="checkbox" name="newsletter_agree" required data-validation="required" tabindex="8"/> 
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
