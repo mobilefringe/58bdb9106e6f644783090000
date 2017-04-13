@@ -499,12 +499,6 @@ function renderEvents(container, template, collection){
             val.image_url = val.event_image_url_abs;
         }
         
-        if(val.event_image_url_abs.indexOf('missing.png') < 0){
-            val.image_url = default_image.image_url;
-        } else {
-            val.image_url = val.event_image_url_abs;
-        }
-        
         if (val.name.length > 30){
             val.name_short = val.name.substring(0,30) + "...";
         }
