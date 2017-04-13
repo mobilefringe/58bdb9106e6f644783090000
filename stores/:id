@@ -196,8 +196,10 @@
                 load_store_map(regions, store_details);
             }
         }
-        
-        function renderGeneral(container, template, collection){
+        loadMallDataCached(renderAll); 
+    });
+    
+    function renderGeneral(container, template, collection){
             var item_list = [];
             var item_rendered = [];
             var template_html = $(template).html();
@@ -211,7 +213,4 @@
             });
             $(container).html(item_rendered.join(''));
         }
-
-        loadMallDataCached(renderAll); 
-    });
 </script>
