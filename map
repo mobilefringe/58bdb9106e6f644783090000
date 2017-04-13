@@ -80,7 +80,7 @@
                 }
                 
                 var store_phone = val.phone; 
-                if(store_phone != null && != undefined) {
+                if(store_phone != null || != undefined) {
                     phone_number = "Phone: " + store_phone;
                 } else {
                     phone_number = "";
