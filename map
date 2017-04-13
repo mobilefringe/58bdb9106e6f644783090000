@@ -79,7 +79,7 @@
                     hour_string = "";
                 }
                 
-                var store_phone = val.   
+                // var store_phone = val.   
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
                     obj = {};
                     if(val.store_front_url_abs.indexOf('missing.png') > -1){
