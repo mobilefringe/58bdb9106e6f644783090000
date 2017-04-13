@@ -136,7 +136,7 @@
                         cat_list.push(categories);
                     });
                     console.log(cat_list);
-                    renderGeneral("#store_categories_container", "#store_categories_template", cat_list);
+                    renderStoreDetails("#store_categories_container", "#store_categories_template", cat_list);
                 } 
                 
                 
