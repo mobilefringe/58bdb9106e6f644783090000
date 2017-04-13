@@ -139,7 +139,7 @@
                 
                 
                 var hour_ids = store_details.store_hours;
-                console.log(hours_ids)
+                console.log(hour_ids)
                 if (hour_ids.length > 0){
                     var hours = (getHoursForIds(hour_ids));
                     console.log(hours)
