@@ -52,7 +52,7 @@
                 <h3 class="store_details_title caps center">Categories</h3> 
                 <div id="store_categories_container">
                     <script id="store_categories_template" type="x-tmpl-mustache/text">
-                        <h3 class="store_details_categories center">{{name}}</h3>
+                        <h3 class="store_details_categories center">{{cat_name}}</h3>
                     </script>
                 </div>
             </div>
@@ -206,6 +206,7 @@
             Mustache.parse(template_html); 
             $.each( collection , function( key, val ) {
                 console.log(collection)
+                val.cat_name = val.name;
                 var repo_rendered = Mustache.render(template_html,val);
                 
                 item_rendered.push(repo_rendered);
