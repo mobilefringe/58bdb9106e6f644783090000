@@ -74,6 +74,8 @@
                     } else {
                         hour_string = "Closed";
                     }
+                } else {
+                    $('tooltip_hours').hide();
                 }
                    
                 if(val.svgmap_region != null && typeof(val.svgmap_region) != 'undefined'){
