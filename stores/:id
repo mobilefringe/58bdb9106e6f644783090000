@@ -135,6 +135,8 @@
                         cat_list.push(categories);
                     });
                     renderGeneral("#store_categories_container", "#store_categories_template", cat_list);
+                } else {
+                    $('#categories').hide();
                 } 
                 
                 var hour_ids = store_details.store_hours;
