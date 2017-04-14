@@ -496,6 +496,7 @@ function renderEvents(container, template, collection){
         else{
             val.store_name = "Domain NORTHSIDE";
             val.image_url = val.event_image_url_abs;
+            val.logo  = default_image.image_url;
         }
         
         if (val.name.length > 30){
