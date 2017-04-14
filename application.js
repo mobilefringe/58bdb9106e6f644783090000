@@ -504,12 +504,11 @@ function renderEvents(container, template, collection){
         
         if(val.event_image_url_abs.indexOf('missing.png') < 0){
             val.image_url = default_image.image_url;
-        } 
-        // else {
-        //     if(val.image_url.indexOf('missing.png') < 0){
-        //         val.image_url = default_image.image_url;
-        //     }
-        // }
+        } else {
+            if(val.image_url.indexOf('missing.png') < 0){
+                val.image_url = default_image.image_url;
+            }
+        }
         
         
         if (val.name.length > 30){
