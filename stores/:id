@@ -129,11 +129,11 @@
                 renderStoreDetails("#store_name_mobile_container", "#store_name_mobile_template", store_details, slug);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 
-                // if () {
-                //     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
-                // } else {
-                //     $("#store_phone").hide();
-                // }
+                if(val.phone != undefined) {
+                    renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
+                } else {
+                    $("#store_phone").hide();
+                }
                 
                 var cat_ids = store_details.categories;
                 var cat_list = [];
