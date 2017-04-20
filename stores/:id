@@ -129,7 +129,7 @@
                 renderStoreDetails("#store_name_mobile_container", "#store_name_mobile_template", store_details, slug);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 
-                if(val.phone != undefined) {
+                if(store_details.phone != undefined) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 } else {
                     $("#store_phone").hide();
