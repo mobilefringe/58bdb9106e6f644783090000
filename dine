@@ -96,7 +96,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var coming_soon = getStoresListByCategoryID();
+            var coming_soon = getStoresListByCategoryID(5033);
             var dining = getStoresListByCategoryID(5034);
             var late_night = getStoresListByCategoryID(5035);
             var specialty_foods = getStoresListByCategoryID(5039);
