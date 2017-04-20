@@ -131,7 +131,7 @@
                 
                 var store_phone = store_details.phone;
                 console.log(store_phone);
-                if(store_phone != undefined || store_phone != "") {
+                if(store_phone.length > 0) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 } else {
                     $("#store_phone").hide();
