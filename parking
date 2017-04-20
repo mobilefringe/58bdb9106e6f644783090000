@@ -53,6 +53,16 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            var contact_json = prefix + '/pages/northside-contact-information.json';
+            $.getJSON(contact_json).done(function(data) {
+                $('#mm_page_contact').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
+            
             show_content();
         }
         loadMallDataCached(renderAll); 
