@@ -29,7 +29,7 @@
             <h3 class="hours_header" id="mm_page_title">New to NORTHSIDE?</h3>
             <div id="mm_page_content"></div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 inside_page">
             <div class="margin_20"></div>
             <div id="mm_page_contact"></div>    
         </div>
