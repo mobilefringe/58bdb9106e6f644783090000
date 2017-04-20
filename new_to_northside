@@ -29,23 +29,9 @@
             <h3 class="hours_header" id="mm_page_title">New to NORTHSIDE?</h3>
             <div id="mm_page_content"></div>
         </div>
-        <div class="col-md-3 inside_page">
-            <h3 class="hours_header">Site Hours</h3>
-            <p>
-                <span class="bold">Monday – Saturday</span><br>
-                10AM to 9PM<br>
-                <span class="bold">Sunday</span><br>
-                12PM to 6PM<br>
-                <span class="italic">*Hours may vary by tenant</span>
-            </p>
-            <h3 class="hours_header">Find Us</h3>
-            <p>
-                <span class="bold">Domain NORTHSIDE</span><br>
-                11700 Domain Blvd.<br>
-                Austin, TX 78758<br>
-                <a href="tel:512-758-7937">512-758-7937</a>
-            </p>
-            <h3 class="next_btn"><a href="/directions">Get Directions <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1492018455000/right_chevron.png" class="" alt=""></a></h3>
+        <div class="col-md-3">
+            <div class="margin_20"></div>
+            <div id="mm_page_contact"></div>    
         </div>
     </div>
 </div>
@@ -62,6 +48,15 @@
             $.getJSON(pages_json).done(function(data) {
                 // $('#mm_page_title').html(data.title);
                 $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            var contact_json = prefix + '/pages/northside-contact-information.json';
+            $.getJSON(contact_json).done(function(data) {
+                $('#mm_page_contact').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
