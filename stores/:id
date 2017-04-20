@@ -130,6 +130,7 @@
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 
                 var store_phone = store_details.phone;
+                console.log(store_phone);
                 if(store_phone != undefined || store_phone != "") {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 } else {
