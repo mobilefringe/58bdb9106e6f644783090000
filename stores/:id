@@ -27,7 +27,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div id="store_phone" class="hidden_now">
+            <div id="store_phone">
                 <h3 class="store_details_title caps center">Contact</h3>
                 <div id="store_phone_container">
                     <script id="store_phone_template" type="x-tmpl-mustache/text">
