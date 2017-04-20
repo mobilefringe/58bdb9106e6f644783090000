@@ -27,11 +27,13 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <h3 class="store_details_title caps center">Contact</h3>
-            <div id="store_phone_container">
-                <script id="store_phone_template" type="x-tmpl-mustache/text">
-                    <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p></a>
-                </script>
+            <div id="store_phone">
+                <h3 class="store_details_title caps center">Contact</h3>
+                <div id="store_phone_container">
+                    <script id="store_phone_template" type="x-tmpl-mustache/text">
+                        <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p></a>
+                    </script>
+                </div>
             </div>
             <div id="hours">
                 <h3 class="store_details_title caps center">Hours</h3> 
