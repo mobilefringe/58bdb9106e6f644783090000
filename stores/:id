@@ -27,7 +27,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div id="store_phone">
+            <div id="store_phone" class="hidden_now">
                 <h3 class="store_details_title caps center">Contact</h3>
                 <div id="store_phone_container">
                     <script id="store_phone_template" type="x-tmpl-mustache/text">
@@ -129,7 +129,8 @@
                 renderStoreDetails("#store_name_mobile_container", "#store_name_mobile_template", store_details, slug);
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 
-                if(store_details.phone != undefined || store_details.phone != "") {
+                var store_phone = store_details.phone;
+                if(store_phone != undefined || store_phone != "") {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                 } else {
                     $("#store_phone").hide();
