@@ -93,6 +93,7 @@
                     else{
                         obj["tooltip"] = "<div class='tooltip_div'><div class='tooltip_image'><img src='" + val.store_front_url_abs + "'></div><div class='tooltip_content'><h3 class='tooltip_store_name'>" + val.name + "</h3><hr><p class='tooltip_phone'>" + phone_number + "</p><p class='tooltip_hours'>" + hour_string + "</p></div></div>"
                     }
+                    obj["popover"] = "<p class='tooltip_name'>" + val.name + "</p> <a href='/stores/"+ val.slug + "'>View Details</a>"
                     obj["attr"] = {}
                     // obj["attr"]["href"] = "/stores/"+ val.slug
                     regions[val.svgmap_region] = obj
