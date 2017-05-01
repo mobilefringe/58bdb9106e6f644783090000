@@ -80,7 +80,7 @@
                 
                 var store_phone = val.phone; 
                 console.log(store_phone);
-                if(store_phone != null) {
+                if(store_phone != "") {
                     phone_number = "Phone: " + store_phone;
                 } else {
                     phone_number = "";
