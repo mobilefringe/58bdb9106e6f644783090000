@@ -5,7 +5,6 @@
                 <script id="promo_details_template" type="x-tmpl-mustache/text">
                     <div class="promo_details_img">
                         <img src="{{event_image_url_abs}}" class="promo_details_image" style="{{promo_image_show}}"/>
-                        
                     </div>
                     <div class="margin_20"></div>
                     <h3 class="details_header caps center">{{store_name}}</h3>
