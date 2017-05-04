@@ -465,9 +465,6 @@ function renderStoreDetailsHours(container, template, collection){
         if(val.open_full_day == true){
             val.hour_string = "Open 24 hours";
         }     
-        if(val.is_closed == false && val.open_full_day == false){
-            val.hour_string = open_time + " - " + close_time;
-        }
 
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
