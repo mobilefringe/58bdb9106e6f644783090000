@@ -461,7 +461,8 @@ function renderStoreDetailsHours(container, template, collection){
         } 
         if(val.open_full_day == true){
             val.hour_string = "Open 24 hours";
-        } else {
+        } 
+        if(val.is_closed == false && val.open_ful_day == false){
             val.hour_string = open_time + " - " + close_time;
         }
         
