@@ -456,7 +456,7 @@ function renderStoreDetailsHours(container, template, collection){
         var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
         var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
        
-        if (val.is_closed == true){
+        if(val.is_closed == true){
             val.hour_string = "Closed";
         } 
         if(val.open_full_day == true){
@@ -464,6 +464,7 @@ function renderStoreDetailsHours(container, template, collection){
         } else {
             val.hour_string = open_time + " - " + close_time;
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
