@@ -455,7 +455,10 @@ function renderStoreDetailsHours(container, template, collection){
         }
         var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
         var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
-       
+        
+        if(val.is_closed == false && val.open_full_day == false){
+            val.hour_string = open_time + " - " + close_time;
+        }       
         if(val.is_closed == true){
             val.hour_string = "Closed";
         } 
