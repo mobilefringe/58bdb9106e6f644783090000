@@ -458,7 +458,7 @@ function renderStoreDetailsHours(container, template, collection){
         
         if(val.is_closed == null || val.is_closed == false && val.open_full_day == false){
             val.hour_string = open_time + " - " + close_time;
-        // }       
+        }       
         if(val.is_closed == true){
             val.hour_string = "Closed";
         } 
