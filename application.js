@@ -456,14 +456,13 @@ function renderStoreDetailsHours(container, template, collection){
         var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
         var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
        
-        if(val.open_time == null && val.close_time == null){
-            if(val.is_closed == true){
-                val.hour_string = "Closed";
-            } 
-            if(val.open_full_day == true){
-                val.hour_string = "Open 24 hours";
-            }     
-        } else {
+        if(val.is_closed == true){
+            val.hour_string = "Closed";
+        } 
+        if(val.open_full_day == true){
+            val.hour_string = "Open 24 hours";
+        }     
+        if(val.is_closed == false && val.open_full_day == false){
             val.hour_string = open_time + " - " + close_time;
         }
         
