@@ -121,7 +121,6 @@
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             var store_details = getStoreDetailsBySlug(slug);
-            
             if(store_details === undefined){
                 window.location = "/";
             } else {
