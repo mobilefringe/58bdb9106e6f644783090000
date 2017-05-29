@@ -1538,6 +1538,9 @@ a:hover, a:focus{
 .site_searcher_div, #store_search_results {
     position: absolute;
     z-index: 9;
+    
+    background: rgba(0,0,0,0.8);
+    color: #FFF;
 }
 
 .newsletter_btn {
