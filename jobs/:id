@@ -1,0 +1,117 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-8 col-md-push-4">
+            <h3 class="back_btn"><a href="/jobs"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488986031000/left_chevron.png" class="" alt=""> Back to Careers</a></h3>
+            <div class="thick_line no_margin"></div>
+            <div id="job_details_container_2" class="promo_details_container">
+                <script id="job_details_template_2" type="x-tmpl-mustache/text">
+                    <h3 class="details_header caps">{{name}}</h3>
+                    <h3 class="details_desc promo_store_name">{{store_name}}</h3>
+                    <div class="row">
+                        <div class="mobile_margin">
+                            <div class="col-sm-8">
+                                <div class="dates_container">
+                                    <h3 class="jobs_publish_date"><i class="fa fa-calendar"></i> &nbsp;{{dates}}</h3>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="details_sharer pull-right">
+                                    <div>Share</div>
+                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
+                                        <div class="social_fb_share"></div>
+                                    </a>
+                                    <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
+                                        <div class="social_twitter_share"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details_desc">
+                        {{{rich_description}}}
+                    </div>
+                </script>
+            </div>
+            <div class="margin_20"></div>
+        </div>
+        <div class="col-md-4 col-md-pull-8">
+            <div class="row">
+                <div class="hidden-xs hidden-sm col-md-12">
+                    <div id="job_details_container">
+                        <script id="job_details_template" type="x-tmpl-mustache/text">
+                            <div class="promo_details_img">
+                                <img src="{{image_url}}" alt="Store Logo" class="details_image" />
+                            </div>
+                            <div class="margin_20"></div>
+                            <h3 class="details_header caps center">{{store_name}}</h3>
+                        </script>
+                    </div>
+                    <div id="category_container">
+                        <script id="category_template" type="x-tmpl-mustache/text">
+                            <h3 class="category_title center">{{.}}</h3>
+                        </script>
+                    </div>
+                    <div id="store_details_container">
+                        <script id="store_details_template" type="x-tmpl-mustache/text">
+                            <h3 class="store_details_title caps center">Contact</h3>
+                            <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p>
+                        </script>
+                    </div>
+                </div>
+                <div class="col-md-12">    
+                    <div id="hours" class="hidden_now">
+                        <h3 class="store_details_title caps center">Hours</h3> 
+                        <div id="reg_hours_container" class="hours_container">
+                            <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <span>{{day}}</span>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <span class="pull-right">{{hour_string}}</span>
+                                    </div>
+                                </div>
+                            </script>
+                        </div>
+                    </div>
+                    <div id="store_btn_container">
+                        <script id="store_btn_template" type="x-tmpl-mustache/text">
+                            <a href="/stores/{{slug}}"><div class="store_details_btn caps">Store Details & Location</div></a>
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            job_details = getJobDetailsBySlug(slug);
+            renderJobDetails('#job_details_container', '#job_details_template', job_details)
+            renderJobDetails('#job_details_container_2', '#job_details_template_2', job_details)
+            
+            if(job_details.jobable_type === "Store") {
+                var store_slug = job_details.store_detail_btn;
+                var store_details = getStoreDetailsBySlug(store_slug);
+                renderSimple("#store_details_container", "#store_details_template", store_details);
+                renderSimple("#store_btn_container", "#store_btn_template", store_details);
+            
+                var hour_ids = store_details.store_hours;
+                if (hour_ids != null && hour_ids != undefined && hour_ids.length > 0){
+                    var hours = (getHoursForIds(hour_ids));
+                    renderStoreDetailsHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+                    $('#hours').show();
+                }
+            }
+            
+            show_content();
+            $('#top_nav_centre_info').addClass('active_yellow')
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
