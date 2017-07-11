@@ -329,6 +329,7 @@ function renderPromotions(container, template, collection){
         }
         
         var store_front = getStoreDetailsBySlug(val.store_detail_btn);
+        console.log(store_front)
         var store_front_image = store_front.gallery;
         var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
         
