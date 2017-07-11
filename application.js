@@ -331,9 +331,9 @@ function renderPromotions(container, template, collection){
         var store_details = getStoreDetailsByID(val.promotionable_id);
         console.log(store_details)
         
-        var store_front = getStoreDetailsBySlug(val.store_detail_btn);
+        // var store_front = getStoreDetailsBySlug(val.store_detail_btn);
         
-        // var store_front_image = store_front.gallery;
+        var store_front_image = store_details.gallery;
         var store_logo = store_details.store_front_url_abs;
         
         // if(store_front_image != undefined) {
