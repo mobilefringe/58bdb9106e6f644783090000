@@ -336,12 +336,12 @@ function renderPromotions(container, template, collection){
         var store_front_image = store_details.gallery;
         var store_logo = store_details.store_front_url_abs;
         
-        // if(store_front_image != undefined) {
-        //     val.image_url = "//mallmaverick.com" + store_front_image;
-        // }
-        // if(store_front_image === undefined){
-        //     val.image_url = store_logo;
-        // }
+        if(store_front_image != undefined) {
+            val.image_url = "//mallmaverick.com" + store_front_image;
+        }
+        if(store_front_image === undefined){
+            val.image_url = store_logo;
+        }
         if(store_logo.indexOf('missing.png') > 0 || store_logo == undefined){
             val.image_url  = default_image.image_url;
         }
