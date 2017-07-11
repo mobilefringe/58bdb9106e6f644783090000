@@ -327,7 +327,7 @@ function renderPromotions(container, template, collection){
             val.store_name = mall_name;
             val.image_url = promo_default.image_url;
         }
-        
+        console.log(collection)
         var store_details = getStoreDetailsByID(val.promotionable_id);
         var store_logo = store_details.store_front_url_abs;
         if(store_logo != undefined){
