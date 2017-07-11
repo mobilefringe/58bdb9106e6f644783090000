@@ -71,24 +71,19 @@
         init(e);
         function renderAll(){
             var promotions = getPromotionsList().sortBy(function(o){ return o.end_date });
+            console.log(promotions);
             var published_promos = [];
             var cat_list = [];
             var cat_names = [];
             $.each(promotions, function(key, val){
-                try {
-                    today = moment();
-                    webDate = moment(val.show_on_web_date)
-                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                        published_promos.push(val);
-                    }
-                    console.log(val.promotionable_id);
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos.push(val);
+                }
                 
-                    var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                    cat_list.push(store_categories);
-                }
-                catch (err) {
-                    console.log(err);
-                }
+                // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
+                // cat_list.push(store_categories);
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
