@@ -318,6 +318,7 @@ function renderPromotions(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
+      try{
         if (val.promotionable_type == "Store") {
             var store_details = getStoreDetailsByID(val.promotionable_id);
             val.store_detail_btn = store_details.slug ;
@@ -328,9 +329,8 @@ function renderPromotions(container, template, collection){
             val.image_url = promo_default.image_url;
         }
         
-        var store_details = getStoreDetailsByID(val.promotionable_id);
-        // var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
-        var store_logo = store_details.store_front_url_abs;
+        var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
+        var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
         
         if(store_front_image != undefined) {
             val.image_url = "//mallmaverick.com" + store_front_image;
@@ -349,26 +349,6 @@ function renderPromotions(container, template, collection){
             val.name_short = val.name;
         }
         
-        // var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
-        // var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
-        
-        // if(store_front_image != undefined) {
-        //     val.image_url = "//mallmaverick.com" + store_front_image;
-        // }
-        // if(store_front_image === undefined){
-        //     val.image_url = store_logo;
-        // }
-        // if(store_logo.indexOf('missing.png') > 0){
-        //     val.image_url  = default_image.image_url;
-        // }
-
-        // if (val.name.length > 32){
-        //     val.name_short = val.name.substring(0,30) + "...";
-        // }
-        // else {
-        //     val.name_short = val.name;
-        // }
-        
         var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
         val.cat_list = store_categories.join(',');
         
@@ -384,6 +364,10 @@ function renderPromotions(container, template, collection){
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
+      }
+      catch(err){
+        console.log(err);
+      }
     });
     $(container).html(item_rendered.join(''));
 }
