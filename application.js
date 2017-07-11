@@ -342,9 +342,9 @@ function renderPromotions(container, template, collection){
         // if(store_front_image === undefined){
         //     val.image_url = store_logo;
         // }
-        // if(store_logo.indexOf('missing.png') > 0){
-        //     val.image_url  = default_image.image_url;
-        // }
+        if(store_logo.indexOf('missing.png') > 0 || store_logo == undefined){
+            val.image_url  = default_image.image_url;
+        }
 
         if (val.name.length > 32){
             val.name_short = val.name.substring(0,30) + "...";
