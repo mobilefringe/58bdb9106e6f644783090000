@@ -75,15 +75,20 @@
             var cat_list = [];
             var cat_names = [];
             $.each(promotions, function(key, val){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    published_promos.push(val);
-                }
-                console.log(val.promotionable_id);
+                try {
+                    today = moment();
+                    webDate = moment(val.show_on_web_date)
+                    if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                        published_promos.push(val);
+                    }
+                    console.log(val.promotionable_id);
                 
-                // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                // cat_list.push(store_categories);
+                    var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
+                    cat_list.push(store_categories);
+                }
+                catch (err) {
+                    console.log(err);
+                }
             });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
