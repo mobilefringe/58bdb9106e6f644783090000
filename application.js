@@ -337,7 +337,7 @@ function renderPromotions(container, template, collection){
         if(store_front_image == undefined){
             val.image_url = store_logo;
         }
-        if(store_logo.indexOf('missing.png') > 0){
+        if(store_logo.indexOf('missing.png') > 0 || store_logo == undefined){
             val.image_url  = default_image.image_url;
         }
 
