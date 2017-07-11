@@ -329,7 +329,7 @@ function renderPromotions(container, template, collection){
         }
         
         var store_details = getStoreDetailsByID(val.promotionable_id);
-        console.log(store_front)
+        console.log(store_details)
         
         var store_front = getStoreDetailsBySlug(val.store_detail_btn);
         
