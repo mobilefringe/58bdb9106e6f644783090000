@@ -334,7 +334,7 @@ function renderPromotions(container, template, collection){
         var store_front = getStoreDetailsBySlug(val.store_detail_btn);
         
         // var store_front_image = store_front.gallery;
-        // var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
+        var store_logo = store_details.store_front_url_abs;
         
         // if(store_front_image != undefined) {
         //     val.image_url = "//mallmaverick.com" + store_front_image;
