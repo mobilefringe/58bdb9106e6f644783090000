@@ -327,6 +327,7 @@ function renderPromotions(container, template, collection){
         else{
             val.store_name = mall_name;
             val.image_url = promo_default.image_url;
+            val.cat_list = "0000"
         }
         
         var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
