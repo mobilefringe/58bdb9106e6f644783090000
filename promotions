@@ -105,7 +105,6 @@
             $('#category_select').prepend('<li class="show_cat_stores" data-id="9999">DOMAIN NORTHSIDE</li>');
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">ALL</li>');
             
-                
             show_content();
             store_search();
             show_cat_stores();
@@ -157,9 +156,7 @@
                     val.cat_list = "9999"
                     val.image_url  = default_image.image_url;
                 }
-                
-                
-                
+
                 var show_date = moment(val.show_on_web_date);
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
