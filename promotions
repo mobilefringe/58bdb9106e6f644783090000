@@ -102,7 +102,7 @@
             console.log(category_info)
             var cat_list = _.uniq(category_info, function(o){ return o.name; });
             console.log(cat_list)
-            renderGeneral("#category_select", "#category_select_template", category_info);
+            renderGeneral("#category_select", "#category_select_template", cat_list);
             $('#category_select').prepend('<li class="show_cat_stores" data-id="9999">DOMAIN NORTHSIDE</li>');
             $('#category_select').prepend('<li class="show_cat_stores" data-id="All">ALL</li>');
             
