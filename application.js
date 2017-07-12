@@ -311,68 +311,68 @@ function renderJobDetails(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function renderPromotions(container, template, collection){
-    var mall_name = getPropertyDetails().name;
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html); 
-    $.each( collection , function( key, val ) {
-      try{
-        if (val.promotionable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.promotionable_id);
-            val.store_detail_btn = store_details.slug ;
-            val.store_name = store_details.name;
-        }
-        else{
-            val.store_name = mall_name;
-            val.image_url = promo_default.image_url;
-            val.cat_list = "0000"
-            val.image_url  = default_image.image_url;
-        }
+// function renderPromotions(container, template, collection){
+//     var mall_name = getPropertyDetails().name;
+//     var item_list = [];
+//     var item_rendered = [];
+//     var template_html = $(template).html();
+//     Mustache.parse(template_html); 
+//     $.each( collection , function( key, val ) {
+//       try{
+//         if (val.promotionable_type == "Store") {
+//             var store_details = getStoreDetailsByID(val.promotionable_id);
+//             val.store_detail_btn = store_details.slug ;
+//             val.store_name = store_details.name;
+//         }
+//         else{
+//             val.store_name = mall_name;
+//             val.image_url = promo_default.image_url;
+//             val.cat_list = "0000"
+//             val.image_url  = default_image.image_url;
+//         }
         
-        var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
-        var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
+//         var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
+//         var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
         
-        if(store_front_image != undefined) {
-            val.image_url = "//mallmaverick.com" + store_front_image;
-        }
-        if(store_front_image === undefined){
-            val.image_url = store_logo;
-        }
-        if(store_logo.indexOf('missing.png') > 0){
-            val.image_url  = default_image.image_url;
-        }
+//         if(store_front_image != undefined) {
+//             val.image_url = "//mallmaverick.com" + store_front_image;
+//         }
+//         if(store_front_image === undefined){
+//             val.image_url = store_logo;
+//         }
+//         if(store_logo.indexOf('missing.png') > 0){
+//             val.image_url  = default_image.image_url;
+//         }
 
-        if (val.name.length > 32){
-            val.name_short = val.name.substring(0,30) + "...";
-        }
-        else {
-            val.name_short = val.name;
-        }
+//         if (val.name.length > 32){
+//             val.name_short = val.name.substring(0,30) + "...";
+//         }
+//         else {
+//             val.name_short = val.name;
+//         }
         
-        var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
-        val.cat_list = store_categories.join(',');
+//         var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
+//         val.cat_list = store_categories.join(',');
         
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
-        else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-        }
+//         var show_date = moment(val.show_on_web_date);
+//         var start = moment(val.start_date).tz(getPropertyTimeZone());
+//         var end = moment(val.end_date).tz(getPropertyTimeZone());
+//         if (start.format("DMY") == end.format("DMY")){
+//             val.dates = start.format("MMM D")
+//         }
+//         else{
+//             val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+//         }
         
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
-      }
-      catch(err){
-        console.log(err);
-      }
-    });
-    $(container).html(item_rendered.join(''));
-}
+//         var rendered = Mustache.render(template_html,val);
+//         item_rendered.push(rendered);
+//       }
+//       catch(err){
+//         console.log(err);
+//       }
+//     });
+//     $(container).html(item_rendered.join(''));
+// }
 
 
 function renderPromoDetails(container, template, collection){
