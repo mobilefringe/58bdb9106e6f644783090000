@@ -102,8 +102,9 @@
                 category_info.push(category);
             });
             renderGeneral("#category_select", "#category_select_template", category_info);
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="All">All</li>');
-            $('#category_select').prepend('<li class="show_cat_stores" data-id="9999">Domain NORTHSIDE</li>');
+            $('#category_select').prepend('<li class="show_cat_stores" data-id="9999">DOMAIN NORTHSIDE</li>');
+            $('#category_select').prepend('<li class="show_cat_stores" data-id="All">ALL</li>');
+            
                 
             show_content();
             store_search();
