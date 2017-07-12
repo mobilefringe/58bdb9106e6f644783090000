@@ -89,6 +89,7 @@
                     console.log(err);
                 }
             });
+            console.log(published_promos)
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
             }
