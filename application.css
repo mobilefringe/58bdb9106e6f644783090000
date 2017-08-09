@@ -1492,7 +1492,7 @@ a:hover, a:focus{
         font-size: 14px;
         margin: 0;
         border-bottom: 1px solid #ccc;
-        color: #536c92;
+        color: $slate;
     }
     a {
         display: block;
