@@ -1487,6 +1487,7 @@ a:hover, a:focus{
         font-weight: 300;
         position: relative;
         background: #eee;
+        color: $slate;
     }
     h4 {
         font-size: 14px;
