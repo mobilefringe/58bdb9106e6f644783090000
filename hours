@@ -1,0 +1,74 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="store_list_header">Centre Information</h3>
+            <ul class="side_menu hidden_phone">
+                <li><a href="/about_us">About Us</a></li>
+                <li class="active"><a href="/hours">Operating Hours</a></li>
+                <li><a href="/getting_here">Getting Here</a></li>
+                <li><a href="/jobs">Careers</a></li>
+                <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
+                <li><a href="/leasing">Leasing & Partnerships</a></li>
+                <li><a href="/contact_us">Contact Us</a></li>
+            </ul>
+            <div class="position_relative show_phone">
+                <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Operating Hours</span> <i class="fa fa-caret-down pull-right"></i></a>
+                <ul id="side_nav" class="dropdown-menu" aria-labelledby="cat_dd">
+                    <li><a href="/about_us">About Us</a></li>
+                    <li><a href="/getting_here">Getting Here</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/non_profit_groups">Non-Profit Groups</a></li>
+                    <li><a href="/leasing">Leasing & Partnerships</a></li>
+                    <li><a href="/contact_us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/jpeg/1447713049000/img.jpg" class="full_width hidden_phone" alt="hours banner">
+            <h3 class="hours_header">REGULAR HOURS</h3>
+            <table id="reg_hours_container" class="hours_container">
+                <script id="reg_hours_template" type="x-tmpl-mustache/text">
+                    <tr>
+                        <td class="hours_left">
+                            <span>{{day}}</span>
+                            <span class="dashes"></span>
+                        </td>   
+                        <td class="hours_right">
+                            <span>{{h}}</span>
+                        </td>
+                    </tr>
+                </script>
+            </table>
+            <div class="margin_20"></div>
+            <h2 class="hours_header">HOLIDAY HOURS</h2>    
+            <table id="holiday_hours_container" class="hours_container">
+                <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                    <tr>
+                        <td class="hours_left">
+                            <span>{{holiday_name}} ({{formatted_date}})</span>
+                            <span class="dashes"></span>
+                        </td>   
+                        <td class="hours_right">
+                            {{h}}
+                        </td>
+                    </tr>
+                </script>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var hours = getPropertyRegularHours();
+            renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
+            var holiday_hours = getPropertyHolidayHours().sortBy(function(o){ return o.holiday_date });
+            renderHours('#holiday_hours_container','#holiday_hours_template', holiday_hours, 'holiday_hours');
+            show_content();
+            $('#top_nav_centre_info').addClass('active_yellow')
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
