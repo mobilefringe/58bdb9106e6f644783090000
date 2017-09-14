@@ -21,34 +21,31 @@ function renderBanner(banner_template,home_banner,banners){
     $.each( banners , function( key, val ) {
         today = new Date();
         start = new Date (val.start_date);
-       
         start.setDate(start.getDate());
-       if(val.url == "" || val.url === null){
-           val.css = "style=cursor:default;";
-           val.noLink = "return false";
-       }
-       if (start <= today){
-         if (val.end_date){
-             end = new Date (val.end_date);
-             end.setDate(end.getDate() + 1);
-             if (end >= today){
-               item_list.push(val);  
-             }
-             
-         } else {
-             item_list.push(val);
-         }
-       }
+        if(val.url == "" || val.url === null){
+            val.css = "style=cursor:default;";
+            val.noLink = "return false";
+        }
+        if (start <= today){
+            if (val.end_date){
+                end = new Date (val.end_date);
+                end.setDate(end.getDate() + 1);
+                if (end >= today){
+                    item_list.push(val);  
+                }
+            } else {
+                item_list.push(val);
+            }
+        }
     });
 
     $.each( item_list , function( key, val ) {
         var repo_rendered = Mustache.render(banner_template_html,val);
         item_rendered.push(repo_rendered);
-       
     });
     $(home_banner).html(item_rendered.join(''));
-    
 }
+
 function renderFeatureItems(container, template, collection){
     var item_list = [];
     var item_rendered = [];
@@ -112,6 +109,7 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
+        
         if(val.total_published_promos != null){
             val.promotion_exist = "display: inline";
             val.promotion_list = val.total_published_promos;
@@ -152,10 +150,9 @@ function renderStoreDetails(container, template, collection, slug){
         val.map_x_coordinate = val.x_coordinate - 19;
         val.map_y_coordinate = val.y_coordinate - 58;
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
-        if (val.website != null && val.website.length > 0){
+        if(val.website != null && val.website.length > 0){
             val.show = "display:inline-block";
-        }
-        else{
+        } else {
             val.show = "display:none";
         }
         
@@ -235,7 +232,6 @@ function renderHours(container, template, collection, type){
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-
     });
     
     $(container).show();
@@ -252,8 +248,7 @@ function renderJobs(container, template, collection){
         if(val.jobable_type == "Store"){
             val.store_name = getStoreDetailsByID(val.jobable_id).name;
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
-        }
-        else{
+        } else {
             val.store_name = mall_name;
         }
         var show_date = moment(val.show_on_web_date);
@@ -261,8 +256,7 @@ function renderJobs(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         
@@ -286,12 +280,10 @@ function renderJobDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = default_image.image_url;
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = mall_name;
             val.image_url = default_image.image_url;
         }
@@ -301,10 +293,10 @@ function renderJobDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
@@ -365,13 +357,12 @@ function renderPromotions(container, template, collection){
             
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
-        } catch(err) {
+        } catch(err){
             console.log(err);
         }
     });
     $(container).html(item_rendered.join(''));
 }
-
 
 function renderPromoDetails(container, template, collection){
     var mall_name = getPropertyDetails().name;
@@ -387,12 +378,10 @@ function renderPromoDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = default_image.image_url;
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = mall_name;
             val.image_url = default_image.image_url;
         }
@@ -406,8 +395,7 @@ function renderPromoDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         var rendered = Mustache.render(template_html,val);
@@ -456,7 +444,6 @@ function renderStoreDetailsHours(container, template, collection){
             case 6:
                 val.day = "Saturday";
                 break;
-            
         }
         var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
         var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
@@ -476,7 +463,6 @@ function renderStoreDetailsHours(container, template, collection){
     });
     $(container).html(item_rendered.join(''));
 }
-
 
 function renderEvents(container, template, collection){
     var mall_name = getPropertyDetails().name;
@@ -502,8 +488,7 @@ function renderEvents(container, template, collection){
             // if(store_logo.indexOf('missing.png') > 0){
             //     val.image_url  = default_image.image_url;
             // }
-        }
-        else{
+        } else {
             val.store_name = "Domain NORTHSIDE";
             val.image_url = val.event_image_url_abs;
             val.logo  = default_image.image_url;
@@ -514,8 +499,7 @@ function renderEvents(container, template, collection){
         
         if (val.name.length > 30){
             val.name_short = val.name.substring(0,30) + "...";
-        }
-        else {
+        } else {
             val.name_short = val.name;
         }
         
@@ -524,10 +508,10 @@ function renderEvents(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
@@ -548,12 +532,10 @@ function renderEventDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = default_image.image_url;
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = "Domain NORTHSIDE";
             val.image_url = default_image.image_url;
         }
@@ -567,10 +549,10 @@ function renderEventDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
@@ -600,6 +582,7 @@ function renderHomeHours(container, template, collection){
     });
     $(container).html(item_rendered.join(''));
 }
+
 function renderRepo(container, template, collection){
     var item_list = [];
     var item_rendered = [];
