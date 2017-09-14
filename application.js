@@ -341,8 +341,7 @@ function renderPromotions(container, template, collection){
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 val.cat_list = store_categories.join(',');
                 
-            }
-            else{
+            } else {
                 val.store_name = mall_name;
                 val.image_url = promo_default.image_url;
                 val.cat_list = "9999"
@@ -351,8 +350,7 @@ function renderPromotions(container, template, collection){
             
             if (val.name.length > 32){
                 val.name_short = val.name.substring(0,30) + "...";
-            }
-            else {
+            } else {
                 val.name_short = val.name;
             }
                 
@@ -361,15 +359,13 @@ function renderPromotions(container, template, collection){
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMM D")
-            }
-            else{
+            } else {
                 val.dates = start.format("MMM D") + " - " + end.format("MMM D");
             }
             
             var rendered = Mustache.render(template_html,val);
             item_rendered.push(rendered);
-          }
-        catch(err){
+        } catch(err) {
             console.log(err);
         }
     });
