@@ -491,4 +491,6 @@ function getAssetURL(id){
     var store_id = id
     var store_assets = "//northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
     var asset_url = "//www.mallmaverick.com" + store_assets.url;
+    console.log(asset_url)
+    // return asset_url;
 }
