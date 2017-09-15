@@ -489,8 +489,9 @@ var promo_default = {
 
 function getAssetURL(id){
     var store_id = id
-    var store_assets = "northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
-    console.log(store_assets)
+    var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+    return store_assets.url
+    console.log()
     var asset_url = "//www.mallmaverick.com" + JSON.parse(store_assets.url);
     console.log(asset_url)
     // return asset_url;
