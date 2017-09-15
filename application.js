@@ -319,6 +319,7 @@ function renderPromotions(container, template, collection){
                 // var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
                 var store_front_image = store_details.assets[0];
                 console.log(store_details)
+                console.log(store_front_image)
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(store_front_image != undefined) {
