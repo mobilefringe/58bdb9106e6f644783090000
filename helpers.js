@@ -494,7 +494,7 @@ function getAssetURL(id){
         url: store_assets,
         dataType: 'json',
         success: function(json) {
-            url = json.store_files.url;      
+            url = json.url;      
             console.log(url);
         }
     });
