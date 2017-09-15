@@ -494,15 +494,12 @@ function getAssetURL(id){
         url: store_assets,
         dataType: 'json',
         success: function(json) {
-            url = json.url;      
             console.log(json.store_files);
+            var store_files = json.store_files;
         }
     });
-    // $.each(json, function(i, v){
-    //                 var div_stores = "<div class='store_search_list'>";
-    //                 div_stores = div_stores + "<h4><a href='/stores/" + v.slug + "'>" + v.name + "</a></h4>";
-    //                 div_stores = div_stores + "</div>";
-    //                 $('#store_search_results').append(div_stores);
-    //                 $('#store_search_results').show();
-    //             });
+    $.each(store_files, function(key, val){
+        var assets_url = val.url;
+        console.log(assets_url);
+    });
 }
