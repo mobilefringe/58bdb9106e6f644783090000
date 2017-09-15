@@ -496,8 +496,9 @@ function getAssetURL(id){
         dataType: 'json',
         success: function(json) {
             store_files = json.store_files;
-            return store_files;
+            
         }
+        return store_files;
     });
     $.each(store_files, function(key, val){
         console.log(store_files)
