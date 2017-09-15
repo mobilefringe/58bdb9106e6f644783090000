@@ -316,10 +316,8 @@ function renderPromotions(container, template, collection){
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
-                var store_front_im3age = getStoreDetailsBySlug(val.store_detail_btn).gallery;
-                // var store_front_image = getAssetBySlug(val.store_detail_btn);
+                var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
                 console.log(store_details)
-                // console.log(store_front_image)
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(store_front_image != undefined) {
