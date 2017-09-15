@@ -490,12 +490,13 @@ var promo_default = {
 function getAssetURL(id){
     var store_id = id
     var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+    var store_files = [];
     $.ajax({
         url: store_assets,
         dataType: 'json',
         success: function(json) {
             console.log(json.store_files);
-            var store_files = json.store_files;
+            store_files = json.store_files;
         }
     });
     $.each(store_files, function(key, val){
