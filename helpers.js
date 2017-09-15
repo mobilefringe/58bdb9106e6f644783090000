@@ -492,7 +492,7 @@ function getAssetURL(id){
     var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
     $.ajax({
         url: store_assets,
-        dataType: 'jsonp',
+        dataType: 'json',
         success: function(json) {
             url = json.store_files.url;      
             console.log(url);
