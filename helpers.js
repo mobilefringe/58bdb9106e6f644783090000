@@ -495,7 +495,14 @@ function getAssetURL(id){
         dataType: 'json',
         success: function(json) {
             url = json.url;      
-            console.log(json);
+            console.log(json.store_files);
         }
     });
+    // $.each(json, function(i, v){
+    //                 var div_stores = "<div class='store_search_list'>";
+    //                 div_stores = div_stores + "<h4><a href='/stores/" + v.slug + "'>" + v.name + "</a></h4>";
+    //                 div_stores = div_stores + "</div>";
+    //                 $('#store_search_results').append(div_stores);
+    //                 $('#store_search_results').show();
+    //             });
 }
