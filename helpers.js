@@ -495,11 +495,11 @@ function getAssetURL(id){
         url: store_assets,
         dataType: 'json',
         success: function(json) {
-            console.log(json.store_files);
             store_files = json.store_files;
         }
     });
     $.each(store_files, function(key, val){
+        console.log(store_files)
         var assets_url = val.url;
         console.log(assets_url);
     });
