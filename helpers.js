@@ -495,7 +495,7 @@ function getAssetURL(id){
         dataType: 'json',
         success: function(json) {
             url = json.url;      
-            console.log(url);
+            console.log(json);
         }
     });
 }
