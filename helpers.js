@@ -493,11 +493,11 @@ function getAssetURL(id){
     var asset_url = "";
     $.getJSON(store_assets).done(function(data) {
         asset_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-        
+        return asset_url;
     }).fail(function(jqXHR) {
         if (jqXHR.status == 404) {
             $("#404_msg").fadeIn("fast");
         }
     });
-    return asset_url;
+    
 }
