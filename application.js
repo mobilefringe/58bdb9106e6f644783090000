@@ -324,18 +324,25 @@ function renderPromotions(container, template, collection){
                     } catch (err) {
                         console.log(err);
                     }
+                } else {
+                    var store_logo = store_details.store_front_url_abs;
+                    if(store_logo.indexOf('missing.png') > 0){
+                        val.image_url  = default_image.image_url;
+                    } else {
+                        val.image_url = store_logo;
+                    }
                 }
                 console.log(store_front_image);
-                var store_logo = store_details.store_front_url_abs;
+                // var store_logo = store_details.store_front_url_abs;
                 
-                if(store_front_image != null) {
-                    val.image_url = store_front_image;
-                } else {
-                    val.image_url = store_logo;
-                }
-                if(store_logo.indexOf('missing.png') > 0){
-                    val.image_url  = default_image.image_url;
-                }
+                // if(store_front_image != null) {
+                //     val.image_url = store_front_image;
+                // } else {
+                //     val.image_url = store_logo;
+                // }
+                // if(store_logo.indexOf('missing.png') > 0){
+                //     val.image_url  = default_image.image_url;
+                // }
 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 val.cat_list = store_categories.join(',');
