@@ -494,7 +494,6 @@ function getAssetURL(id){
     $.getJSON(store_assets).done(function(data) {
         var asset_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
         console.log(asset_url)
-        return asset_url;
     }).fail(function(jqXHR) {
         if (jqXHR.status == 404) {
             $("#404_msg").fadeIn("fast");
