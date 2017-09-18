@@ -322,13 +322,14 @@ function renderPromotions(container, template, collection){
                 var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
                 // if(store_details.assets != null){
                 //     try {
-                console.log(store_assets)
-                        // var request = $.ajax( store_assets, { dataType: "json" } ),
-                        //     store_assets = request.then(function( data ) {
-                        //         store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-                        //         return store_front_image_url;
+                
+                        var request = $.ajax( store_assets, { dataType: "json" } ),
+                            store_assets = request.then(function( data ) {
+                                console.log(data)
+                                store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+                                return store_front_image_url;
                                 
-                        //     });
+                            });
                         //     store_assets.done(function( data ) {
                         //         console.log(store_front_image_url) 
                         //         if(store_front_image_url != null){
