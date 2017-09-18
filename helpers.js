@@ -500,6 +500,4 @@ function getAssetURL(id){
             console.log(err)
         }
     });
-    
-    
 }
