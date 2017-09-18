@@ -323,7 +323,7 @@ function renderPromotions(container, template, collection){
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
                         var request = $.ajax( store_assets, { dataType: "json" } ),
                             store_front_image_url =  "https://www.mallmaverick.com" + store_assets.store_files[0].url;
-                        });
+                        // });
                          
                         request.done(function( data ) {
                             return store_front_image_url
