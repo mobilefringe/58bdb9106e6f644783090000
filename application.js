@@ -322,6 +322,7 @@ function renderPromotions(container, template, collection){
                     try {
                         setTimeout(function() {
                             store_front_image = getAssetURL(store_id);
+                            console.log(store_front_image);
                         }, 5000);
                     } catch (err) {
                         console.log(err);
@@ -334,7 +335,7 @@ function renderPromotions(container, template, collection){
                         val.image_url = store_logo;
                     }
                 }
-                console.log(store_front_image);
+                
                 // var store_logo = store_details.store_front_url_abs;
                 
                 // if(store_front_image != null) {
