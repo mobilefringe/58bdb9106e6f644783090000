@@ -496,8 +496,9 @@ function getAssetURL(id){
         dataType: 'json',
         async: false,
         success: function(data) {
-            store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-            return store_front_image_url
+            log(data.store_files)
+            //store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+            //return store_front_image_url
         },
         error: function (data){
             console.log(err);
