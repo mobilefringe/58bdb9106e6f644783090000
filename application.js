@@ -327,7 +327,7 @@ function renderPromotions(container, template, collection){
                         console.log(err);
                     }
                 }
-                
+                console.log(store_front_image);
                 var store_logo = store_details.store_front_url_abs;
                 
                 if(store_front_image != null) {
