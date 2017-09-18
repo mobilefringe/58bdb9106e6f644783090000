@@ -506,14 +506,4 @@ function getAssetURL(id){
     });
     
     return store_front_image_url;
-    
-    // $.getJSON(store_assets).done(function(data) {
-    //     store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-    //     console.log(store_front_image_url)
-    //     return store_front_image_url
-    // }).fail(function(jqXHR) {
-    //     if (jqXHR.status == 404) {
-    //         console.log(err)
-    //     }
-    // });
 }
