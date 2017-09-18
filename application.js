@@ -337,7 +337,7 @@ function renderPromotions(container, template, collection){
                 // }
                 // if(store_logo.indexOf('missing.png') > 0){
                 //     val.image_url  = default_image.image_url;
-                }
+                // }
 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 val.cat_list = store_categories.join(',');
