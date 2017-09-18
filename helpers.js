@@ -499,7 +499,7 @@ function getAssetURL(id){
             if(data.store_files.length > 0){
                 store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
             else{
-                
+                store_front_image_url = undefined; 
                 }
             return store_front_image_url
         },
