@@ -320,7 +320,9 @@ function renderPromotions(container, template, collection){
                 var store_front_image = "";
                 if(store_details.assets != null){
                     try {
-                        store_front_image = getAssetURL(store_id);
+                        setTimeout(function() {
+                            store_front_image = getAssetURL(store_id);
+                        }, 5000);
                     } catch (err) {
                         console.log(err);
                     }
