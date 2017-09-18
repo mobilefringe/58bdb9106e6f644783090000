@@ -313,7 +313,6 @@ function renderPromotions(container, template, collection){
         try {
             if(val.promotionable_type == "Store"){
                 var store_details = getStoreDetailsByID(val.promotionable_id);
-                console.log(store_details)
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
@@ -327,7 +326,7 @@ function renderPromotions(container, template, collection){
                             console.log(store_front_image)
                         }).fail(function(jqXHR) {
                             if (jqXHR.status == 404) {
-                                console.log("error")
+                                console.log(err)
                             }
                         });
                     } catch(err){
@@ -339,8 +338,7 @@ function renderPromotions(container, template, collection){
                 
                 if(store_front_image != null) {
                     val.image_url = store_front_image;
-                }
-                if(store_front_image === undefined){
+                } else {
                     val.image_url = store_logo;
                 }
                 if(store_logo.indexOf('missing.png') > 0){
