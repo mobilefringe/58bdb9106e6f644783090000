@@ -110,8 +110,9 @@
         
         function renderAll(){
             var repo = getRepoDetailsByName("Newsletter").images;
-            console.log(repo)
-            renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
+            if(repo != null){
+                renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
+            }
             
             $.validate();
 
