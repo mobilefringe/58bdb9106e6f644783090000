@@ -316,9 +316,7 @@ function renderPromotions(container, template, collection){
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
-                
                 if(store_details.assets != null){
-                    console.log("I have assets")
                     try {
                         var store_id = store_details.id;
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
@@ -339,7 +337,7 @@ function renderPromotions(container, template, collection){
                                             console.log(store_front_image)
                                             
                 // var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
-                var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
+                var store_logo = store_details.store_front_url_abs;
                 
                 if(store_front_image != null) {
                     val.image_url = store_front_image;
