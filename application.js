@@ -329,8 +329,8 @@ function renderPromotions(container, template, collection){
                                 console.log(store_front_image_url)
                             });
                             chained.done(function( data ) {
-                                
-                        });
+                            }  
+                        // });
                             
                         // });
                          
