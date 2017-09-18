@@ -304,6 +304,9 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
+    $.ajaxSetup({
+        async: false    
+    });
     var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
@@ -370,6 +373,9 @@ function renderPromotions(container, template, collection){
         }
     });
     $(container).html(item_rendered.join(''));
+    $.ajaxSetup({
+        async: true   
+    });
 }
 
 function renderPromoDetails(container, template, collection){
