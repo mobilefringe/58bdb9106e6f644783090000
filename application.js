@@ -330,15 +330,15 @@ function renderPromotions(container, template, collection){
                             
                         // });
                          
-                        request.done(function( data ) {
-                            return store_front_image_url
-                            console.log(store_front_image_url)
-                          // data retrieved from url2 as provided by the first request
+                        // request.done(function( data ) {
+                        //     return store_front_image_url
+                        //     console.log(store_front_image_url)
+                        //   // data retrieved from url2 as provided by the first request
                           
-                        //   if(store_front_image_url != null){
+                        // //   if(store_front_image_url != null){
                               
-                        //   }
-                        });
+                        // //   }
+                        // });
                         
                         
                         
