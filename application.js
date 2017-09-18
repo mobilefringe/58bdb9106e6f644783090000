@@ -318,6 +318,7 @@ function renderPromotions(container, template, collection){
                 
                 var store_front_image = "";
                 if(store_details.assets != null){
+                    console.log("I have assets")
                     try {
                         var store_id = store_details.id;
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
