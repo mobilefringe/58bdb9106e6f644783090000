@@ -494,7 +494,7 @@ function getAssetURL(id){
     $.ajax({
         url: store_assets,
         dataType: 'json',
-        async: true,
+        async: false,
         // data: myData,
         success: function(data) {
             store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
