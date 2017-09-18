@@ -322,8 +322,9 @@ function renderPromotions(container, template, collection){
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
                         var store_front_image_url = "";
                         $.getJSON(store_assets).done(function(data) {
-                            console.log(data)
-                            store_front_image_url =  "https://www.mallmaverick.com" + data.store_files.url;
+                            
+                            store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+                            console.log(store_front_image_url)
                             return store_front_image_url
                         }).fail(function(jqXHR) {
                             if (jqXHR.status == 404) {
@@ -336,7 +337,7 @@ function renderPromotions(container, template, collection){
                     }
                 }
                 
-                                            console.log(store_front_image)
+                                            // console.log(store_front_image)
                                             
                 // var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
                 var store_logo = store_details.store_front_url_abs;
