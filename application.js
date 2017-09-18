@@ -322,8 +322,8 @@ function renderPromotions(container, template, collection){
                     // try {
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
                         var request = $.ajax( store_assets, { dataType: "json" } ),
-                            console.log(request)
                             store_assets = request.then(function( data ) {
+                                console.log(data)
                                 store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
                                 return store_front_image_url;
                                 console.log(store_front_image_url)
