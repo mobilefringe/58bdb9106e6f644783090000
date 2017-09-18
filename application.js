@@ -324,7 +324,7 @@ function renderPromotions(container, template, collection){
                 if(store_details.assets != null){
                     try {
                         store_front_image = getAssetURL(store_id);
-                        console.log(getAssetURL(store_id))
+                        console.log(getAssetURL(store_id));
                     } catch (err) {
                         console.log(err);
                     }
