@@ -320,10 +320,10 @@ function renderPromotions(container, template, collection){
                     try {
                         var store_id = store_details.id;
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
-                        
+                        var store_front_image_url = "";
                         $.getJSON(store_assets).done(function(data) {
-                            var store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-                            return store_front_image
+                            store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+
                         }).fail(function(jqXHR) {
                             if (jqXHR.status == 404) {
                                 console.log(err)
