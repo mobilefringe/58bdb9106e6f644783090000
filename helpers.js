@@ -501,7 +501,7 @@ function getAssetURL(id){
             }
         },
         error: function (data){
-            console.log(err);
+            store_front_image_url = "";
         }
     });
     
