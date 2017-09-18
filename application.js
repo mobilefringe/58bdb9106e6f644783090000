@@ -304,9 +304,6 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
-    $.ajaxSetup({
-        async: false    
-    });
     var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
@@ -319,22 +316,13 @@ function renderPromotions(container, template, collection){
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
-                var store_id = store_details.id;
-                var store_front_image = "";
-                if(store_details.assets != null){
-                    try {
-                        store_front_image = getAssetURL(store_id);
-                        console.log(getAssetURL(store_id));
-                    } catch (err) {
-                        console.log(err);
-                    }
-                }
-
-                var store_logo = store_details.store_front_url_abs;
+                var store_front_image = getAssetURL(store_id);
+                var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
-                if(store_front_image != null) {
-                    val.image_url = store_front_image;
-                } else {
+                if(store_front_image != undefined) {
+                    val.image_url = "//mallmaverick.com" + store_front_image;
+                }
+                if(store_front_image === undefined){
                     val.image_url = store_logo;
                 }
                 if(store_logo.indexOf('missing.png') > 0){
@@ -373,9 +361,6 @@ function renderPromotions(container, template, collection){
         }
     });
     $(container).html(item_rendered.join(''));
-    $.ajaxSetup({
-        async: true   
-    });
 }
 
 function renderPromoDetails(container, template, collection){
