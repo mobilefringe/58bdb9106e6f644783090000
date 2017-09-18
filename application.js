@@ -318,9 +318,10 @@ function renderPromotions(container, template, collection){
                 
                 var store_id = store_details.id;
                 var store_front_image = "";
-                if(store_details.assets != null){
-                    try {
-                        var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+                
+                var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+                // if(store_details.assets != null){
+                //     try {
                         var request = $.ajax( store_assets, { dataType: "json" } ),
                             store_assets = request.then(function( data ) {
                                 store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
@@ -329,28 +330,29 @@ function renderPromotions(container, template, collection){
                             });
                             store_assets.done(function( data ) {
                                 console.log(store_front_image_url) 
-
+                                if(store_front_image_url != null){
                                     val.image_url = store_front_image_url;
-                                
+                                } else {
+                                    var store_logo = store_details.store_front_url_abs;
+                                    if(store_logo.indexOf('missing.png') > 0){
+                                        val.image_url  = default_image.image_url;
+                                    } else {
+                                        val.image_url = store_logo;
+                                    }    
+                                }
                         });
 
-                        
-                        
-                        
-                        
-                        // store_front_image = getAssetURL(store_id);
-                        // console.log(store_front_image);
-                    } catch (err) {
-                        console.log(err);
-                    }
-                } else {
-                    var store_logo = store_details.store_front_url_abs;
-                    if(store_logo.indexOf('missing.png') > 0){
-                        val.image_url  = default_image.image_url;
-                    } else {
-                        val.image_url = store_logo;
-                    }
-                }
+                //     } catch (err) {
+                //         console.log(err);
+                //     }
+                // } else {
+                //     var store_logo = store_details.store_front_url_abs;
+                //     if(store_logo.indexOf('missing.png') > 0){
+                //         val.image_url  = default_image.image_url;
+                //     } else {
+                //         val.image_url = store_logo;
+                //     }
+                // }
                 
                 // var store_logo = store_details.store_front_url_abs;
                 
