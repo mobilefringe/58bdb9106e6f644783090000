@@ -313,9 +313,25 @@ function renderPromotions(container, template, collection){
         try {
             if(val.promotionable_type == "Store"){
                 var store_details = getStoreDetailsByID(val.promotionable_id);
+                console.log(store_details)
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
+                if(store_details.assets != null){
+                    try {
+                        var store_id = id;
+                        var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+                        // var asset_url = "";
+                        $.getJSON(store_assets).done(function(data) {
+                            var asset_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+                            console.log(asset_url)
+                        }).fail(function(jqXHR) {
+                            if (jqXHR.status == 404) {
+                                $("#404_msg").fadeIn("fast");
+                            }
+                        });
+                    } catch()
+                }
                 var store_front_image = getStoreDetailsBySlug(val.store_detail_btn).gallery;
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
