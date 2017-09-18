@@ -324,7 +324,7 @@ function renderPromotions(container, template, collection){
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
                         $.getJSON(store_assets).done(function(data) {
                             store_front_image =  "https://www.mallmaverick.com" + data.store_files[0].url;
-
+                            return store_front_image
                         }).fail(function(jqXHR) {
                             if (jqXHR.status == 404) {
                                 console.log(err)
