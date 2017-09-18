@@ -324,10 +324,10 @@ function renderPromotions(container, template, collection){
                         $.getJSON(store_assets).done(function(data) {
                             store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
 
-                        }).fail(function(jqXHR) {
-                            if (jqXHR.status == 404) {
-                                console.log(err)
-                            }
+                        // }).fail(function(jqXHR) {
+                        //     if (jqXHR.status == 404) {
+                        //         console.log(err)
+                        //     }
                         });
                         var store_front_image = store_front_image_url;
                     } catch(err){
