@@ -492,8 +492,8 @@ function getAssetURL(id){
     var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
     var store_front_image_url = "";               
     $.getJSON(store_assets).done(function(data) {
-        
         store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+        console.log(log)
         return store_front_image_url
     }).fail(function(jqXHR) {
         if (jqXHR.status == 404) {
