@@ -316,12 +316,13 @@ function renderPromotions(container, template, collection){
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 
-                var store_front_image = "";
+                
                 if(store_details.assets != null){
                     console.log("I have assets")
                     try {
                         var store_id = store_details.id;
                         var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+                        var store_front_image = "";
                         $.getJSON(store_assets).done(function(data) {
                             store_front_image =  "https://www.mallmaverick.com" + data.store_files[0].url;
                             return store_front_image
