@@ -316,7 +316,6 @@ function renderPromotions(container, template, collection){
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 var store_front_image = getAssetURL(val.promotionable_id);
-                log(store_front_image);
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(store_front_image !== undefined) {
