@@ -329,6 +329,9 @@ function renderPromotions(container, template, collection){
                             });
                             store_assets.done(function( data ) {
                                 console.log(store_front_image_url) 
+                                if(store_front_image_url != null){
+                                    val.image_url = store_front_image_url;
+                                }
                         });
 
                         
