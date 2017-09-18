@@ -319,14 +319,15 @@ function renderPromotions(container, template, collection){
                 var store_id = store_details.id;
                 var store_front_image = "";
                 if(store_details.assets != null){
+                    console.log("I have assets")
                     try {
                         store_front_image = getAssetURL(store_id);
-                        console.log(store_front_image);
+                        
                     } catch (err) {
                         console.log(err);
                     }
                 }
-
+                
                 var store_logo = store_details.store_front_url_abs;
                 
                 if(store_front_image != null) {
