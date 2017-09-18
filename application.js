@@ -319,16 +319,30 @@ function renderPromotions(container, template, collection){
                 var store_id = store_details.id;
                 var store_front_image = "";
                 if(store_details.assets != null){
-                    try {
-                        var defer = $.Deferred();
-                        setTimeout(function() {
-                            defer.resolve();
-                            store_front_image = getAssetURL(store_id);
-                            console.log(store_front_image);
-                        }, 5000);
-                    } catch (err) {
-                        console.log(err);
-                    }
+                    // try {
+                        var store_assets = "https://northside.mallmaverick.com/api/v4/northside/stores/" + store_id + "/store_files.json"
+                        var request = $.ajax( store_assets, { dataType: "json" } ),
+                            store_front_image_url =  "https://www.mallmaverick.com" + store_assets.store_files[0].url;
+                        });
+                         
+                        request.done(function( data ) {
+                            return store_front_image_url
+                            console.log(store_front_image_url)
+                          // data retrieved from url2 as provided by the first request
+                          
+                        //   if(store_front_image_url != null){
+                              
+                        //   }
+                        });
+                        
+                        
+                        
+                        
+                        // store_front_image = getAssetURL(store_id);
+                        // console.log(store_front_image);
+                    // } catch (err) {
+                    //     console.log(err);
+                    // }
                 // } else {
                 //     var store_logo = store_details.store_front_url_abs;
                 //     if(store_logo.indexOf('missing.png') > 0){
