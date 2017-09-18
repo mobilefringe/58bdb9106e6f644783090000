@@ -340,9 +340,9 @@ function renderPromotions(container, template, collection){
                         
                         // store_front_image = getAssetURL(store_id);
                         // console.log(store_front_image);
-                    // } catch (err) {
-                    //     console.log(err);
-                    // }
+                    } catch (err) {
+                        console.log(err);
+                    }
                 } else {
                     var store_logo = store_details.store_front_url_abs;
                     if(store_logo.indexOf('missing.png') > 0){
