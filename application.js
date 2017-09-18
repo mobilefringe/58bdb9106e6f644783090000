@@ -325,17 +325,19 @@ function renderPromotions(container, template, collection){
                 
                         var request = $.ajax( store_assets, { dataType: "json" } ),
                             store_assets = request.then(function( data ) {
-                                console.log(data)
-                                if(data != null){
-                                    store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
-                                    return store_front_image_url;
-                                } else {
-                                    console.log("I need a logo")
-                                }
+                                return data
+                                // if(data != null){
+                                //     store_front_image_url =  "https://www.mallmaverick.com" + data.store_files[0].url;
+                                //     return store_front_image_url;
+                                // } else {
+                                //     console.log("I need a logo")
+                                // }
                                     
                                 
                             });
-                        //     store_assets.done(function( data ) {
+                            
+                            store_assets.done(function( data ) {
+                                console.log(data)
                         //         console.log(store_front_image_url) 
                         //         if(store_front_image_url != null){
                         //             val.image_url = store_front_image_url;
