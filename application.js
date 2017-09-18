@@ -320,7 +320,9 @@ function renderPromotions(container, template, collection){
                 var store_front_image = "";
                 if(store_details.assets != null){
                     try {
+                        var defer = $.Deferred();
                         setTimeout(function() {
+                            defer.resolve();
                             store_front_image = getAssetURL(store_id);
                             console.log(store_front_image);
                         }, 5000);
