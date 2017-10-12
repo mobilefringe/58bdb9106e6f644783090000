@@ -332,8 +332,9 @@ function renderPromotions(container, template, collection){
                 }
 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
-                val.cat_list = store_categories.join(',');
-                
+                if(store_categories != null){
+                    val.cat_list = store_categories.join(',');
+                }
             } else {
                 val.store_name = mall_name;
                 val.image_url = promo_default.image_url;
