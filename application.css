@@ -21,7 +21,8 @@
 
 @font-face {
     font-family: 'gibson_bold';
-    src: url("//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000//1488899417000/Gibson Bold.ttf") format("TrueType");
+    // src: url("//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000//1488899417000/Gibson Bold.ttf") format("TrueType");
+    src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1488899417000/Gibson Bold.ttf") format("TrueType");
     font-weight: bold;
 }
 @font-face {
