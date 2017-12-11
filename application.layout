@@ -12,6 +12,7 @@
         <meta name="keywords" content="{{meta_keywords}}">
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1">
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
         <title>{{meta_title}}</title>
         
         <script>
