@@ -52,6 +52,9 @@ function init(e){
     //         alert("Please agree to receive newsletter before continuing.")
     //     }
     // });
+    //dynamically changing copyright year
+var current_year = moment().year();
+$("#current_year").text(current_year);
 }
 
 function render_instagram(data){
