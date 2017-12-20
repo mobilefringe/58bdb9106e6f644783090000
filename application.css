@@ -1227,7 +1227,7 @@ a:hover, a:focus{
 }
 .store_details_title {
     font-size: 20px;
-    font-family: 'abril_bold';
+    font-family: 'gibson_regular';;
     color: $slate;
 }
 .store_details_phone {
@@ -1259,7 +1259,7 @@ a:hover, a:focus{
     margin-bottom: 20px;
     padding: 17px 30px;
     background: $slate;
-    font-family: 'abril_bold';
+    font-family: 'gibson_regular';;
     font-size: 20px;
     color: #fff;
     text-align: center;
@@ -1408,7 +1408,7 @@ a:hover, a:focus{
     margin-bottom: 0;
     padding: 10px;
     font-size: 14px;
-    font-family: 'abril_bold';
+    font-family: 'gibson_regular';;
     letter-spacing: 1px;
 }
 .tooltip_div {
@@ -1450,7 +1450,7 @@ a:hover, a:focus{
 .tooltip_store_name {
     padding-right: 10px;
     font-size: 20px;
-    font-family: 'abril_bold';
+    font-family: 'gibson_regular';;
     letter-spacing: 1px;
 }
 #mm_page_content{
