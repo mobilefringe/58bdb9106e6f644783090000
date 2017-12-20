@@ -1227,7 +1227,7 @@ a:hover, a:focus{
 }
 .store_details_title {
     font-size: 20px;
-    font-family: 'gibson_regular';;
+    font-family: 'gibson_bold';;
     color: $slate;
 }
 .store_details_phone {
