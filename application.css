@@ -642,7 +642,7 @@ a:hover, a:focus{
 
 .footer_explore {
     margin: 0 0 20px 0;
-    font-family: 'gibson_regular';
+    font-family: 'gibson_bold';
     font-size: 15px;
     color: #536c92;
     letter-spacing: 2px;
@@ -669,7 +669,7 @@ a:hover, a:focus{
 }
 
 .footer_main_li{
-    font-family: 'gibson_regular';
+    font-family: 'gibson_bold';
     text-transform: uppercase;
 }
 
