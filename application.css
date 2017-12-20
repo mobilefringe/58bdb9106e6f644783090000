@@ -642,7 +642,7 @@ a:hover, a:focus{
 
 .footer_explore {
     margin: 0 0 20px 0;
-    font-family: 'abril_bold', serif;
+    font-family: 'gibson_regular';
     font-size: 15px;
     color: #536c92;
     letter-spacing: 2px;
@@ -669,7 +669,7 @@ a:hover, a:focus{
 }
 
 .footer_main_li{
-    font-family: 'abril_bold', serif;
+    font-family: 'gibson_regular';
     text-transform: uppercase;
 }
 
@@ -708,7 +708,7 @@ a:hover, a:focus{
     padding-bottom: 15px;
     margin-bottom: 0;
     background: #fff;
-    font-family: 'abril_bold', serif;
+    font-family: 'gibson_regular';
 }
 
 
@@ -1626,7 +1626,7 @@ a:hover, a:focus{
         padding: 17px 30px;
         background: $slate;
         border: none;
-        font-family: 'abril_bold', serif;
+        font-family: 'gibson_regular';
         color: #fff;
     }
     #agree_terms, #newsletter_signup {
