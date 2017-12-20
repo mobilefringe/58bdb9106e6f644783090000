@@ -743,7 +743,7 @@ a:hover, a:focus{
     -ms-flex-pack: distribute;
     justify-content: space-between;
     font-size: 24px;
-    font-family: 'gibson_regular';
+    font-family: 'gibson_bold';
 }
 
 // #store_list_container {
