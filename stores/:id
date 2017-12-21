@@ -44,7 +44,7 @@
             <div id="store_website" class="hidden_now">
                 <div id="store_website_container">
                     <script id="store_website_template" type="x-tmpl-mustache/text">
-                        <a href="{{website}}" style="{{phone_show}}">
+                        <a href="{{website}}" target="_blank">
                             <div class="store_details_btn center">Website</div>
                         </a>
                     </script>
