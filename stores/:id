@@ -30,7 +30,9 @@
             <div id="store_phone" class="hidden_now">
                 <div id="store_phone_container">
                     <script id="store_phone_template" type="x-tmpl-mustache/text">
-                        <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p></a>
+                        <a href="tel:{{phone}}">
+                            <div class="store_details_btn center">{{phone}}</div>
+                        </a>
                     </script>
                 </div>
             </div>
