@@ -162,7 +162,7 @@
                 }
                 
                 var store_website = store_details.website;
-                if(store_website != null) {
+                if(store_website.length > 0) {
                     renderStoreDetails("#store_website_container", "#store_website_template", store_details, slug);
                     $("#store_website").show();
                 }
