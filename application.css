@@ -1817,10 +1817,9 @@ a:hover, a:focus{
         margin-left: 12px;
         width: 125px;
     }
-    
     #navbar .nav li {
-        text-align: center;
         font-family: 'gibson_bold';
+        text-align: center;
     }
     #navbar .nav li a{
         padding-left:0;
