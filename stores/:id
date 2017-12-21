@@ -154,7 +154,7 @@
                 if(store_email != null) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                     $("#store_email").show();
-                } else {
+                // } else {
                     
                 }
                 
