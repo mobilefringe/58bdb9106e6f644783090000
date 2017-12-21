@@ -27,21 +27,21 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <div id="store_phone">
+            <div id="store_phone" class="hidden_now">
                 <div id="store_phone_container">
                     <script id="store_phone_template" type="x-tmpl-mustache/text">
                         <a href="tel:{{phone}}" style="{{phone_show}}"><p class="store_details_phone center">{{phone}}</p></a>
                     </script>
                 </div>
             </div>
-            <div id="store_email">
+            <div id="store_email" class="hidden_now">
                 <div id="store_email_container">
                     <script id="store_email_template" type="x-tmpl-mustache/text">
                         EMAIL
                     </script>
                 </div>
             </div>
-            <div id="store_website">
+            <div id="store_website" class="hidden_now">
                 <div id="store_website_container">
                     <script id="store_website_template" type="x-tmpl-mustache/text">
                         <a href="tel:{{website}}" style="{{phone_show}}"><p class="store_details_phone center">Website</p></a>
