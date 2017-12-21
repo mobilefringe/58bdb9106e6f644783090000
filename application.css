@@ -1820,6 +1820,7 @@ a:hover, a:focus{
     
     #navbar .nav li{
         text-align:center;
+        font-family: 'gibson_bold';
         
     }
     #navbar .nav li a{
@@ -1840,6 +1841,9 @@ a:hover, a:focus{
         margin: 0;
         // padding-bottom: 20px;
         padding: 20px 0;
+    }
+    #navbar .navbar-nav .open .dropdown-menu > li {
+        font-family: 'gibson_regular';
     }
     #navbar .navbar-nav .open .dropdown-menu>li>a{
         padding: 10px 0;
