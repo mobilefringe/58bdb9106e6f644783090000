@@ -156,7 +156,7 @@
                 }
                 
                 var store_email = store_details.email;
-                if(store_email != null) {
+                if(store_email.length > 0) {
                     renderStoreDetails("#store_email_container", "#store_email_template", store_details, slug);
                     $("#store_email").show();
                 }
