@@ -145,23 +145,24 @@
                 var store_phone = store_details.phone;
                 if(store_phone.length > 0) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
+                    $("#store_phone").show();
                 } else {
                     $("#store_phone").hide();
                 }
                 
-                var store_email = store_details.email;
-                if(store_email.length > 0) {
-                    renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
-                } else {
-                    $("#store_phone").hide();
-                }
+                // var store_email = store_details.email;
+                // if(store_email.length > 0) {
+                //     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
+                // } else {
+                //     $("#store_phone").hide();
+                // }
                 
-                var store_website = store_details.email;
-                if(store_website.length > 0) {
-                    renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
-                } else {
-                    $("#store_phone").hide();
-                }
+                // var store_website = store_details.email;
+                // if(store_website.length > 0) {
+                //     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
+                // } else {
+                //     $("#store_phone").hide();
+                // }
                 
                 var cat_ids = store_details.categories;
                 var cat_list = [];
