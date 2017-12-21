@@ -44,7 +44,7 @@
             <div id="store_website" class="hidden_now">
                 <div id="store_website_container">
                     <script id="store_website_template" type="x-tmpl-mustache/text">
-                        <a href="tel:{{website}}" style="{{phone_show}}"><p class="store_details_phone center">Website</p></a>
+                        <a href="{{website}}" style="{{phone_show}}"><p class="store_details_phone center">Website</p></a>
                     </script>
                 </div>
             </div>
