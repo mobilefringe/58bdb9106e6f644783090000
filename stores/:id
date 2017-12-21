@@ -37,7 +37,9 @@
             <div id="store_email" class="hidden_now">
                 <div id="store_email_container">
                     <script id="store_email_template" type="x-tmpl-mustache/text">
-                        EMAIL
+                        <a href="mailto:{{email}}">
+                            <div class="store_details_btn center">Email Us</div>
+                        </a>
                     </script>
                 </div>
             </div>
