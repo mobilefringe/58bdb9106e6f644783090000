@@ -150,7 +150,7 @@
                 renderStoreDetails("#store_details_container", "#store_details_template", store_details, slug);
                 
                 var store_phone = store_details.phone;
-                if(store_phone != null || store_phone.length > 0) {
+                if(store_phone.length > 0 || store_phone != null) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                     $("#store_phone").show();
                 }
