@@ -146,8 +146,8 @@
                 if(store_phone.length > 0) {
                     renderStoreDetails("#store_phone_container", "#store_phone_template", store_details, slug);
                     $("#store_phone").show();
-                } else {
-                    $("#store_phone").hide();
+                // } else {
+                //     $("#store_phone").hide();
                 }
                 
                 // var store_email = store_details.email;
