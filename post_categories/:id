@@ -136,8 +136,10 @@
             show_content();
             blog_searcher();
             $("#"+slug).addClass('active_cat');
+            
+            $('#top_nav_blog').addClass('active_yellow')
         }
+        
         loadMallDataCached(renderAll); 
-		
     });
 </script>
