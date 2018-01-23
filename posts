@@ -1,35 +1,27 @@
 <style>
-    .promo_container{
-    margin-left:-24px;
-    margin-right:-24px;
-}
-
-
-.promo_one, .promo_two{
+    .post_container{
+        margin-left:-24px;
+        margin-right:-24px;
+    }
+.post_one, .post_two{
     padding: 0 24px;
     width:50%;
     float:left;
 }
 
-.promo_two{
+.post_two{
     text-align:center;
 }
 
-.promo_container:nth-child(even) .promo_one{
+.post_container:nth-child(even) .promo_one{
    float: right;
 }
 
-.promo_container:nth-child(even) .promo_two{
+.post_container:nth-child(even) .promo_two{
    text-align: center;
 }
 
-.promo_box_separator{
-    margin: 25px 24px;
-    border-bottom:1px solid #ccc;
-    border-top:0;
-}
-
-.blog_box_separator{
+.post_separator{
     margin: 28px 24px;
     margin-bottom:32px;
     border-bottom:1px solid #ccc;
@@ -174,8 +166,8 @@
             <div class="row">
                 <div id="blog_container">
                     <script id="blog_template" type="x-tmpl-mustache/text">
-                        <div class="promo_container mobile_padding">
-                            <div class="promo_one">
+                        <div class="post_container mobile_padding">
+                            <div class="post_one">
                                 <p class="blog_heading no_margin">{{published_on}}</p>
                                 <h2 class="blog_name_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
                                 <p class="blog_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
@@ -192,12 +184,12 @@
                                     </a>
                                 </p>
                             </div>
-                            <div class="promo_two">
+                            <div class="post_two">
                                 <img src="{{post_image}}" alt="blog" class="img_auto" />
                                 <p class="blog_details_tags">{{tag_list}}</p>
                             </div>
                             <div class="clearfix"></div>
-                            <hr class="blog_box_separator"></hr>
+                            <hr class="post_separator"></hr>
                         </div>
                     </script>
                 </div>
