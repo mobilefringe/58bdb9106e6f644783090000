@@ -34,10 +34,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="blog_header">
+        <div class="blog_header">
     <a href="/posts"><b>MIDTOWN</b> BLOG</a>
      <div class="blog_searcher_div" >
         <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
@@ -46,6 +43,10 @@
         </div>
     </div>
 </div>
+    </div>
+</div>
+
+
 <script>
     $(document).ready(function(e){
         init(e);
