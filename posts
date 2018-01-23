@@ -127,7 +127,7 @@
             renderPosts("#blog_container", "#blog_template", published_posts);
             renderBlogs("#blog_links_container", "#blog_links_template", blogs);
             // renderBlogs("#blog_links_container_2", "#blog_links_template_2", blogs);
-            blog_searcher();
+            northside_blog_search();
             
 
             show_content();
