@@ -68,15 +68,18 @@
         <div class="mobile_padding">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12 text-left">
+                    <!--<div class="row">-->
+                    <!--    <div class="col-md-12 text-left">-->
                             <div id="blog_links_container">
                                 <script id="blog_links_template" type="x-tmpl-mustache/text">
                                     <a href="/post_categories/{{slug}}" class="post_categories">{{name}}</a>
                                 </script>
                             </div>
-                        </div>
-                    </div>    
+                        <!--</div>-->
+                    <!--</div>    -->
+                </div>
+                <div class="col-md-6">
+                
                 </div>
             </div>
         </div>
