@@ -1,27 +1,26 @@
 <style>
-    .post_container{
-        margin-left:-24px;
-        margin-right:-24px;
-    }
+.post_container{
+    margin-left:-24px;
+    margin-right:-24px;
+}
+.post_container:nth-child(even) .promo_one {
+   float: right;
+}
+.post_container:nth-child(even) .promo_two {
+   text-align: center;
+}
 .post_one, .post_two{
     padding: 0 24px;
     width:50%;
     float:left;
 }
-
 .post_two{
     text-align:center;
 }
 .post_two img {
     max-width: 100%;
 }
-.post_container:nth-child(even) .promo_one{
-   float: right;
-}
 
-.post_container:nth-child(even) .promo_two{
-   text-align: center;
-}
 
 .post_separator{
     margin: 28px 24px;
