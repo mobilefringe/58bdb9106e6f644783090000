@@ -222,20 +222,6 @@
         </div>
     </div>
 </div>
-
-
-<!--<p class="blog_sharer share_links">-->
-<!--                                    Share-->
-<!--                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://midtownplaza.ca/posts/{{slug}}">-->
-<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_facebook.png" class="details_share_icons" alt="share fb" />-->
-<!--                                    </a>-->
-<!--                                    <a target="_blank" href="//twitter.com/share?text={{title}}&url=https://midtownplaza.ca/posts/{{slug}}">-->
-<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_twitter.png" class="details_share_icons" alt="share twitter" />-->
-<!--                                    </a>-->
-<!--                                    <a onclick="pinIt()" style="padding: 0;border: 0;background: none;cursor:pointer">-->
-<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_pinterest.png" class="details_share_icons" alt="share pinterest" />-->
-<!--                                    </a>-->
-<!--                                </p>-->
 <script>
     $(document).ready(function(e){
         init(e);
