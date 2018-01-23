@@ -136,7 +136,7 @@
             show_content();
             store_search();
             show_cat_stores();
-            $('#top_nav_promotions').addClass('active_yellow')
+            $('#top_nav_blog').addClass('active_yellow')
         }
         loadMallDataCached(renderAll); 
     });
