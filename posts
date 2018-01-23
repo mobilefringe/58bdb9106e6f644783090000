@@ -12,7 +12,7 @@
                         <div class="col-md-12 text-left">
                             <div id="blog_links_container">
                                 <script id="blog_links_template" type="x-tmpl-mustache/text">
-                                    <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
+                                    <a href="/post_categories/{{slug}}" class="post_categories">{{name}}</a>
                                 </script>
                             </div>
                         </div>
