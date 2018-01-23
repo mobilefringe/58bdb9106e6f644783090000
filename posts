@@ -9,7 +9,7 @@
 .post_container:nth-child(even) .post_two {
    text-align: center;
 }
-.post_container:last-child .post_seperator {
+.post_container:nth-child(last) .post_separator {
    display: none;
 }
 .post_one, .post_two{
