@@ -192,7 +192,8 @@
                             <div class="post_one">
                                 <h3 class="post_date">{{published_on}}</h3>
                                 <h3 class="post_title"><a href="/posts/{{slug}}">{{title}}</a></h3>
-                                <p class="post_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
+                                <p class="post_description">{{description_short}}</p> 
+                                <h3 class="post_read_more"><a href="/posts/{{slug}}">read more</a></h3>
                                 <div class="details_sharer">
                                     <div>Share</div>
                                     <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
