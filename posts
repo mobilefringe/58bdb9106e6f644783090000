@@ -3,10 +3,10 @@
     margin-left:-24px;
     margin-right:-24px;
 }
-.post_container:nth-child(even) .promo_one {
+.post_container:nth-child(even) .post_one {
    float: right;
 }
-.post_container:nth-child(even) .promo_two {
+.post_container:nth-child(even) .post_two {
    text-align: center;
 }
 .post_one, .post_two{
