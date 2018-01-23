@@ -419,8 +419,7 @@ function northside_blog_search(){
             $('#blog_results').html('');
             $('#blog_results').hide();
             $('#close_blog_search').hide();
-        }
-        else{
+        } else {
             $('#close_blog_search').show();
             $('#blog_results').html('');
             var val = $(this).val().toLowerCase();
@@ -453,6 +452,40 @@ function northside_blog_search(){
         }
     });
 }
+
+function search_blog(keyword){
+    var blogs = getBlogList();
+    var all_posts = [];
+    $.each(blogs, function(i, val){
+        if(val.posts.length > 0){
+            var b = {};
+            b.name = val.name;
+            b.posts = [];
+            $.each(val.posts, function(k, l){
+                var publish_date = new Date(l.publish_date);
+                var today = new Date();
+                if (publish_date <= today){
+                    if(l.title.toLowerCase().indexOf(keyword) >= 0 
+                    | l.body.toLowerCase().indexOf(keyword) >= 0){
+                        b.posts.push(l);
+                    }else{
+                        $.each( l.tag, function( index2, value2 ) {
+                            if(value2.toLowerCase().indexOf(keyword) >= 0){
+                                b.posts.push(l);
+                                return false;
+                            }
+                        });
+                    }
+                }
+            });
+            if(b.posts.length >0){
+                all_posts.push(b);
+            }
+        }
+    });
+    return all_posts;
+}
+
 function store_search() {
     $('#close_search_results').click(function(){
         $(this).hide();
