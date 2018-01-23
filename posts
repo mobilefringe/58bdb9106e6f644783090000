@@ -12,7 +12,9 @@
 .post_two{
     text-align:center;
 }
-
+.post_two img {
+    max-width: 100%;
+}
 .post_container:nth-child(even) .promo_one{
    float: right;
 }
