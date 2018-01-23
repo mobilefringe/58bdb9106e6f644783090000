@@ -10,7 +10,7 @@
    text-align: center;
 }
 .post_container:nth-child(last) .post_separator {
-   display: none;
+   border-bottom: none;
 }
 .post_one, .post_two{
     padding: 0 24px;
