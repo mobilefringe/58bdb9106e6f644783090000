@@ -462,7 +462,7 @@ function search_blog(keyword){
             b.name = val.name;
             b.posts = [];
             $.each(val.posts, function(k, l){
-                var publish_date = in_my_time_zone(moment(l.publish_date), "DD MM YY") 
+                var publish_date = in_my_time_zone(moment(l.publish_date), "DD/MM/YYYY") 
                 console.log(publish_date)
                 var today = new Date();
                 if (publish_date <= today){
