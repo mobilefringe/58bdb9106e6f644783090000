@@ -1,3 +1,74 @@
+<style>
+    .promo_container{
+    margin-left:-24px;
+    margin-right:-24px;
+}
+
+
+.promo_one, .promo_two{
+    padding: 0 24px;
+    width:50%;
+    float:left;
+}
+
+.promo_two{
+    text-align:center;
+}
+
+.promo_container:nth-child(even) .promo_one{
+   float: right;
+}
+
+.promo_container:nth-child(even) .promo_two{
+   text-align: center;
+}
+
+.promo_box_separator{
+    margin: 25px 24px;
+    border-bottom:1px solid #ccc;
+    border-top:0;
+}
+
+.blog_box_separator{
+    margin: 28px 24px;
+    margin-bottom:32px;
+    border-bottom:1px solid #ccc;
+    border-top:0;
+}
+
+.promo_name_header{
+    font-size: 18px;
+    color: #233a32;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-transform:uppercase;
+    font-family:museo;
+}
+
+.description{
+    font-size:16px;
+    word-wrap: break-word;
+    
+}
+
+.details_header{
+    font-size:18px;
+    margin-top:15px;
+    margin-bottom:0;
+    line-height:35px;
+    text-transform:uppercase;
+    color: #233a32;
+    font-family:museo;
+}
+.blog_name_header{
+    text-transform:uppercase;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:0;
+    font-family:museo;
+}
+</style>
 <div class="promotions_header">
     <div class="site_container mobile_padding">
         <div class="row">
