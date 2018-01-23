@@ -68,6 +68,10 @@
     font-weight: 400;
     font-size: 20px;
 }
+.post_read_more img {
+    margin-bottom: 3px;
+    padding-left: 15px;
+}
 /*.details_header{*/
 /*    font-size:18px;*/
 /*    margin-top:15px;*/
