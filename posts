@@ -209,12 +209,9 @@
                                         <div class="social_twitter_share"></div>
                                     </a>
                                 </div>
-                                
-                                
                             </div>
                             <div class="post_two">
-                                <img src="{{post_image}}" alt="blog" class="img_auto" />
-                                <p class="blog_details_tags">{{tag_list}}</p>
+                                <img src="{{post_image}}" alt="{{title}}"/>
                             </div>
                             <div class="clearfix"></div>
                             <hr class="post_separator"></hr>
