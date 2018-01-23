@@ -46,3 +46,17 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            
+
+            show_content();
+            store_search();
+            show_cat_stores();
+            $('#top_nav_promotions').addClass('active_yellow')
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
