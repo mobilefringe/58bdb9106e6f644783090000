@@ -63,6 +63,9 @@
     font-size: 20px;
     color: #4B4B4B;
 }
+.post_read_more {
+    
+}
 /*.details_header{*/
 /*    font-size:18px;*/
 /*    margin-top:15px;*/
@@ -190,18 +193,17 @@
                                 <h3 class="post_date">{{published_on}}</h3>
                                 <h3 class="post_title"><a href="/posts/{{slug}}">{{title}}</a></h3>
                                 <p class="post_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
-                                <p class="blog_sharer share_links">
-                                    Share
-                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://midtownplaza.ca/posts/{{slug}}">
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_facebook.png" class="details_share_icons" alt="share fb" />
+                                <div class="details_sharer pull-right">
+                                    <div>Share</div>
+                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
+                                        <div class="social_fb_share"></div>
                                     </a>
-                                    <a target="_blank" href="//twitter.com/share?text={{title}}&url=https://midtownplaza.ca/posts/{{slug}}">
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_twitter.png" class="details_share_icons" alt="share twitter" />
+                                    <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
+                                        <div class="social_twitter_share"></div>
                                     </a>
-                                    <a onclick="pinIt()" style="padding: 0;border: 0;background: none;cursor:pointer">
-                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_pinterest.png" class="details_share_icons" alt="share pinterest" />
-                                    </a>
-                                </p>
+                                </div>
+                                
+                                
                             </div>
                             <div class="post_two">
                                 <img src="{{post_image}}" alt="blog" class="img_auto" />
@@ -217,6 +219,19 @@
     </div>
 </div>
 
+
+<!--<p class="blog_sharer share_links">-->
+<!--                                    Share-->
+<!--                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://midtownplaza.ca/posts/{{slug}}">-->
+<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_facebook.png" class="details_share_icons" alt="share fb" />-->
+<!--                                    </a>-->
+<!--                                    <a target="_blank" href="//twitter.com/share?text={{title}}&url=https://midtownplaza.ca/posts/{{slug}}">-->
+<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_twitter.png" class="details_share_icons" alt="share twitter" />-->
+<!--                                    </a>-->
+<!--                                    <a onclick="pinIt()" style="padding: 0;border: 0;background: none;cursor:pointer">-->
+<!--                                        <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_pinterest.png" class="details_share_icons" alt="share pinterest" />-->
+<!--                                    </a>-->
+<!--                                </p>-->
 <script>
     $(document).ready(function(e){
         init(e);
