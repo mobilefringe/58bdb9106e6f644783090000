@@ -44,16 +44,30 @@
     word-wrap: break-word;
     
 }
-
-.details_header{
-    font-size:18px;
-    margin-top:15px;
-    margin-bottom:0;
-    line-height:35px;
-    text-transform:uppercase;
-    color: #233a32;
-    font-family:museo;
+.post_title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'gibson_bold', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    color: #536c92;
+} 
+.post_date {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #4A4A4A;
+    text-transform: uppercase;
 }
+/*.details_header{*/
+/*    font-size:18px;*/
+/*    margin-top:15px;*/
+/*    margin-bottom:0;*/
+/*    line-height:35px;*/
+/*    text-transform:uppercase;*/
+/*    color: #233a32;*/
+/*    font-family:museo;*/
+/*}*/
 .blog_name_header{
     text-transform:uppercase;
     font-size:18px;
@@ -169,8 +183,8 @@
                     <script id="blog_template" type="x-tmpl-mustache/text">
                         <div class="post_container mobile_padding">
                             <div class="post_one">
-                                <p class="blog_heading no_margin">{{published_on}}</p>
-                                <h2 class="blog_name_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
+                                <h3 class="post_date">{{published_on}}</h3>
+                                <h3 class="post_title"><a href="/posts/{{slug}}">{{title}}</a></h3>
                                 <p class="blog_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
                                 <p class="blog_sharer share_links">
                                     Share
