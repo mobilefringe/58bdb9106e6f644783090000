@@ -64,7 +64,9 @@
     color: #4B4B4B;
 }
 .post_read_more {
-    
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 20px;
 }
 /*.details_header{*/
 /*    font-size:18px;*/
