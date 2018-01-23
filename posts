@@ -68,6 +68,81 @@
     margin-top:0;
     font-family:museo;
 }
+
+.blog_header{
+    padding:22px 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: -14px;
+    line-height:34px;
+}
+
+.blog_header>a{
+    color:#000;
+}
+.blog_heading{
+    color: #233a32;
+    font-weight:bold;
+    font-size:18px;
+    margin-top:0;
+    margin-bottom:16px;
+    text-transform: uppercase;
+    font-family:museo;
+}
+
+.blog_read_more{
+    font-family: 'EB Garamond';
+    font-size:18px;
+    color:#233a32;
+    text-decoration:underline;
+}
+
+.blog_read_more:hover{
+    color:#233a32;
+    text-decoration:underline;
+}
+.blog_details_container{
+    margin:0 -13px;
+}
+.blog_left{
+    padding:0 13px;
+    border-right:1px solid #ccc;
+    width:801px;
+    float:left;
+    margin-bottom:20px;
+}
+
+.blog_right{
+    padding:0 13px;
+    float:left;
+    width:265px;
+}
+
+.blog_details_heading{
+    font-size:20px;
+    font-weight:bold;
+    margin-top: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 15px;
+    font-family: museo;
+}
+.blog_details_dates{
+    color: #233a32;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-family: museo;
+}
+.blog_details_tags{
+    margin-bottom:0;
+    margin-top:16px;
+    font-size:14px;
+}
 </style>
 <div class="promotions_header">
     <div class="site_container mobile_padding">
