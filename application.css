@@ -2352,9 +2352,11 @@ a:hover, a:focus{
     }
     .blog_category_container {
         margin: 0;
+        margin-bottom: 20px;
     }
     .blog_search_container {
         margin: 0 auto;
+        margin-bottom: 20px;
         width: 80%;
         float: none;
     }
