@@ -1822,7 +1822,10 @@ a:hover, a:focus{
     }
     .post_container {
         margin: 0;
-    }    
+    }   
+    .post_details_container {
+        width: 100%
+    }
 }
     
 @media(max-width: 800px){
