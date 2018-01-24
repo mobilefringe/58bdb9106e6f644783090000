@@ -27,7 +27,7 @@
     left: -1px;
     background: #EEE;
 }
-.blog_search_container #blog_results h2 {
+.blog_search_container #blog_results h2, .blog_search_container #blog_results h4 {
     margin: 0;
     padding: 10px 12px;
     position: relative;
