@@ -2372,7 +2372,9 @@ a:hover, a:focus{
         box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px 0px;
         visibility: visible;
     }
-    
+    .post_one, .post_two {
+        width: 100%;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1024px){
