@@ -113,7 +113,7 @@
             </div>   
         </div>
         <div class="mobile_padding">
-            <div class="clearfix">
+            <div class="row clearfix">
                 <div class="pull-left">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
