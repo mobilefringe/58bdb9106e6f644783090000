@@ -7,6 +7,11 @@
     border: none;
     background: transparent;
 }
+.blog_search_container #close_blog_search {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+}
 .post_container{
     margin-left:-24px;
     margin-right:-24px;
