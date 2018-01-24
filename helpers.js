@@ -454,7 +454,7 @@ function northside_blog_search(){
         }
     });
     $('#close_blog_search').click(function(){
-        $('#blog_search_input').val() == "";
+        $('#blog_search_input').val('');
         $('#blog_results').html('');
         $('#blog_results').hide();
         $('#close_blog_search').hide();
