@@ -2451,6 +2451,9 @@ a:hover, a:focus{
     .post_author {
         margin-bottom: 20px;
     }
+    .post_details_container .details_sharer {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1024px){
