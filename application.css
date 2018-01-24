@@ -2317,6 +2317,10 @@ a:hover, a:focus{
         width: 100%;
         height: auto;
     }
+    .post_sidebar {
+        margin: 0;
+        border-left: none
+    }
 }
 @media (max-width: 425px){
     .top_header{
