@@ -25,6 +25,7 @@
     position: absolute;
     top: 29px;
     left: -1px;
+    background: #EEE;
 }
 .blog_search_container #blog_results h2 {
     margin: 0;
