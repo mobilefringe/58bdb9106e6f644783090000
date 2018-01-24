@@ -19,7 +19,7 @@
     right: 10px;
 }
 .blog_search_container #blog_results {
-    width: 100%;
+    width: 235px;
     position: absolute;
     top: 29px;
     left: -1px;
