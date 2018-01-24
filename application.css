@@ -2319,6 +2319,7 @@ a:hover, a:focus{
     }
     .post_sidebar {
         margin: 0;
+        padding: 0;
         border-left: none
     }
 }
