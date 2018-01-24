@@ -70,7 +70,7 @@
                 <div class="col-md-6">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
-                            <a href="/post_categories/{{slug}}" class="post_categories">{{name}}</a>
+                            <h3 class="post_date"><a href="/post_categories/{{slug}}">{{name}}</a></h3>
                         </script>
                     </div>
                 </div>
