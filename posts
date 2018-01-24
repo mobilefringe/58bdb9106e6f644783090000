@@ -89,7 +89,7 @@
             </div>   
         </div>
         <div class="mobile_padding">
-            <!--<div class="row">-->
+            <div class="clearfix">
                 <div class="pull-left">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
@@ -104,7 +104,7 @@
                         <div id="blog_results"></div>
                     </div>
                 </div>
-            <!--</div>-->
+            </div>
         </div>
     </div>
 </div>
