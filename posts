@@ -6,6 +6,8 @@
     position: relative;
 }
 .blog_search_container #blog_search_input {
+    padding: 4px 12px;
+    height: 30px;
     border: none;
     background: transparent;
     color: #FFF;
