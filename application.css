@@ -1814,6 +1814,9 @@ a:hover, a:focus{
 }
 /* */
 @media(max-width: 1024px){
+    .top_nav_menu {
+        margin: 10px 20px 5px 20px;
+    }
     .post_container {
         margin: 0;
     }    
