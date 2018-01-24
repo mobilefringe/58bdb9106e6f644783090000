@@ -11,8 +11,8 @@
 }
 .blog_search_container #close_blog_search {
     position: absolute;
-    top: 10px;
-    right: 24px;
+    top: 8px;
+    right: 10px;
 }
 .post_container{
     margin-left:-24px;
