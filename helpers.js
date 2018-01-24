@@ -414,6 +414,7 @@ function in_my_time_zone(hour, format){
 }
 
 function northside_blog_search(){
+    $('#close_blog_search').hide();
     $('#blog_search_input').keyup(function(){
         if ($('#blog_search_input').val() == ""){
             $('#blog_results').html('');
