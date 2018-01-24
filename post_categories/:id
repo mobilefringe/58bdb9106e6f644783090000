@@ -1,63 +1,3 @@
-<style>
-.post_container{
-    margin-left:-24px;
-    margin-right:-24px;
-}
-.post_container:nth-child(even) .post_one {
-   float: right;
-}
-.post_container:nth-child(even) .post_two {
-   text-align: center;
-}
-.post_container:nth-child(last) .post_separator {
-   border-bottom: none;
-}
-.post_one, .post_two{
-    padding: 0 24px;
-    width:50%;
-    float:left;
-}
-.post_two{
-    text-align:center;
-}
-.post_two img {
-    max-width: 100%;
-}
-.post_separator{
-    margin: 28px 24px;
-    margin-bottom:32px;
-    border-bottom:1px solid #ccc;
-    border-top:0;
-}
-.post_title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-family: 'gibson_bold', sans-serif;
-    font-size: 28px;
-    line-height: 40px;
-    color: #536c92;
-} 
-.post_date {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 20px;
-    color: #4A4A4A;
-    text-transform: uppercase;
-}
-.post_description {
-    font-size: 20px;
-    color: #4B4B4B;
-}
-.post_read_more {
-    margin-bottom: 40px;
-    font-weight: 400;
-    font-size: 20px;
-}
-.post_read_more img {
-    margin-bottom: 3px;
-    padding-left: 15px;
-}
-</style>
 <div class="promotions_header">
     <div class="site_container mobile_padding">
         <div class="row">
@@ -66,17 +6,17 @@
             </div>   
         </div>
         <div class="mobile_padding">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row clearfix">
+                <div class="pull-left">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
-                            <a href="/post_categories/{{slug}}" class="post_categories">{{name}}</a>
+                            <h3 class="post_categories"><a href="/post_categories/{{slug}}">{{name}}</a><span> | </span></h3>
                         </script>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="blog_searcher_div" >
-                        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
+                <div class="pull-right">
+                    <div class="blog_search_container">
+                        <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
                         <i id="close_blog_search" class="fa fa-times-circle"></i>
                         <div id="blog_results"></div>
                     </div>
