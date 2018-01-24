@@ -1751,6 +1751,7 @@ a:hover, a:focus{
         top: 29px;
         left: -1px;
         background: #EEE;
+        z-index: 99;
         h2, h4 {
             margin: 0;
             padding: 10px 12px;
