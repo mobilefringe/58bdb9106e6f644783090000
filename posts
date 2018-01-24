@@ -45,6 +45,7 @@
     text-transform: uppercase;
 }
 .post_categories {
+    padding-right: 2px;
     display: inline-block;
     color: #FFF;
 }
