@@ -1902,6 +1902,9 @@ a:hover, a:focus{
     .top_nav_menu {
         margin: 10px 20px 5px 20px;
     }
+    .blog_header_container {
+        padding: 0 24px;
+    }
     .post_container {
         margin: 0;
     }   
