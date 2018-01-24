@@ -415,7 +415,7 @@ function in_my_time_zone(hour, format){
 
 function northside_blog_search(){
     $('#blog_search_input').keyup(function(){
-        if ($('#blog_search').val() == ""){
+        if ($('#blog_search_input').val() == ""){
             $('#blog_results').html('');
             $('#blog_results').hide();
             $('#close_blog_search').hide();
@@ -445,8 +445,7 @@ function northside_blog_search(){
                 if (document.getElementById(collapse_js).classList.contains("open")){
                     $(collapse).slideUp('fast');
                     $(collapse).removeClass('open');
-                }
-                else{
+                } else {
                     $(collapse).addClass('open');
                     $(collapse).slideDown('fast');
                 }
