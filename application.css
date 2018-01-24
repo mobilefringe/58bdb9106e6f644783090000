@@ -1707,11 +1707,15 @@ a:hover, a:focus{
 /* */
 
 /* *** BLOG *** */
+.blog_category_container {
+    float: left;
+}
 .blog_search_container {
     border: 1px solid #FFF;   
     width: 235px;
     height: 30px;
     position: relative;
+    float: right;
     #blog_search_input {
         padding: 4px 12px;
         height: 28px;
