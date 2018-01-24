@@ -9,6 +9,9 @@
     border: none;
     background: transparent;
 }
+.blog_search_container #blog_search_input::placeholder {
+    color: #FFF;
+}
 .blog_search_container #close_blog_search {
     position: absolute;
     top: 8px;
