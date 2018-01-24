@@ -20,9 +20,10 @@
 .blog_search_container #blog_results {
     width: 100%;
     position: absolute;
-    top: 30px;
-    background: grey;
-    border: 1px solid grey;
+    top: 29px;
+    left: -1px;
+    background: #EEE;
+    border: 1px solid #EEE;
     border-top: none;
 }
 .blog_search_container #blog_results h2 {
