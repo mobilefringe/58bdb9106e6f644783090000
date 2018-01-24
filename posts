@@ -49,6 +49,9 @@
     display: inline-block;
     color: #FFF;
 }
+.post_categories:nth-child(last) span {
+    display: none;
+}
 .post_description {
     font-size: 20px;
     color: #4B4B4B;
