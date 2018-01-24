@@ -1813,7 +1813,12 @@ a:hover, a:focus{
     padding-left: 15px;
 }
 /* */
-
+@media(max-width: 1024px){
+    .post_container {
+        margin: 0;
+    }    
+}
+    
 @media(max-width: 800px){
     .no_pointer_desktop{
         pointer-events:all;
