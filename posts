@@ -7,7 +7,7 @@
 }
 .blog_search_container #blog_search_input {
     padding: 4px 12px;
-    height: 30px;
+    height: 28px;
     border: none;
     background: transparent;
     color: #FFF;
@@ -25,9 +25,6 @@
     position: absolute;
     top: 29px;
     left: -1px;
-    background: #EEE;
-    border: 1px solid #EEE;
-    border-top: none;
 }
 .blog_search_container #blog_results h2 {
     margin: 0;
