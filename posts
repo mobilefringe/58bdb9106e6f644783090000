@@ -75,7 +75,7 @@
                 <div class="col-md-8">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
-                            <h3 class="post_categories"><a href="/post_categories/{{slug}}">{{name}}</a> | </h3>
+                            <h3 class="post_categories"><a href="/post_categories/{{slug}}">{{name}}</a><span> | </span></h3>
                         </script>
                     </div>
                 </div>
