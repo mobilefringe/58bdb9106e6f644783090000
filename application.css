@@ -2320,6 +2320,9 @@ a:hover, a:focus{
     .post_one, .post_two {
         padding: 0 12px;
     }
+    .post_separator {
+        margin: 28px 10px;
+    }
     .post_sidebar {
         margin: 0;
         padding: 0;
