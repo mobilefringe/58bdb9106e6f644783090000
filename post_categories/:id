@@ -24,36 +24,32 @@
     </div>
 </div>
 <div class="site_container mobile_padding">
-    <div class="fluid_row">
-        <div class="mobile_padding">
-            <div class="row">
-                <div id="blog_container">
-                    <script id="blog_template" type="x-tmpl-mustache/text">
-                        <div class="post_container mobile_padding">
-                            <div class="post_one">
-                                <h3 class="post_date">{{published_on}}</h3>
-                                <h3 class="post_title"><a href="/posts/{{slug}}">{{title}}</a></h3>
-                                <p class="post_description">{{description_short}}</p> 
-                                <h3 class="post_read_more"><a href="/posts/{{slug}}">Read More <img src="//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1492018455000/right_chevron.png" class="" alt=""></a></h3>
-                                <div class="details_sharer">
-                                    <div>Share</div>
-                                    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
-                                        <div class="social_fb_share"></div>
-                                    </a>
-                                    <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
-                                        <div class="social_twitter_share"></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="post_two">
-                                <img src="{{post_image}}" alt="{{title}}"/>
-                            </div>
-                            <div class="clearfix"></div>
-                            <hr class="post_separator"></hr>
+    <div class="row">
+        <div id="blog_container">
+            <script id="blog_template" type="x-tmpl-mustache/text">
+                <div class="post_container mobile_padding">
+                    <div class="post_one">
+                        <h3 class="post_date">{{published_on}}</h3>
+                        <h3 class="post_title"><a href="/posts/{{slug}}">{{title}}</a></h3>
+                        <p class="post_description">{{description_short}}</p> 
+                        <h3 class="post_read_more"><a href="/posts/{{slug}}">Read More <img src="//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1492018455000/right_chevron.png" class="" alt=""></a></h3>
+                        <div class="details_sharer">
+                            <div>Share</div>
+                            <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
+                                <div class="social_fb_share"></div>
+                            </a>
+                            <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
+                                <div class="social_twitter_share"></div>
+                            </a>
                         </div>
-                    </script>
+                    </div>
+                    <div class="post_two">
+                        <img src="{{post_image}}" alt="{{title}}"/>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr class="post_separator"></hr>
                 </div>
-            </div>
+            </script>
         </div>
     </div>
 </div>
