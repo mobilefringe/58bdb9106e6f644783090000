@@ -8,6 +8,7 @@
 .blog_search_container #blog_search_input {
     border: none;
     background: transparent;
+    color: #FFF;
 }
 .blog_search_container #blog_search_input::placeholder {
     color: #FFF;
