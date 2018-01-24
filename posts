@@ -89,8 +89,8 @@
             </div>   
         </div>
         <div class="mobile_padding">
-            <div class="row">
-                <div class="col-md-8">
+            <!--<div class="row">-->
+                <div class="pull-left">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
                             <h3 class="post_categories"><a href="/post_categories/{{slug}}">{{name}}</a><span> | </span></h3>
@@ -104,7 +104,7 @@
                         <div id="blog_results"></div>
                     </div>
                 </div>
-            </div>
+            <!--</div>-->
         </div>
     </div>
 </div>
