@@ -2437,6 +2437,20 @@ a:hover, a:focus{
     .post_one, .post_two {
         width: 100%;
     }
+    .post_details_container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: left;
+        -webkit-align-items: left;
+        -ms-flex-align: left;
+        align-items: left;
+    }
+    .post_author {
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 800px) and (max-width: 1024px){
