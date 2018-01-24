@@ -2376,6 +2376,9 @@ a:hover, a:focus{
         margin-bottom: 20px;
         width: 80%;
         float: none;
+        .details_sharer {
+            width: 100%;
+        }
     }
     .post_one, .post_two {
         padding: 0 12px;
