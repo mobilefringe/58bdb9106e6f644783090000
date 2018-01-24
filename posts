@@ -49,7 +49,7 @@
     display: inline-block;
     color: #FFF;
 }
-.post_categories span:nth-child(last) {
+.post_categories span:last-child {
     display: none;
 }
 .post_description {
