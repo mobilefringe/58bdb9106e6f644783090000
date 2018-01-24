@@ -19,7 +19,7 @@
                     <i id="close_blog_search" class="fa fa-times-circle"></i>
                     <div id="blog_results"></div>
                 </div>
-            </div
+            </div>
         </div>
     </div>
 </div>
