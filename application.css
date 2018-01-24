@@ -2325,6 +2325,11 @@ a:hover, a:focus{
         float: none;
         text-align: center;
     }
+    .blog_search_container {
+        margin: 0 auto;
+        width: 80%;
+        float: none;
+    }
     .post_one, .post_two {
         padding: 0 12px;
     }
