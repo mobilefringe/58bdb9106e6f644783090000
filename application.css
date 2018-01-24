@@ -2353,6 +2353,7 @@ a:hover, a:focus{
     .blog_category_container {
         margin: 0;
         margin-bottom: 20px;
+        text-align: center;
     }
     .blog_search_container {
         margin: 0 auto;
