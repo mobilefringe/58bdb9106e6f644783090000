@@ -1736,9 +1736,41 @@ a:hover, a:focus{
         border: none;
         background: transparent;
         color: #FFF;
-        &::placeholder {
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             color: #FFF;
         }
+        ::-moz-placeholder { /* Firefox 19+ */
+            color: #FFF;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+            color: #FFF;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #FFF;
+        }
+    }
+    #blog_search_input:focus {
+        &::-webkit-input-placeholder {
+            color: transparent;
+            -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+            color: transparent;
+            -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+        }
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: transparent;
+            -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+        }
+        &:-ms-input-placeholder {  
+            color: transparent;
+            -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+        }
+    }
     }
     #close_blog_search {
         position: absolute;
