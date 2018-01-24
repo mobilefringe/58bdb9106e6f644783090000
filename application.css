@@ -1863,8 +1863,20 @@ a:hover, a:focus{
     padding-left: 15px;
 }
 .post_details_container {
-    margin-top: 20px;
+    margin: 20px 0;
     width: calc(100% - 48px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .post_details_container .details_sharer {
     float: right;
