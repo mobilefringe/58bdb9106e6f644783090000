@@ -1707,15 +1707,20 @@ a:hover, a:focus{
 /* */
 
 /* *** BLOG *** */
+.blog_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .blog_category_container {
-    float: left;
+    margin-right: auto;
 }
 .blog_search_container {
+    margin-left: auto;
     border: 1px solid #FFF;   
     width: 235px;
     height: 30px;
     position: relative;
-    float: right;
     #blog_search_input {
         padding: 4px 12px;
         height: 28px;
@@ -1796,6 +1801,7 @@ a:hover, a:focus{
     text-transform: uppercase;
 }
 .post_categories {
+    margin: 0;
     padding-right: 2px;
     display: inline-block;
     color: #FFF;
