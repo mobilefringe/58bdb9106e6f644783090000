@@ -1879,9 +1879,12 @@ a:hover, a:focus{
     align-items: center;
 }
 .post_details_container .details_sharer {
-    float: right;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 .post_author {
+    margin: 0;
+    margin-right: auto;
     display: inline-block;
     float: left;
 }
