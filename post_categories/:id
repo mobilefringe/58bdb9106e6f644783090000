@@ -5,21 +5,19 @@
                 <h3 class="store_list_header center">Domain Northside Blog</h3>
             </div>   
         </div>
-        <div class="mobile_padding">
-            <div class="row clearfix">
-                <div class="pull-left">
+        <div class="row">
+            <div class="blog_header_container">
+                <div class="blog_category_container">
                     <div id="blog_links_container">
                         <script id="blog_links_template" type="x-tmpl-mustache/text">
                             <h3 class="post_categories"><a href="/post_categories/{{slug}}">{{name}}</a><span> | </span></h3>
                         </script>
                     </div>
                 </div>
-                <div class="pull-right">
-                    <div class="blog_search_container">
-                        <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
-                        <i id="close_blog_search" class="fa fa-times-circle"></i>
-                        <div id="blog_results"></div>
-                    </div>
+                <div class="blog_search_container">
+                    <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
+                    <i id="close_blog_search" class="fa fa-times-circle"></i>
+                    <div id="blog_results"></div>
                 </div>
             </div>
         </div>
