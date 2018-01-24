@@ -1,6 +1,11 @@
 <style>
 .blog_search_container {
-    
+    border: 1px solid #FFF;   
+    position: relative;
+}
+.blog_search_container #blog_search_input {
+    border: none;
+    background: transparent;
 }
 .post_container{
     margin-left:-24px;
@@ -87,7 +92,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="blog_search_container">
-                        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
+                        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search_input" />
                         <i id="close_blog_search" class="fa fa-times-circle"></i>
                         <div id="blog_results"></div>
                     </div>
