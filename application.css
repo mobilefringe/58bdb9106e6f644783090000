@@ -2321,6 +2321,10 @@ a:hover, a:focus{
         width: 100%;
         height: auto;
     }
+    .blog_category_container {
+        float: none;
+        text-align: center;
+    }
     .post_one, .post_two {
         padding: 0 12px;
     }
