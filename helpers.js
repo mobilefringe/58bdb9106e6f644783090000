@@ -476,13 +476,13 @@ function search_blog(keyword){
                 if (publish_date <= today){
                     if(l.title.toLowerCase().indexOf(keyword) >= 0 || l.body.toLowerCase().indexOf(keyword) >= 0){
                         b.posts.push(l);
-                    }else{
-                        $.each( l.tag, function( index2, value2 ) {
-                            if(value2.toLowerCase().indexOf(keyword) >= 0){
-                                b.posts.push(l);
-                                return false;
-                            }
-                        });
+                    // }else{
+                    //     $.each( l.tag, function( index2, value2 ) {
+                    //         if(value2.toLowerCase().indexOf(keyword) >= 0){
+                    //             b.posts.push(l);
+                    //             return false;
+                    //         }
+                    //     });
                     }
                 }
             });
