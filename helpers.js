@@ -474,8 +474,7 @@ function search_blog(keyword){
                 console.log(publish_date)
                 var today = moment().format("DD/MM/YYYY");
                 if (publish_date <= today){
-                    if(l.title.toLowerCase().indexOf(keyword) >= 0 
-                    | l.body.toLowerCase().indexOf(keyword) >= 0){
+                    if(l.title.toLowerCase().indexOf(keyword) >= 0 || l.body.toLowerCase().indexOf(keyword) >= 0){
                         b.posts.push(l);
                     }else{
                         $.each( l.tag, function( index2, value2 ) {
