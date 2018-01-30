@@ -35,10 +35,10 @@
                         <h3 class="post_read_more"><a href="/posts/{{slug}}">Read More <img src="//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1492018455000/right_chevron.png" class="" alt=""></a></h3>
                         <div class="details_sharer">
                             <div>Share</div>
-                            <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/promotions/{{slug}}">
+                            <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/posts/{{slug}}">
                                 <div class="social_fb_share"></div>
                             </a>
-                            <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/promotions/{{slug}}&text={{name}}">
+                            <a target="_blank" href="//www.twitter.com/share?url=https://domainnorthside.com/posts/{{slug}}&text={{name}}">
                                 <div class="social_twitter_share"></div>
                             </a>
                         </div>
