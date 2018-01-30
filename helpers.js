@@ -471,7 +471,6 @@ function search_blog(keyword){
             b.posts = [];
             $.each(val.posts, function(k, l){
                 var publish_date = in_my_time_zone(moment(l.publish_date), "DD/MM/YYYY") 
-                console.log(publish_date)
                 var today = moment().format("DD/MM/YYYY");
                 if (publish_date <= today){
                     if(l.title.toLowerCase().indexOf(keyword) >= 0 || l.body.toLowerCase().indexOf(keyword) >= 0){
