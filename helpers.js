@@ -429,10 +429,6 @@ function northside_blog_search(){
                 var h2 = "<h2 id='open_"+ i +"' class='li_open'>(" +v.posts.length + ") " + v.name +"<i class='pull-right fa fa-chevron-down'></i></h2>";
                 var div = "<div class='blog_search_results' id='collapse_open_"+ i  + "'>";
                 $.each(v.posts, function(j,k){
-                    // var date_blog = new Date((k.publish_date + " 05:00:00").replace(/-/g,"/"));
-                    // var date_blog = in_my_time_zone(moment(k.publish_date), "DD/MM/YYYY") 
-                    // k.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
-                    // k.published_on = date_blog
                     k.published_on = in_my_time_zone(moment(k.publish_date), "DD/MM/YYYY") 
                     div = div + "<h4><a href='/posts/" + k.slug + "'>" + k.title + "<br /><span>Published on: " + k.published_on +"</span></a></h4>";
                 });
