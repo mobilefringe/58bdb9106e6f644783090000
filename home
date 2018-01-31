@@ -83,7 +83,7 @@
                 console.log(popup)
                 if (popup != undefined){
                     if(popup.use_form === true){
-                        
+                        console.log("HeLLO!")    
                     } else {
                         $('.popup_home a').attr('href', popup.photo_link)
                         $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
