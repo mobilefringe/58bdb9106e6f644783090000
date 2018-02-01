@@ -97,8 +97,8 @@
                     }
                 }
             // }
-            $('.close_popup, .custom_backdrop').click(function(){
-                $(".modal-backdrop").remove();
+            $('.close_popup, .popup-backdrop').click(function(){
+                $(".popup-backdrop").remove();
 		        $(".popup_home").remove();
 		        $(".popup_form").remove();
             })
