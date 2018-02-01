@@ -1,7 +1,7 @@
 <!-- popup form starts-->
 <div class="popup_form hidden_now ">
     <img src="#" alt="newsletter pop up">
-    <i class="fa fa-remove close_popup"></i>
+    <i class="fa fa-remove close_popup" tabindex="6"></i>
     <div class="popup_container">
         <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
         <form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
