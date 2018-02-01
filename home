@@ -84,6 +84,7 @@
                 if (popup != undefined){
                     if(popup.use_form === true){
                         console.log("HeLLO!") 
+                        $('.popup_form img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
                         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
                         $('.popup_form').show();
                     } else {
