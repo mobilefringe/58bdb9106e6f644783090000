@@ -85,7 +85,6 @@
                     if(popup.use_form === true){
                         var window_width = $( window ).width();
                         if (window_width > 480) {
-                            console.log("HeLLO!") 
                             $('.popup_form img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
                             $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
                             $('.popup_form').show();    
