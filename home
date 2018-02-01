@@ -86,13 +86,13 @@
                         var window_width = $( window ).width();
                         if (window_width > 480) {
                             $('.popup_form img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
-                            $('<div class="modal-backdrop"></div>').appendTo(document.body);
+                            $('<div class="popup-backdrop"></div>').appendTo(document.body);
                             $('.popup_form').show();    
                         }
                     } else {
                         $('.popup_home a').attr('href', popup.photo_link)
                         $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
-                        $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                        $('<div class="popup_backdrop"></div>').appendTo(document.body);
                         $('.popup_home').show()
                     }
                 }
