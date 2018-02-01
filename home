@@ -4,7 +4,7 @@
     <i class="fa fa-remove close_popup" tabindex="6"></i>
     <div class="popup_container">
         <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
-        <form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+        <form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" method="post" id="subForm">
             <div class="row margin_10">
                 <div class="col-md-10">
                     <label for="fieldName">Name</label>
@@ -109,16 +109,5 @@
             });
         }
         loadMallData(renderAll); 
-        
-        function validateNewsletterForm(){
-            console.log("Hello")
-            if ($("#agree_newsletter").prop("checked") != true){
-                alert("Please agree to the receiving newsletter.");
-                $("#agree_newsletter").focus();
-                return false;
-            } else {
-                return true;
-            }
-        }
     });
 </script>
