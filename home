@@ -111,6 +111,7 @@
         loadMallData(renderAll); 
         
         function validateNewsletterForm(){
+            console.log("Hello")
             if ($("#agree_newsletter").prop("checked") != true){
                 alert("Please agree to the receiving newsletter.");
                 $("#agree_newsletter").focus();
