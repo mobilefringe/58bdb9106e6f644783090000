@@ -31,7 +31,7 @@
             </label>
             <a href="/privacy_policy" target="_blank">Privacy Policy.</a>
             <br />
-            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT">      
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" tabindex="5">      
         </form>
     </div>
 </div>
