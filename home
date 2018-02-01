@@ -4,24 +4,23 @@
     <i class="fa fa-remove close_popup"></i>
     <div class="popup_container">
         <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
-        <form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" method="post" id="subForm">
-        <form accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+        <form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
             <div class="row margin_10">
                 <div class="col-md-10">
-                    <label for="fieldName">Name *</label>  
-                    <input id="fieldName" name="cm-name" type="text" required="" class="form-control">
+                    <label for="fieldName">Name *</label>
+                    <input class="contest_info" id="fieldName" name="cm-name" type="text" tabindex="1"/>
                 </div>
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
-                    <label for="email">Email *</label> 
-                    <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
+                    <label for="fieldEmail">Email *</label>
+                    <input class="contest_info" id="fieldEmail" name="cm-xnhtd-xnhtd" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="2"/>
                 </div>
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
-                    <label for="postal">Postal Code *</label> 
-                    <input id="fieldzdydu" name="cm-f-zdydu" type="text" required="" class="form-control"> 
+                    <label for="fieldokiilt">ZIP Code *</label>
+                    <input class="contest_info" id="fieldokiilt" name="cm-f-okiilt" type="text" required data-validation="required" tabindex="3"/>
                 </div>
             </div>
             <div class="margin_30"></div>
