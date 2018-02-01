@@ -1,6 +1,6 @@
 <!-- popup form starts-->
 <div class="popup_form hidden_now ">
-    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" alt="newsletter pop up">
+    <img src="#" alt="newsletter pop up">
     <i class="fa fa-remove close_popup"></i>
     <div class="popup_container">
         <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
@@ -108,5 +108,15 @@
             });
         }
         loadMallData(renderAll); 
+        
+        function validateNewsletterForm(){
+            if ($("#agree_newsletter").prop("checked") != true){
+                alert("Please agree to the receiving newsletter.");
+                $("#agree_newsletter").focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
     });
 </script>
