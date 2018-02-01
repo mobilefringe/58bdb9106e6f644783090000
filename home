@@ -103,7 +103,7 @@
 		        $(".popup_form").remove();
             })
             
-            // show_content();
+            show_content();
             
             $('.flexslider').flexslider({
                 animation: "slide",
