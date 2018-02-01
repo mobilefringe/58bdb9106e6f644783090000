@@ -80,7 +80,6 @@
             // if($.cookie("popup_viewed") != "true"){
             //     $.cookie("popup_viewed", "true", { expires: 1 });
                 var popup = getPopups()[0];
-                console.log(popup)
                 if (popup != undefined){
                     if(popup.use_form === true){
                         var window_width = $( window ).width();
