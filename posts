@@ -37,7 +37,7 @@
                             <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/posts/{{slug}}">
                                 <div class="social_fb_share"></div>
                             </a>
-                            <a target="_blank" href="http://twitter.com/share?text={{twitter_title}}&urlurl=https://domainnorthside.com/posts/{{slug}}">
+                            <a target="_blank" href="http://twitter.com/share?text={{twitter_title}}&url=https://domainnorthside.com/posts/{{slug}}">
                                 <div class="social_twitter_share"></div>
                             </a>
                         </div>
