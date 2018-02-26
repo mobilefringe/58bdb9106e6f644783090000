@@ -26,7 +26,6 @@ function renderPosts(container, template, collection){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
-    var counter = 1;
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
@@ -44,11 +43,10 @@ function renderPosts(container, template, collection){
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
         val.published_on = date_blog.format('MMM DD, YYYY');
         
-        val.counter = counter;
-        
+        val.twitter_title = val.title + " via @DomainNORTHSIDE"
+
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-        counter = counter + 1;
     });
     
     $(container).show();
