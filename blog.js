@@ -8,7 +8,6 @@ function renderPostsPageData(){
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) });
         console.log(published_posts)
         renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
-        load_more(1, published_posts);
     } else {
         regularPostList();
     }
@@ -21,13 +20,6 @@ function regularPostList () {
     var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) });
     console.log(published_posts)
     renderPosts("#blog_container", "#blog_template", published_posts);
-    load_more(1, published_posts);
-    
-    $('#load_more_posts').click(function(e){
-        var i = $('#num_loaded').val();
-        load_more(i, published_posts);
-        e.preventDefault();
-    });
 }
 
 function renderPosts(container, template, collection){
@@ -103,27 +95,10 @@ function renderSearchPosts(container, template, collection, search){
         }
     });
     
-    $("#loaded_posts").hide();
-    
     if(item_rendered.length === 0) {
         $("#no_posts").show();
-        $("#all_loaded").hide();
     }
     
     $(container).show();
     $(container).html(item_rendered.join(''));
-}
-
-function load_more(num, blog_posts){
-    var n = parseInt(num);
-    for(i=n; i < n + 5; i++){
-        var id = i.toString();
-        $('#show_' + id ).fadeIn();
-    }
-    var posts = blog_posts.length + 1
-    if(i >= blog_posts.length + 1){
-        $('#loaded_posts').hide();
-        $('#all_loaded').show();
-    }
-    $('#num_loaded').val(i);
 }
