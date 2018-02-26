@@ -30,7 +30,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1519669755000/northside_blog_default.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -63,7 +63,7 @@ function renderSearchPosts(container, template, collection, search){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a7c73796e6f646258430000/image/png/1519416315000/Background.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1519669755000/northside_blog_default.png";
         } else {
             val.post_image = val.image_url;
         }
