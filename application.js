@@ -395,7 +395,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1519669755000/northside_blog_default.png";
         } else {
             val.post_image = val.image_url;
         }
