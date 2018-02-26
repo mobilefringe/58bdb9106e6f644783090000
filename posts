@@ -50,6 +50,11 @@
                 </div>
             </script>
         </div>
+        <div id="no_posts" class="hidden_now ">
+            <div class="col-md-12">
+                <h4>Sorry, no Posts.</h4>    
+            </div>
+	    </div>
     </div>
 </div>
 <script src="http://preview-5a678ccb6e6f647da50d0000.codecloudapp.com/blog.js"></script>
