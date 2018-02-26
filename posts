@@ -57,15 +57,27 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var posts = getAllPublishedPosts();
-            var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
-            renderPosts("#blog_container", "#blog_template", published_posts);
-            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            // var posts = getAllPublishedPosts();
+            // var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            // renderPosts("#blog_container", "#blog_template", published_posts);
+            // renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            
+            renderPostsPageData();
 
             northside_blog_search();
-            
-
+        
             show_content();
+            
+            $('.colored_link').click(function(e) {
+                var href = $(this).attr('href');
+                document.location.href = href;
+            });
+            
+            $('.mobile_blog_select').change(function(e){
+                var href = this.value;
+                document.location.href = href;
+            });
+        
             store_search();
             show_cat_stores();
             $('#top_nav_blog').addClass('active_yellow')
