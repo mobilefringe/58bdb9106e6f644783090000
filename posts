@@ -57,7 +57,7 @@
 	    </div>
     </div>
 </div>
-<script src="http://preview-5a678ccb6e6f647da50d0000.codecloudapp.com/blog.js"></script>
+<script src="../blog.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
