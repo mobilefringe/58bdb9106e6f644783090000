@@ -118,13 +118,13 @@ function renderStoreList(container, template, collection, type){
             val.show = "visibility: hidden";
         }
         
-        if(val.is_coming_soon_store == true){
+        if(val.is_coming_soon_store == true && val.is_new_store == false){
             val.coming_soon_store = "display: block";
         } else {
             val.coming_soon_store = "display:none";
         }
         
-        if(val.is_new_store == true){
+        if(val.is_new_store == true && val.is_coming_soon_store == false){
             val.new_store = "display: block";
         } else {
             val.new_store = "display: none";
