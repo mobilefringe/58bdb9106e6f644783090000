@@ -168,7 +168,6 @@
                 }
                 
                 var cat_ids = store_details.categories;
-                
                 var cat_list = [];
                 if (cat_ids != null){
                     $.each(cat_ids, function(key, val){
