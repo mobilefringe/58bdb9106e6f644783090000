@@ -168,15 +168,14 @@
                 }
                 
                 var cat_ids = store_details.categories;
-                if(cat_ids != null){
-                    var cat_list = [];
-                    if (cat_ids.length > 0){
-                        $.each(cat_ids, function(key, val){
-                            var categories = getCategoryDetails(cat_ids[key]);
-                            cat_list.push(categories);
-                        });
-                        renderGeneral("#store_categories_container", "#store_categories_template", cat_list);
-                    }
+                
+                var cat_list = [];
+                if (cat_ids != null){
+                    $.each(cat_ids, function(key, val){
+                        var categories = getCategoryDetails(cat_ids[key]);
+                        cat_list.push(categories);
+                    });
+                    renderGeneral("#store_categories_container", "#store_categories_template", cat_list);
                 } else {
                     $('#categories').hide();
                 }  
