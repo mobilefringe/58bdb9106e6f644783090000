@@ -327,14 +327,15 @@ function renderPromotions(container, template, collection){
                 if(val.is_special_promo == true){
                     val.image_url = val.promo_image_url_abs;  
                 } else {
-                    if(store_front_image != undefined) {
-                        val.image_url = store_front_image;
-                    } else {
+                    if(store_front_imag.indexOf('missing.png') > 0) {
                         if(store_logo.indexOf('missing.png') > 0){
                             val.image_url  = default_image.image_url;
                         } else {
                             val.image_url = store_logo;    
                         }
+                        
+                    } else {
+                        val.image_url = store_front_image;
                     }
                 }
 
