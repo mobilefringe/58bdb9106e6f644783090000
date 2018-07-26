@@ -315,45 +315,26 @@ function renderPromotions(container, template, collection){
     $.each( collection , function( key, val ) {
         try {
             if(val.promotionable_type == "Store"){
-                // var store_details = getStoreDetailsByID(val.promotionable_id);
-                // val.store_detail_btn = store_details.slug ;
-                // val.store_name = store_details.name;
-                // var store_front_image = store_details.store_front_alt_url_abs;
-                // var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
-                
-                // if(val.is_special_promo == true){
-                //     val.image_url = val.promo_image_url_abs;  
-                // } else {
-                //     if(store_front_image.indexOf('missing.png') > 0) {
-                //         if(store_logo.indexOf('missing.png') > 0){
-                //             val.image_url  = default_image.image_url;
-                //         } else {
-                //             val.image_url = store_logo;    
-                //         }
-                //     } else {
-                //         val.image_url = store_front_image;
-                //     }
-                // }
                 var store_details = getStoreDetailsByID(val.promotionable_id);
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
-                var store_front_image = getAssetURL(val.promotionable_id);
+                var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(val.is_special_promo == true){
-                    val.image_url = val.promo_image_url_abs    
+                    val.image_url = val.promo_image_url_abs;  
                 } else {
-                    if(store_front_image !== undefined) {
-                        val.image_url = "//mallmaverick.com" + store_front_image;
-                    }
-                    if(store_front_image === ""){
-                        val.image_url = store_logo;
-                    }
-                    if(store_logo.indexOf('missing.png') > 0){
-                        val.image_url  = default_image.image_url;
+                    if(store_front_image.indexOf('missing.png') > 0) {
+                        if(store_logo.indexOf('missing.png') > 0){
+                            val.image_url  = default_image.image_url;
+                        } else {
+                            val.image_url = store_logo;    
+                        }
+                    } else {
+                        val.image_url = store_front_image;
                     }
                 }
-
+        
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 if(store_categories != null){
                     val.cat_list = store_categories.join(',');
