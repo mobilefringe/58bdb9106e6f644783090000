@@ -320,7 +320,8 @@ function renderPromotions(container, template, collection){
                 console.log("deets ", store_details)
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
-                var store_front_image = getAssetURL(val.promotionable_id);
+                // var store_front_image = getAssetURL(val.promotionable_id);
+                var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(val.is_special_promo == true){
