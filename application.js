@@ -307,7 +307,6 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
-    console.log()
     var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
@@ -317,10 +316,8 @@ function renderPromotions(container, template, collection){
         try {
             if(val.promotionable_type == "Store"){
                 var store_details = getStoreDetailsByID(val.promotionable_id);
-                console.log("deets ", store_details)
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
-                // var store_front_image = getAssetURL(val.promotionable_id);
                 var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
@@ -333,7 +330,6 @@ function renderPromotions(container, template, collection){
                         } else {
                             val.image_url = store_logo;    
                         }
-                        
                     } else {
                         val.image_url = store_front_image;
                     }
