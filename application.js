@@ -329,12 +329,12 @@ function renderPromotions(container, template, collection){
                 } else {
                     if(store_front_image !== undefined) {
                         val.image_url = store_front_image;
-                    }
-                    if(store_front_image === ""){
-                        val.image_url = store_logo;
-                    }
-                    if(store_logo.indexOf('missing.png') > 0){
-                        val.image_url  = default_image.image_url;
+                    } else {
+                        if(store_logo.indexOf('missing.png') > 0){
+                            val.image_url  = default_image.image_url;
+                        } else {
+                            val.image_url = store_logo;    
+                        }
                     }
                 }
 
