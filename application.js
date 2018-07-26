@@ -307,6 +307,7 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
+    console.log(collection)
     var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
