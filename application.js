@@ -325,9 +325,9 @@ function renderPromotions(container, template, collection){
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if(val.is_special_promo == true){
-                    val.image_url = val.promo_image_url_abs    
+                    val.image_url = val.promo_image_url_abs;  
                 } else {
-                    if(store_front_image !== undefined) {
+                    if(store_front_image != undefined) {
                         val.image_url = store_front_image;
                     } else {
                         if(store_logo.indexOf('missing.png') > 0){
