@@ -307,6 +307,7 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
+    console.log()
     var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
@@ -316,6 +317,7 @@ function renderPromotions(container, template, collection){
         try {
             if(val.promotionable_type == "Store"){
                 var store_details = getStoreDetailsByID(val.promotionable_id);
+                console.log("deets ", store_details)
                 val.store_detail_btn = store_details.slug ;
                 val.store_name = store_details.name;
                 var store_front_image = getAssetURL(val.promotionable_id);
