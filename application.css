@@ -1162,6 +1162,7 @@ a:hover, a:focus{
 }
 .promo_img_container {
     height: 225px;
+    border-top: 2px solid #000;
     text-align: center;
 }
 .promo_img_container img {
@@ -1172,7 +1173,7 @@ a:hover, a:focus{
     padding: 20px;
     padding-bottom: 0;
     height: 210px;
-    border-top: 2px solid #000;
+    
 }
 .details_sharer{
     display: inline-block;
