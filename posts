@@ -12,6 +12,9 @@
                     <h3 class="post_categories"><a href="/posts?tag=fashion">Fashion</a><span> | </span></h3>
                     <h3 class="post_categories"><a href="/posts?tag=beauty">Beauty</a><span> | </span></h3>
                     <h3 class="post_categories"><a href="/posts?tag=lifestyle">Lifestyle</a><span> | </span></h3>
+                    <h3 class="post_categories"><a href="/posts?tag=lifestyle">Lifestyle</a><span> | </span></h3>
+                    <h3 class="post_categories"><a href="/posts?tag=lifestyle">Lifestyle</a><span> | </span></h3>
+                    <h3 class="post_categories"><a href="/posts?tag=lifestyle">Lifestyle</a><span> | </span></h3>
                 </div>
                 <div class="blog_search_container">
                     <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
