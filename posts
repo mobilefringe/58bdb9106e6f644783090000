@@ -37,7 +37,6 @@
                             </a>
                         </div>
                     </div>
-                    {{twitter_title}}
                     <div class="post_two">
                         <img src="{{post_image}}" alt="{{title}}"/>
                     </div>
