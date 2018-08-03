@@ -67,7 +67,6 @@
             
             function getBlogCategoris(posts) {
                 var categories = uniqueCategories([].concat(_.map(posts, 'categories')));
-                
                 return _.uniq(_.pullAll(categories, [null]));
             }
             
@@ -85,10 +84,26 @@
                 return allUniqueCategories;
             }
             
+            function getPostsByCategory(){
+                var category_posts = [];
+                var all_posts = getAllPublishedPosts();
+                var all_categories = getBlogCategoris(all_posts)
+                for(i = 0; i < all_categories.length; i++) {
+                    for (j = 0; j < all_posts.length; j++) {
+                        if($.inArray(parseInt(all_categories[i]), all_posts[j].categories) > -1){
+                            category_posts.push(all_posts[j]);
+                        }
+                    }
+                }
+                return category_posts;
+            }
+
             var posts = getAllPublishedPosts();
             var cats = getBlogCategoris(posts);
             console.log(cats)
             
+            var cat_posts = getPostsByCategory();
+            console.log(cat_posts)
             
             renderPostsPageData();
 
