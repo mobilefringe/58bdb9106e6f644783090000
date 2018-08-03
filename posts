@@ -62,10 +62,32 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            // var posts = getAllPublishedPosts();
-            // var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
-            // renderPosts("#blog_container", "#blog_template", published_posts);
-            // renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            
+            
+            function getBlogCategoris(posts) {
+                var categories = uniqueCategories([].concat(_.map(posts, 'categories')));
+                
+                return _.uniq(_.pullAll(categories, [null]));
+            }
+            
+            function uniqueCategories(currentCategories) {
+                var allUniqueCategories = [];
+                _.forEach(currentCategories, function(val, key){
+                    if(val !== null && val !== undefined && val.length > 0) {
+                        _.forEach(val, function(category, key){
+                            if(!_.includes(allUniqueCategories, category)){
+                                allUniqueCategories.push(category);
+                            }
+                        });
+                    }
+                });
+                return allUniqueCategories;
+            }
+            
+            var posts = getAllPublishedPosts();
+            var cats = getBlogCategoris(posts);
+            console.log(cats)
+            
             
             renderPostsPageData();
 
