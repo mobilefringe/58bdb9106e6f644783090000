@@ -73,6 +73,7 @@ function renderPosts(container, template, collection){
         val.published_on = date_blog.format('MMM DD, YYYY');
         
         val.twitter_title = val.title + " via @DomainNORTHSIDE"
+        console.log("val.twitter_title", val.twitter_title)
 
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
