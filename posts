@@ -87,7 +87,9 @@
             function getPostsByCategory(){
                 var category_posts = [];
                 var all_posts = getAllPublishedPosts();
-                var all_categories = getBlogCategoris(all_posts)
+                console.log("all_posts", all_posts)
+                var all_categories = getBlogCategoris(all_posts);
+                console.log("all_categories", all_categories)
                 for(i = 0; i < all_categories.length; i++) {
                     for (j = 0; j < all_posts.length; j++) {
                         if($.inArray(parseInt(all_categories[i]), all_posts[j].categories) > -1){
