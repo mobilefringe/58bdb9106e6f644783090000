@@ -68,7 +68,7 @@
                 $('#category_container').append('<h3 class="post_categories"><a href="/posts">' + val + '</a><span> | </span></h3>');
             });
             // renderGeneral("#category_container", "category_template", categories);
-            // $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span> | </span></h3>');
+            $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span> | </span></h3>');
 
             renderPostsPageData();
 
