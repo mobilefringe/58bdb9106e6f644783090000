@@ -87,7 +87,8 @@ function renderGeneral(container, template, collection){
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
         console.log(val)
-        var repo_rendered = Mustache.render(template_html,val);
+        val.name = val;
+        var repo_rendered = Mustache.render(template_html, val);
         item_rendered.push(repo_rendered);
     });
     $(container).html(item_rendered.join(''));
