@@ -1,3 +1,35 @@
+function getBlogCategories(posts) {
+    var categories = uniqueCategories([].concat(_.map(posts, 'categories')));
+    return _.uniq(_.pullAll(categories, [null]));
+}
+
+function uniqueCategories(currentCategories) {
+    var allUniqueCategories = [];
+    _.forEach(currentCategories, function(val, key){
+        if(val !== null && val !== undefined && val.length > 0) {
+            _.forEach(val, function(category, key){
+                if(!_.includes(allUniqueCategories, category)){
+                    allUniqueCategories.push(category);
+                }
+            });
+        }
+    });
+    return allUniqueCategories;
+}
+
+function getPostsByCategory(category_name){
+    var post_categories = [];
+    var all_posts = getAllPublishedPosts();
+    var all_categories = getBlogCategories(all_posts);
+    for (j = 0; j < all_posts.length; j++) {
+        if($.inArray(category_name, all_posts[j].categories) > -1){
+            post_categories.push(all_posts[j]);
+        }
+    }
+    return post_categories;
+}
+
+
 function renderPostsPageData(){
     //check if tag is attached to path
     var query = window.location.search;
