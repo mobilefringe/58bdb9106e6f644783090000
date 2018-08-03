@@ -33,11 +33,12 @@ function renderPostsPageData(){
     //check if tag is attached to path
     var query = window.location.search;
     if(query !== "") {
-        var tag_name = query.split('=')[1];
-        tag_name = tag_name.replace("%20", " ");
+        var cat_name = query.split('=')[1];
+        cat_name = cat_name.replace("%20", " ");
+        console.log("cat_name", cat_name)
         var posts = getAllPublishedPosts();
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-        renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
+        renderSearchPosts("#blog_container", "#blog_template", published_posts, cat_name);
     } else {
         regularPostList();
     }
