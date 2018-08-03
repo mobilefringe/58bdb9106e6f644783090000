@@ -29,7 +29,6 @@ function getPostsByCategory(category_name){
     return post_categories;
 }
 
-
 function renderPostsPageData(){
     //check if tag is attached to path
     var query = window.location.search;
@@ -38,7 +37,6 @@ function renderPostsPageData(){
         tag_name = tag_name.replace("%20", " ");
         var posts = getAllPublishedPosts();
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-        console.log(published_posts)
         renderSearchPosts("#blog_container", "#blog_template", published_posts, tag_name);
     } else {
         regularPostList();
@@ -50,7 +48,6 @@ function renderPostsPageData(){
 function regularPostList () {
     var posts = getAllPublishedPosts();
     var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-    console.log(published_posts)
     renderPosts("#blog_container", "#blog_template", published_posts);
 }
 
