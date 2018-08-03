@@ -35,12 +35,10 @@ function renderPostsPageData(){
     if(query !== "") {
         var cat_name = query.split('=')[1];
         cat_name = cat_name.replace("%20", " ");
-        console.log("cat_name", cat_name)
         var posts = getPostsByCategory(cat_name);
-        console.log(posts)
-        // var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+        var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
         // renderSearchPosts("#blog_container", "#blog_template", published_posts, cat_name);
-        renderPosts("#blog_container", "#blog_template", posts);
+        renderPosts("#blog_container", "#blog_template", published_posts);
     } else {
         regularPostList();
     }
