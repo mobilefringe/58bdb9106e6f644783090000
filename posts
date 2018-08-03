@@ -90,7 +90,7 @@
                 var all_categories = getBlogCategories(all_posts);
                 // for(i = 0; i < all_categories.length; i++) {
                     for (j = 0; j < all_posts.length; j++) {
-                        console.log("(all_categories[i]", all_categories[i], "all_posts[j].categories", all_posts[j].categories, "if", $.inArray(all_categories[i], all_posts[j].categories) > -1 )
+                        console.log("(all_categories[i]", category_name, "all_posts[j].categories", all_posts[j].categories, "if", $.inArray(all_categories[i], all_posts[j].categories) > -1 )
                         if($.inArray(category_name, all_posts[j].categories) > -1){
                             
                             post_categories.push(all_posts[j]);
