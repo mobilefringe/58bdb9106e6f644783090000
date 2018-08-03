@@ -57,6 +57,7 @@
 	    </div>
     </div>
 </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script src="../blog.js"></script>
 <script>
     $(document).ready(function(e){
