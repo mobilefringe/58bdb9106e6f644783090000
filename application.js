@@ -80,15 +80,11 @@ function renderFeatureItems(container, template, collection){
 }
 
 function renderGeneral(container, template, collection){
-    console.log(collection)
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        console.log(val)
-        val.name = val;
-        console.log(val.name)
         var repo_rendered = Mustache.render(template_html, val);
         item_rendered.push(repo_rendered);
     });
