@@ -38,8 +38,9 @@ function renderPostsPageData(){
         console.log("cat_name", cat_name)
         var posts = getPostsByCategory(cat_name);
         console.log(posts)
-        var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
-        renderSearchPosts("#blog_container", "#blog_template", published_posts, cat_name);
+        // var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
+        // renderSearchPosts("#blog_container", "#blog_template", published_posts, cat_name);
+        renderPosts("#blog_container", "#blog_template", posts);
     } else {
         regularPostList();
     }
