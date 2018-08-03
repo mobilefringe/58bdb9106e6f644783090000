@@ -91,6 +91,7 @@
                 for(i = 0; i < all_categories.length; i++) {
                     for (j = 0; j < all_posts.length; j++) {
                         console.log("all_categories", all_categories)
+                        console.log("all_posts[j].categories", all_posts[j].categories)
                         if($.inArray(all_categories, all_posts[j].categories) > -1){
                             
                             category_posts.push(all_posts[j]);
