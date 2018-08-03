@@ -103,7 +103,7 @@
             var cats = getBlogCategoris(posts);
             console.log(cats)
             
-            var cat_posts = getPostsByCategory();
+            var cat_posts = getPostsByCategory("Fashion");
             console.log(cat_posts)
             
             renderPostsPageData();
