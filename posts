@@ -85,7 +85,7 @@
             }
             
             function getPostsByCategory(){
-                var category_posts = [];
+                var post_categories = [];
                 var all_posts = getAllPublishedPosts();
                 var all_categories = getBlogCategoris(all_posts);
                 for(i = 0; i < all_categories.length; i++) {
@@ -94,11 +94,11 @@
                         console.log("all_posts[j].categories", all_posts[j].categories)
                         if($.inArray(all_categories, all_posts[j].categories) > -1){
                             
-                            category_posts.push(all_posts[j]);
+                            post_categories.push(all_posts[j]);
                         }
                     }
                 }
-                return category_posts;
+                return post_categories;
             }
 
             var posts = getAllPublishedPosts();
