@@ -8,9 +8,9 @@
         <div class="row">
             <div class="blog_header_container">
                 <div class="blog_category_container" id="category_container">
-                    <script id="category_template" type="x-tmpl-mustache/text">
-                        <h3 class="post_categories"><a href="/posts?category={{}}">{{ val }}</a><span> | </span></h3>
-                    </script>
+                    <!--<script id="category_template" type="x-tmpl-mustache/text">-->
+                    <!--    <h3 class="post_categories"><a href="/posts?category={{}}">{{ val }}</a><span> | </span></h3>-->
+                    <!--</script>-->
                 </div>
                 <div class="blog_search_container">
                     <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
@@ -64,7 +64,10 @@
         function renderAll(){
             var posts = getAllPublishedPosts();
             var categories = getBlogCategories(posts);
-            renderGeneral("#category_container", "category_template", categories);
+            $.each(categories, function(key, val){
+                $('#category_container').append('<h3 class="post_categories"><a href="/posts">' + val + '</a><span> | </span></h3>');
+            });
+            // renderGeneral("#category_container", "category_template", categories);
             // $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span> | </span></h3>');
 
             renderPostsPageData();
