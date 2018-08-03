@@ -103,7 +103,7 @@
             var posts = getAllPublishedPosts();
 
             
-            var cat_posts = getPostsByCategory("Lifestyle");
+            var cat_posts = getPostsByCategory("Fashion");
             console.log(cat_posts)
             
             renderPostsPageData();
