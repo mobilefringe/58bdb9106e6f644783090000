@@ -103,7 +103,7 @@
             var posts = getAllPublishedPosts();
 
             
-            var cat_posts = getPostsByCategory("Beauty");
+            var cat_posts = getPostsByCategory("Lifestyle");
             console.log(cat_posts)
             
             renderPostsPageData();
