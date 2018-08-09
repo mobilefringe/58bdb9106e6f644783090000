@@ -35,6 +35,7 @@ function renderPostsPageData(){
     if(query !== "") {
         var cat_name = query.split('=')[1];
         cat_name = cat_name.replace("%20", " ");
+        cat_name = cat_name.replace("%20", " ");
         console.log(cat_name)
         var posts = getPostsByCategory(cat_name);
         var published_posts = posts.sortBy(function(o){ return moment(o.publish_date) }).reverse();
