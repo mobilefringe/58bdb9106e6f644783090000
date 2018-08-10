@@ -64,10 +64,14 @@ function renderPosts(container, template, collection){
             val.post_image = val.image_url;
         }
         
-        if(val.body.length > 100){
-            val.description_short = val.body.substring(0,100) + "...";
+        if(val.caption != null) {
+            val.description_short = val.caption;
         } else {
-            val.description_short = val.body;
+            if(val.body.length > 100){
+                val.description_short = val.body.substring(0,100) + "...";
+            } else {
+                val.description_short = val.body;
+            }
         }
         
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
