@@ -58,6 +58,7 @@
         init(e);
         function renderAll(){
             var posts = getAllPublishedPosts();
+            console.log(posts)
             var categories = getBlogCategories(posts);
             $.each(categories, function(key, val){
                 $('#category_container').append('<h3 class="post_categories"><a href="/posts?category='+ val + '">' + val + '</a><span> | </span></h3>');
