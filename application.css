@@ -19,11 +19,19 @@
     src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1488899424000/GibsonLight Regular.ttf") format("TrueType");
 }
 
+// @font-face {
+//     font-family: 'gibson_bold';
+//     src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1488899417000/Gibson Bold.ttf") format("TrueType");
+//     font-weight: bold;
+// }
 @font-face {
-    font-family: 'gibson_bold';
-    src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1488899417000/Gibson Bold.ttf") format("TrueType");
+    font-family: 'Gibson';
+    src: url('//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1534476370000/GibsonBold.woff2') format('woff2'),
+        url('//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000/application/font-woff/1534476370000/GibsonBold.woff') format('woff');
     font-weight: bold;
+    font-style: normal;
 }
+
 @font-face {
     font-family: 'gibson_light';
     src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1488899424000/GibsonLight Regular.ttf") format("TrueType");
@@ -582,8 +590,8 @@ a:hover, a:focus{
     margin: 10px 35px 5px 35px;
     position:relative;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-text-rendering: optimizeLegibility !important;
--webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 .top_nav_menu a {
