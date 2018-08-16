@@ -552,6 +552,7 @@ a:hover, a:focus{
     border:0;
     padding-right: 25px;
     line-height: 31px;
+        letter-spacing: 1px;
 }
 // .top_form_control input::-moz-placeholder,
 // .top_form_control input:-ms-input-placeholder,
@@ -1571,7 +1572,7 @@ a:hover, a:focus{
 }
 .newsletter_btn span {
     margin-left: 5px;
-        letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 .newsletter_btn a:hover {
     color: #FFF;
