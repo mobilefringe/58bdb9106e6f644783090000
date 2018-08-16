@@ -85,7 +85,6 @@
                 document.location.href = href;
             });
             
-            
             $("#category_dropdown").bind("change", function(e) {
                 e.preventDefault()
                 var selectedOption = $("#category_dropdown option:selected")
