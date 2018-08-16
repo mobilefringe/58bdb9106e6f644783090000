@@ -100,7 +100,7 @@
                 console.log(selectedCat)
                 var href = "/posts?category=" + selectedCat
                 console.log(href)
-                // dropPin(svgmap_region);
+                document.location.href = href;
             });
             
             store_search();
