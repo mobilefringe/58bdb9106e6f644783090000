@@ -676,7 +676,7 @@ a:hover, a:focus{
 
 .footer_ul a{
     color: #4B4B4B;
-        letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .mini_footer a:hover, .footer_ul a:hover{
@@ -970,6 +970,7 @@ a:hover, a:focus{
     // padding: 10px 30px;
     padding: 10px 0;
     font-size: 20px;
+    letter-spacing:0.5px;
 }
 .hours_left{
     font-size: 15px;
