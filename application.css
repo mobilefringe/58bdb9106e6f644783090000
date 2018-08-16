@@ -25,7 +25,7 @@
 //     font-weight: bold;
 // }
 @font-face {
-    font-family: 'Gibson';
+    font-family: 'gibson_bold';
     src: url('//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1534476370000/GibsonBold.woff2') format('woff2'),
         url('//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000/application/font-woff/1534476370000/GibsonBold.woff') format('woff');
     font-weight: bold;
