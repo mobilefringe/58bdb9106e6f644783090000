@@ -96,7 +96,8 @@
                 var selectedOption = $("#category_dropdown option:selected")
                 selectedOption = selectedOption[0]
                 console.log("selectedOption", selectedOption)
-                // var svgmap_region = $(selectedOption).attr('data-svg');
+                var selectedCat = $(selectedOption).val();
+                console.log(selectedCat)
                 // dropPin(svgmap_region);
             });
             
