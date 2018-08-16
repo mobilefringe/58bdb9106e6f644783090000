@@ -69,7 +69,7 @@
             } else {
                 $.each(categories, function(key, val) {
                     $("#category_dropdown").append('<option>' + val + '</option>')  
-                    $("#category_dropdown").prepend('<option selected>Select a Category</option>)
+                    $("#category_dropdown").prepend('<option selected>Select a Category</option>')
                 })
             }
 
