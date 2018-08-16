@@ -61,7 +61,6 @@
         init(e);
         function renderAll(){
             var posts = getAllPublishedPosts();
-            console.log(posts)
             var categories = getBlogCategories(posts);
             if ($(window).width() > 768) {
                 $.each(categories, function(key, val){
