@@ -90,7 +90,16 @@
                 var href = this.value;
                 document.location.href = href;
             });
-        
+            
+            $("#category_dropdown").bind("change", function(e) {
+                e.preventDefault()
+                var selectedOption = $("#category_dropdown option:selected")
+                selectedOption = selectedOption[0]
+                console.log("selectedOption", selectedOption)
+                // var svgmap_region = $(selectedOption).attr('data-svg');
+                // dropPin(svgmap_region);
+            });
+            
             store_search();
             show_cat_stores();
             $('#top_nav_blog').addClass('active_yellow')
