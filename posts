@@ -98,6 +98,8 @@
                 console.log("selectedOption", selectedOption)
                 var selectedCat = $(selectedOption).val();
                 console.log(selectedCat)
+                var href = "/posts?category=" + selectedCat
+                console.log(href)
                 // dropPin(svgmap_region);
             });
             
