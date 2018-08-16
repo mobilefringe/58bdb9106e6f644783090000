@@ -86,22 +86,19 @@
                 document.location.href = href;
             });
             
-            $('.mobile_blog_select').change(function(e){
+            $('#category_dropdown').change(function(e){
                 var href = this.value;
                 document.location.href = href;
             });
             
-            $("#category_dropdown").bind("change", function(e) {
-                e.preventDefault()
-                var selectedOption = $("#category_dropdown option:selected")
-                selectedOption = selectedOption[0]
-                console.log("selectedOption", selectedOption)
-                var selectedCat = $(selectedOption).val();
-                console.log(selectedCat)
-                var href = "/posts?category=" + selectedCat
-                console.log(href)
-                document.location.href = href;
-            });
+            // $("#category_dropdown").bind("change", function(e) {
+            //     e.preventDefault()
+            //     var selectedOption = $("#category_dropdown option:selected")
+            //     selectedOption = selectedOption[0]
+            //     var selectedCat = $(selectedOption).val();
+            //     var href = "/posts?category=" + selectedCat
+            //     document.location.href = href;
+            // });
             
             store_search();
             show_cat_stores();
