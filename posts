@@ -7,8 +7,8 @@
         </div>
         <div class="row">
             <div class="blog_header_container">
-                <div class="blog_category_container" id="category_container"></div>
-                <div class="blog_category_dropdown">
+                <div class="blog_category_container hidden_now" id="category_container"></div>
+                <div class="blog_category_dropdown hidden_now">
                     <select id="category_dropdown"></select>
                 </div>
                 <div class="blog_search_container">
@@ -62,19 +62,23 @@
         function renderAll(){
             var posts = getAllPublishedPosts();
             var categories = getBlogCategories(posts);
+            // DESKTOP
+            $.each(categories, function(key, val){
+                $('#category_container').append('<h3 class="post_categories"><a href="/posts?category='+ val + '">' + val + '</a><span class="post_spacer">•</span></h3>');
+            });
+            $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span class="post_spacer">•</span></h3>');
+            // MOBILE
+            $.each(categories, function(key, val) {
+                $("#category_dropdown").append('<option value="' + val + '">' + val + '</option>');
+            });
+            $("#category_dropdown").prepend('<option selected>Select a Category</option>')
             $(window).on('resize', function(){
                 var win = $(this); //this = window
                 console.log("win", win.width())
                 if (win.width() >= 768) {
-                    $.each(categories, function(key, val){
-                        $('#category_container').append('<h3 class="post_categories"><a href="/posts?category='+ val + '">' + val + '</a><span class="post_spacer">•</span></h3>');
-                    });
-                    $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span class="post_spacer">•</span></h3>');
+                    $("#category_container").show();
                 } else {
-                    $.each(categories, function(key, val) {
-                        $("#category_dropdown").append('<option value="' + val + '">' + val + '</option>');
-                    });
-                    $("#category_dropdown").prepend('<option selected>Select a Category</option>')
+                    
                 }
             });
 
