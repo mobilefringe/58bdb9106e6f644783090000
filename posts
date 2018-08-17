@@ -71,14 +71,15 @@
             $.each(categories, function(key, val) {
                 $("#category_dropdown").append('<option value="' + val + '">' + val + '</option>');
             });
-            $("#category_dropdown").prepend('<option selected>Select a Category</option>')
+            $("#category_dropdown").prepend('<option selected>Select a Category</option>');
+            
             $(window).on('resize', function(){
                 var win = $(this); //this = window
                 console.log("win", win.width())
                 if (win.width() >= 768) {
                     $("#category_container").show();
                 } else {
-                    
+                   $(".blog_category_dropdown").show(); 
                 }
             });
 
