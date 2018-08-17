@@ -80,7 +80,9 @@
             renderPostsPageData();
 
             northside_blog_search();
-        
+            
+            categoryDisplay();
+            
             show_content();
             
             $('.colored_link').click(function(e) {
