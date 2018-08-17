@@ -73,20 +73,14 @@
             });
             $("#category_dropdown").prepend('<option selected>Select a Category</option>');
             
-            $(window).on('resize', function(){
-                var win = $(this); //this = window
-                console.log("win", win.width())
-                if (win.width() >= 768) {
-                    $("#category_container").show();
-                } else {
-                   $(".blog_category_dropdown").show(); 
-                }
-            });
+            window.onresize = categoryDisplay();
 
             renderPostsPageData();
 
             northside_blog_search();
         
+            categoryDisplay();
+            
             show_content();
             
             $('.colored_link').click(function(e) {
@@ -108,5 +102,15 @@
             $('#top_nav_blog').addClass('active_yellow')
         }
         loadMallDataCached(renderAll); 
+        
+        function categoryDisplay() {
+            var win = $(this); //this = window
+            console.log("win", win.width())
+            if (win.width() >= 768) {
+                $("#category_container").show();
+            } else {
+               $(".blog_category_dropdown").show(); 
+            }
+        }
     });
 </script>
