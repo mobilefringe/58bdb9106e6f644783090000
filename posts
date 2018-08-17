@@ -108,7 +108,6 @@
         
         function categoryDisplay() {
             var win = $(this); //this = window
-            console.log("win", win.width())
             if (win.width() >= 768) {
                 $("#category_container").show();
             } else {
