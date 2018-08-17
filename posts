@@ -73,14 +73,14 @@
             });
             $("#category_dropdown").prepend('<option selected>Select a Category</option>');
             
-            window.onresize = categoryDisplay();
+            $(window).on('resize', function(){
+                categoryDisplay();
+            });
 
             renderPostsPageData();
 
             northside_blog_search();
         
-            categoryDisplay();
-            
             show_content();
             
             $('.colored_link').click(function(e) {
