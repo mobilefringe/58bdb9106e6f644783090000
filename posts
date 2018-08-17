@@ -62,6 +62,14 @@
         function renderAll(){
             var posts = getAllPublishedPosts();
             var categories = getBlogCategories(posts);
+            $(window).on('resize', function(){
+                var win = $(this); //this = window
+                console.log("win", win)
+                // if (win.width() >= 1280) {
+                    
+                // }
+            });
+      
             if ($(window).width() > 768) {
                 $.each(categories, function(key, val){
                     $('#category_container').append('<h3 class="post_categories"><a href="/posts?category='+ val + '">' + val + '</a><span class="post_spacer">•</span></h3>');
