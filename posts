@@ -103,6 +103,7 @@
             show_cat_stores();
             $('#top_nav_blog').addClass('active_yellow')
         }
+        
         loadMallDataCached(renderAll); 
         
         function categoryDisplay() {
