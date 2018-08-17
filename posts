@@ -64,7 +64,7 @@
             var categories = getBlogCategories(posts);
             $(window).on('resize', function(){
                 var win = $(this); //this = window
-                console.log("win", win)
+                console.log("win", win.width())
                 // if (win.width() >= 1280) {
                     
                 // }
