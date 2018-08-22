@@ -632,6 +632,9 @@ a:hover, a:focus{
     color: #000;
     border-left: 2px solid #eee;
     border-right: 2px solid #eee;
+    a{
+        font-weight:bold;
+    }
 }
 .dropdown-menu2>li>a:focus, .dropdown-menu2>li>a:hover{
     color: $slate;
