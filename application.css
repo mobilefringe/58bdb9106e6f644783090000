@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: 'gibson_bold';
-    src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1297397392000/Gibson-Bold.otf") format("OpenType");
+    src: url("//codecloud.cdn.speedyrails.net/sites/59b9abda6e6f642752370000//1297397392000/Gibson-Bold.otf") format("OpenType");shou
 }
 @font-face {
     font-family: 'gibson_semibold';
@@ -616,7 +616,7 @@ a:hover, a:focus{
     border-left: 0;
     border-right: 0;
     border-bottom: 2px solid #eee;
-    font-family: 'gibson_regular';
+    font-family: 'gibson_light';
 }
 
 .dropdown:hover .dropdown-menu2 {
