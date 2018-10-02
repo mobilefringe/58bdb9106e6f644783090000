@@ -5,10 +5,10 @@
                 <h3 class="store_list_header center">Domain Northside Blog</h3>
             </div>  
             <div class="blog_search_container">
-                    <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
-                    <i id="close_blog_search" class="fa fa-times-circle"></i>
-                    <div id="blog_results"></div>
-                </div>
+                <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
+                <i id="close_blog_search" class="fa fa-times-circle"></i>
+                <div id="blog_results"></div>
+            </div>
         </div>
         <div class="row">
             <div class="blog_header_container">
