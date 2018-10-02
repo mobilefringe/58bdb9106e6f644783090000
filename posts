@@ -11,11 +11,7 @@
                 <div class="blog_category_dropdown hidden_now">
                     <select id="category_dropdown"></select>
                 </div>
-                <div class="blog_search_container">
-                    <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
-                    <i id="close_blog_search" class="fa fa-times-circle"></i>
-                    <div id="blog_results"></div>
-                </div>
+                
             </div>
         </div>
     </div>
