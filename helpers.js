@@ -37,6 +37,7 @@ function init(e){
     $(".current_year").text(current_year);
     
     // Trigger FB Crawler
+    var url = 
     ogShare();
 }
 
@@ -570,19 +571,3 @@ function getAssetURL(id){
     return store_front_image_url;
 }
 
-function ogShare() {
-    var url = Window.location;
-    console.log(url)
-    FB.ui(
-        {
-            method: 'share_open_graph',
-            action_type: 'og.likes',
-            action_properties: JSON.stringify({
-                object:'https://developers.facebook.com/docs/opengraph/getting-started',
-            })
-        }, function(response){
-            // Debug response (optional)
-            console.log(response);
-        }
-    );
-}
