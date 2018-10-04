@@ -56,7 +56,7 @@
     
             function ogShare(FB) {
                 var currentPage = window.location.href;
-            console.log(currentPage)
+                console.log(currentPage)
                 FB.ui(
                     {
                         method: 'share_open_graph',
