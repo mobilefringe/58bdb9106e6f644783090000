@@ -52,7 +52,7 @@
             }(document, 'script', 'facebook-jssdk'));
             
             var currentPage = window.location;
-            console.logcurrentPage)
+            console.log(currentPage)
     
             // function ogShare() {
                 FB.ui(
