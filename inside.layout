@@ -31,6 +31,45 @@
             ga('send', 'pageview');
         </script>
         
+        <script>
+            // Initialize the Facebook JS SDK.
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId            : '1987015024884837',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v3.1'
+                });
+            };
+            
+            // Load the Facebook JS SDK Asynchronously
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            
+            var currentPage = window.location;
+            console.logcurrentPage)
+    
+            // function ogShare() {
+                FB.ui(
+                    {
+                        method: 'share_open_graph',
+                        action_type: 'og.likes',
+                        action_properties: JSON.stringify({
+                            object: currentPage,
+                        })
+                    }, function(response){
+                        // Debug response (optional)
+                        console.log(response);
+                    }
+                );
+            // }
+        </script>
+        
         <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: //bootswatch.com/flatly/ -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
