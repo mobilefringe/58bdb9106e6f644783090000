@@ -45,6 +45,21 @@
                 js.src = "https://connect.facebook.net/en_US/sdk.js";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
+            
+            function ogShare() {
+                FB.ui(
+                    {
+                        method: 'share_open_graph',
+                        action_type: 'og.likes',
+                        action_properties: JSON.stringify({
+                            object:'https://developers.facebook.com/docs/opengraph/getting-started',
+                        })
+                    }, function(response){
+                        // Debug response (optional)
+                        console.log(response);
+                    }
+                );
+            }
         </script>
         
         <!-- Facebook Pixel Code -->
