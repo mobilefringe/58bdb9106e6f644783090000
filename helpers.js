@@ -571,6 +571,8 @@ function getAssetURL(id){
 }
 
 function ogShare() {
+    var url = Window.location;
+    console.log(url)
     FB.ui(
         {
             method: 'share_open_graph',
