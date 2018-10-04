@@ -35,7 +35,7 @@
                     xfbml            : true,
                     version          : 'v3.1'
                 });
-                
+                ogShare(FB);
             };
             
             // Load the Facebook JS SDK Asynchronously
@@ -63,7 +63,6 @@
                     }
                 );
             }
-            ogShare(FB);
         </script>
         
         <!-- Facebook Pixel Code -->
