@@ -46,7 +46,7 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
             
-            var currentPage = window.location;
+            var currentPage = window.location.href;
             console.log(`currentPage)
     
             // function ogShare() {
