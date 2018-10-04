@@ -37,7 +37,8 @@ function init(e){
     $(".current_year").text(current_year);
     
     // Trigger FB Crawler
-    var url = 
+    var url = window.location;
+    console.log(url)
     ogShare();
 }
 
