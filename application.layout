@@ -57,6 +57,7 @@
                         action_properties: JSON.stringify({
                             object: currentPage,
                         })
+                        console.log(action_properties)
                     }, function(response){
                         // Debug response (optional)
                         console.log(response);
