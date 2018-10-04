@@ -26,7 +26,7 @@
             ga('send', 'pageview');
         </script>
         
-        <script>
+         <script>
             // Initialize the Facebook JS SDK.
             window.fbAsyncInit = function() {
                 FB.init({
@@ -35,6 +35,7 @@
                     xfbml            : true,
                     version          : 'v3.1'
                 });
+                ogShare(FB);
             };
             
             // Load the Facebook JS SDK Asynchronously
@@ -46,10 +47,9 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
             
-            var currentPage = window.location.href;
-            console.log(currentPage)
-    
-            // function ogShare() {
+            function ogShare(FB) {
+                var currentPage = window.location.href;
+                console.log(currentPage)
                 FB.ui(
                     {
                         method: 'share_open_graph',
@@ -62,7 +62,7 @@
                         console.log(response);
                     }
                 );
-            // }
+            }
         </script>
         
         <!-- Facebook Pixel Code -->
