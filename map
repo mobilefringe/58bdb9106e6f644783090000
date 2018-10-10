@@ -67,7 +67,7 @@
                 var todays_hours_id = val.todays_hour;
                 var hour_string = "";
                 if(todays_hours_id != null) {
-                    var todays_hours = getHoursForIds(todays_hours_id);
+                    var todays_hours = getHoursForIds([todays_hours_id]);
                     //  console.log("store", val.name, todays_hours)
                     if (todays_hours.open_time && todays_hours.close_time && (todays_hours.is_closed == false || todays_hours.is_closed == null)){
                         var open_time = in_my_time_zone(moment(todays_hours.open_time), "h:mma");
