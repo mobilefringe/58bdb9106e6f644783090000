@@ -105,7 +105,6 @@
 
             var dine_list = dining.concat(late_night, specialty_foods).sortBy(function(o){ return o.name});
             var sorted_list = _.uniqBy(dine_list, function(o){ return o.name; });
-            console.log("sorted_list", sorted_list)
             renderStoreList('#store_list_container','#store_list_template', sorted_list, "stores");
             
             show_content();
