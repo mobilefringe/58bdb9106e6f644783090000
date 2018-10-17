@@ -40,7 +40,6 @@
                     xfbml            : true,
                     version          : 'v3.1'
                 });
-                // ogShare(FB);
                 scrapeLink(FB);
             };
             
@@ -52,23 +51,7 @@
                 js.src = "https://connect.facebook.net/en_US/sdk.js";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-            
-            // function ogShare(FB) {
-            //     var currentPage = window.location.href;
-            //     FB.ui(
-            //         {
-            //             method: 'share_open_graph',
-            //             action_type: 'og.likes',
-            //             action_properties: JSON.stringify({
-            //                 object: currentPage,
-            //             })
-            //         }, function(response){
-            //             // Debug response (optional)
-            //             console.log(response);
-            //         }
-            //     );
-            // }
-            
+
             function scrapeLink(FB){
                 var masterdfd = $.Deferred();
                 var currentPage = window.location.href;
