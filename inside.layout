@@ -105,7 +105,7 @@
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/5639075d6e6f647b9f020000/text/javascript/1446569669000/instafeed.min.js"></script>
-        <script src="//www.google.com/recaptcha/api.js"></script>
+        <!--<script src="//www.google.com/recaptcha/api.js"></script>-->
         <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/5438407c6e6f64462d020000/601617fe9ab691b1b62a66ac3ca3e8b7/jquery.cookie.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
