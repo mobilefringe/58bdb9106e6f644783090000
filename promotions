@@ -100,9 +100,9 @@
             })
             
             
-            if(published_promos.length > 0){
+            if(paginated_promos.length > 0){
                 console.log("before promo render")
-                renderPromotions("#promos_container","#promos_template", published_promos);
+                renderPromotions("#promos_container","#promos_template", paginated_promos);
             } else {
                 $('#no_promos').show()
             }
