@@ -89,7 +89,7 @@
                 }
             });
             // getStoreCategories().sortBy(function(o){ return o.name});
-            var cat_list = _.filter(getStoreCategories(), function(o) {
+            cat_list = _.filter(getStoreCategories(), function(o) {
                 // console.log("val", o)
                 return o.store_ids;
             });
