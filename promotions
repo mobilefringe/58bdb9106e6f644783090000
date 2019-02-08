@@ -93,7 +93,7 @@
                 return o.store_ids;
             });
             
-            var paginated_promos = published_promos.slice(1, 3);
+            var paginated_promos = published_promos.slice(1, 10);
             $("#load_more").click(function(){
                 var current_count = $("#load_more").attr('data-count');
                 console.log("current_count", current_count)
