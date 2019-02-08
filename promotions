@@ -109,7 +109,7 @@
             show_cat_stores();
             $('#top_nav_promotions').addClass('active_yellow')
         }
-        loadMallData(renderAll); 
+        loadMallDataCached(renderAll); 
     });
     
     function show_cat_stores(){
