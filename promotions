@@ -102,7 +102,9 @@
                 $("#load_more").attr('data-count', current_count+increment)
                 paginated_promos = published_promos.slice(0, current_count+increment);
                 renderPromotions("#promos_container","#promos_template", paginated_promos);
-                if(paginated_promos.length == published_promos.length)
+                if(paginated_promos.length == published_promos.length){
+                    
+                }
             })
             
             
