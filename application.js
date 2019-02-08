@@ -330,72 +330,72 @@ function renderPromotions(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        // try {
-        //     if(val.promotionable_type == "Store"){
-        //         var store_details = getStoreDetailsByID(val.promotionable_id);
-        //         val.store_detail_btn = store_details.slug ;
-        //         val.store_name = store_details.name;
-        //         var store_front_image = store_details.store_front_alt_url_abs;
-        //         var store_logo = store_details.store_front_url_abs;
-        //         // console.log((store_front_image.indexOf('missing.png') > -1), store_front_image)
-        //         // console.log(store_logo.indexOf('missing.png') > -1,store_logo )
-        //         if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
-        //                 if (store_front_image.indexOf('missing.png') == -1) {
-        //                     val.image_url = store_front_image;
-        //                 }
-        //                 else if (store_logo.indexOf('missing.png') == -1) {
-        //                     val.image_url = store_logo;
-        //                 }
-        //                 else {
-        //                     val.image_url  = default_image.image_url;
-        //                 }
-        //         } else {
-        //             val.image_url = val.promo_image_url_abs
-        //         }
-        //         // if(val.is_special_promo == true){
-        //         //     val.image_url = val.promo_image_url_abs    
-        //         // } else {
-        //         //     if (store_front_image.indexOf('missing.png') > -1) {
-        //         //         val.image_url = store_front_image;
-        //         //     }
-        //         //     if(store_front_image === ""){
-        //         //         val.image_url = store_logo;
-        //         //     }
-        //         //     if(store_logo.indexOf('missing.png') > 0){
-        //         //         val.image_url  = default_image.image_url;
-        //         //     }
-        //         // }
+        try {
+            if(val.promotionable_type == "Store"){
+                var store_details = getStoreDetailsByID(val.promotionable_id);
+                val.store_detail_btn = store_details.slug ;
+                val.store_name = store_details.name;
+                var store_front_image = store_details.store_front_alt_url_abs;
+                var store_logo = store_details.store_front_url_abs;
+                // console.log((store_front_image.indexOf('missing.png') > -1), store_front_image)
+                // console.log(store_logo.indexOf('missing.png') > -1,store_logo )
+                if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
+                        if (store_front_image.indexOf('missing.png') == -1) {
+                            val.image_url = store_front_image;
+                        }
+                        else if (store_logo.indexOf('missing.png') == -1) {
+                            val.image_url = store_logo;
+                        }
+                        else {
+                            val.image_url  = default_image.image_url;
+                        }
+                } else {
+                    val.image_url = val.promo_image_url_abs
+                }
+                // if(val.is_special_promo == true){
+                //     val.image_url = val.promo_image_url_abs    
+                // } else {
+                //     if (store_front_image.indexOf('missing.png') > -1) {
+                //         val.image_url = store_front_image;
+                //     }
+                //     if(store_front_image === ""){
+                //         val.image_url = store_logo;
+                //     }
+                //     if(store_logo.indexOf('missing.png') > 0){
+                //         val.image_url  = default_image.image_url;
+                //     }
+                // }
 
-        //         var store_categories = store_details.categories;
-        //         if(store_categories != null){
-        //             val.cat_list = store_categories.join(',');
-        //         }
-        //     } else {
-        //         val.store_name = mall_name;
-        //         val.image_url = promo_default.image_url;
-        //         val.cat_list = "9999"
-        //         val.image_url  = default_image.image_url;
-        //     }
+                var store_categories = store_details.categories;
+                if(store_categories != null){
+                    val.cat_list = store_categories.join(',');
+                }
+            } else {
+                val.store_name = mall_name;
+                val.image_url = promo_default.image_url;
+                val.cat_list = "9999"
+                val.image_url  = default_image.image_url;
+            }
             
-        //     if (val.name.length > 32){
-        //         val.name_short = val.name.substring(0,30) + "...";
-        //     } else {
-        //         val.name_short = val.name;
-        //     }
+            if (val.name.length > 32){
+                val.name_short = val.name.substring(0,30) + "...";
+            } else {
+                val.name_short = val.name;
+            }
                 
-        //     var start = moment(val.start_date).tz(getPropertyTimeZone());
-        //     var end = moment(val.end_date).tz(getPropertyTimeZone());
-        //     if (start.format("DMY") == end.format("DMY")){
-        //         val.dates = start.format("MMM D")
-        //     } else {
-        //         val.dates = start.format("MMM D") + " - " + end.format("MMM D");
-        //     }
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
+            if (start.format("DMY") == end.format("DMY")){
+                val.dates = start.format("MMM D")
+            } else {
+                val.dates = start.format("MMM D") + " - " + end.format("MMM D");
+            }
             
-        //     var rendered = Mustache.render(template_html,val);
-        //     item_rendered.push(rendered);
-        // } catch(err){
-        //     console.log(err);
-        // }
+            var rendered = Mustache.render(template_html,val);
+            item_rendered.push(rendered);
+        } catch(err){
+            console.log(err);
+        }
     });
     console.log("done promo render")
     $(container).html(item_rendered.join(''));
