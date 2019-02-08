@@ -91,7 +91,7 @@
             // getStoreCategories().sortBy(function(o){ return o.name});
             var cat_list = _.filter(getStoreCategories(), function(o) {
                 console.log("val", o)
-                return o.store_ids !== null;
+                return o.store_ids;
             });
             // published_promos = _.filter(promotions, function(num){ return num % 2 == 0; });
             if(published_promos.length > 0){
