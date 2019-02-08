@@ -350,19 +350,19 @@ function renderPromotions(container, template, collection){
                 } else {
                     val.image_url = val.promo_image_url_abs
                 }
-                if(val.is_special_promo == true){
-                    val.image_url = val.promo_image_url_abs    
-                } else {
-                    if (store_front_image.indexOf('missing.png') > -1) {
-                        val.image_url = store_front_image;
-                    }
-                    if(store_front_image === ""){
-                        val.image_url = store_logo;
-                    }
-                    if(store_logo.indexOf('missing.png') > 0){
-                        val.image_url  = default_image.image_url;
-                    }
-                }
+                // if(val.is_special_promo == true){
+                //     val.image_url = val.promo_image_url_abs    
+                // } else {
+                //     if (store_front_image.indexOf('missing.png') > -1) {
+                //         val.image_url = store_front_image;
+                //     }
+                //     if(store_front_image === ""){
+                //         val.image_url = store_logo;
+                //     }
+                //     if(store_logo.indexOf('missing.png') > 0){
+                //         val.image_url  = default_image.image_url;
+                //     }
+                // }
 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 if(store_categories != null){
