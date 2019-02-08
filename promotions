@@ -81,8 +81,6 @@
                     if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                         published_promos.push(val);
                     }
-                    // var store_categories = getStoreDetailsByID(val.promotionable_id).categories[0];
-                    // cat_list.push(store_categories);
                 }
                 catch (err) {
                     console.log(err);
