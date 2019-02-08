@@ -94,7 +94,7 @@
             });
             
             var increment = 10;
-            var paginated_promos = published_promos.slice(0, 10);
+            var paginated_promos = published_promos.slice(0, increment);
             
             $("#load_more").click(function(){
                 var current_count = $("#load_more").attr('data-count');
