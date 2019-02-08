@@ -337,32 +337,32 @@ function renderPromotions(container, template, collection){
                 val.store_name = store_details.name;
                 var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = store_details.store_front_url_abs;
-                if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
-                        if(store_front_image !== undefined) {
-                            val.image_url = "//mallmaverick.com" + store_front_image;
-                        }
-                        if(store_front_image === ""){
-                            val.image_url = store_logo;
-                        }
-                        if(store_logo.indexOf('missing.png') > 0){
-                            val.image_url  = default_image.image_url;
-                        }
-                } else {
-                    val.image_url = val.promo_image_url_abs
-                }
-                // if(val.is_special_promo == true){
-                //     val.image_url = val.promo_image_url_abs    
+                // if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
+                //         if(store_front_image !== undefined) {
+                //             val.image_url = "//mallmaverick.com" + store_front_image;
+                //         }
+                //         if(store_front_image === ""){
+                //             val.image_url = store_logo;
+                //         }
+                //         if(store_logo.indexOf('missing.png') > 0){
+                //             val.image_url  = default_image.image_url;
+                //         }
                 // } else {
-                //     if(store_front_image !== undefined) {
-                //         val.image_url = "//mallmaverick.com" + store_front_image;
-                //     }
-                //     if(store_front_image === ""){
-                //         val.image_url = store_logo;
-                //     }
-                //     if(store_logo.indexOf('missing.png') > 0){
-                //         val.image_url  = default_image.image_url;
-                //     }
+                //     val.image_url = val.promo_image_url_abs
                 // }
+                if(val.is_special_promo == true){
+                    val.image_url = val.promo_image_url_abs    
+                } else {
+                    if(store_front_image !== undefined) {
+                        val.image_url = "//mallmaverick.com" + store_front_image;
+                    }
+                    if(store_front_image === ""){
+                        val.image_url = store_logo;
+                    }
+                    if(store_logo.indexOf('missing.png') > 0){
+                        val.image_url  = default_image.image_url;
+                    }
+                }
 
                 var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
                 if(store_categories != null){
