@@ -337,7 +337,7 @@ function renderPromotions(container, template, collection){
                 val.store_name = store_details.name;
                 var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = store_details.store_front_url_abs;
-                console.log("val.promo_image_url_abs.indexOf('missing.png')", val.promo_image_url_abs.indexOf('missing.png'))
+                console.log("val.promo_image_url_abs.indexOf('missing.png')", val.promo_image_url_abs)
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
                         console.log("store_front_image", store_front_image)
                         if(store_front_image !== undefined) {
