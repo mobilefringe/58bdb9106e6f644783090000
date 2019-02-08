@@ -366,7 +366,7 @@ function renderPromotions(container, template, collection){
                 //     }
                 // }
 
-                var store_categories = getStoreDetailsByID(val.promotionable_id).categories;
+                var store_categories = store_details.categories;
                 if(store_categories != null){
                     val.cat_list = store_categories.join(',');
                 }
@@ -398,7 +398,7 @@ function renderPromotions(container, template, collection){
             console.log(err);
         }
     });
-    console.log("done promo rendere")
+    console.log("done promo render")
     $(container).html(item_rendered.join(''));
 }
 
