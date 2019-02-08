@@ -337,7 +337,8 @@ function renderPromotions(container, template, collection){
                 val.store_name = store_details.name;
                 var store_front_image = store_details.store_front_alt_url_abs;
                 var store_logo = store_details.store_front_url_abs;
-                console.log((store_front_image.indexOf('missing.png') > -1), store_logo.indexOf('missing.png') > -1)
+                console.log((store_front_image.indexOf('missing.png') > -1))
+                console.log(store_logo.indexOf('missing.png') > -1,store_logo )
                 // if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
                         if (store_front_image.indexOf('missing.png') > -1) {
                             val.image_url = store_front_image;
