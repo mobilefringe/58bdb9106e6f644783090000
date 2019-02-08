@@ -300,10 +300,10 @@ function init_map(reg){
 }
 
 
-function verify_captcha(response){
-    var secret_key = "6LeCLhETAAAAAH8koFeWonL5g_kkYrSp8gcsrRjO";
-    var data = {"secret_key": secret_key, "g-recaptcha-response": response }
-}
+// function verify_captcha(response){
+//     var secret_key = "6LeCLhETAAAAAH8koFeWonL5g_kkYrSp8gcsrRjO";
+//     var data = {"secret_key": secret_key, "g-recaptcha-response": response }
+// }
 
 function blog_searcher(){
     $('#close_search').click(function(){
