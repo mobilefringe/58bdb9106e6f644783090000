@@ -353,7 +353,7 @@ function renderPromotions(container, template, collection){
                 if(val.is_special_promo == true){
                     val.image_url = val.promo_image_url_abs    
                 } else {
-                    if(store_front_image !== undefined) {
+                    if (store_front_image.indexOf('missing.png') > -1) {
                         val.image_url = store_front_image;
                     }
                     if(store_front_image === ""){
