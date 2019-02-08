@@ -88,12 +88,9 @@
                     console.log(err);
                 }
             });
-            // getStoreCategories().sortBy(function(o){ return o.name});
             cat_list = _.filter(getStoreCategories(), function(o) {
-                // console.log("val", o)
                 return o.store_ids;
             });
-            console.log("cat_list", cat_list)
             // published_promos = _.filter(promotions, function(num){ return num % 2 == 0; });
             if(published_promos.length > 0){
                 console.log("before promo render")
