@@ -398,6 +398,7 @@ function renderPromotions(container, template, collection){
             console.log(err);
         }
     });
+    console.log("done promo rendere")
     $(container).html(item_rendered.join(''));
 }
 
