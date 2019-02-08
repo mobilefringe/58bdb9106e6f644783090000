@@ -92,7 +92,12 @@
             cat_list = _.filter(getStoreCategories(), function(o) {
                 return o.store_ids;
             });
-            // published_promos = _.filter(promotions, function(num){ return num % 2 == 0; });
+            
+            $("#load_more").click(function(){
+                var current_count = $("#load_more").attr('data-count');
+            })
+            
+            
             if(published_promos.length > 0){
                 console.log("before promo render")
                 renderPromotions("#promos_container","#promos_template", published_promos);
