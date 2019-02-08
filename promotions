@@ -93,6 +93,7 @@
                 // console.log("val", o)
                 return o.store_ids;
             });
+            console.log("cat_list", cat_list)
             // published_promos = _.filter(promotions, function(num){ return num % 2 == 0; });
             if(published_promos.length > 0){
                 renderPromotions("#promos_container","#promos_template", published_promos);
