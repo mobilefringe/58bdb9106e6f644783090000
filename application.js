@@ -341,7 +341,7 @@ function renderPromotions(container, template, collection){
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
                     val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1519669755000/northside_blog_default.png";
                 } else {
-                    val.post_image = val.image_url;
+                    val.image_url = val.promo_image_url_abs
                 }
                 // if(val.is_special_promo == true){
                 //     val.image_url = val.promo_image_url_abs    
