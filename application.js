@@ -339,7 +339,7 @@ function renderPromotions(container, template, collection){
                 var store_logo = store_details.store_front_url_abs;
                 // console.log((store_front_image.indexOf('missing.png') > -1), store_front_image)
                 // console.log(store_logo.indexOf('missing.png') > -1,store_logo )
-                // if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
+                if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
                         if (store_front_image.indexOf('missing.png') == -1) {
                             val.image_url = store_front_image;
                         }
@@ -349,9 +349,9 @@ function renderPromotions(container, template, collection){
                         else {
                             val.image_url  = default_image.image_url;
                         }
-                // } else {
-                //     val.image_url = val.promo_image_url_abs
-                // }
+                } else {
+                    val.image_url = val.promo_image_url_abs
+                }
                 // if(val.is_special_promo == true){
                 //     val.image_url = val.promo_image_url_abs    
                 // } else {
