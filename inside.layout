@@ -305,7 +305,7 @@
                     <a href="/directions"><h3 class="footer_explore hidden_phone">DIRECTIONS</h3></a>
                     <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488983673000/northside_logo.png" class="logo_phone visible-sm-block visible-xs-block" alt="logo"></a>
                     <div class="margin_20 visible-sm-block visible-xs-block"></div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.1330663349804!2d-97.7231981845472!3d30.403966308453096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc727dab9c1d%3A0x2672981dc99cbdd9!2sDomain+NORTHSIDE!5e0!3m2!1sen!2sus!4v1488835590379" width="100%" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.1330663349804!2d-97.7231981845472!3d30.403966308453096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc727dab9c1d%3A0x2672981dc99cbdd9!2sDomain+NORTHSIDE!5e0!3m2!1sen!2sus!4v1488835590379" width="100%" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>-->
                 <!--    <div class="margin_20 visible-sm-block visible-xs-block"></div>-->
                 <!--    <p class="store_desc visible-sm-block visible-xs-block">Fashion, home interiors, beauty, dining and nightlife — you can call it home, stay the night, spend the day, enjoy the community and expect the uncommon vibe...</p>-->
                 </div>
