@@ -59,9 +59,6 @@
                     </script>
                 </div>
                 <div class="col-md-12">
-                    <h3 id="load_more" class="" data-count="10">LOAD MORE</h3>
-                </div>
-                <div class="col-md-12">
                     <h3 id="no_promos" class="hidden_now">There are currently no promotions available, please check back again later.</h3>
                 </div>
             </div>
@@ -92,29 +89,10 @@
             cat_list = _.filter(getStoreCategories(), function(o) {
                 return o.store_ids;
             });
-            
-            var increment = 10;
-            var paginated_promos = published_promos.slice(0, increment);
-            
-            $("#load_more").click(function(){
-                var current_count = $("#load_more").attr('data-count');
-                console.log("current_count", current_count);
-                $("#load_more").attr('data-count', current_count+increment)
-                paginated_promos = published_promos.slice(0, current_count+increment);
-                console.log($("#promos_template").children())
-                $("#promos_container").children().remove();
-                $("#promos_container").append('<script id="promos_template" type="x-tmpl-mustache/text"></script>')
-                
-                renderPromotions("#promos_container","#promos_template", paginated_promos);
-                if(paginated_promos.length == published_promos.length){
-                    $("#load_more").hide()
-                }
-            })
-            
-            
-            if(paginated_promos.length > 0){
+            // published_promos = _.filter(promotions, function(num){ return num % 2 == 0; });
+            if(published_promos.length > 0){
                 console.log("before promo render")
-                renderPromotions("#promos_container","#promos_template", paginated_promos);
+                renderPromotions("#promos_container","#promos_template", published_promos);
             } else {
                 $('#no_promos').show()
             }
