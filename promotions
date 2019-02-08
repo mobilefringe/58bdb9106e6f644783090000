@@ -95,6 +95,7 @@
             
             $("#load_more").click(function(){
                 var current_count = $("#load_more").attr('data-count');
+                console.log("current_count", current_count)
             })
             
             
