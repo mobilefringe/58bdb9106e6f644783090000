@@ -88,7 +88,7 @@
                     console.log(err);
                 }
             });
-            getStoreCategories().sortBy(function(o){ return o.name});
+            // getStoreCategories().sortBy(function(o){ return o.name});
             var cat_list = _.filter(getStoreCategories(), function(o) {
                 return o.store_ids !== null;
             });
