@@ -339,7 +339,15 @@ function renderPromotions(container, template, collection){
                 var store_logo = getStoreDetailsBySlug(val.store_detail_btn).store_front_url_abs;
                 
                 if (val.promo_image_url_abs.indexOf('missing.png') > -1) {
-                    val.post_image = "//codecloud.cdn.speedyrails.net/sites/5a678ccb6e6f647da50d0000/image/png/1519669755000/northside_blog_default.png";
+                        if(store_front_image !== undefined) {
+                        val.image_url = "//mallmaverick.com" + store_front_image;
+                    }
+                    if(store_front_image === ""){
+                        val.image_url = store_logo;
+                    }
+                    if(store_logo.indexOf('missing.png') > 0){
+                        val.image_url  = default_image.image_url;
+                    }
                 } else {
                     val.image_url = val.promo_image_url_abs
                 }
