@@ -354,7 +354,7 @@ function renderPromotions(container, template, collection){
                     val.image_url = val.promo_image_url_abs    
                 } else {
                     if(store_front_image !== undefined) {
-                        val.image_url = "//mallmaverick.com" + store_front_image;
+                        val.image_url = store_front_image;
                     }
                     if(store_front_image === ""){
                         val.image_url = store_logo;
