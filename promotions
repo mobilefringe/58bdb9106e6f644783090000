@@ -101,6 +101,7 @@
                 console.log("current_count", current_count);
                 $("#load_more").attr('data-count', current_count+increment)
                 paginated_promos = published_promos.slice(0, current_count+increment);
+                .children()..remove();
                 renderPromotions("#promos_container","#promos_template", paginated_promos);
                 if(paginated_promos.length == published_promos.length){
                     $("#load_more").hide()
