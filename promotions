@@ -58,9 +58,9 @@
                         </div>
                     </script>
                 </div>
-                <!--<div class="col-md-12">-->
-                <!--    <h3 id="load_more" class="">LOAD MORE</h3>-->
-                <!--</div>-->
+                <div class="col-md-12">
+                    <h3 id="load_more" class="">LOAD MORE</h3>
+                </div>
                 <div class="col-md-12">
                     <h3 id="no_promos" class="hidden_now">There are currently no promotions available, please check back again later.</h3>
                 </div>
