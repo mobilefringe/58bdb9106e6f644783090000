@@ -135,7 +135,7 @@
             
             $("#mc-embedded-subscribe-form").submit(function(e){
                 e.preventDefault();
-                console.log($(this))
+                // console.log($(this))
                 // var result = ;
             })
             show_content();
