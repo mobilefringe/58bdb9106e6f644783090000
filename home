@@ -13,8 +13,8 @@
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
-                    <label for="fieldEmail">Email *</label>
-                    <input class="form-control" id="fieldEmail" name="cm-xnhtd-xnhtd" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="2"/>
+                    <label for="mce-EMAIL">Email *</label>
+                    <input class="form-control" id="mce-EMAIL" name="cm-xnhtd-xnhtd" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="2"/>
                 </div>
             </div>
             <div class="row margin_10">    
