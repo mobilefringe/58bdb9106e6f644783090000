@@ -59,7 +59,7 @@
                 <div class="row">
                     <div class="col-sm-6">  
                         <label for="mce-MMERGE12">ZIP Code *</label>
-                        <input class="contest_info" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="required" tabindex="5"/>
+                        <input class="contest_info" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode" tabindex="5"/>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
