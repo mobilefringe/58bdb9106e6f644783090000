@@ -130,7 +130,7 @@
                     return this.optional($el) || /^\d{5}(?:-\d{4})?$/.test(value);
                 },
                 errorMessage : 'Please provide a valid zipcode.',
-                errorMessageKey: 'Error'
+                errorMessageKey: 'InvalidZipcode'
             });
     
             $.validate();
