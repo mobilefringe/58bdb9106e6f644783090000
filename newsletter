@@ -119,7 +119,9 @@
             if(repo != null){
                 renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
             }
-            
+            $.validator.addMethod("zipcode", function(value, element) {
+  return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
+}, "Please provide a valid zipcode.");
             $.validate();
 
             show_content();
