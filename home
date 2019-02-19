@@ -102,6 +102,16 @@
 		        $(".popup_form").remove();
             })
             
+            //add custom US zipcode validation
+            $.formUtils.addValidator({
+                name : 'zipcode',
+                validatorFunction : function(value, $el, config, language, $form) {
+                    return /^\d{5}(?:[\s-]\d{4})?$/.test(value);
+                },
+                errorMessage : 'Please provide a valid zipcode.',
+                errorMessageKey: 'InvalidZipcode'
+            });
+            
             show_content();
             
             $('.flexslider').flexslider({
