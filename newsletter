@@ -77,13 +77,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="line_break">&nbsp;</div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <button class="submit_btn caps" tabindex="10">Submit</button>
-                    </div>
-                    <div class="col-sm-6"></div>
-                </div>
+                
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-12">    
@@ -92,6 +86,13 @@
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
                     </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
                 </div>
                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_47396e9fb3ef9c547d3fceb54_fa57238974" tabindex="-1" value=""></div>
