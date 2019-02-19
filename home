@@ -7,8 +7,8 @@
         <form action="https://domainnorthside.us20.list-manage.com/subscribe/post?u=47396e9fb3ef9c547d3fceb54&amp;id=fa57238974" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="row margin_10">
                 <div class="col-md-10">
-                    <label for="fieldName">Name</label>
-                    <input class="form-control" id="fieldName" name="cm-name" type="text" tabindex="1"/>
+                    <label for="mce-FNAME">Name</label>
+                    <input class="form-control" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
                 </div>
             </div>
             <div class="row margin_10">    
