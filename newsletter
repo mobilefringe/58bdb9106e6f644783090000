@@ -42,8 +42,8 @@
                         <input class="contest_info" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
                     </div>
                     <div class="col-sm-6">
-                        <label for="last_name">Last Name</label>
-                        <input class="contest_info" id="last_name" name="contest[last_name]" type="text" tabindex="2"/>
+                        <label for="mce-LNAME">Last Name</label>
+                        <input class="contest_info" id="mce-LNAME" name="contest[last_name]" type="text" tabindex="2"/>
                     </div>
                 </div>
                 <div class="row">
