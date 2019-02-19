@@ -137,6 +137,7 @@
                 e.preventDefault();
                 // console.log($(this))
                 var result = $(this).submit();
+                console.log("result", result)
             })
             show_content();
         }
