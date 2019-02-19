@@ -26,7 +26,7 @@
             <div class="margin_30"></div>
             <br>
             <label class="popup_agree">
-                <input id="agree_newsletter" type="checkbox" required data-validation="required" tabindex="4">
+                <input id="mce-MMERGE10" type="checkbox" required data-validation="required" tabindex="4">
                 <span>I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.</span>
             </label>
             <a href="/privacy_policy" target="_blank">Privacy Policy.</a>
