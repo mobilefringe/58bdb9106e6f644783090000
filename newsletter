@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-sm-6"> 
                         <label for="mce-MMERGE14">Age</label>
-                        <input class="contest_info" id="fieldokiili" name="mce-MMERGE14" type="text" tabindex="6"/>
+                        <input class="contest_info" id="mce-MMERGE14" name="MMERGE14" type="text" tabindex="6"/>
                     </div>
                     <div class="col-sm-6">  
                         <label for="fieldokiild">Gender</label>
