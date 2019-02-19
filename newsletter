@@ -121,7 +121,7 @@
                 renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
             }
             
-            //add zipcode validation
+            //add custom zipcode validation
             $.formUtils.addValidator({
                 name : 'zipcode',
                 validatorFunction : function(value, $el, config, language, $form) {
