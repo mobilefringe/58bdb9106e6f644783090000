@@ -111,7 +111,7 @@
                 errorMessage : 'Please provide a valid zipcode.',
                 errorMessageKey: 'InvalidZipcode'
             });
-            
+            $.validate();
             show_content();
             
             $('.flexslider').flexslider({
