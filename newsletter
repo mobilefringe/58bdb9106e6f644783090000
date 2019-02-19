@@ -133,12 +133,12 @@
     
             $.validate();
             
-            $("#mc-embedded-subscribe-form").submit(function(e){
-                e.preventDefault();
-                // console.log($(this))
-                var result = $(this).submit();
-                console.log("result", result)
-            })
+            // $("#mc-embedded-subscribe-form").submit(function(e){
+            //     e.preventDefault();
+            //     // console.log($(this))
+            //     var result = $(this).submit();
+            //     console.log("result", result)
+            // })
             show_content();
         }
         
