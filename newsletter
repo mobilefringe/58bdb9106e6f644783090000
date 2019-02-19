@@ -127,7 +127,7 @@
             $.formUtils.addValidator({
                 name : 'zipcode',
                 validatorFunction : function(value, $el, config, language, $form) {
-                    return /^\d{5}(?:-\d{4})?$/.test(value);
+                    return /^\d{5}(?:[\s-]\d{4})?$/.test(value);
                 },
                 errorMessage : 'Please provide a valid zipcode.',
                 errorMessageKey: 'InvalidZipcode'
