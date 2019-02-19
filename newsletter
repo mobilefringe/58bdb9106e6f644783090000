@@ -129,7 +129,7 @@
                 validatorFunction : function(value, $el, config, language, $form) {
                     return this.optional($el) || /^\d{5}(?:-\d{4})?$/.test(value);
                 },
-                errorMessage : 'You have to answer an even number',
+                errorMessage : 'Please provide a valid zipcode.',
                 errorMessageKey: 'badEvenNumber'
             });
     
