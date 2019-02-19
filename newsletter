@@ -127,7 +127,7 @@
             $.formUtils.addValidator({
                 name : 'zipcode',
                 validatorFunction : function(value, $el, config, language, $form) {
-                    return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
+                    return this.optional($el) || /^\d{5}(?:-\d{4})?$/.test(value);
                 },
                 errorMessage : 'You have to answer an even number',
                 errorMessageKey: 'badEvenNumber'
