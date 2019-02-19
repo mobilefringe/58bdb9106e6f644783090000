@@ -120,10 +120,7 @@
             if(repo != null){
                 renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
             }
-            // console.log("jQuery", jQuery())
-            // jQuery.validator.addMethod("zipcode", function(value, element) {
-            //   return this.optional(element) || /^\d{5}(?:-\d{4})?$/.test(value);
-            // }, "Please provide a valid zipcode.");
+            
             $.formUtils.addValidator({
                 name : 'zipcode',
                 validatorFunction : function(value, $el, config, language, $form) {
@@ -134,7 +131,10 @@
             });
     
             $.validate();
-
+            
+            $("#mc-embedded-subscribe-form").submit(function(){
+                
+            })
             show_content();
         }
         
