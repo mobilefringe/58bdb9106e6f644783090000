@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="mce-LNAME">Last Name</label>
-                        <input class="contest_info" id="mce-LNAME" name="contest[last_name]" type="text" tabindex="2"/>
+                        <input class="contest_info" id="mce-LNAME" name="LNAME" type="text" tabindex="2"/>
                     </div>
                 </div>
                 <div class="row">
