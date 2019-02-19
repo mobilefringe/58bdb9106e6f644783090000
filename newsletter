@@ -133,8 +133,9 @@
     
             $.validate();
             
-            $("#mc-embedded-subscribe-form").submit(function(){
-                
+            $("#mc-embedded-subscribe-form").submit(function(e){
+                e.preventDefault();
+                var result = ;
             })
             show_content();
         }
