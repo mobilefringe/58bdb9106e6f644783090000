@@ -151,7 +151,14 @@
                                 <li><a href="/hope_gallery">HOPE Gallery</a></li>
                             </ul>
                         </li>
-                        <li><a href="/promotions" class="caps">Promotions</a></li>
+                        <li>
+                            <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
+                                <li><a href="promotions">Promotions</a></li>
+                              
+                                <li><a href="/pages/northside-vip-loyalty-program">VIP Loyalty Program</a></li>
+                            </ul>
+                        </li>
                         <li><a href="/events" class="caps">Events</a></li>
                         <li><a href="/posts" class="caps">Blog</a></li>
                         <li>
