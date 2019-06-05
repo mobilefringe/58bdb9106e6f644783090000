@@ -1115,6 +1115,10 @@ a:hover, a:focus{
     margin-bottom:20px;
 }
 
+.jobs_filter li {
+    color: #fff;
+}
+
 .jobs_filter:after {
     content: ".";
     display: block;
