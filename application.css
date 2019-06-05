@@ -581,8 +581,9 @@ a:focus, a:hover{
 }
 
 .flex-control-paging li a.flex-active, .flex-control-paging li a:hover{
-    background: #a4a8d1;
-    background: rgba(164, 168, 209, 1);
+    // background: #a4a8d1;
+    // background: rgba(164, 168, 209, 1);
+    background: #000;
     color: transparent;
 }
 
