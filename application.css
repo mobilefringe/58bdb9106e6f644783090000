@@ -42,7 +42,8 @@
 
 /* COLOUR VARIABLES */
 $slate: #536c92;
-$lavender: #a4a8d1;
+// $lavender: #a4a8d1;
+$lavender: #536c92;
 
 /* LOADING */
 .loader,
