@@ -1108,7 +1108,8 @@ a:hover, a:focus{
 .jobs_filter{
     padding:0;
     font-size:12px;
-    background:#979797;
+    // background:#979797;
+    background: #505050;
     text-transform:uppercase;
     letter-spacing: 0.94px;
     list-style:none;
