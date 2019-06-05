@@ -572,7 +572,6 @@ a:focus, a:hover{
     height:13px;
     width:13px;
     background: $slate;
-    color: $slate;
     // background: #a4a8d1;
     // background: rgba(164, 168, 209, 0.4);
     -webkit-box-shadow: none;
