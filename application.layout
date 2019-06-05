@@ -182,13 +182,13 @@
                     <div class="top_header_social_icons ">
                         <p>Get to Know Us:</p>
                         <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
-                            <div class="social_fb"></div>
+                            <div class="social_fb"><span class="visibilityhidden">facebook</span></div>
                         </a>
                         <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
-                            <div class="social_twitter"></div>
+                            <div class="social_twitter"><span class="visibilityhidden">twitter</span></div>
                         </a>
                         <a target="_blank" href="//www.instagram.com/domainnorthside/">
-                            <div class="social_insta"></div>
+                            <div class="social_insta"><span class="visibilityhidden">instagram</span></div>
                         </a>
                     </div>
                 </div>
