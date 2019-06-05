@@ -163,7 +163,7 @@
                         <li><a href="/posts" class="caps">Blog</a></li>
                         <li>
                             <a class="dd_link caps" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
+                            <ul class="dropdown-menu" aria-labelledby="mobile_nav4">
                                 <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
