@@ -38,6 +38,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="alpha_list">
+                {{#url}}
                     <a href="#7">#</a>
                     <a href="#A">A</a>
                     <a href="#B">B</a>
@@ -65,6 +66,7 @@
                     <a href="#X">X</a>
                     <a href="#Y">Y</a>
                     <a href="#Z">Z</a>
+                {{/url}}
                 </div>
             </div>
         </div>
