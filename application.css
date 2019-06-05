@@ -1577,8 +1577,7 @@ a:hover, a:focus{
     font-size: 20px;
     line-height: 28px;
     a {
-        // color: $slate;
-        color: #536c92 !important;
+        color: $slate;
     }
     img {
         max-width: 100%;
