@@ -621,7 +621,7 @@ a:hover, a:focus{
     p {
         font-family: 'gibson_semibold', sans-serif;
         font-size: 15px;
-        // color: #a4a8d1;
+        // color: #a4a8d1; this was the light purple color but flagged for contrast
         color: #536c92;
     }
 }
