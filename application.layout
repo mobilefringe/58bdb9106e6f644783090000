@@ -127,7 +127,7 @@
         <![endif]-->
     </head>
 
-    <body id="page-top">
+    <body id="top">
         <div class="site_container">
             <nav class="show_phone mobile_nav navbar-fixed-top">
                 <img alt="Menu toggler" src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489683413000/mobile_menu.png" class="menu_toggler">
