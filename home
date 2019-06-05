@@ -1,0 +1,123 @@
+<!-- popup form starts-->
+<div class="popup_form hidden_now ">
+    <img src="#" alt="newsletter pop up">
+    <i class="fa fa-remove close_popup" tabindex="6"></i>
+    <div class="popup_container">
+        <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
+        <form action="https://domainnorthside.us20.list-manage.com/subscribe/post?u=47396e9fb3ef9c547d3fceb54&amp;id=fa57238974" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div class="row margin_10">
+                <div class="col-md-10">
+                    <label for="mce-FNAME">Name</label>
+                    <input class="form-control" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
+                </div>
+            </div>
+            <div class="row margin_10">    
+                <div class="col-md-10">
+                    <label for="mce-EMAIL">Email *</label>
+                    <input class="form-control" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="2"/>
+                </div>
+            </div>
+            <div class="row margin_10">    
+                <div class="col-md-10">
+                    <label for="mce-MMERGE12">ZIP Code *</label>
+                    <input class="form-control" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode" tabindex="3"/>
+                </div>
+            </div>
+            <div class="margin_30"></div>
+            <br>
+            <label class="popup_agree">
+                <input id="mce-MMERGE10" type="checkbox" required data-validation="required" tabindex="4">
+                <span>I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.</span>
+            </label>
+            <a href="/privacy_policy" target="_blank">Privacy Policy.</a>
+            <br />
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" tabindex="5">      
+        </form>
+    </div>
+</div>
+<!-- popup form ends-->
+<!-- popup image starts-->
+<div class="popup_home hidden_now">
+    <a href="#">
+        <img src="#" alt="pop up" />
+    </a>
+    <i class="fa fa-remove close_popup"></i>
+</div>
+<!-- popup image ends-->
+<div class="flexslider">
+    <ul class="slides" id="home_banner">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <li>
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img alt={{name}} src="{{image_url}}" />
+                </a>
+            </li>
+        </script>
+    </ul>
+</div>
+<div class="feature_row" id="feature_container">
+    <script id="feature_template" type="x-tmpl-mustache/text">
+        <div class="feature_item">
+            <div class="yellow_line"></div>
+            <a href="{{url}}" {{css}} onclick="{{noLink}}" class="darken">
+                <h5 class="feature_header">{{name}}</h5>
+                <img src="{{image_url}}" alt="{{name}}" />
+            </a>
+        </div>
+    </script>    
+</div>
+<div class="clearfix"></div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var banners = getBanners();
+            var feature_items = getFeatureList();
+            renderBanner('#banner_template','#home_banner',banners);
+            renderFeatureItems('#feature_container','#feature_template', feature_items);
+            
+            if($.cookie("popup_viewed") != "true"){
+                $.cookie("popup_viewed", "true", { expires: 1 });
+                var popup = getPopups()[0];
+                if (popup != undefined){
+                    if(popup.use_form === true){
+                        var window_width = $( window ).width();
+                        if (window_width > 480) {
+                            $('.popup_form img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                            $('<div class="popup-backdrop"></div>').appendTo(document.body);
+                            $('.popup_form').show();    
+                        }
+                    } else {
+                        $('.popup_home a').attr('href', popup.photo_link)
+                        $('.popup_home img').attr('src', '//mallmaverick.cdn.speedyrails.net' + popup.photo_url)
+                        $('<div class="popup-backdrop"></div>').appendTo(document.body);
+                        $('.popup_home').show()
+                    }
+                }
+            }
+            $('.close_popup, .popup-backdrop').click(function(){
+                $(".popup-backdrop").remove();
+		        $(".popup_home").remove();
+		        $(".popup_form").remove();
+            })
+            
+            //add custom US zipcode validation
+            $.formUtils.addValidator({
+                name : 'zipcode',
+                validatorFunction : function(value, $el, config, language, $form) {
+                    return /^\d{5}(?:[\s-]\d{4})?$/.test(value);
+                },
+                errorMessage : 'Please provide a valid zipcode.',
+                errorMessageKey: 'InvalidZipcode'
+            });
+            $.validate();
+            show_content();
+            
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+        }
+        loadMallData(renderAll); 
+    });
+</script>
