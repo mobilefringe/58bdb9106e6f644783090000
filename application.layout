@@ -206,7 +206,7 @@
                             </a>
                         </div>
                         <div class="site_searcher_div">
-                            <label class="top_form_control no_margin visibilityhidden">Search here
+                            <label class="top_form_control no_margin">Search here
                                 <i class="custom_i fa fa-search"></i>
                                 <!--<label for="site_search" class="visibilityhidden">Search here</label>-->
                                 <input type="text" placeholder="Search" id="site_search" />
