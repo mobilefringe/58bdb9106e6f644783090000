@@ -621,7 +621,8 @@ a:hover, a:focus{
     p {
         font-family: 'gibson_semibold', sans-serif;
         font-size: 15px;
-        color: #a4a8d1;
+        // color: #a4a8d1;
+        color: #536c92;
     }
 }
 
