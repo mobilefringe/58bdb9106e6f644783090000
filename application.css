@@ -418,7 +418,7 @@ body{
 }
 p {
 a{
-    color:$lavender !important;
+    color:$slate !important;
     text-decoration:underline !important;
 }
 }
