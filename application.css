@@ -622,7 +622,7 @@ a:hover, a:focus{
         font-family: 'gibson_semibold', sans-serif;
         font-size: 15px;
         // color: #a4a8d1; this was the light purple color but flagged for contrast
-        color: #536c92;
+        color: $slate;
     }
 }
 
@@ -760,7 +760,7 @@ a:hover, a:focus{
     margin: 0 0 20px 0;
     font-family: 'gibson_semibold';
     font-size: 15px;
-    color: #536c92;
+    color: $slate;
     letter-spacing: 2px;
     line-height: 27px;
 }
@@ -797,7 +797,7 @@ a:hover, a:focus{
 }
 
 .mini_footer a{
-    color: #536c92 !important;
+    color: $slate !important;
 }
 
 .feature_row{
