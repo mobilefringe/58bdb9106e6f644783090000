@@ -206,7 +206,7 @@
                             </a>
                         </div>
                         <div class="site_searcher_div">
-                            <label for="search_results_stores" class="top_form_control no_margin">
+                            <label for="search_results_stores" class="top_form_control no_margin, visibiltyhidden">
                                 <i class="custom_i fa fa-search"></i>
                                 <input type="text" placeholder="Search" id="site_search" />
                                 <i id="close_search" class="fa fa-times-circle"></i>
