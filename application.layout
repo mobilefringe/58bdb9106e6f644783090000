@@ -117,7 +117,8 @@
         
         <script>
             // setEndPoint('//northside.mallmaverick.com/api/v4/northside/all.json');
-            setEndPoint('//eglinton.mallmaverick.com/api/v4/eglinton/all.json');
+            // setEndPoint('//eglinton.mallmaverick.com/api/v4/eglinton/all.json');
+            setEndPoint('//sheridancentre.mallmaverick.com/api/v4/sheridancentre/all.json');
         </script>
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
