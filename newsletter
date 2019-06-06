@@ -1,0 +1,140 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="store_list_header">Guest Services</h3>
+            <ul class="side_menu hidden_phone">
+                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                <li><a href="/information">Information</a></li>
+                <li><a href="/directions">Directions</a></li>
+                <li><a href="/parking">Parking</a></li>
+                <li><a href="/jobs">Careers</a></li>
+                <li class="active"><a href="/newsletter">Become a NORTHSIDER</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <!--<li><a href="/hours">Operating Hours</a></li>-->
+            </ul>
+            <div class="position_relative show_phone">
+                <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Become a NORTHSIDER</span> <i class="fa fa-caret-down pull-right"></i></a>
+                <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
+                    <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                    <li><a href="/information">Information</a></li>
+                    <li><a href="/directions">Directions</a></li>
+                    <li><a href="/parking">Parking</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <!--<li><a href="/hours">Operating Hours</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 contest_page">
+            <h3 class="hours_header">Become a NORTHSIDER</h3>
+            <div class="margin_20"></div>
+            <div id="newsletter_image_container">
+                <script id="newsletter_image_template" type="x-tmpl-mustache/text">
+                    <img id="page_image" class="margin_20" alt="Newsletter Image" src="{{image_url}}"/>
+                </script>
+            </div>
+            <div class="contest_description margin_20">Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</div>
+            <!--<form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" method="post" id="subForm">-->
+            <form action="https://domainnorthside.us20.list-manage.com/subscribe/post?u=47396e9fb3ef9c547d3fceb54&amp;id=fa57238974" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="mce-FNAME">First Name</label>
+                        <input class="contest_info" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="mce-LNAME">Last Name</label>
+                        <input class="contest_info" id="mce-LNAME" name="LNAME" type="text" tabindex="2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="mce-EMAIL">Email *</label>
+                        <input class="contest_info" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="mce-PHONE">Phone Number</label>
+                        <input class="contest_info" id="mce-PHONE" name="PHONE" type="text" tabindex="4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">  
+                        <label for="mce-MMERGE12">ZIP Code *</label>
+                        <input class="contest_info" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode" tabindex="5"/>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6"> 
+                        <label for="mce-MMERGE14">Age</label>
+                        <input class="contest_info" id="mce-MMERGE14" name="MMERGE14" type="text" tabindex="6"/>
+                    </div>
+                    <div class="col-sm-6">  
+                        <label for="mce-MMERGE13">Gender</label>
+                        <select class="contest_info" id="mce-MMERGE13" name="MMERGE13" tabindex="7">
+                            <option value="">Select</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-12">    
+                        <label class="newsletter_agree">
+                            <input id="mce-MMERGE10" type="checkbox" name="MMERGE10" required data-validation="required" tabindex="8"/> 
+                            I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
+                        </label>
+                    </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button class="submit_btn caps" tabindex="10">Submit</button>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_47396e9fb3ef9c547d3fceb54_fa57238974" tabindex="-1" value=""></div>
+    
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="margin_40"></div>
+                        <p class="hidden_now" id="succes_msg">Thank you! Your information has been received.</p>
+                    </div>
+                    <div class="col-sm-6"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        
+        function renderAll(){
+            var repo = getRepoDetailsByName("Newsletter").images;
+            if(repo != null){
+                renderRepo("#newsletter_image_container", "#newsletter_image_template", repo);
+            }
+            
+            //add custom US zipcode validation
+            $.formUtils.addValidator({
+                name : 'zipcode',
+                validatorFunction : function(value, $el, config, language, $form) {
+                    return /^\d{5}(?:[\s-]\d{4})?$/.test(value);
+                },
+                errorMessage : 'Please provide a valid zipcode.',
+                errorMessageKey: 'InvalidZipcode'
+            });
+    
+            $.validate();
+            
+            show_content();
+        }
+        
+        loadMallDataCached(renderAll); 
+    });
+</script>
