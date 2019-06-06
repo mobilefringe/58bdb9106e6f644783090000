@@ -107,6 +107,9 @@
             var sorted_list = _.uniqBy(dine_list, function(o){ return o.name; });
             renderStoreList('#store_list_container','#store_list_template', sorted_list, "stores");
             
+            $(".zoom-in").append('<p class="visibilityhidden">Zoom In</p>');
+           	$(".zoom-out").append('<p class="visibilityhidden">Zoom Out</p>');
+            
             show_content();
             
             store_search();
