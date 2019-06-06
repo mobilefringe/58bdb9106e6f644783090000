@@ -62,6 +62,9 @@
             show_content();
             $('#top_nav_stores').addClass('active_yellow')
             
+            $(".zoom-in").append('<p class="visibilityhidden'>Zoom In</p>');
+           	$(".zoom-out").append('<p class="visibilityhidden'>Zoom Out</p>');
+            
             regions = {};
             $.each(stores, function(key, val) {
                 var todays_hours_id = val.todays_hour;
