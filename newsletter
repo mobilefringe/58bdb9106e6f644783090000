@@ -39,38 +39,38 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="mce-FNAME">First Name</label>
-                        <input class="contest_info" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
+                        <input class="contest_info" id="mce-FNAME" name="FNAME" type="text"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="mce-LNAME">Last Name</label>
-                        <input class="contest_info" id="mce-LNAME" name="LNAME" type="text" tabindex="2"/>
+                        <input class="contest_info" id="mce-LNAME" name="LNAME" type="text"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="mce-EMAIL">Email *</label>
-                        <input class="contest_info" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                        <input class="contest_info" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                     </div>
                     <div class="col-sm-6">
                         <label for="mce-PHONE">Phone Number</label>
-                        <input class="contest_info" id="mce-PHONE" name="PHONE" type="text" tabindex="4"/>
+                        <input class="contest_info" id="mce-PHONE" name="PHONE" type="text"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6">  
                         <label for="mce-MMERGE12">ZIP Code *</label>
-                        <input class="contest_info" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode" tabindex="5"/>
+                        <input class="contest_info" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode"/>
                     </div>
                     <div class="col-sm-6"></div>
                 </div>
                 <div class="row">
                     <div class="col-sm-6"> 
                         <label for="mce-MMERGE14">Age</label>
-                        <input class="contest_info" id="mce-MMERGE14" name="MMERGE14" type="text" tabindex="6"/>
+                        <input class="contest_info" id="mce-MMERGE14" name="MMERGE14" type="text"/>
                     </div>
                     <div class="col-sm-6">  
                         <label for="mce-MMERGE13">Gender</label>
-                        <select class="contest_info" id="mce-MMERGE13" name="MMERGE13" tabindex="7">
+                        <select class="contest_info" id="mce-MMERGE13" name="MMERGE13" >
                             <option value="">Select</option>
                             <option value="Female">Female</option>
                             <option value="Male">Male</option>
@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-sm-12">    
                         <label class="newsletter_agree">
-                            <input id="mce-MMERGE10" type="checkbox" name="MMERGE10" required data-validation="required" tabindex="8"/> 
+                            <input id="mce-MMERGE10" type="checkbox" name="MMERGE10" required data-validation="required"/> 
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
                     </div>
