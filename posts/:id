@@ -1,0 +1,242 @@
+<div class="promotions_header">
+    <div class="site_container mobile_padding">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="store_list_header center">NORTHSIDE NOW</h3>
+            </div>  
+            <div class="search_wrapper">
+                <div class="blog_search_container">
+                    <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
+                    <i id="close_blog_search" class="fa fa-times-circle"></i>
+                    <div id="blog_results"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="blog_header_container site_container">
+                <div class="blog_category_container hidden_now" id="category_container"></div>
+                <div class="blog_category_dropdown hidden_now">
+                    <select id="category_dropdown"></select>
+                </div>
+                <!--<div class="blog_search_container">-->
+                <!--    <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />-->
+                <!--    <i id="close_blog_search" class="fa fa-times-circle"></i>-->
+                <!--    <div id="blog_results"></div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site_container mobile_padding">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="post_container">
+                <script id="post_template" type="x-tmpl-mustache/text">
+                    <h3 class="post_date">{{published_on}}</h3>
+                    <div class="post_details_container">
+                        <h3 class="post_title col-sm-9">{{title}}</h3>
+                        <div class="details_sharer col-sm-3">
+                            <div>Share</div>
+                            <a target="_blank" href="//www.facebook.com/sharer.php?u=https://domainnorthside.com/posts/{{slug}}">
+                                <div class="social_fb_share"></div>
+                            </a>
+                            <a target="_blank" href="http://twitter.com/share?text={{twitter_title}}&urlurl=https://domainnorthside.com/posts/{{slug}}&text={{name}}">
+                                <div class="social_twitter_share"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <img class="post_img" alt="{{title}}" src="{{post_image}}" />
+                    <div class="post_details_description">{{{html_body}}}</div> 
+                    
+                    <div class="hidden_now" style="{{show_video}}">
+                        <a href="{{video_link}}" data-toggle="lightbox" data-width="1024">
+                            <div class="post_details_watch_video">
+                                <p class="center caps">Watch Video<i class="fa fa-play-circle"></i></p>
+                            </div>
+                        </a>
+                    </div>
+                </script>
+            </div>
+            
+            <div id="gallery_container" class="hidden_now gallery_slider">
+                <script id="gallery_template" type="x-tmpl-mustache/text">
+                    <div>
+                        <div class="gallery_image_container">
+                            <img src="{{ gallery_image }}" alt="" />
+                        </div>
+                        <div class="gallery_content_conatiner">
+                            {{ #caption }}
+                            <p class="bold">{{ caption }}</p>
+                            {{ /caption }}
+                            <p>{{{ description }}}</p>
+                        </div>
+                    </div>
+                </script>
+            </div>
+            <div class="newsletter_signoff">
+                <p>Be the FIRST to know about store openings, sales and events occurring at Domain NORTHSIDE.
+                <br>Become a NORTHSIDER today!</p>
+                <a href="/newsletter">
+                    <p>Sign up for our newsletter.</p>
+                </a>
+                <div class="top_header_social_icons ">
+                    <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
+                        <div class="social_fb"></div>
+                    </a>
+                    <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
+                        <div class="social_twitter"></div>
+                    </a>
+                    <a target="_blank" href="//www.instagram.com/domainnorthside/">
+                        <div class="social_insta"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="visible-sm visible-xs">
+                <hr>
+            </div>
+            <div class="post_sidebar">
+                <h3 class="post_sidebar_header">Recent Posts</h3>
+                <div id="side_blog_container">
+                    <script id="side_blog_template" type="x-tmpl-mustache/text">
+                        <div class="side_blog_box">
+                            <a href="/posts/{{slug}}">
+                                <img src="{{post_image}}" alt="post" class="post_sidebar_img" />
+                                <h3 class="post_sidebar_title">{{title}}</h3>
+                            </a>
+                        </div>
+                    </script>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-left blog_cats_side">
+                        <h3 class="post_sidebar_header">Categories</h3>
+                        <div id="sidebar_category_container"></div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../blog.js"></script>
+
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var posts = getAllPublishedPosts();
+            var categories = getBlogCategories(posts);
+            
+            // DESKTOP
+            $.each(categories, function(key, val){
+                $('#category_container').append('<h3 class="post_categories"><a href="/posts?category='+ val + '">' + val + '</a><span class="post_spacer">•</span></h3>');
+                
+                $('#sidebar_category_container').append('<p class="post_description"><a href="/posts?category='+ val + '">' + val + '</a></p>');
+            });
+            $('#category_container').prepend('<h3 class="post_categories"><a href="/posts">All</a><span class="post_spacer">•</span></h3>');
+            $('#sidebar_category_container').prepend('<p class="post_description"><a href="/posts">All</a></p>');
+            
+            // MOBILE
+            $.each(categories, function(key, val) {
+                $("#category_dropdown").append('<option value="' + val + '">' + val + '</option>');
+            });
+            $("#category_dropdown").prepend('<option selected>Select a Category</option>');
+            
+            $(window).on('resize', function(){
+                categoryDisplay();
+            });
+            
+            categoryDisplay();
+            
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var post = getPublishedPostDetailsBySlug(slug);
+            console.log("post", post)
+            var published_posts = sortByKey(posts, 'publish_date').reverse().slice(0, 3);
+            renderPosts("#side_blog_container", "#side_blog_template", published_posts);
+            renderPostDetails("#post_container", "#post_template", post);
+            
+            $("#category_dropdown").bind("change", function(e) {
+                e.preventDefault()
+                var selectedOption = $("#category_dropdown option:selected")
+                selectedOption = selectedOption[0]
+                var selectedCat = $(selectedOption).val();
+                var href = "/posts?category=" + selectedCat
+                document.location.href = href;
+            });
+            
+            var galleries = $('gallery');
+            if (galleries.length > 0) {
+                var gallery = [];
+                $.each(galleries, function(key, val) {
+                    var container = $(val);
+                    var gallery_slug = $(val).attr('source');
+                    gallery = getFashionBySlug(gallery_slug).fashion_images;
+                    renderGallery("#gallery_container", "#gallery_template", gallery);
+                });
+            }
+  
+            show_content();
+            northside_blog_search();
+            
+            $('.gallery_slider').slick({
+                adaptiveHeight: true,
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 600,
+            });
+                
+            $('#top_nav_blog').addClass('active_yellow')
+        }
+        
+        function renderPostDetails(container, template, collection){
+            var item_list = [];
+            var item_rendered = [];
+            var template_html = $(template).html();
+            $.each( collection , function( key, val ) {
+                if (val.image_url.indexOf('missing.png') > -1) {
+                    val.post_image = "//codecloud.cdn.speedyrails.net/sites/5ceec9016e6f64444c060000/image/png/1519669755000/northside_blog_default.png";
+                } else {
+                    val.post_image = val.image_url;
+                }
+                
+                if (val.video_link) {
+                    val.show_video = "display: block"
+                }
+                
+                var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
+                val.published_on = date_blog.format("MMMM D, YYYY")
+
+                val.twitter_title = val.title + " via @DomainNORTHSIDE";
+                
+                var rendered = Mustache.render(template_html,val);
+                item_rendered.push(rendered);
+            });
+            
+            $(container).html(item_rendered.join(''));
+        }
+        
+        function categoryDisplay() {
+            var win = $(this); //this = window
+            if (win.width() >= 768) {
+                $("#category_container").show();
+            } else {
+               $(".blog_category_dropdown").show(); 
+            }
+        }
+
+        loadMallDataCached(renderAll); 
+    });
+    
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
