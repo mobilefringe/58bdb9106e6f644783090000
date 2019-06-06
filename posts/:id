@@ -43,6 +43,7 @@
                                 <div class="social_fb_share"></div>
                             </a>
                             <a target="_blank" href="http://twitter.com/share?text={{twitter_title}}&urlurl=https://domainnorthside.com/posts/{{slug}}&text={{name}}">
+                                <p class="visibilityhidden">twitter</p>
                                 <div class="social_twitter_share"></div>
                             </a>
                         </div>
