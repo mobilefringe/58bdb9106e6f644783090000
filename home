@@ -51,8 +51,8 @@
                 {{#url}}
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
                     <img alt="{{name}}" src="{{image_url}}" />
-                {{/url}}
                 </a>
+                {{/url}}
             </li>
         </script>
     </ul>
