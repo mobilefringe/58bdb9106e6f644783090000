@@ -47,7 +47,7 @@
                             </a>
                         </div>
                     </div>
-                    <img class="post_img" alt="{{title}}" src="{{post_image}}" />
+                    <img class="post_img" alt="" src="{{post_image}}" />
                     <div class="post_details_description">{{{html_body}}}</div> 
                     
                     <div class="hidden_now" style="{{show_video}}">
