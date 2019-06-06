@@ -87,9 +87,11 @@
                         <div class="social_fb"></div>
                     </a>
                     <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
+                        <p class="visibilityhidden">twitter</p>
                         <div class="social_twitter"></div>
                     </a>
                     <a target="_blank" href="//www.instagram.com/domainnorthside/">
+                        <p class="visibilityhidden">instagram</p>
                         <div class="social_insta"></div>
                     </a>
                 </div>
