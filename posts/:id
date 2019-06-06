@@ -17,6 +17,7 @@
             <div class="blog_header_container site_container">
                 <div class="blog_category_container hidden_now" id="category_container"></div>
                 <div class="blog_category_dropdown hidden_now">
+                    <label for="category_dropdown"><p class="visibilityhidden">Select a category</p></label>
                     <select id="category_dropdown"></select>
                 </div>
                 <!--<div class="blog_search_container">-->
