@@ -40,6 +40,7 @@
 <div class="popup_home hidden_now">
     <a href="#">
         <img src="#" alt="pop up" />
+        hi
     </a>
     <i class="fa fa-remove close_popup"></i>
 </div>
