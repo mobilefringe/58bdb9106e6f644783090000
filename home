@@ -49,7 +49,7 @@
         <script id="banner_template" type="x-tmpl-mustache/text">
             <li>
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    <img alt="" src="{{image_url}}" />
+                    <img alt="Banner image" src="{{image_url}}" />
                 </a>
             </li>
         </script>
