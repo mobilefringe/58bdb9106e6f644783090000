@@ -38,8 +38,10 @@
 <!-- popup form ends-->
 <!-- popup image starts-->
 <div class="popup_home hidden_now">
+    {{#url}}
     <a href="#">
         <img src="#" alt="pop up" />
+        {{/url}}
     </a>
     <i class="fa fa-remove close_popup"></i>
 </div>
