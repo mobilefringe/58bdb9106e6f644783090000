@@ -41,8 +41,8 @@
     {{#url}}
     <a href="#">
         <img src="#" alt="pop up" />
-        {{/url}}
     </a>
+        {{/url}}
     <i class="fa fa-remove close_popup"></i>
 </div>
 <!-- popup image ends-->
