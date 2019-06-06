@@ -81,7 +81,7 @@
                 <div class="line_break">&nbsp;</div>
                 <div class="row">
                     <div class="col-sm-12">    
-                        <label for="mce-MMERGE10" class="newsletter_agree"><p class="hiddenvisibility">Agreement</p>
+                        <label for="mce-MMERGE10" class="newsletter_agree">
                             <input id="mce-MMERGE10" type="checkbox" name="MMERGE10" required data-validation="required"/> 
                             I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
                         </label>
