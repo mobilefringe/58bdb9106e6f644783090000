@@ -50,7 +50,7 @@
             <li>
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
                     <img alt="{{name}}" src="{{image_url}}" />
-                    <p class="visiblityhidden">click</p>
+                    <p>click here for</p>
                 </a>
             </li>
         </script>
