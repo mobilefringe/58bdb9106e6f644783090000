@@ -46,7 +46,7 @@
                         <div class="col-sm-6 col-md-4 margin_50 cats_row" data-cat="{{cat_list}}">
                             <div class="promo_container" value="{{categories}}">
                                 <div class="promo_img_container">
-                                    <img src="{{image_url}}" alt="Promotion" class="promo_img" />
+                                    <img src="{{image_url}}" alt="{{name}}" class="promo_img" />
                                 </div>
                                 <div class="details">
                                     <h3 class="details_header">{{name_short}}</h3>
