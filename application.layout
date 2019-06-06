@@ -336,6 +336,6 @@
                 <div class="clearfix"></div>
             </div>
         </footer>
-        <a href="#top" class="scrollToTop"><i class="fa fa-arrow-up"><span class="visibilityhidden">arrow up</span></i></a>
+        <a href="#top" class="scrollToTop"><i class="fa fa-arrow-up"><p class="visibilityhidden">arrow up</p></i></a>
     </body>
 </html>
