@@ -269,7 +269,7 @@ function renderJobs(container, template, collection){
             val.store_name = getStoreDetailsByID(val.jobable_id).name;
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
         } else {
-            val.store_name = site_json.mall_name;
+            val.store_name = mall_name;
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
