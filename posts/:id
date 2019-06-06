@@ -83,6 +83,7 @@
                 </a>
                 <div class="top_header_social_icons ">
                     <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
+                        <p class="visibilityhidden">facebook</p>
                         <div class="social_fb"></div>
                     </a>
                     <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
