@@ -61,10 +61,10 @@
             <div class="yellow_line"></div>
             {{#url}}
             <a href="{{url}}" {{css}} onclick="{{noLink}}" class="darken">
-            {{/url}}
                 <h5 class="feature_header">{{name}}</h5>
                 <img src="{{image_url}}" alt="{{name}}" />
             </a>
+            {{/url}}
         </div>
     </script>    
 </div>
