@@ -104,7 +104,7 @@
                     <script id="side_blog_template" type="x-tmpl-mustache/text">
                         <div class="side_blog_box">
                             <a href="/posts/{{slug}}">
-                                <img src="{{post_image}}" alt="{{name}}" class="post_sidebar_img" />
+                                <img src="{{post_image}}" alt="{{title}}" class="post_sidebar_img" />
                                 <h3 class="post_sidebar_title">{{title}}</h3>
                             </a>
                         </div>
