@@ -1,6 +1,6 @@
 <style>
     .site_container {
-        width: 1500px;
+        width: inital;
     }
 </style>
 
