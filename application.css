@@ -1899,6 +1899,10 @@ a:hover, a:focus{
         &:-moz-placeholder { /* Firefox 18- */
             color: #FFF;
         }
+        
+        label {
+            display: none;
+        }
     }
     #blog_search_input:focus {
         &::-webkit-input-placeholder {
