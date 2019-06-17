@@ -34,8 +34,8 @@
         </div>
         <div class="row">
             <div class="col-md-12">
+                z{{#alpha}}
                 <div class="alpha_list">
-                {{#alpha}}
                     <a href="#7">#</a>
                     <a href="#A">A</a>
                     <a href="#B">B</a>
@@ -63,8 +63,8 @@
                     <a href="#X">X</a>
                     <a href="#Y">Y</a>
                     <a href="#Z">Z</a>
-                    {{/alpha}}
                 </div>
+                {{/alpha}}
             </div>
         </div>
     </div>
