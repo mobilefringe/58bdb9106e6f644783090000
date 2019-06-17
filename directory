@@ -9,7 +9,7 @@
 </style>
 
 <div class="promotions_header">
-    <div class="site_container mobile_padding">
+    <div class="inner_site_container mobile_padding">
         <div class="row">
             <div class="col-md-12">
                 <h3 class="store_list_header center">Directory</h3>
