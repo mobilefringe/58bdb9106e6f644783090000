@@ -1,6 +1,6 @@
 <style>
-    .inner_site_container {
-        width: ;
+    .promotions_header {
+        width: 100%;
         margin: 0 auto;
 }
 </style>
