@@ -34,7 +34,6 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                {{#alpha}}
                 <div class="alpha_list">
                     <a href="#7">#</a>
                     <a href="#A">A</a>
@@ -64,7 +63,6 @@
                     <a href="#Y">Y</a>
                     <a href="#Z">Z</a>
                 </div>
-                {{/alpha}}
             </div>
         </div>
     </div>
