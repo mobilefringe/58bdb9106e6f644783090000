@@ -6,7 +6,7 @@
             </div>  
             <div class="search_wrapper">
                 <div class="blog_search_container">
-                    <!--<label for="blog_search_input"><p class="visibilityhidden">Search our blog</p></label>-->
+                    <label for="blog_search_input"><p class="visibilityhidden">Search our blog</p></label>
                     <input type="text" class="form-control" placeholder="Search Our Blog" id="blog_search_input" />
                     <i id="close_blog_search" class="fa fa-times-circle"></i>
                     <div id="blog_results"></div>
