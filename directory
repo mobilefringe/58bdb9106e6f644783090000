@@ -2,6 +2,10 @@
     .site_container {
         width: 100%;
     }
+    .inner_site_container {
+        width: 1140px;
+        margin: 0 auto;
+}
 </style>
 
 <div class="promotions_header">
