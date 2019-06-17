@@ -1,3 +1,9 @@
+<style>
+    .site_container {
+        width: 100%;
+    }
+</style>
+
 <div class="promotions_header">
     <div class="site_container mobile_padding">
         <div class="row">
