@@ -18,6 +18,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
+                    <div id="dropdownMenu1" class="visibilityhidden">Sort by category</div>
                     <div class="promotions_header_container dropdown category_selector">
                         <a class="" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Sort by Category <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span></a>
                         <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
