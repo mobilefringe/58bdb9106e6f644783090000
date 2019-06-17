@@ -50,6 +50,7 @@
             <li>
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
                     <img alt="{{name}}" src="{{image_url}}" />
+                    <span class="visibilityhidden">Promotions page</span>
                 </a>
             </li>
         </script>
