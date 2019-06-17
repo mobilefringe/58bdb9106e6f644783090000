@@ -1880,6 +1880,10 @@ a:hover, a:focus{
     height: 30px;
     position: relative;
     margin-top: 22px;
+    
+    label {
+        display: none;
+    }
     #blog_search_input {
         position: absolute;
         padding: 4px 12px;
@@ -1898,10 +1902,6 @@ a:hover, a:focus{
         }
         &:-moz-placeholder { /* Firefox 18- */
             color: #FFF;
-        }
-        
-        label {
-            display: none;
         }
     }
     #blog_search_input:focus {
