@@ -11,7 +11,7 @@
                     <input class="form-control" id="mce-FNAME" name="FNAME" type="text"/>
                 </div>
             </div>
-            <div class="row margin_10">    
+            <div class="row margin_10">      
                 <div class="col-md-10">
                     <label for="mce-EMAIL">Email *</label>
                     <input class="form-control" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
