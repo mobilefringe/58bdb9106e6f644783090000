@@ -49,7 +49,7 @@
         <script id="banner_template" type="x-tmpl-mustache/text">
             <li>
                 <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    <img alt="{{name}}" src="{{image_url}}" />
+                    <img alt="home page banner" src="{{image_url}}" />
                     <span class="visibilityhidden">Promotions page</span>
                 </a>
             </li>
