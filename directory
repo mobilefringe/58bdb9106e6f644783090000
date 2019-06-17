@@ -6,7 +6,7 @@
 </style>
 
 <div class="promotions_header">
-    <div class="inner_site_container mobile_padding">
+    <div class="site_container mobile_padding">
         <div class="row">
             <div class="col-md-12">
                 <h3 class="store_list_header center">Directory</h3>
@@ -74,7 +74,7 @@
         </div>
     </div>
 </div>
-<div class="inner_site_container mobile_padding">
+<div class="site_container mobile_padding">
     <div class="row">
         <div id="store_list_container">
             <!--<div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>-->
