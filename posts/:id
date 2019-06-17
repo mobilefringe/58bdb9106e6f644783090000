@@ -85,16 +85,13 @@
                 </a>
                 <div class="top_header_social_icons ">
                     <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
-                        <p class="visibilityhidden">facebook</p>
-                        <div class="social_fb"></div>
+                        <div class="social_fb"><p class="visibilityhidden">facebook</p></div>
                     </a>
                     <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
-                        <p class="visibilityhidden">twitter</p>
-                        <div class="social_twitter"></div>
+                        <div class="social_twitter"><p class="visibilityhidden">twitter</p></div>
                     </a>
                     <a target="_blank" href="//www.instagram.com/domainnorthside/">
-                        <p class="visibilityhidden">instagram</p>
-                        <div class="social_insta"></div>
+                        <div class="social_insta"><p class="visibilityhidden">instagram</p></div>
                     </a>
                 </div>
             </div>
