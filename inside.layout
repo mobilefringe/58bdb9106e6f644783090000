@@ -140,7 +140,7 @@
                 <div id="navbar">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a class="dd_link caps" href="#" id="mobile_nav1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Directory <i class="fa fa-caret-down"></i></a>
+                            <a class="dd_link caps" href="#" id="mobile_nav1" data-toggle="dropdown" aria-haspopup="true" aria-label="mobile nav" aria-expanded="true">Directory <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav1">
                                 <li><a href="/directory">All</a></li>
                                 <li><a href="/stores">Shop</a></li>
