@@ -221,7 +221,7 @@
                     <div class="top_nav_menu" id="top_nav_stores">
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu1" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Directory <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
+                            <ul class="dropdown-menu dropdown-menu2" aria-label="dropdownMenu1">
                                 <li><a href="/directory">All</a></li>
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
