@@ -275,6 +275,7 @@
             </div>
         </div>
         <div class="site_container yield">
+        <h1 style="display: none">Westmount Shopping Centre</h1>
             {{yield}}
         </div>
         <footer class="site_container">
