@@ -179,7 +179,7 @@
                 <div class="col-md-4 hidden_phone">
                     <div class="top_header_social_icons ">
                         <p>Get to Know Us:</p>
-                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
+                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/" aria-label="facebook">
                             <div class="social_fb"></div>
                         </a>
                         <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
