@@ -124,8 +124,9 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
+    
     <body id="page-top">
+    <h1 class="accessibility">Domain Northside</h1>
         <div class="site_container">
             <nav class="show_phone mobile_nav navbar-fixed-top">
                 <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489683413000/mobile_menu.png" class="menu_toggler" alt="menu toggler">
@@ -275,7 +276,6 @@
             </div>
         </div>
         <div class="site_container yield">
-        <h1 class="accessibility">Domain Northside</h1>
             {{yield}}
         </div>
         <footer class="site_container">
