@@ -182,10 +182,10 @@
                         <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/" aria-label="facebook link">
                             <div class="social_fb"></div>
                         </a>
-                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
+                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE" aria-label="twitter link">
                             <div class="social_twitter"></div>
                         </a>
-                        <a target="_blank" href="//www.instagram.com/domainnorthside/">
+                        <a target="_blank" href="//www.instagram.com/domainnorthside/" aria-label="instagram link">
                             <div class="social_insta"></div>
                         </a>
                     </div>
