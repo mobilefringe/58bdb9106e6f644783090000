@@ -21,6 +21,7 @@
                 <div class="col-md-4">
                     <div class="promotions_header_container">
                         <select id="store_select_container" class="form-control select_store">
+                            <p class="accessibility">select</p>
                             <script id="store_select_template" type="x-tmpl-mustache/text">
                                 <option value='{{svgmap_region}}'>{{name}}</option>
                             </script>
