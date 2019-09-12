@@ -1,0 +1,146 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="store_list_header">Guest Services</h3>
+            <ul class="side_menu hidden_phone">
+                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                <li><a href="/information">Information</a></li>
+                <li><a href="/directions">Directions</a></li>
+                <li><a href="/parking">Parking</a></li>
+                <li><a href="/jobs">Careers</a></li>
+                <li><a href="/newsletter">Become a NORTHSIDER</a></li>
+                <li class="active"><a href="/contact">Contact Us</a></li>
+                <li><a href="/pages/northside-photography-requests
+>">Photography</a></li>
+                <!--<li><a href="/hours">Operating Hours</a></li>-->
+            </ul>
+            <div class="position_relative show_phone">
+                <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Contact Us</span> <i class="fa fa-caret-down pull-right"></i></a>
+                <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
+                    <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                    <li><a href="/information">Information</a></li>
+                    <li><a href="/directions">Directions</a></li>
+                    <li><a href="/parking">Parking</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/newsletter">Become a NORTHSIDER</a></li>
+                    <li><a href="/pages/northside-photography-requests
+>">Photography</a></li>
+                    <!--<li><a href="/hours">Operating Hours</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6 inside_page">
+            <h3 class="hours_header" id="mm_page_title">Contact Us</h3>
+            <div id="send_contact_success" class="alert alert-success" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <span class="sr-only">Success</span>
+                Thank you for contacting us. A member from our team will contact you shortly. 
+            </div>
+            <div id="send_contact_error" class="alert alert-danger" role="alert" style="display:none">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                There was an error when trying to submit your request. Please ensure you have entered a valid email address and the required fields. Please try again.
+            </div>
+            <form name="contact_form" id="contact_form" method="post" class="margin_40">
+                <p>We'd love to hear from you! Send us your comments by completing the contact form below.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="first_name">First Name *</label>
+                        <input class="contest_info" id="first_name" name="first_name" type="text" required data-validation="required" tabindex="1"/>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last_name">Last Name *</label>
+                        <input class="contest_info" id="last_name" name="last_name" type="text" required data-validation="required" tabindex="2"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">Email *</label>
+                        <input class="contest_info" id="email" name="email" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>
+                    </div>
+                    <div class="col-md-6">  
+                        <label for="zip_code">ZIP Code</label>
+                        <input class="contest_info" id="zip_code" name="zip_code" type="text" tabindex="4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="subject">Subject *</label>
+                        <input class="contest_info" name="subject" id="subject"  type="text" required data-validation="required" tabindex="5">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="email">Comments *</label>
+                        <textarea class="contest_info" id="comments" name="comments" rows="8" required data-validation="required" tabindex="6"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">    
+                        <label>
+                            <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="7"/> 
+                            I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.
+                        </label>
+                    </div>
+                </div>
+                <div class="line_break">&nbsp;</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="submit_btn caps" tabindex="8">Send</button>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3 hidden_phone">
+            <div class="margin_20"></div>
+            <div id="mm_page_content"></div>    
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var prefix = get_prefix();
+            var pages_json = prefix + '/pages/northside-contact-information.json';
+            $.getJSON(pages_json).done(function(data) {
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            
+            $.validate();
+            
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+    
+    $('#contact_form').submit(function(e) {
+        values = [];
+        values = JSON.stringify($('#contact_form').serializeArray());
+        e.preventDefault();
+        $.ajax({
+            url : "/api/v1/contact_us",
+            type: "POST",
+            data : {authenticity_token: '<%=form_authenticity_token%>' ,
+            form_data: values },
+            success: function(data, textStatus, jqXHR) {
+                $('#send_contact_success').fadeIn();
+                $('#contact_form').find("input[type=text], input[type=email], textarea").val("");
+                $('html, body').animate({scrollTop : 0},800);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('#send_contact_error').fadeIn();
+                $('html, body').animate({scrollTop : 0},800);
+            }
+        });
+    });
+</script>
