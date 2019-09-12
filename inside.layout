@@ -179,13 +179,13 @@
                 <div class="col-md-4 hidden_phone">
                     <div class="top_header_social_icons ">
                         <p>Get to Know Us:</p>
-                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
+                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/" aria-label="facebook link">
                             <div class="social_fb"></div>
                         </a>
-                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
+                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE" aria-label="twitterlink">
                             <div class="social_twitter"></div>
                         </a>
-                        <a target="_blank" href="//www.instagram.com/domainnorthside/">
+                        <a target="_blank" href="//www.instagram.com/domainnorthside/" aria-label="instagram link">
                             <div class="social_insta"></div>
                         </a>
                     </div>
