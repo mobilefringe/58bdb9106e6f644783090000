@@ -1,0 +1,60 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="store_list_header">Guest Services</h3>
+            <ul class="side_menu hidden_phone">
+                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                <li class="active"><a href="/information">Information</a></li>
+                <li><a href="/directions">Directions</a></li>
+                <li><a href="/parking">Parking</a></li>
+                <li><a href="/jobs">Careers</a></li>
+                <li><a href="/newsletter">Become a NORTHSIDER</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/pages/northside-photography-requests
+>">Photography</a></li>
+                <!--<li><a href="/hours">Operating Hours</a></li>-->
+            </ul>
+            <div class="position_relative show_phone">
+                <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Information</span> <i class="fa fa-caret-down pull-right"></i></a>
+                <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
+                    <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                    <li><a href="/directions">Directions</a></li>
+                    <li><a href="/parking">Parking</a></li>
+                    <li><a href="/jobs">Careers</a></li>
+                    <li><a href="/newsletter">Become a NORTHSIDER</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/pages/northside-photography-requests
+>">Photography</a></li>
+                    <!--<li><a href="/hours">Operating Hours</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h3 class="hours_header" id="mm_page_title">Information</h3>
+            <div id="mm_page_content"></div>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var prefix = get_prefix();
+            var pages_json = prefix + '/pages/northside-information.json';
+            $.getJSON(pages_json).done(function(data) {
+                // $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    });
+</script>
