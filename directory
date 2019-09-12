@@ -74,7 +74,7 @@
             <!--<div style="{{show}}" class="store_initial" id="{{initial}}">{{initial}}</div>-->
             <script id="store_list_template" type="x-tmpl-mustache/text">
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
-                    <div class="store_logo_container" id="{{initial}}">
+                    <div class="store_logo_container" id="{{initial.toUpperCase()}}">
                         <a href="/stores/{{slug}}">
                             <img alt="{{name}}" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                             <div class="store_coming_soon" style="{{coming_soon_store}}">
