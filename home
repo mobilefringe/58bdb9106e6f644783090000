@@ -1,37 +1,37 @@
 <!-- popup form starts-->
 <div class="popup_form hidden_now ">
     <img src="#" alt="newsletter pop up">
-    <i class="fa fa-remove close_popup" tabindex="6"></i>
+    <i class="fa fa-remove close_popup"></i>
     <div class="popup_container">
         <h5>Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</h5>
         <form action="https://domainnorthside.us20.list-manage.com/subscribe/post?u=47396e9fb3ef9c547d3fceb54&amp;id=fa57238974" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div class="row margin_10">
                 <div class="col-md-10">
                     <label for="mce-FNAME">Name</label>
-                    <input class="form-control" id="mce-FNAME" name="FNAME" type="text" tabindex="1"/>
+                    <input class="form-control" id="mce-FNAME" name="FNAME" type="text"/>
                 </div>
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
                     <label for="mce-EMAIL">Email *</label>
-                    <input class="form-control" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="2"/>
+                    <input class="form-control" id="mce-EMAIL" name="EMAIL" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom"/>
                 </div>
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
                     <label for="mce-MMERGE12">ZIP Code *</label>
-                    <input class="form-control" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode" tabindex="3"/>
+                    <input class="form-control" id="mce-MMERGE12" name="MMERGE12" type="text" required data-validation="zipcode"/>
                 </div>
             </div>
             <div class="margin_30"></div>
             <br>
             <label class="popup_agree">
-                <input id="mce-MMERGE10" type="checkbox" required data-validation="required" tabindex="4">
+                <input id="mce-MMERGE10" type="checkbox" required data-validation="required">
                 <span>I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.</span>
             </label>
             <a href="/privacy_policy" target="_blank">Privacy Policy.</a>
             <br />
-            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" tabindex="5">      
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT">      
         </form>
     </div>
 </div>
