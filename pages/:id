@@ -55,7 +55,7 @@
                 }
             }); 
             
-            if (_.includes(slug, "slug northside-photography-requests"))  {
+            if (_.includes(slug, "northside-photography-requests"))  {
                 $("#photography").show();
                 $("#other").hide();
             }
