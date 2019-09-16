@@ -44,6 +44,7 @@
             var slug = pathArray[pathArray.length-1];
             var prefix = get_prefix();
             var pages_json = prefix + "/pages/" + slug + ".json"
+            console.log("pages_json", pages_json)
             $.getJSON(pages_json).done(function(data) {
                 $('#mm_page_title').html(data.title);
                 $('#mm_page_content').html(data.body);
@@ -52,6 +53,8 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
+            
+            if ()
             show_content();
         }
         loadMallDataCached(renderAll); 
