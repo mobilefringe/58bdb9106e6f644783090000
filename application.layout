@@ -124,12 +124,12 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    
+
     <body id="page-top">
         <div class="site_container">
             <nav class="show_phone mobile_nav navbar-fixed-top">
-                <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489683413000/mobile_menu.png" class="menu_toggler" alt="menu toggler">
-                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488983673000/northside_logo.png" class="logo_phone" alt="Domain Northside logo"></a>
+                <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489683413000/mobile_menu.png" class="menu_toggler">
+                <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488983673000/northside_logo.png" class="logo_phone" alt="logo"></a>
                 <div id="navbar">
                     <ul class="nav navbar-nav">
                         <li>
@@ -161,7 +161,7 @@
                         <li><a href="/posts" class="caps">Blog</a></li>
                         <li>
                             <a class="dd_link caps" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-label="mobile_nav3">
+                            <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
                                 <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
@@ -169,7 +169,7 @@
                                 <li><a href="/jobs">Careers</a></li>
                                 <li><a href="/newsletter">Become a NORTHSIDER</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
-                                <!--<li><a href="/hours">Operating Hours</a></li>-->
+                                <li><a href="/pages/northside-photography-requests">Photography</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -179,13 +179,13 @@
                 <div class="col-md-4 hidden_phone">
                     <div class="top_header_social_icons ">
                         <p>Get to Know Us:</p>
-                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/" aria-label="facebook link">
+                        <a target="_blank" href="//www.facebook.com/DomainNORTHSIDE/">
                             <div class="social_fb"></div>
                         </a>
-                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE" aria-label="twitter link">
+                        <a target="_blank" href="//twitter.com/DomainNORTHSIDE">
                             <div class="social_twitter"></div>
                         </a>
-                        <a target="_blank" href="//www.instagram.com/domainnorthside/" aria-label="instagram link">
+                        <a target="_blank" href="//www.instagram.com/domainnorthside/">
                             <div class="social_insta"></div>
                         </a>
                     </div>
@@ -206,8 +206,7 @@
                         <div class="site_searcher_div">
                             <label class="top_form_control no_margin">
                                 <i class="custom_i fa fa-search"></i>
-                                <p class="accessibility">search</p>
-                                <input type="text" placeholder="Search" id="site_search"/>
+                                <input type="text" placeholder="Search" id="site_search" />
                                 <i id="close_search" class="fa fa-times-circle"></i>
                             </label>
                             <div class="site_search_results" id="search_results_stores"></div>
@@ -259,7 +258,7 @@
                     <div class="top_nav_menu" id="top_nav_centre_info">
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu4" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-label="dropdownMenu3">
+                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
                                 <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
@@ -311,7 +310,7 @@
                 </div>
                 <div class="col-md-6">
                     <a href="/directions"><h3 class="footer_explore hidden_phone">DIRECTIONS</h3></a>
-                    <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488983673000/northside_logo.png" class="logo_phone visible-sm-block visible-xs-block" alt="Domain Northside logo"></a>
+                    <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488983673000/northside_logo.png" class="logo_phone visible-sm-block visible-xs-block" alt="logo"></a>
                     <div class="margin_20 visible-sm-block visible-xs-block"></div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.1330663349804!2d-97.7231981845472!3d30.403966308453096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cc727dab9c1d%3A0x2672981dc99cbdd9!2sDomain+NORTHSIDE!5e0!3m2!1sen!2sus!4v1488835590379" width="100%" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <!--    <div class="margin_20 visible-sm-block visible-xs-block"></div>-->
@@ -333,6 +332,6 @@
                 <div class="clearfix"></div>
             </div>
         </footer>
-        <a href="page-top" class="scrollToTop" aria-label="sroll to top"><i class="fa fa-arrow-up"></i></a>
+        <a href="#top" class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
     </body>
 </html>
