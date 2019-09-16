@@ -10,9 +10,7 @@
                 <li><a href="/jobs">Careers</a></li>
                 <li><a href="/newsletter">Become a NORTHSIDER</a></li>
                 <li><a href="/contact">Contact Us</a></li>
-                <li><a href="/pages/northside-photography-requests
->">Photography</a></li>
-                <!--<li><a href="/hours">Operating Hours</a></li>-->
+                <li><a href="/pages/northside-photography-requests">Photography</a></li>
             </ul>
             <div class="position_relative show_phone">
                 <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Information</span> <i class="fa fa-caret-down pull-right"></i></a>
