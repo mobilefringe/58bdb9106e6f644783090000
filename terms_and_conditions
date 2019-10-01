@@ -1,0 +1,34 @@
+<div class="fluid_row mobile_padding">
+    <div class="row">
+        <!--<div class="col-md-3">-->
+            
+        <!--</div>-->
+        <div class="col-md-12 contact_rows">
+            <h3 class="hours_header" id="mm_page_title">DOMAIN NORTHSIDE Terms & Conditions</h3>
+            <div id="mm_page_content"></div>
+            <h3 id="404_msg" class="hidden_now">Sorry we can't find the page you're looking for.</h3>
+        </div>
+    </div>
+</div>
+<div class="margin_40"></div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var prefix = get_prefix();
+            var pages_json = prefix + '/pages/northside-terms-conditions.json';
+            $.getJSON(pages_json).done(function(data) {
+                // $('#mm_page_title').html(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
