@@ -247,8 +247,15 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_promotions">
-                        <a href="/promotions" class="caps">Promotions</a>
+                    <div class="top_nav_menu" id="top_nav_rock_rose">
+                        <div class="dropdown">
+                            <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions<i class="fa fa-caret-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
+                                <li><a href="/promotions">Promotions</a></li>
+                              
+                                <li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="top_nav_menu" id="top_nav_events">
                         <a href="/events" class="caps">Events</a>
