@@ -1,7 +1,7 @@
 <div class="fluid_row mobile_padding">
-    <div class="row hidden_now" id="photography">
+    <div class="row" id="photography">
         
-        <div  class="col-md-3">
+        <div  class="col-md-3 hidden_now">
             <h3 class="store_list_header">Guest Services</h3>
             <ul class="side_menu hidden_phone">
                 <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
