@@ -1,6 +1,5 @@
 <div class="fluid_row mobile_padding">
     <div class="row" id="photography">
-        
         <div  class="col-md-3 hidden_now">
             <h3 class="store_list_header">Guest Services</h3>
             <ul class="side_menu hidden_phone">
@@ -58,7 +57,7 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-            
+            console.log(slug)
             if (_.includes(slug, "northside-photography-requests"))  {
                 $("#photography").show();
                 $("#other").hide();
