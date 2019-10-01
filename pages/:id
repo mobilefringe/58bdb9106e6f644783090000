@@ -64,8 +64,6 @@
                     $("#404_msg").fadeIn("fast");
                 }
             }); 
-            console.log(slug)
-            
             show_content();
         }
         loadMallDataCached(renderAll); 
