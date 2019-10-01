@@ -1,8 +1,5 @@
 <div class="fluid_row">
     <div class="row">
-        <!--<div class="col-md-3">-->
-            
-        <!--</div>-->
         <div class="col-md-10 contact_rows">
             <h3 class="hours_header" id="mm_page_title"></h3>
             <div id="mm_page_content"></div>
