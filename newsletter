@@ -154,8 +154,8 @@
 	    
 	}
 	#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input {
-    width: 50px;
-}
+        width: 50px;
+    }
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
