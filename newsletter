@@ -1,3 +1,4 @@
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <div class="fluid_row mobile_padding">
     <div class="row">
         <div class="col-md-3">
@@ -104,7 +105,7 @@
     </div>
 </div>
 <div class="margin_40"></div>
-<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
 <script>
     $(document).ready(function(e){
         init(e);
