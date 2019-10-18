@@ -159,6 +159,7 @@
         padding: 17px 30px;
         background: #536c92;
         border: none;
+        border-radius:0px;
         font-family: 'gibson_regular';
         color: #fff;
         font-size: 20px;
