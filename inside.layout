@@ -166,7 +166,7 @@
                             </ul>
                         </li>
                         <li><a href="/events" class="caps">Events</a></li>
-                        <li><a href="/posts" class="caps">Blog</a></li>
+                        <!--<li><a href="/posts" class="caps">Blog</a></li>-->
                         <li>
                             <a class="dd_link caps" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
@@ -260,9 +260,9 @@
                     <div class="top_nav_menu" id="top_nav_events">
                         <a href="/events" class="caps">Events</a>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_blog">
-                        <a href="/posts" class="caps">Blog</a>
-                    </div>
+                    <!--<div class="top_nav_menu" id="top_nav_blog">-->
+                    <!--    <a href="/posts" class="caps">Blog</a>-->
+                    <!--</div>-->
                     <div class="top_nav_menu" id="top_nav_centre_info">
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu4" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
