@@ -270,6 +270,9 @@
                             </ul>
                         </div>
                     </div>
+                       <div class="top_nav_menu" id="top_nav_sponsor">
+                        <a href="/pages/northside-sponsorships" class="caps">Sponsorship</a>
+                    </div>
                 </div>
             </div>
         </div>
