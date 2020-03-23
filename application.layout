@@ -154,7 +154,7 @@
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
                                 <li><a href="promotions">Promotions</a></li>
                               
-                                <li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>
+                                <!--<li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
                             </ul>
                         </li>
                         <li><a href="/events" class="caps">Events</a></li>
@@ -246,7 +246,7 @@
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
                                 <li><a href="/promotions">Promotions</a></li>
                               
-                                <li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>
+                                <!--<li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
                             </ul>
                         </div>
                     </div>
