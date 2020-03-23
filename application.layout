@@ -146,7 +146,7 @@
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
                                 <li><a href="/about">About Rock Rose</a></li>
                                 <!--<li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>-->
-                                <li><a href="/hope_gallery">HOPE Gallery</a></li>
+                                <!--<li><a href="/hope_gallery">HOPE Gallery</a></li>-->
                             </ul>
                         </li>
                         <li>
@@ -162,7 +162,7 @@
                         <li>
                             <a class="dd_link caps" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="mobile_nav3">
-                                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                                <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
                                 <li><a href="/parking">Parking & Transportation</a></li>
@@ -236,7 +236,7 @@
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
                                 <li><a href="/about">About Rock Rose</a></li>
                                 <!--<li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>-->
-                                <li><a href="/hope_gallery">HOPE Gallery</a></li>
+                                <!--<li><a href="/hope_gallery">HOPE Gallery</a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -260,7 +260,7 @@
                         <div class="dropdown">
                             <a href="#" id="dropdownMenu4" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
-                                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                                <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
                                 <li><a href="/parking">Parking & Transportation</a></li>
@@ -301,7 +301,7 @@
                         <div class="col-xs-6">
                             <ul class="footer_ul">
                                 <li class="footer_main_li">Guest Services</li>
-                                <li><a href="/new_to_northside">New to NORTHSIDE?</a></li>
+                                <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
                                 <li><a href="/parking">Parking & Transportation</a></li>
