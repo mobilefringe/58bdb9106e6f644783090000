@@ -152,12 +152,13 @@
                             <!--</ul>-->
                         </li>
                         <li>
-                            <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
-                                <li><a href="promotions">Promotions</a></li>
+                            <a href="promotions">Promotions</a>
+                            <!--<a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>-->
+                            <!--<ul class="dropdown-menu" aria-labelledby="mobile_nav2">-->
+                            <!--    <li><a href="promotions">Promotions</a></li>-->
                               
                                 <!--<li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
-                            </ul>
+                            <!--</ul>-->
                         </li>
                         <li><a href="/events" class="caps">Events</a></li>
                         <!--<li><a href="/posts" class="caps">Blog</a></li>-->
