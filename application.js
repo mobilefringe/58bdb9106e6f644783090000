@@ -619,7 +619,7 @@ function renderEvents(container, template, collection){
         // }
         
         if (val.name.length > 30){
-            val.name = 'fives fives fives fives fives fives fives fives fives'
+            // val.name = 'fives fives fives fives fives fives fives fives fives'
             // val.name_short = val.name.substring(0, 45)
             if (val.name.length > 45) {
                 val.name_short = val.name.substring(0, 45) + "...";
