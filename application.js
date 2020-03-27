@@ -378,8 +378,11 @@ function renderPromotions(container, template, collection){
             }
             
             if (val.name.length > 32){
-                val.name_short = val.name.substring(0,45) + "...";
-                console.log(val.name_short.length)
+                if (val.name.length > 45) {
+                    val.name_short = val.name.substring(0, 45) + "...";
+                } else {
+                    val.name_short = val.name
+                }
             } else {
                 val.name_short = val.name;
             }
@@ -606,21 +609,7 @@ function renderEvents(container, template, collection){
             }
         }
         
-        // if (val.name.length > 30){
-        //     // val.name = 'fives fives fives fives fives fives fives fives fives'
-        //     val.name_short = val.name.substring(0, 45)
-        //     if (val.name.length > 45) {
-        //         val.name_short = val.name_short + "...";
-        //     } else {
-        //         val.name_short = val.name_short
-        //     }
-        // } else {
-        //     val.name_short = val.name;
-        // }
-        
-        if (val.name.length > 30){
-            // val.name = 'fives fives fives fives fives fives fives fives fives'
-            // val.name_short = val.name.substring(0, 45)
+        if (val.name.length > 32){
             if (val.name.length > 45) {
                 val.name_short = val.name.substring(0, 45) + "...";
             } else {
