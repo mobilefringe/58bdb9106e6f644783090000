@@ -297,8 +297,8 @@
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
                                 <li><a href="/map">Interactive Map</a></li>
-                                <!--<li class="footer_main_li"><a href="/about">Rock Rose</a></li>-->
-                                <!--<li class="footer_main_li"><a href="/promotions">Promotions</a></li>-->
+                                <li class="footer_main_li"><a href="/about">Rock Rose</a></li>
+                                <li class="footer_main_li"><a href="/promotions">Promotions</a></li>
                                 <li class="footer_main_li"><a href="/events"></a>Events</a></li>
                                 <li class="footer_main_li"><a href="/contact">Contact Us</a></li>
                             </ul>
