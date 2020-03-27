@@ -148,23 +148,23 @@
                                 <li><a href="/map">Interactive Map</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
-                                <li><a href="/about">About Rock Rose</a></li>
+                        <!--<li>-->
+                        <!--    <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>-->
+                        <!--    <ul class="dropdown-menu" aria-labelledby="mobile_nav2">-->
+                        <!--        <li><a href="/about">About Rock Rose</a></li>-->
                                 <!--<li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>-->
                                 <!--<li><a href="/hope_gallery">HOPE Gallery</a></li>-->
-                            </ul>
-                        </li>
+                        <!--    </ul>-->
+                        <!--</li>-->
                         <!--<li><a href="/promotions" class="caps">Promotions</a></li>-->
-                        <li>
-                            <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" aria-labelledby="mobile_nav2">
-                                <li><a href="promotions">Promotions</a></li>
+                        <!--<li>-->
+                        <!--    <a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>-->
+                        <!--    <ul class="dropdown-menu" aria-labelledby="mobile_nav2">-->
+                        <!--        <li><a href="promotions">Promotions</a></li>-->
                               
                                 <!--<li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
-                            </ul>
-                        </li>
+                        <!--    </ul>-->
+                        <!--</li>-->
                         <li><a href="/events" class="caps">Events</a></li>
                         <!--<li><a href="/posts" class="caps">Blog</a></li>-->
                         <li>
@@ -237,26 +237,26 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="top_nav_menu" id="top_nav_rock_rose">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
-                                <li><a href="/about">About Rock Rose</a></li>
+                    <!--<div class="top_nav_menu" id="top_nav_rock_rose">-->
+                    <!--    <div class="dropdown">-->
+                    <!--        <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>-->
+                    <!--        <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
+                    <!--            <li><a href="/about">About Rock Rose</a></li>-->
                                 <!--<li><a href="/thursdays_rock_rose">3rd Thursdays on Rock Rose</a></li>-->
                                 <!--<li><a href="/hope_gallery">HOPE Gallery</a></li>-->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="top_nav_menu" id="top_nav_rock_rose">
-                        <div class="dropdown">
-                            <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions<i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
-                                <li><a href="/promotions">Promotions</a></li>
+                    <!--        </ul>-->
+                    <!--    </div>-->
+                    <!--</div>-->
+                    <!--<div class="top_nav_menu" id="top_nav_rock_rose">-->
+                    <!--    <div class="dropdown">-->
+                    <!--        <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions<i class="fa fa-caret-down"></i></a>-->
+                    <!--        <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
+                    <!--            <li><a href="/promotions">Promotions</a></li>-->
                               
                                 <!--<li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
-                            </ul>
-                        </div>
-                    </div>
+                    <!--        </ul>-->
+                    <!--    </div>-->
+                    <!--</div>-->
                     <div class="top_nav_menu" id="top_nav_events">
                         <a href="/events" class="caps">Events</a>
                     </div>
@@ -296,8 +296,8 @@
                                 <li><a href="/stores">Shop</a></li>
                                 <li><a href="/dine">Dine</a></li>
                                 <li><a href="/map">Interactive Map</a></li>
-                                <li class="footer_main_li"><a href="/about">Rock Rose</a></li>
-                                <li class="footer_main_li"><a href="/promotions">Promotions</a></li>
+                                <!--<li class="footer_main_li"><a href="/about">Rock Rose</a></li>-->
+                                <!--<li class="footer_main_li"><a href="/promotions">Promotions</a></li>-->
                                 <li class="footer_main_li"><a href="/events"></a>Events</a></li>
                                 <li class="footer_main_li"><a href="/contact">Contact Us</a></li>
                             </ul>
