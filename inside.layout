@@ -239,7 +239,7 @@
                         </div>
                     </div>
                     <div class="top_nav_menu" id="top_nav_rock_rose">
-                        <a href="/about">About Rock Rose</a>
+                        <a href="/about" class="caps">About Rock Rose</a>
                         <!--<div class="dropdown">-->
                         <!--    <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>-->
                         <!--    <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
