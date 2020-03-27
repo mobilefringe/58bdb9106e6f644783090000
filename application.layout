@@ -142,7 +142,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="/about">About Rock Rose</a>
+                            <a href="/about" class="caps">About Rock Rose</a>
                         
                             <!--<a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>-->
                             <!--<ul class="dropdown-menu" aria-labelledby="mobile_nav2">-->
@@ -152,7 +152,7 @@
                             <!--</ul>-->
                         </li>
                         <li>
-                            <a href="promotions">Promotions</a>
+                            <a href="promotions" class="caps">Promotions</a>
                             <!--<a class="dd_link caps" href="#" id="mobile_nav2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions <i class="fa fa-caret-down"></i></a>-->
                             <!--<ul class="dropdown-menu" aria-labelledby="mobile_nav2">-->
                             <!--    <li><a href="promotions">Promotions</a></li>-->
