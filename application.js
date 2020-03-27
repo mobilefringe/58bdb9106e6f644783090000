@@ -609,7 +609,7 @@ function renderEvents(container, template, collection){
             // val.name_short = val.name.substring(0,45)
             val.name="fives fives fives fives fives fives fives fives"
             // console.log(val.name.length)
-            val.name_short = val.name.substring(0,45)
+            val.name_short = val.name.substring(0,40)
             if (val.name_short.length > 45) {
                 val.name_short = val.name_short + "..."
             } 
