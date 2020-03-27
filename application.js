@@ -612,6 +612,7 @@ function renderEvents(container, template, collection){
             val.name_short = val.name.substring(0,40)
             if (val.name_short.length > 40) {
                 val.name_short = val.name_short + "..."
+                console.log(val.name_short)
             } 
         } else {
             val.name_short = val.name;
