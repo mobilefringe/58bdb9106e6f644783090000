@@ -250,7 +250,7 @@
                         <!--</div>-->
                     </div>
                     <div class="top_nav_menu" id="top_nav_rock_rose">
-                        <a href="/promotions">Promotions</a>
+                        <a href="/promotions" class="caps">Promotions</a>
                         <!--<div class="dropdown">-->
                         <!--    <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions<i class="fa fa-caret-down"></i></a>-->
                         <!--    <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
