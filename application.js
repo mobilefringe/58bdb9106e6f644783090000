@@ -605,7 +605,7 @@ function renderEvents(container, template, collection){
             }
         }
         
-        if (val.name.length > 30){
+        if (val.name.length > 40){
             // val.name_short = val.name.substring(0,45)
             val.name="fives fives fives fives fives fives fives fives"
             // console.log(val.name.length)
