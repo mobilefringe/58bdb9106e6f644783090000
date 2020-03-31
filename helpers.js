@@ -28,7 +28,7 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
 	
-    get_instagram("//northside.mallmaverick.com/api/v4/northside/social.json", 9, 'thumbnail', render_instagram)
+    get_instagram("//northside.mallmaverickstaging.com/api/v4/northside/social.json", 9, 'thumbnail', render_instagram)
     
     blog_searcher();
     
