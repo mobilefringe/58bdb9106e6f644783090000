@@ -22,7 +22,7 @@
                         Sort by Category <span class="dropdown_arrow"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489097373000/Expand Arrow.png" alt=""></span>
                     </a>
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
-			            <li class="show_cat_stores" data-id="000" name="All">ALL</li>
+			  
 			            <li class="show_cat_stores" data-id="9372" name="Entertainment">ENTERTAINMENT</li>
 				        
                     </ul>
