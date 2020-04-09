@@ -23,7 +23,7 @@
                     </a>
                     <ul class="dropdown-menu cat_list" aria-labelledby="dropdownMenu1" id="category_select">
 			            <li class="show_cat_stores" data-id="000" name="All">ALL</li>
-			            <li class="show_cat_stores" data-id="5029" name="Servicest">ENTERTAINMENT</li>
+			            <li class="show_cat_stores" data-id="5029" name="Services">Services</li>
 				        
                     </ul>
                 </div>
