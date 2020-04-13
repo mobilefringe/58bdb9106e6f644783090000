@@ -293,7 +293,7 @@
                 </div>
             </div>
         </div>
-        <div class="yield">
+        <div class="site_container yield">
             {{yield}}
         </div>
         <footer class="site_container">
