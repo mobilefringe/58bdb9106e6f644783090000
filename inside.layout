@@ -245,7 +245,7 @@
                         </div>
                     </div>
                     <div class="top_nav_menu" id="top_nav_rock_rose">
-                        <a href="/about" class="caps">About Rock Rose</a>
+                        <a href="/about" class="caps">Rock Rose</a>
                         <!--<div class="dropdown">-->
                         <!--    <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rock Rose <i class="fa fa-caret-down"></i></a>-->
                         <!--    <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
@@ -260,7 +260,7 @@
                         <!--<div class="dropdown">-->
                         <!--    <a href="#" id="dropdownMenu2" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions<i class="fa fa-caret-down"></i></a>-->
                         <!--    <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">-->
-                                <!--<li><a href="/promotions">Promotions</a></li>-->
+                        <!--        <li><a href="/promotions">Promotions</a></li>-->
                               
                         <!--        <li><a href="/pages/northside-vip-loyalty-offers">VIP Loyalty Program</a></li>-->
                         <!--    </ul>-->
@@ -269,7 +269,7 @@
                     <div class="top_nav_menu" id="top_nav_events">
                         <a href="/events" class="caps">Events</a>
                     </div>
-                      <div class="top_nav_menu" id="top_nav_sponsor">
+                     <div class="top_nav_menu" id="top_nav_sponsor">
                         <a href="/pages/northside-sponsorships" class="caps">Sponsorship</a>
                     </div>
                     <!--<div class="top_nav_menu" id="top_nav_blog">-->
@@ -280,9 +280,10 @@
                             <a href="#" id="dropdownMenu4" class="caps" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
                                 <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
+                                <li><a href="/tourism">Tourism</a></li>
                                 <li><a href="/information">Information</a></li>
                                 <li><a href="/directions">Directions</a></li>
-                                <li><a href="/parking">Parking</a></li>
+                                <li><a href="/parking">Parking & Transportation</a></li>
                                 <li><a href="/jobs">Careers</a></li>
                                 <li><a href="/newsletter">Become a NORTHSIDER</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
@@ -290,6 +291,7 @@
                             </ul>
                         </div>
                     </div>
+                      
                 </div>
             </div>
         </div>
