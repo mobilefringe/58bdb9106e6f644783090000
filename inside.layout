@@ -169,6 +169,7 @@
                         <!--    </ul>-->
                         <!--</li>-->
                         <li><a href="/events" class="caps">Events</a></li>
+                         <li><a href="/pages/northside-sponsorships" class="caps">Sponsorship</a></li>
                         <!--<li><a href="/posts" class="caps">Blog</a></li>-->
                         <li>
                             <a class="dd_link caps" href="#" id="mobile_nav4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services <i class="fa fa-caret-down"></i></a>
