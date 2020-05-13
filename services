@@ -97,14 +97,12 @@
 <script>
     $(document).ready(function(e){
         init(e);
-       function renderAll(){
-var services = getStoresListByCategoryID(5029);
-// var late_night = getStoresListByCategoryID(5035);
-// var specialty_foods = getStoresListByCategoryID(5039);
-// var dine_list = dining.concat(late_night, specialty_foods).sortBy(function(o){ return o.name});
-var services_list = services.sortBy(function(o){ return o.name});
-var sorted_list = _.uniqBy(services_list, function(o){ return o.name; });
-renderStoreList('#store_list_container','#store_list_template', sorted_list, "stores");
+        function renderAll(){
+            var services = getStoresListByCategoryID(5029);
+            console.log("services", services)
+            var services_list = services.sortBy(function(o){ return o.name});
+            var sorted_list = _.uniqBy(services_list, function(o){ return o.name; });
+            renderStoreList('#store_list_container','#store_list_template', sorted_list, "stores");
             
             show_content();
             
