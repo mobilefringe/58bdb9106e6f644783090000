@@ -100,9 +100,9 @@
         function renderAll(){
             var services = getStoresListByCategoryID(5029);
             console.log("services", services)
-            // var services_list = services.sortBy(function(o){ return o.name});
+            var services_list = services.sortBy(function(o){ return o.name});
             // var sorted_list = _.uniqBy(services_list, function(o){ return o.name; });
-            renderStoreList('#store_list_container','#store_list_template', services, "stores");
+            renderStoreList('#store_list_container','#store_list_template', services_list, "stores");
             
             show_content();
             
