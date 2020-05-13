@@ -10,7 +10,6 @@
                 <div class="col-md-4">
                     <div class="promotions_header_container store_search" >
                         <label class="">
-                            <p class="accessibility">search</p>
                             <input type="text" placeholder="Search" id="store_search" />
                             <img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1488985579000/search-512.png" class="pull-right" id="store_search_img" alt="">
                             <i id="close_search_results" class="fa fa-times-circle hidden_now"></i>
@@ -77,7 +76,7 @@
                 <div class="col-xs-6 col-sm-3 col-md-2 cats_row" data-cat="{{cat_list}}">
                     <div class="store_logo_container" id="{{initial}}">
                         <a href="/stores/{{slug}}">
-                            <img alt="{{name}}" style="{{initial_img}}" src="{{store_front_url_abs}}"/>
+                            <img style="{{initial_img}}" src="{{store_front_url_abs}}"/>
                             <div class="store_coming_soon" style="{{coming_soon_store}}">
                                 <div class="new_store">Coming soon</div>
                             </div>
@@ -85,8 +84,8 @@
                                 <div class="new_store">Now Open</div>
                             </div>
                             <div class="store_list_promos">
-                                <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt="jobs"> {{job_list}}</span>
-                                <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt="promotions"> {{promotion_list}}</span>
+                                <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
+                                <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt=""> {{promotion_list}}</span>
                             </div>
                         </a>
                     </div>
@@ -100,10 +99,11 @@
         init(e);
         function renderAll(){
             var categories = getStoreCategories().sortBy(function(o){ return o.name});
+            console.log("categories", categories)
             var stores_list = [];
             $.each(categories, function(key, val){
                 var category_id = val.id;
-                if(category_id != 5032 && category_id != 5034 && category_id != 5035 && category_id != 5038 && category_id != 5039 && category_id != 5033) {
+                if (category_id != 5032 && category_id != 5034 && category_id != 5035 && category_id != 5038 && category_id != 5039 && category_id != 5033) {
                     stores_list.push(val);
                 }
             });
