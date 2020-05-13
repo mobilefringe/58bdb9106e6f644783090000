@@ -103,7 +103,7 @@
             var stores_list = [];
             $.each(categories, function(key, val){
                 var category_id = val.id;
-                if (category_id != 5032 && category_id != 5034 && category_id != 5035 && category_id != 5038 && category_id != 5039 && category_id != 5033) {
+                if (category_id != 5032 && category_id != 5034 && category_id != 5035 && category_id != 5038 && category_id != 5039 && category_id != 5033 && category_id != 5029 && category_id != 9372) {
                     stores_list.push(val);
                 }
             });
