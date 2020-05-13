@@ -3,20 +3,18 @@
         <div class="col-md-3">
             <h3 class="store_list_header">Guest Services</h3>
             <ul class="side_menu hidden_phone">
-                <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
                 <li><a href="/tourism">Tourism</a></li>
                 <li><a href="/information">Information</a></li>
                 <li><a href="/directions">Directions</a></li>
                 <li><a href="/parking">Parking</a></li>
                 <li><a href="/jobs">Careers</a></li>
-                <li class="active"><a href="/newsletter">Become a NORTHSIDER</a></li>
+                <li class="active">Become a NORTHSIDER</li>
                 <li><a href="/contact">Contact Us</a></li>
                 <li><a href="/pages/northside-photography-requests">Photography</a></li>
             </ul>
             <div class="position_relative show_phone">
                 <a href="#" id="side_dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span id="side_nav_text">Become a NORTHSIDER</span> <i class="fa fa-caret-down pull-right"></i></a>
                 <ul id="side_nav" class="dropdown-menu" aria-labelledby="side_dd">
-                    <!--<li><a href="/new_to_northside">New to NORTHSIDE?</a></li>-->
                     <li><a href="/tourism">Tourism</a></li>
                     <li><a href="/information">Information</a></li>
                     <li><a href="/directions">Directions</a></li>
@@ -36,102 +34,45 @@
                 </script>
             </div>
             <div class="contest_description margin_20">Like being first? Then get your can’t-miss NORTHSIDE news before everybody else. Welcome to the club, NORTHSIDER.</div>
-            <!--<form action="https://mobilefringe.createsend.com/t/d/s/xnhtd/" method="post" id="subForm">-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <label for="fieldName">First Name</label>-->
-            <!--            <input class="contest_info" id="fieldName" name="cm-name" type="text" tabindex="1"/>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <label for="last_name">Last Name</label>-->
-            <!--            <input class="contest_info" id="last_name" name="contest[last_name]" type="text" tabindex="2"/>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <label for="fieldEmail">Email *</label>-->
-            <!--            <input class="contest_info" id="fieldEmail" name="cm-xnhtd-xnhtd" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="3"/>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <label for="fieldokiilj">Phone Number</label>-->
-            <!--            <input class="contest_info" id="fieldokiilj" name="cm-f-okiilj" type="text" tabindex="4"/>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6">  -->
-            <!--            <label for="fieldokiilt">ZIP Code *</label>-->
-            <!--            <input class="contest_info" id="fieldokiilt" name="cm-f-okiilt" type="text" required data-validation="required" tabindex="5"/>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6"></div>-->
-            <!--    </div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6"> -->
-            <!--            <label for="fieldokiili">Age</label>-->
-            <!--            <input class="contest_info" id="fieldokiili" name="cm-f-okiili" type="text" tabindex="6"/>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6">  -->
-            <!--            <label for="fieldokiild">Gender</label>-->
-            <!--            <select class="contest_info" id="fieldokiild" name="cm-f-okiild" tabindex="7">-->
-            <!--                <option value="">Select</option>-->
-            <!--                <option value="female">Female</option>-->
-            <!--                <option value="male">Male</option>-->
-            <!--            </select>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div class="line_break">&nbsp;</div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <button class="submit_btn caps" tabindex="10">Submit</button>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6"></div>-->
-            <!--    </div>-->
-            <!--    <div class="line_break">&nbsp;</div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-12">    -->
-            <!--            <label class="newsletter_agree">-->
-            <!--                <input id="newsletter_signup" type="checkbox" name="newsletter_agree" required data-validation="required" tabindex="8"/> -->
-            <!--                I would like to become a NORTHSIDER and agree to receive communications from Domain NORTHSIDE.-->
-            <!--            </label>-->
-            <!--        </div>-->
-            <!--    </div>-->
-            <!--    <div class="row">-->
-            <!--        <div class="col-sm-6">-->
-            <!--            <div class="margin_40"></div>-->
-            <!--            <p class="hidden_now" id="succes_msg">Thank you! Your information has been received.</p>-->
-            <!--        </div>-->
-            <!--        <div class="col-sm-6">-->
-            <!--    </div>-->
-            <!--</form>-->
             <div id="mc_embed_signup">
                 <form action="https://domainnorthside.us3.list-manage.com/subscribe/post?u=226e5c156efd033b34af73dcb&amp;id=59866c71c3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                </label>
-                	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-FNAME">First Name </label>
-                	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                </div>
-                <div class="mc-field-group">
-                	<label for="mce-LNAME">Last Name </label>
-                	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                </div>
-                <div class="mc-field-group size1of2">
-                	<label for="mce-BIRTHDAY-month">Birthday </label>
-                	<div class="datefield">
-                		<span class="subfield monthfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month"></span> / 
-                		<span class="subfield dayfield"><input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day"></span> 
-                		<span class="small-meta nowrap">( mm / dd )</span>
-                	</div>
-                </div>	<div id="mce-responses" class="clear">
-                		<div class="response" id="mce-error-response" style="display:none"></div>
-                		<div class="response" id="mce-success-response" style="display:none"></div>
-                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_226e5c156efd033b34af73dcb_59866c71c3" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                        <div class="mc-field-group">
+                        	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                	        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-FNAME">First Name </label>
+                        	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                        	<label for="mce-LNAME">Last Name </label>
+                        	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                        <div class="mc-field-group size1of2">
+                	        <label for="mce-BIRTHDAY-month">Birthday </label>
+                        	<div class="datefield">
+                        		<span class="subfield monthfield">
+                        		    <input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month">
+                    		    </span> / 
+                        		<span class="subfield dayfield">
+                        		    <input class="birthday " type="text" pattern="[0-9]*" value="" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day">
+                    		    </span> 
+                        		<span class="small-meta nowrap">( mm / dd )</span>
+                        	</div>
+                        </div>	
+                        <div id="mce-responses" class="clear">
+                		    <div class="response" id="mce-error-response" style="display:none"></div>
+                		    <div class="response" id="mce-success-response" style="display:none"></div>
+                	    </div>    
+                	    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_226e5c156efd033b34af73dcb_59866c71c3" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        </div>
                     </div>
                 </form>
             </div>
