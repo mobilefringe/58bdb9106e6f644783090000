@@ -104,7 +104,7 @@
             var late_night = getStoresListByCategoryID(5035);
             var specialty_foods = getStoresListByCategoryID(5039);
             var quick_bites = getStoresListByCategoryID(9373);
-            var dine_list = dining.concat(late_night, specialty_foods,quick_bites).sortBy(function(o){ return o.name});
+            var dine_list = dining.concat(late_night, specialty_foods, quick_bites).sortBy(function(o){ return o.name});
             var sorted_list = _.uniqBy(dine_list, function(o){ return o.name; });
             renderStoreList('#store_list_container','#store_list_template', sorted_list, "stores");
             
