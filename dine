@@ -85,6 +85,9 @@
                             <div class="store_coming_soon" style="{{new_store}}">
                                 <div class="new_store">Now Open</div>
                             </div>
+                            <div class="store_list_promos" style="{{store_tag_exist}}">
+                                <div class="promo_exist">To-Go/Curbside</div>
+                            </div>
                             <div class="store_list_promos">
                                 <span class="promo_exist" style="{{job_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000358000/jobs.png" class="" alt=""> {{job_list}}</span>
                                 <span class="promo_exist" style="{{promotion_exist}}"><img src="//codecloud.cdn.speedyrails.net/sites/58bdb9106e6f644783090000/image/png/1489000371000/promotions.png" class="" alt=""> {{promotion_list}}</span>
