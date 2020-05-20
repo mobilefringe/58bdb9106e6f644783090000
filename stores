@@ -83,7 +83,7 @@
                             <div class="store_coming_soon" style="{{new_store}}">
                                 <div class="new_store">Now Open</div>
                             </div>
-                            <div class="promo_exist" style="{{store_tag_exist}}">
+                            <div class="store_list_promos" style="{{store_tag_exist}}">
                                 <div class="promo_exist">To-Go/Curbside</div>
                             </div>
                             <div class="store_list_promos">
