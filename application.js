@@ -143,7 +143,7 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.job_exist = "display: none";
         }
-        
+        // To-Go/Curbside
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
