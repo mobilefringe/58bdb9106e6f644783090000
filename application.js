@@ -117,7 +117,6 @@ function renderStoreList(container, template, collection, type){
             store_initial = current_initial;
             val.show = "visibility: hidden";
         }
-        console.log(val.tags, val.tags && val.tags.includes('To-Go/Curbside'))
         if(val.tags && val.tags.includes('To-Go/Curbside')){
             val.store_tag_exist = "display: block";
         } else {
