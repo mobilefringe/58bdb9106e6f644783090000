@@ -123,7 +123,7 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.store_tag_exist = "display: none";
         }
-        if(val.is_coming_soon_store == true && val.is_new_store == false){
+        if(val.is_coming_soon_store == true && val.is_new_store == false && !val.tags && val.tags.includes('To-Go/Curbside')){
             val.coming_soon_store = "display: block";
         } else {
             val.coming_soon_store = "display:none";
