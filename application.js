@@ -129,9 +129,9 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
-        console.log(val.tags, val.tags.includes('To-Go/Curbside'))
+        console.log(val.tags, val.tags && val.tags.includes('To-Go/Curbside'))
         if(val.tags && val.tags.includes('To-Go/Curbside')){
-            val.store_tag_exist = "display: inline";
+            val.store_tag_exist = "display: block";
         } else {
             val.store_tag_exist = "display: none";
         }
