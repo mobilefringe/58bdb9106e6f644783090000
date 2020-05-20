@@ -118,7 +118,7 @@ function renderStoreList(container, template, collection, type){
             val.show = "visibility: hidden";
         }
         console.log(val.tags, val.tags && val.tags.includes('To-Go/Curbside'))
-        if(val.is_new_store == false && val.is_coming_soon_store == false && val.tags && val.tags.includes('To-Go/Curbside')){
+        if(val.tags && val.tags.includes('To-Go/Curbside')){
             val.store_tag_exist = "display: block";
         } else {
             val.store_tag_exist = "display: none";
