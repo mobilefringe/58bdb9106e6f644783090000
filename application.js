@@ -129,7 +129,12 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.new_store = "display: none";
         }
-        
+        console.log(val.tags, val.tags.includes('To-Go/Curbside'))
+        if(val.tags.includes('To-Go/Curbside')){
+            val.store_tag_exist = "display: inline";
+        } else {
+            val.store_tag_exist = "display: none";
+        }
         if(val.total_published_promos != null){
             val.promotion_exist = "display: inline";
             val.promotion_list = val.total_published_promos;
@@ -143,7 +148,7 @@ function renderStoreList(container, template, collection, type){
         } else {
             val.job_exist = "display: none";
         }
-        // To-Go/Curbside
+
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
